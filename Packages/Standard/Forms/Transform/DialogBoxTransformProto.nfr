@@ -1,0 +1,739 @@
+{
+    "Layout": "Windows Form",
+    "Version": "2.0",
+    "Settings": {
+        "GridX": true,
+        "GridY": true,
+        "GridRotate": true,
+        "GridXStep": 8,
+        "GridYStep": 8,
+        "GridRotateStep": 0.0174533,
+        "RotateShift": 2,
+        "GridPointSize": 1,
+        "GridPointColor": [
+            113,
+            21,
+            36,
+            255
+        ],
+        "Namespace": "standard",
+        "Prefix": "m_p",
+        "SelectionPointSize": 4,
+        "SelectionBorderWidth": 1,
+        "SelectionBorderColor": [
+            0,
+            0,
+            255,
+            150
+        ],
+        "SelectionBackgroundColor": [
+            0,
+            0,
+            255,
+            50
+        ],
+        "OverwriteIncludes": [
+            {
+                "Search": "Standard",
+                "Replace": "../.."
+            }
+        ],
+        "OverwriteNamespaces": [
+            {
+                "Search": "standard",
+                "Replace": ""
+            }
+        ],
+        "WidgetsSection": "protected",
+        "GenerateGetters": false,
+        "HighlightBorderWidth": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "HighlightBorderColor": [
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ]
+        ],
+        "ExportAs": 1,
+        "DialogBoxPackage": "Standard",
+        "DialogBoxClass": "DialogBoxEx"
+    },
+    "Form": {
+        "Name": "DialogBoxTransformProto",
+        "Caption": "Transform",
+        "ClientSize": [
+            432,
+            187
+        ],
+        "State": "WindowState::Hidden",
+        "WindowPosition": "WindowPosition::MainFormCenter",
+        "HasMaximizeBox": false,
+        "HasMinimizeBox": false,
+        "HasSizeBox": false,
+        "OnKeyUp": "FormTransformProto_OnKeyUp"
+    },
+    "Controls": [
+        {
+            "Package": "Standard",
+            "ClassName": "GroupBox",
+            "Name": "GroupBoxT",
+            "Transform": {
+                "Tx": 8,
+                "Ty": 8,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                136,
+                94
+            ],
+            "Caption": "Translate",
+            "UseMask": false,
+            "Controls": [
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "LabelTx",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "X:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "LabelTy",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 46,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "Y:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "LabelTz",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 70,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "Z:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditTx",
+                    "Transform": {
+                        "Tx": 28,
+                        "Ty": 18,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 8,
+                    "Text": "0",
+                    "OnKillFocus": "EditTx_OnKillFocus"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditTy",
+                    "Transform": {
+                        "Tx": 28,
+                        "Ty": 44,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 9,
+                    "Text": "0",
+                    "OnKillFocus": "EditTy_OnKillFocus"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditTz",
+                    "Transform": {
+                        "Tx": 28,
+                        "Ty": 68,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 10,
+                    "Text": "0",
+                    "OnKillFocus": "EditTz_OnKillFocus"
+                }
+            ]
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "GroupBox",
+            "Name": "GroupBoxS",
+            "Transform": {
+                "Tx": 148,
+                "Ty": 8,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                136,
+                94
+            ],
+            "Caption": "Scale",
+            "UseMask": false,
+            "Controls": [
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "LabelSx",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "X:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "LabelSy",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 46,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "Y:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "LabelSz",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 70,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "Z:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditSx",
+                    "Transform": {
+                        "Tx": 28,
+                        "Ty": 18,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 14,
+                    "Text": "1",
+                    "OnKillFocus": "EditSx_OnKillFocus"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditSy",
+                    "Transform": {
+                        "Tx": 28,
+                        "Ty": 44,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 15,
+                    "Text": "1",
+                    "OnKillFocus": "EditSy_OnKillFocus"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditSz",
+                    "Transform": {
+                        "Tx": 28,
+                        "Ty": 68,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 16,
+                    "Text": "1",
+                    "OnKillFocus": "EditSz_OnKillFocus"
+                }
+            ]
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "GroupBox",
+            "Name": "GroupBoxR",
+            "Transform": {
+                "Tx": 288,
+                "Ty": 8,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                136,
+                94
+            ],
+            "Caption": "Rotate",
+            "UseMask": false,
+            "Controls": [
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "LabelRx",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "X:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "LabelRy",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 46,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "Y:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "LabelRz",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 70,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "Z:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditRx",
+                    "Transform": {
+                        "Tx": 28,
+                        "Ty": 18,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 20,
+                    "Text": "0",
+                    "OnKillFocus": "EditRx_OnKillFocus"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditRy",
+                    "Transform": {
+                        "Tx": 28,
+                        "Ty": 44,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 21,
+                    "Text": "0",
+                    "OnKillFocus": "EditRy_OnKillFocus"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditRz",
+                    "Transform": {
+                        "Tx": 28,
+                        "Ty": 68,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 22,
+                    "Text": "0",
+                    "OnKillFocus": "EditRz_OnKillFocus"
+                }
+            ]
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "GroupBox",
+            "Name": "GroupBoxO",
+            "Transform": {
+                "Tx": 8,
+                "Ty": 106,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                416,
+                46
+            ],
+            "Caption": "Orders",
+            "UseMask": false,
+            "Controls": [
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "LabelRO",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "Rotate:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "LabelTO",
+                    "Transform": {
+                        "Tx": 210,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "Transform:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "DropDown",
+                    "Name": "DropDownRO",
+                    "Transform": {
+                        "Tx": 106,
+                        "Ty": 18,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 25,
+                    "Editable": false,
+                    "OnSelect": "DropDownRO_OnSelect"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "DropDown",
+                    "Name": "DropDownTO",
+                    "Transform": {
+                        "Tx": 308,
+                        "Ty": 18,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 26,
+                    "Editable": false,
+                    "OnSelect": "DropDownTO_OnSelect"
+                }
+            ]
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Button",
+            "Name": "ButtonOk",
+            "Transform": {
+                "Tx": 146,
+                "Ty": 156,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                68,
+                23
+            ],
+            "TabOrder": 27,
+            "Caption": "OK",
+            "OnClick": "ButtonOk_OnClick"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Button",
+            "Name": "ButtonCancel",
+            "Transform": {
+                "Tx": 218,
+                "Ty": 156,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                68,
+                23
+            ],
+            "TabOrder": 28,
+            "Caption": "Cancel",
+            "OnClick": "ButtonCancel_OnClick"
+        }
+    ]
+}

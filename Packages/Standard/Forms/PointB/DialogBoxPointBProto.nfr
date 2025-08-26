@@ -1,0 +1,191 @@
+{
+    "Layout": "Windows Form",
+    "Version": "2.0",
+    "Settings": {
+        "GridX": true,
+        "GridY": true,
+        "GridRotate": true,
+        "GridXStep": 8,
+        "GridYStep": 8,
+        "GridRotateStep": 0.0174533,
+        "RotateShift": 2,
+        "GridPointSize": 1,
+        "GridPointColor": [
+            113,
+            21,
+            36,
+            255
+        ],
+        "Namespace": "standard",
+        "Prefix": "m_p",
+        "SelectionPointSize": 4,
+        "SelectionBorderWidth": 1,
+        "SelectionBorderColor": [
+            0,
+            0,
+            255,
+            150
+        ],
+        "SelectionBackgroundColor": [
+            0,
+            0,
+            255,
+            50
+        ],
+        "OverwriteIncludes": [
+            {
+                "Search": "Standard",
+                "Replace": "../.."
+            }
+        ],
+        "OverwriteNamespaces": [
+            {
+                "Search": "standard",
+                "Replace": ""
+            }
+        ],
+        "WidgetsSection": "protected",
+        "GenerateGetters": false,
+        "HighlightBorderWidth": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "HighlightBorderColor": [
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ]
+        ],
+        "ExportAs": 1,
+        "DialogBoxPackage": "Standard",
+        "DialogBoxClass": "DialogBoxEx"
+    },
+    "Form": {
+        "Name": "DialogBoxPointBProto",
+        "Caption": "Point(bool)",
+        "ClientSize": [
+            158,
+            57
+        ],
+        "State": "WindowState::Hidden",
+        "WindowPosition": "WindowPosition::MainFormCenter",
+        "HasMaximizeBox": false,
+        "HasMinimizeBox": false,
+        "HasSizeBox": false,
+        "OnKeyUp": "FormPointBProto_OnKeyUp"
+    },
+    "Controls": [
+        {
+            "Package": "Standard",
+            "ClassName": "CheckBox",
+            "Name": "CheckBoxX",
+            "Transform": {
+                "Tx": 8,
+                "Ty": 8,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "TabOrder": 1,
+            "Caption": "X"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "CheckBox",
+            "Name": "CheckBoxY",
+            "Transform": {
+                "Tx": 82,
+                "Ty": 8,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "TabOrder": 2,
+            "Caption": "Y"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Button",
+            "Name": "ButtonOk",
+            "Transform": {
+                "Tx": 8,
+                "Ty": 26,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                68,
+                23
+            ],
+            "TabOrder": 3,
+            "Caption": "OK",
+            "OnClick": "ButtonOk_OnClick"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Button",
+            "Name": "ButtonCancel",
+            "Transform": {
+                "Tx": 82,
+                "Ty": 26,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                68,
+                23
+            ],
+            "TabOrder": 4,
+            "Caption": "Cancel",
+            "OnClick": "ButtonCancel_OnClick"
+        }
+    ]
+}

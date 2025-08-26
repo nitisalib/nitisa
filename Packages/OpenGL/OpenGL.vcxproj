@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugRT|ARM">
+      <Configuration>DebugRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|ARM64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|Win32">
+      <Configuration>DebugRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|x64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|ARM">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|ARM64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|Win32">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|x64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Controls\3DObject\3DObject.h" />
+    <ClInclude Include="Controls\BlinnPhongMaterial\BlinnPhongMaterial.h" />
+    <ClInclude Include="Controls\BlinnPhongMaterial\BlinnPhongMaterialService.h" />
+    <ClInclude Include="Controls\Box\Box.h" />
+    <ClInclude Include="Controls\CheckerMaterial\CheckerMaterialService.h" />
+    <ClInclude Include="Controls\CustomMaterial\CustomMaterial.h" />
+    <ClInclude Include="Controls\CustomMaterial\CustomMaterialService.h" />
+    <ClInclude Include="Controls\I3DObject.h" />
+    <ClInclude Include="Controls\ICheckerMaterial.h" />
+    <ClInclude Include="Controls\CheckerMaterial\CheckerMaterial.h" />
+    <ClInclude Include="Controls\Circle\Circle.h" />
+    <ClInclude Include="Controls\Cone\Cone.h" />
+    <ClInclude Include="Controls\Cylinder\Cylinder.h" />
+    <ClInclude Include="Controls\Disk\Disk.h" />
+    <ClInclude Include="Controls\GouraudMaterial\GouraudMaterial.h" />
+    <ClInclude Include="Controls\GouraudMaterial\GouraudMaterialService.h" />
+    <ClInclude Include="Controls\Heightmap\Heightmap.h" />
+    <ClInclude Include="Controls\IBlinnPhongMaterial.h" />
+    <ClInclude Include="Controls\ICircle.h" />
+    <ClInclude Include="Controls\ICone.h" />
+    <ClInclude Include="Controls\IBox.h" />
+    <ClInclude Include="Controls\ICustomMaterial.h" />
+    <ClInclude Include="Controls\ICylinder.h" />
+    <ClInclude Include="Controls\IDisk.h" />
+    <ClInclude Include="Controls\IGouraudMaterial.h" />
+    <ClInclude Include="Controls\IHeightmap.h" />
+    <ClInclude Include="Controls\IJsonMesh.h" />
+    <ClInclude Include="Controls\IMesh.h" />
+    <ClInclude Include="Controls\IPhongMaterial.h" />
+    <ClInclude Include="Controls\IPlane.h" />
+    <ClInclude Include="Controls\IPyramid.h" />
+    <ClInclude Include="Controls\IRimMaterial.h" />
+    <ClInclude Include="Controls\ISolidMaterial.h" />
+    <ClInclude Include="Controls\ISphere.h" />
+    <ClInclude Include="Controls\ITorus.h" />
+    <ClInclude Include="Controls\ITube.h" />
+    <ClInclude Include="Controls\IView.h" />
+    <ClInclude Include="Controls\JsonMesh\JsonMesh.h" />
+    <ClInclude Include="Controls\Mesh\Mesh.h" />
+    <ClInclude Include="Controls\PhongMaterial\PhongMaterial.h" />
+    <ClInclude Include="Controls\PhongMaterial\PhongMaterialService.h" />
+    <ClInclude Include="Controls\Plane\Plane.h" />
+    <ClInclude Include="Controls\Pyramid\Pyramid.h" />
+    <ClInclude Include="Controls\RimMaterial\RimMaterial.h" />
+    <ClInclude Include="Controls\RimMaterial\RimMaterialService.h" />
+    <ClInclude Include="Controls\SolidMaterial\SolidMaterial.h" />
+    <ClInclude Include="Controls\SolidMaterial\SolidMaterialService.h" />
+    <ClInclude Include="Controls\Sphere\Sphere.h" />
+    <ClInclude Include="Controls\Torus\Torus.h" />
+    <ClInclude Include="Controls\Tube\Tube.h" />
+    <ClInclude Include="Controls\View\View.h" />
+    <ClInclude Include="Controls\View\ViewService.h" />
+    <ClInclude Include="Core\3DControl.h" />
+    <ClInclude Include="Core\3DControlService.h" />
+    <ClInclude Include="Core\Consts.h" />
+    <ClInclude Include="Interfaces\I3DControl.h" />
+    <ClInclude Include="Interfaces\I3DControlService.h" />
+    <ClInclude Include="Interfaces\IMaterialControl.h" />
+    <ClInclude Include="OpenGL.h" />
+    <ClInclude Include="Package\Controls\3DObject\3DObjectEventList.h" />
+    <ClInclude Include="Package\Controls\3DObject\3DObjectPropertyList.h" />
+    <ClInclude Include="Package\Controls\3DObject\Package3DObject.h" />
+    <ClInclude Include="Package\Controls\BlinnPhongMaterial\BlinnPhongMaterialEventList.h" />
+    <ClInclude Include="Package\Controls\BlinnPhongMaterial\BlinnPhongMaterialPropertyList.h" />
+    <ClInclude Include="Package\Controls\BlinnPhongMaterial\PackageBlinnPhongMaterial.h" />
+    <ClInclude Include="Package\Controls\Box\BoxEventList.h" />
+    <ClInclude Include="Package\Controls\Box\BoxPropertyList.h" />
+    <ClInclude Include="Package\Controls\Box\PackageBox.h" />
+    <ClInclude Include="Package\Controls\CheckerMaterial\CheckerMaterialEventList.h" />
+    <ClInclude Include="Package\Controls\CheckerMaterial\CheckerMaterialPropertyList.h" />
+    <ClInclude Include="Package\Controls\CheckerMaterial\PackageCheckerMaterial.h" />
+    <ClInclude Include="Package\Controls\Circle\CircleEventList.h" />
+    <ClInclude Include="Package\Controls\Circle\CirclePropertyList.h" />
+    <ClInclude Include="Package\Controls\Circle\PackageCircle.h" />
+    <ClInclude Include="Package\Controls\Cone\ConeEventList.h" />
+    <ClInclude Include="Package\Controls\Cone\ConePropertyList.h" />
+    <ClInclude Include="Package\Controls\Cone\PackageCone.h" />
+    <ClInclude Include="Package\Controls\CustomMaterial\CustomMaterialEventList.h" />
+    <ClInclude Include="Package\Controls\CustomMaterial\CustomMaterialPropertyList.h" />
+    <ClInclude Include="Package\Controls\CustomMaterial\PackageCustomMaterial.h" />
+    <ClInclude Include="Package\Controls\Cylinder\CylinderEventList.h" />
+    <ClInclude Include="Package\Controls\Cylinder\CylinderPropertyList.h" />
+    <ClInclude Include="Package\Controls\Cylinder\PackageCylinder.h" />
+    <ClInclude Include="Package\Controls\Disk\DiskEventList.h" />
+    <ClInclude Include="Package\Controls\Disk\DiskPropertyList.h" />
+    <ClInclude Include="Package\Controls\Disk\PackageDisk.h" />
+    <ClInclude Include="Package\Controls\GouraudMaterial\GouraudMaterialEventList.h" />
+    <ClInclude Include="Package\Controls\GouraudMaterial\GouraudMaterialPropertyList.h" />
+    <ClInclude Include="Package\Controls\GouraudMaterial\PackageGouraudMaterial.h" />
+    <ClInclude Include="Package\Controls\Heightmap\HeightmapEventList.h" />
+    <ClInclude Include="Package\Controls\Heightmap\HeightmapPropertyList.h" />
+    <ClInclude Include="Package\Controls\Heightmap\PackageHeightmap.h" />
+    <ClInclude Include="Package\Controls\JsonMesh\JsonMeshEventList.h" />
+    <ClInclude Include="Package\Controls\JsonMesh\JsonMeshPropertyList.h" />
+    <ClInclude Include="Package\Controls\JsonMesh\PackageJsonMesh.h" />
+    <ClInclude Include="Package\Controls\Mesh\MeshEventList.h" />
+    <ClInclude Include="Package\Controls\Mesh\MeshPropertyList.h" />
+    <ClInclude Include="Package\Controls\Mesh\PackageMesh.h" />
+    <ClInclude Include="Package\Controls\PhongMaterial\PackagePhongMaterial.h" />
+    <ClInclude Include="Package\Controls\PhongMaterial\PhongMaterialEventList.h" />
+    <ClInclude Include="Package\Controls\PhongMaterial\PhongMaterialPropertyList.h" />
+    <ClInclude Include="Package\Controls\Plane\PackagePlane.h" />
+    <ClInclude Include="Package\Controls\Plane\PlaneEventList.h" />
+    <ClInclude Include="Package\Controls\Plane\PlanePropertyList.h" />
+    <ClInclude Include="Package\Controls\Pyramid\PackagePyramid.h" />
+    <ClInclude Include="Package\Controls\Pyramid\PyramidEventList.h" />
+    <ClInclude Include="Package\Controls\Pyramid\PyramidPropertyList.h" />
+    <ClInclude Include="Package\Controls\RimMaterial\PackageRimMaterial.h" />
+    <ClInclude Include="Package\Controls\RimMaterial\RimMaterialEventList.h" />
+    <ClInclude Include="Package\Controls\RimMaterial\RimMaterialPropertyList.h" />
+    <ClInclude Include="Package\Controls\SolidMaterial\PackageSolidMaterial.h" />
+    <ClInclude Include="Package\Controls\SolidMaterial\SolidMaterialEventList.h" />
+    <ClInclude Include="Package\Controls\SolidMaterial\SolidMaterialPropertyList.h" />
+    <ClInclude Include="Package\Controls\Sphere\PackageSphere.h" />
+    <ClInclude Include="Package\Controls\Sphere\SphereEventList.h" />
+    <ClInclude Include="Package\Controls\Sphere\SpherePropertyList.h" />
+    <ClInclude Include="Package\Controls\Torus\PackageTorus.h" />
+    <ClInclude Include="Package\Controls\Torus\TorusEventList.h" />
+    <ClInclude Include="Package\Controls\Torus\TorusPropertyList.h" />
+    <ClInclude Include="Package\Controls\Tube\PackageTube.h" />
+    <ClInclude Include="Package\Controls\Tube\TubeEventList.h" />
+    <ClInclude Include="Package\Controls\Tube\TubePropertyList.h" />
+    <ClInclude Include="Package\Controls\View\PackageView.h" />
+    <ClInclude Include="Package\Controls\View\ViewEventList.h" />
+    <ClInclude Include="Package\Controls\View\ViewPropertyList.h" />
+    <ClInclude Include="Package\Core\3DControlEventList.h" />
+    <ClInclude Include="Package\Core\3DControlPropertyList.h" />
+    <ClInclude Include="Package\Core\Consts.h" />
+    <ClInclude Include="Package\Core\MaterialControlEventList.h" />
+    <ClInclude Include="Package\Core\MaterialControlPropertyList.h" />
+    <ClInclude Include="Package\Core\Package3DControl.h" />
+    <ClInclude Include="Package\Core\PackageMaterialControl.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyControlMaterial.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyControlMaterialState.h" />
+    <ClInclude Include="Package\PackageOpenGL.h" />
+    <ClInclude Include="Package\PackageOpenGLService.h" />
+    <ClInclude Include="Package\Properties\PropertyControlMaterial.h" />
+    <ClInclude Include="Package\Properties\PropertyControlMaterialState.h" />
+    <ClInclude Include="Package\PropertyHandlers\ControlMaterial\PropertyHandlerControlMaterial.h" />
+    <ClInclude Include="Primitives\2D\Circle\PrimitiveCircle.h" />
+    <ClInclude Include="Primitives\2D\Disk\PrimitiveDisk.h" />
+    <ClInclude Include="Primitives\2D\Plane\PrimitivePlane.h" />
+    <ClInclude Include="Primitives\3D\Box\PrimitiveBox.h" />
+    <ClInclude Include="Primitives\3D\Cone\PrimitiveCone.h" />
+    <ClInclude Include="Primitives\3D\Cylinder\PrimitiveCylinder.h" />
+    <ClInclude Include="Primitives\3D\Pyramid\PrimitivePyramid.h" />
+    <ClInclude Include="Primitives\3D\Sphere\PrimitiveSphere.h" />
+    <ClInclude Include="Primitives\3D\Torus\PrimitiveTorus.h" />
+    <ClInclude Include="Primitives\3D\Tube\PrimitiveTube.h" />
+    <ClInclude Include="Shaders\BlinnPhong.h" />
+    <ClInclude Include="Shaders\Checker.h" />
+    <ClInclude Include="Shaders\Gouraud.h" />
+    <ClInclude Include="Shaders\Phong.h" />
+    <ClInclude Include="Shaders\Rim.h" />
+    <ClInclude Include="Shaders\Solid.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Controls\3DObject\3DObject.cpp" />
+    <ClCompile Include="Controls\BlinnPhongMaterial\BlinnPhongMaterial.cpp" />
+    <ClCompile Include="Controls\BlinnPhongMaterial\BlinnPhongMaterialService.cpp" />
+    <ClCompile Include="Controls\Box\Box.cpp" />
+    <ClCompile Include="Controls\CheckerMaterial\CheckerMaterial.cpp" />
+    <ClCompile Include="Controls\CheckerMaterial\CheckerMaterialService.cpp" />
+    <ClCompile Include="Controls\Circle\Circle.cpp" />
+    <ClCompile Include="Controls\Cone\Cone.cpp" />
+    <ClCompile Include="Controls\CustomMaterial\CustomMaterial.cpp" />
+    <ClCompile Include="Controls\CustomMaterial\CustomMaterialService.cpp" />
+    <ClCompile Include="Controls\Cylinder\Cylinder.cpp" />
+    <ClCompile Include="Controls\Disk\Disk.cpp" />
+    <ClCompile Include="Controls\GouraudMaterial\GouraudMaterial.cpp" />
+    <ClCompile Include="Controls\GouraudMaterial\GouraudMaterialService.cpp" />
+    <ClCompile Include="Controls\Heightmap\Heightmap.cpp" />
+    <ClCompile Include="Controls\JsonMesh\JsonMesh.cpp" />
+    <ClCompile Include="Controls\Mesh\Mesh.cpp" />
+    <ClCompile Include="Controls\PhongMaterial\PhongMaterial.cpp" />
+    <ClCompile Include="Controls\PhongMaterial\PhongMaterialService.cpp" />
+    <ClCompile Include="Controls\Plane\Plane.cpp" />
+    <ClCompile Include="Controls\Pyramid\Pyramid.cpp" />
+    <ClCompile Include="Controls\RimMaterial\RimMaterial.cpp" />
+    <ClCompile Include="Controls\RimMaterial\RimMaterialService.cpp" />
+    <ClCompile Include="Controls\SolidMaterial\SolidMaterial.cpp" />
+    <ClCompile Include="Controls\SolidMaterial\SolidMaterialService.cpp" />
+    <ClCompile Include="Controls\Sphere\Sphere.cpp" />
+    <ClCompile Include="Controls\Torus\Torus.cpp" />
+    <ClCompile Include="Controls\Tube\Tube.cpp" />
+    <ClCompile Include="Controls\View\Axes.cpp" />
+    <ClCompile Include="Controls\View\Grid.cpp" />
+    <ClCompile Include="Controls\View\View.cpp" />
+    <ClCompile Include="Controls\View\ViewService.cpp" />
+    <ClCompile Include="Core\3DControl.cpp" />
+    <ClCompile Include="Core\3DControlService.cpp" />
+    <ClCompile Include="Core\Consts.cpp" />
+    <ClCompile Include="Package\Controls\3DObject\3DObjectEventList.cpp" />
+    <ClCompile Include="Package\Controls\3DObject\3DObjectPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\3DObject\Package3DObject.cpp" />
+    <ClCompile Include="Package\Controls\BlinnPhongMaterial\BlinnPhongMaterialEventList.cpp" />
+    <ClCompile Include="Package\Controls\BlinnPhongMaterial\BlinnPhongMaterialPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\BlinnPhongMaterial\PackageBlinnPhongMaterial.cpp" />
+    <ClCompile Include="Package\Controls\Box\BoxEventList.cpp" />
+    <ClCompile Include="Package\Controls\Box\BoxPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\Box\PackageBox.cpp" />
+    <ClCompile Include="Package\Controls\CheckerMaterial\CheckerMaterialEventList.cpp" />
+    <ClCompile Include="Package\Controls\CheckerMaterial\CheckerMaterialPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\CheckerMaterial\PackageCheckerMaterial.cpp" />
+    <ClCompile Include="Package\Controls\Circle\CircleEventList.cpp" />
+    <ClCompile Include="Package\Controls\Circle\CirclePropertyList.cpp" />
+    <ClCompile Include="Package\Controls\Circle\PackageCircle.cpp" />
+    <ClCompile Include="Package\Controls\Cone\ConeEventList.cpp" />
+    <ClCompile Include="Package\Controls\Cone\ConePropertyList.cpp" />
+    <ClCompile Include="Package\Controls\Cone\PackageCone.cpp" />
+    <ClCompile Include="Package\Controls\CustomMaterial\CustomMaterialEventList.cpp" />
+    <ClCompile Include="Package\Controls\CustomMaterial\CustomMaterialPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\CustomMaterial\PackageCustomMaterial.cpp" />
+    <ClCompile Include="Package\Controls\Cylinder\CylinderEventList.cpp" />
+    <ClCompile Include="Package\Controls\Cylinder\CylinderPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\Cylinder\PackageCylinder.cpp" />
+    <ClCompile Include="Package\Controls\Disk\DiskEventList.cpp" />
+    <ClCompile Include="Package\Controls\Disk\DiskPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\Disk\PackageDisk.cpp" />
+    <ClCompile Include="Package\Controls\GouraudMaterial\GouraudMaterialEventList.cpp" />
+    <ClCompile Include="Package\Controls\GouraudMaterial\GouraudMaterialPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\GouraudMaterial\PackageGouraudMaterial.cpp" />
+    <ClCompile Include="Package\Controls\Heightmap\HeightmapEventList.cpp" />
+    <ClCompile Include="Package\Controls\Heightmap\HeightmapPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\Heightmap\PackageHeightmap.cpp" />
+    <ClCompile Include="Package\Controls\JsonMesh\JsonMeshEventList.cpp" />
+    <ClCompile Include="Package\Controls\JsonMesh\JsonMeshPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\JsonMesh\PackageJsonMesh.cpp" />
+    <ClCompile Include="Package\Controls\Mesh\MeshEventList.cpp" />
+    <ClCompile Include="Package\Controls\Mesh\MeshPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\Mesh\PackageMesh.cpp" />
+    <ClCompile Include="Package\Controls\PhongMaterial\PackagePhongMaterial.cpp" />
+    <ClCompile Include="Package\Controls\PhongMaterial\PhongMaterialEventList.cpp" />
+    <ClCompile Include="Package\Controls\PhongMaterial\PhongMaterialPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\Plane\PackagePlane.cpp" />
+    <ClCompile Include="Package\Controls\Plane\PlaneEventList.cpp" />
+    <ClCompile Include="Package\Controls\Plane\PlanePropertyList.cpp" />
+    <ClCompile Include="Package\Controls\Pyramid\PackagePyramid.cpp" />
+    <ClCompile Include="Package\Controls\Pyramid\PyramidEventList.cpp" />
+    <ClCompile Include="Package\Controls\Pyramid\PyramidPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\RimMaterial\PackageRimMaterial.cpp" />
+    <ClCompile Include="Package\Controls\RimMaterial\RimMaterialEventList.cpp" />
+    <ClCompile Include="Package\Controls\RimMaterial\RimMaterialPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\SolidMaterial\PackageSolidMaterial.cpp" />
+    <ClCompile Include="Package\Controls\SolidMaterial\SolidMaterialEventList.cpp" />
+    <ClCompile Include="Package\Controls\SolidMaterial\SolidMaterialPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\Sphere\PackageSphere.cpp" />
+    <ClCompile Include="Package\Controls\Sphere\SphereEventList.cpp" />
+    <ClCompile Include="Package\Controls\Sphere\SpherePropertyList.cpp" />
+    <ClCompile Include="Package\Controls\Torus\PackageTorus.cpp" />
+    <ClCompile Include="Package\Controls\Torus\TorusEventList.cpp" />
+    <ClCompile Include="Package\Controls\Torus\TorusPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\Tube\PackageTube.cpp" />
+    <ClCompile Include="Package\Controls\Tube\TubeEventList.cpp" />
+    <ClCompile Include="Package\Controls\Tube\TubePropertyList.cpp" />
+    <ClCompile Include="Package\Controls\View\PackageView.cpp" />
+    <ClCompile Include="Package\Controls\View\ViewEventList.cpp" />
+    <ClCompile Include="Package\Controls\View\ViewPropertyList.cpp" />
+    <ClCompile Include="Package\Core\3DControlEventList.cpp" />
+    <ClCompile Include="Package\Core\3DControlPropertyList.cpp" />
+    <ClCompile Include="Package\Core\Consts.cpp" />
+    <ClCompile Include="Package\Core\MaterialControlEventList.cpp" />
+    <ClCompile Include="Package\Core\MaterialControlPropertyList.cpp" />
+    <ClCompile Include="Package\Core\Package3DControl.cpp" />
+    <ClCompile Include="Package\Core\PackageMaterialControl.cpp" />
+    <ClCompile Include="Package\PackageOpenGL.cpp" />
+    <ClCompile Include="Package\PackageOpenGLService.cpp" />
+    <ClCompile Include="Package\Properties\PropertyControlMaterial.cpp" />
+    <ClCompile Include="Package\Properties\PropertyControlMaterialState.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\ControlMaterial\PropertyHandlerControlMaterial.cpp" />
+    <ClCompile Include="Primitives\2D\Circle\PrimitiveCircle.cpp" />
+    <ClCompile Include="Primitives\2D\Disk\PrimitiveDisk.cpp" />
+    <ClCompile Include="Primitives\2D\Plane\PrimitivePlane.cpp" />
+    <ClCompile Include="Primitives\3D\Box\PrimitiveBox.cpp" />
+    <ClCompile Include="Primitives\3D\Cone\PrimitiveCone.cpp" />
+    <ClCompile Include="Primitives\3D\Cylinder\PrimitiveCylinder.cpp" />
+    <ClCompile Include="Primitives\3D\Pyramid\PrimitivePyramid.cpp" />
+    <ClCompile Include="Primitives\3D\Sphere\PrimitiveSphere.cpp" />
+    <ClCompile Include="Primitives\3D\Torus\PrimitiveTorus.cpp" />
+    <ClCompile Include="Primitives\3D\Tube\PrimitiveTube.cpp" />
+    <ClCompile Include="Shaders\BlinnPhong.cpp" />
+    <ClCompile Include="Shaders\Checker.cpp" />
+    <ClCompile Include="Shaders\Gouraud.cpp" />
+    <ClCompile Include="Shaders\Phong.cpp" />
+    <ClCompile Include="Shaders\Rim.cpp" />
+    <ClCompile Include="Shaders\Solid.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{BA201BB0-29EB-4A8F-9ADA-5FAB1315ED3B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OpenGL</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x86\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\OpenGL\x86\Debug\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x64\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\OpenGL\x64\Debug\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\OpenGL\ARM\Debug\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM64\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\OpenGL\ARM64\Debug\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x86\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\OpenGL\x86\DebugRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x64\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\OpenGL\x64\DebugRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\OpenGL\ARM\DebugRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM64\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\OpenGL\ARM64\DebugRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x86\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\OpenGL\x86\Release\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x64\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\OpenGL\x64\Release\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\OpenGL\ARM\Release\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM64\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\OpenGL\ARM64\Release\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x86\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\OpenGL\x86\ReleaseRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x64\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\OpenGL\x64\ReleaseRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\OpenGL\ARM\ReleaseRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM64\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\OpenGL\ARM64\ReleaseRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

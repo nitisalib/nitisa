@@ -1,0 +1,551 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugRT|ARM">
+      <Configuration>DebugRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|ARM64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|x64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|x86">
+      <Configuration>DebugRT</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|ARM">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|ARM64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|x64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|x86">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5fc97957-ff18-4efc-84d4-f09e47c34d5e}</ProjectGuid>
+    <Keyword>Android</Keyword>
+    <RootNamespace>Jpeg</RootNamespace>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <ApplicationType>Android</ApplicationType>
+    <ApplicationTypeRevision>3.0</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <Import Project="..\..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <Import Project="..\..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <Import Project="..\..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'">
+    <Import Project="..\..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <Import Project="..\..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <Import Project="..\..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="..\..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="..\..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <Import Project="..\..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="..\..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="..\..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <Import Project="..\..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <Import Project="..\..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'">
+    <Import Project="..\..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <Import Project="..\..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <Import Project="..\..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x86\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Jpeg\x86\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x64\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Jpeg\x64\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Jpeg\ARM\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM64\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Jpeg\ARM64\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x86\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Jpeg\x86\DebugRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x64\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Jpeg\x64\DebugRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Jpeg\ARM\DebugRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM64\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Jpeg\ARM64\DebugRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x86\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Jpeg\x86\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x64\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Jpeg\x64\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Jpeg\ARM\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM64\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Jpeg\ARM64\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x86\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Jpeg\x86\ReleaseRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x64\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Jpeg\x64\ReleaseRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Jpeg\ARM\ReleaseRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM64\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Jpeg\ARM64\ReleaseRT\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\Dependencies\jpeg-9c;$(ProjectDir);$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <AdditionalOptions>-Wno-pointer-sign -Wno-constant-conversion -Wno-implicit-function-declaration %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>HAVE_PROTOTYPES</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\Dependencies\jpeg-9c;$(ProjectDir);$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <AdditionalOptions>-Wno-pointer-sign -Wno-constant-conversion -Wno-implicit-function-declaration %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>HAVE_PROTOTYPES</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\Dependencies\jpeg-9c;$(ProjectDir);$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <AdditionalOptions>-Wno-pointer-sign -Wno-constant-conversion -Wno-implicit-function-declaration %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>HAVE_PROTOTYPES;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\Dependencies\jpeg-9c;$(ProjectDir);$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <AdditionalOptions>-Wno-pointer-sign -Wno-constant-conversion -Wno-implicit-function-declaration %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>HAVE_PROTOTYPES;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\Dependencies\jpeg-9c;$(ProjectDir);$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <AdditionalOptions>-Wno-pointer-sign -Wno-constant-conversion -Wno-implicit-function-declaration %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>HAVE_PROTOTYPES</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\Dependencies\jpeg-9c;$(ProjectDir);$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <AdditionalOptions>-Wno-pointer-sign -Wno-constant-conversion -Wno-implicit-function-declaration %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>HAVE_PROTOTYPES</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\Dependencies\jpeg-9c;$(ProjectDir);$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <AdditionalOptions>-Wno-pointer-sign -Wno-constant-conversion -Wno-implicit-function-declaration %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>HAVE_PROTOTYPES;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\Dependencies\jpeg-9c;$(ProjectDir);$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <AdditionalOptions>-Wno-pointer-sign -Wno-constant-conversion -Wno-implicit-function-declaration %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>HAVE_PROTOTYPES;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\Dependencies\jpeg-9c;$(ProjectDir);$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <AdditionalOptions>-Wno-pointer-sign -Wno-constant-conversion -Wno-implicit-function-declaration %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>HAVE_PROTOTYPES</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\Dependencies\jpeg-9c;$(ProjectDir);$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <AdditionalOptions>-Wno-pointer-sign -Wno-constant-conversion -Wno-implicit-function-declaration %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>HAVE_PROTOTYPES</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\Dependencies\jpeg-9c;$(ProjectDir);$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <AdditionalOptions>-Wno-pointer-sign -Wno-constant-conversion -Wno-implicit-function-declaration %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>HAVE_PROTOTYPES;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\Dependencies\jpeg-9c;$(ProjectDir);$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <AdditionalOptions>-Wno-pointer-sign -Wno-constant-conversion -Wno-implicit-function-declaration %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>HAVE_PROTOTYPES;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\Dependencies\jpeg-9c;$(ProjectDir);$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <AdditionalOptions>-Wno-pointer-sign -Wno-constant-conversion -Wno-implicit-function-declaration %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>HAVE_PROTOTYPES</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\Dependencies\jpeg-9c;$(ProjectDir);$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <AdditionalOptions>-Wno-pointer-sign -Wno-constant-conversion -Wno-implicit-function-declaration %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>HAVE_PROTOTYPES</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\Dependencies\jpeg-9c;$(ProjectDir);$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <AdditionalOptions>-Wno-pointer-sign -Wno-constant-conversion -Wno-implicit-function-declaration %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>HAVE_PROTOTYPES;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\Dependencies\jpeg-9c;$(ProjectDir);$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <AdditionalOptions>-Wno-pointer-sign -Wno-constant-conversion -Wno-implicit-function-declaration %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>HAVE_PROTOTYPES;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jaricom.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcapimin.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcapistd.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcarith.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jccoefct.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jccolor.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcdctmgr.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jchuff.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcinit.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcmainct.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcmarker.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcmaster.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcomapi.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcparam.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcprepct.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcsample.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jctrans.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdapimin.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdapistd.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdarith.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdatadst.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdatasrc.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdcoefct.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdcolor.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jddctmgr.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdhuff.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdinput.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdmainct.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdmarker.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdmaster.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdmerge.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdpostct.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdsample.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdtrans.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jerror.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jfdctflt.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jfdctfst.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jfdctint.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jidctflt.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jidctfst.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jidctint.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jmemmgr.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jmemnobs.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jquant1.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jquant2.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jutils.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="jconfig.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

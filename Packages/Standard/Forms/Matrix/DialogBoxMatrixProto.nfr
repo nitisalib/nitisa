@@ -1,0 +1,1963 @@
+{
+    "Layout": "Windows Form",
+    "Version": "2.0",
+    "Settings": {
+        "GridX": true,
+        "GridY": true,
+        "GridRotate": true,
+        "GridXStep": 8,
+        "GridYStep": 8,
+        "GridRotateStep": 0.0174533,
+        "RotateShift": 2,
+        "GridPointSize": 1,
+        "GridPointColor": [
+            113,
+            21,
+            36,
+            255
+        ],
+        "Namespace": "standard",
+        "Prefix": "m_p",
+        "SelectionPointSize": 4,
+        "SelectionBorderWidth": 1,
+        "SelectionBorderColor": [
+            0,
+            0,
+            255,
+            150
+        ],
+        "SelectionBackgroundColor": [
+            0,
+            0,
+            255,
+            50
+        ],
+        "OverwriteIncludes": [
+            {
+                "Search": "Standard",
+                "Replace": "../.."
+            }
+        ],
+        "OverwriteNamespaces": [
+            {
+                "Search": "standard",
+                "Replace": ""
+            }
+        ],
+        "WidgetsSection": "protected",
+        "GenerateGetters": false,
+        "HighlightBorderWidth": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "HighlightBorderColor": [
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ]
+        ],
+        "ExportAs": 1,
+        "DialogBoxPackage": "Standard",
+        "DialogBoxClass": "DialogBoxEx"
+    },
+    "Form": {
+        "Name": "DialogBoxMatrixProto",
+        "Caption": "Matrix",
+        "ClientSize": [
+            446,
+            375
+        ],
+        "State": "WindowState::Hidden",
+        "WindowPosition": "WindowPosition::MainFormCenter",
+        "HasMaximizeBox": false,
+        "HasMinimizeBox": false,
+        "HasSizeBox": false,
+        "OnKeyUp": "FormMatrixProto_OnKeyUp"
+    },
+    "Controls": [
+        {
+            "Package": "Standard",
+            "ClassName": "GroupBox",
+            "Name": "GroupBoxMatrix",
+            "Transform": {
+                "Tx": 8,
+                "Ty": 8,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                430,
+                122
+            ],
+            "Caption": "Matrix",
+            "UseMask": false,
+            "Controls": [
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "Edit00",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 2,
+                    "Text": "1",
+                    "OnKillFocus": "OnKillFocus"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "Edit10",
+                    "Transform": {
+                        "Tx": 112,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 3,
+                    "Text": "0",
+                    "OnKillFocus": "OnKillFocus"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "Edit20",
+                    "Transform": {
+                        "Tx": 216,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 4,
+                    "Text": "0",
+                    "OnKillFocus": "OnKillFocus"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "Edit30",
+                    "Transform": {
+                        "Tx": 320,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 5,
+                    "Text": "0",
+                    "OnKillFocus": "OnKillFocus"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "Edit01",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 46,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 6,
+                    "Text": "0",
+                    "OnKillFocus": "OnKillFocus"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "Edit11",
+                    "Transform": {
+                        "Tx": 112,
+                        "Ty": 46,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 7,
+                    "Text": "1",
+                    "OnKillFocus": "OnKillFocus"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "Edit21",
+                    "Transform": {
+                        "Tx": 216,
+                        "Ty": 46,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 8,
+                    "Text": "0",
+                    "OnKillFocus": "OnKillFocus"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "Edit31",
+                    "Transform": {
+                        "Tx": 320,
+                        "Ty": 46,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 9,
+                    "Text": "0",
+                    "OnKillFocus": "OnKillFocus"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "Edit02",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 70,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 10,
+                    "Text": "0",
+                    "OnKillFocus": "OnKillFocus"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "Edit12",
+                    "Transform": {
+                        "Tx": 112,
+                        "Ty": 70,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 11,
+                    "Text": "0",
+                    "OnKillFocus": "OnKillFocus"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "Edit22",
+                    "Transform": {
+                        "Tx": 216,
+                        "Ty": 70,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 12,
+                    "Text": "1",
+                    "OnKillFocus": "OnKillFocus"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "Edit32",
+                    "Transform": {
+                        "Tx": 320,
+                        "Ty": 70,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 13,
+                    "Text": "0",
+                    "OnKillFocus": "OnKillFocus"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "Edit03",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 94,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 14,
+                    "Text": "0",
+                    "OnKillFocus": "OnKillFocus"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "Edit13",
+                    "Transform": {
+                        "Tx": 112,
+                        "Ty": 94,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 15,
+                    "Text": "0",
+                    "OnKillFocus": "OnKillFocus"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "Edit23",
+                    "Transform": {
+                        "Tx": 216,
+                        "Ty": 94,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 16,
+                    "Text": "0",
+                    "OnKillFocus": "OnKillFocus"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "Edit33",
+                    "Transform": {
+                        "Tx": 320,
+                        "Ty": 94,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 17,
+                    "Text": "1",
+                    "OnKillFocus": "OnKillFocus"
+                }
+            ]
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "GroupBox",
+            "Name": "GroupBoxTranslate",
+            "Transform": {
+                "Tx": 8,
+                "Ty": 134,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                430,
+                50
+            ],
+            "Caption": "Translate",
+            "UseMask": false,
+            "Controls": [
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditTx",
+                    "Transform": {
+                        "Tx": 112,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 19,
+                    "Text": "0"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditTy",
+                    "Transform": {
+                        "Tx": 216,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 20,
+                    "Text": "0"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditTz",
+                    "Transform": {
+                        "Tx": 320,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 21,
+                    "Text": "0"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonMT",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        31,
+                        20
+                    ],
+                    "TabOrder": 22,
+                    "Caption": "M * T",
+                    "BorderRadius": {
+                        "State::Normal": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Hovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Focused": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::FocusedHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Active": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::ActiveHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Disabled": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "OnClick": "ButtonMT_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonT",
+                    "Transform": {
+                        "Tx": 43,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        30,
+                        20
+                    ],
+                    "TabOrder": 23,
+                    "Caption": "T",
+                    "BorderRadius": {
+                        "State::Normal": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Hovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Focused": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::FocusedHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Active": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::ActiveHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Disabled": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "OnClick": "ButtonT_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonTM",
+                    "Transform": {
+                        "Tx": 77,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        31,
+                        20
+                    ],
+                    "TabOrder": 24,
+                    "Caption": "T * M",
+                    "BorderRadius": {
+                        "State::Normal": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Hovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Focused": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::FocusedHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Active": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::ActiveHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Disabled": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "OnClick": "ButtonTM_OnClick"
+                }
+            ]
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "GroupBox",
+            "Name": "GroupBoxScale",
+            "Transform": {
+                "Tx": 8,
+                "Ty": 188,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                430,
+                50
+            ],
+            "Caption": "Scale",
+            "UseMask": false,
+            "Controls": [
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditSx",
+                    "Transform": {
+                        "Tx": 112,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 26,
+                    "Text": "1"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditSy",
+                    "Transform": {
+                        "Tx": 216,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 27,
+                    "Text": "1"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditSz",
+                    "Transform": {
+                        "Tx": 320,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 28,
+                    "Text": "1"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonMS",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        31,
+                        20
+                    ],
+                    "TabOrder": 29,
+                    "Caption": "M * S",
+                    "BorderRadius": {
+                        "State::Normal": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Hovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Focused": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::FocusedHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Active": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::ActiveHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Disabled": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "OnClick": "ButtonMS_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonS",
+                    "Transform": {
+                        "Tx": 43,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        30,
+                        20
+                    ],
+                    "TabOrder": 30,
+                    "Caption": "S",
+                    "BorderRadius": {
+                        "State::Normal": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Hovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Focused": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::FocusedHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Active": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::ActiveHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Disabled": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "OnClick": "ButtonS_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonSM",
+                    "Transform": {
+                        "Tx": 77,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        31,
+                        20
+                    ],
+                    "TabOrder": 31,
+                    "Caption": "S * M",
+                    "BorderRadius": {
+                        "State::Normal": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Hovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Focused": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::FocusedHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Active": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::ActiveHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Disabled": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "OnClick": "ButtonSM_OnClick"
+                }
+            ]
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "GroupBox",
+            "Name": "GroupBoxRotate",
+            "Transform": {
+                "Tx": 8,
+                "Ty": 242,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                430,
+                98
+            ],
+            "Caption": "Rotate(degrees)",
+            "UseMask": false,
+            "Controls": [
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "LabelRx",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 26,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "Around X-axis:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonMRx",
+                    "Transform": {
+                        "Tx": 216,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        31,
+                        20
+                    ],
+                    "TabOrder": 34,
+                    "Caption": "M * R",
+                    "BorderRadius": {
+                        "State::Normal": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Hovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Focused": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::FocusedHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Active": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::ActiveHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Disabled": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "OnClick": "ButtonMRx_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonRx",
+                    "Transform": {
+                        "Tx": 251,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        30,
+                        20
+                    ],
+                    "TabOrder": 35,
+                    "Caption": "R",
+                    "BorderRadius": {
+                        "State::Normal": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Hovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Focused": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::FocusedHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Active": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::ActiveHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Disabled": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "OnClick": "ButtonRx_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonRxM",
+                    "Transform": {
+                        "Tx": 285,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        31,
+                        20
+                    ],
+                    "TabOrder": 36,
+                    "Caption": "R * M",
+                    "BorderRadius": {
+                        "State::Normal": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Hovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Focused": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::FocusedHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Active": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::ActiveHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Disabled": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "OnClick": "ButtonRxM_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditRx",
+                    "Transform": {
+                        "Tx": 320,
+                        "Ty": 22,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 37,
+                    "Text": "0"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "LabelRy",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 50,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "Around Y-axis:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonMRy",
+                    "Transform": {
+                        "Tx": 216,
+                        "Ty": 46,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        31,
+                        20
+                    ],
+                    "TabOrder": 39,
+                    "Caption": "M * R",
+                    "BorderRadius": {
+                        "State::Normal": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Hovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Focused": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::FocusedHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Active": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::ActiveHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Disabled": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "OnClick": "ButtonMRy_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonRy",
+                    "Transform": {
+                        "Tx": 251,
+                        "Ty": 46,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        30,
+                        20
+                    ],
+                    "TabOrder": 40,
+                    "Caption": "R",
+                    "BorderRadius": {
+                        "State::Normal": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Hovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Focused": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::FocusedHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Active": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::ActiveHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Disabled": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "OnClick": "ButtonRy_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonRyM",
+                    "Transform": {
+                        "Tx": 285,
+                        "Ty": 46,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        31,
+                        20
+                    ],
+                    "TabOrder": 41,
+                    "Caption": "R * M",
+                    "BorderRadius": {
+                        "State::Normal": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Hovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Focused": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::FocusedHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Active": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::ActiveHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Disabled": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "OnClick": "ButtonRyM_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditRy",
+                    "Transform": {
+                        "Tx": 320,
+                        "Ty": 46,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 42,
+                    "Text": "0"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "LabelRz",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 74,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "Around Z-axis:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonMRz",
+                    "Transform": {
+                        "Tx": 216,
+                        "Ty": 70,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        31,
+                        20
+                    ],
+                    "TabOrder": 44,
+                    "Caption": "M * R",
+                    "BorderRadius": {
+                        "State::Normal": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Hovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Focused": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::FocusedHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Active": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::ActiveHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Disabled": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "OnClick": "ButtonMRz_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonRz",
+                    "Transform": {
+                        "Tx": 251,
+                        "Ty": 70,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        30,
+                        20
+                    ],
+                    "TabOrder": 45,
+                    "Caption": "R",
+                    "BorderRadius": {
+                        "State::Normal": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Hovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Focused": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::FocusedHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Active": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::ActiveHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Disabled": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "OnClick": "ButtonRz_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonRzM",
+                    "Transform": {
+                        "Tx": 285,
+                        "Ty": 70,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        30,
+                        20
+                    ],
+                    "TabOrder": 46,
+                    "Caption": "R * M",
+                    "BorderRadius": {
+                        "State::Normal": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Hovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Focused": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::FocusedHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Active": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::ActiveHovered": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "State::Disabled": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "OnClick": "ButtonRzM_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditRz",
+                    "Transform": {
+                        "Tx": 320,
+                        "Ty": 70,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 47,
+                    "Text": "0"
+                }
+            ]
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Button",
+            "Name": "ButtonOk",
+            "Transform": {
+                "Tx": 152,
+                "Ty": 344,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                68,
+                23
+            ],
+            "TabOrder": 48,
+            "Caption": "OK",
+            "OnClick": "ButtonOk_OnClick"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Button",
+            "Name": "ButtonCancel",
+            "Transform": {
+                "Tx": 224,
+                "Ty": 344,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                68,
+                23
+            ],
+            "TabOrder": 49,
+            "Caption": "Cancel",
+            "OnClick": "ButtonCancel_OnClick"
+        }
+    ]
+}

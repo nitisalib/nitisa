@@ -1,0 +1,73 @@
+// This file is a part of Nitisa framework
+// Copyright © 2020 Nitisa. All rights reserved.
+// Author: Dimitry Lysenko
+// Site: http://nitisa.com
+// Download: http://nitisa.com/downloads
+// Documentation: http://nitisa.com/documentation
+// License: http://nitisa.com/site/license
+
+#pragma once
+
+#include "Nitisa/Core/Messages.h"
+#include "Nitisa/Core/Strings.h"
+#include "Nitisa/Math/PointD.h"
+#include "../IFormPointD.h"
+#include "IDialogBoxPointDProto.h"
+
+namespace nitisa
+{
+	class IControl;
+	class IForm;
+
+	namespace standard
+	{
+		class CDialogBoxPointD :public virtual IFormPointD, public IDialogBoxPointDProto
+		{
+		private:
+			class CDialogBoxPointDService :public IDialogBoxPointDProtoService
+			{
+			private:
+				CDialogBoxPointD * m_pControl;
+			public:
+				// Application notifications
+				void NotifyOnTranslateChange() override;
+
+				CDialogBoxPointDService(CDialogBoxPointD *control);
+			};
+		private:
+			PointD m_sValue;
+			bool m_bHasMin;
+			bool m_bHasMax;
+			double m_fMin;
+			double m_fMax;
+
+			void LoadTranslatableTexts();
+		protected:
+			void FormPointDProto_OnKeyUp(IControl *sender, const MessageKey &m, bool &processed) override;
+			void EditX_OnKillFocus(IControl *sender) override;
+			void EditY_OnKillFocus(IControl *sender) override;
+			void ButtonOk_OnClick(IControl *sender) override;
+			void ButtonCancel_OnClick(IControl *sender) override;
+		public:
+			static const String ClassName; // Class name
+
+			PointD getValue() override;
+			bool hasMin() override;
+			bool hasMax() override;
+			double getMin() override;
+			double getMax() override;
+
+			bool setValue(const PointD &value) override;
+			bool setHasMin(const bool value) override;
+			bool setHasMax(const bool value) override;
+			bool setMin(const double value) override;
+			bool setMax(const double value) override;
+
+			void ActivateFirstEnabledInput() override;
+
+			CDialogBoxPointD();
+			CDialogBoxPointD(IForm *parent);
+			CDialogBoxPointD(IControl *parent);
+		};
+	}
+}

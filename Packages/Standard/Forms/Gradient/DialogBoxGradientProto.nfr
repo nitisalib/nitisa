@@ -1,0 +1,370 @@
+{
+    "Layout": "Windows Form",
+    "Version": "2.0",
+    "Settings": {
+        "GridX": true,
+        "GridY": true,
+        "GridRotate": true,
+        "GridXStep": 8,
+        "GridYStep": 8,
+        "GridRotateStep": 0.0174533,
+        "RotateShift": 2,
+        "GridPointSize": 1,
+        "GridPointColor": [
+            113,
+            21,
+            36,
+            255
+        ],
+        "Namespace": "standard",
+        "Prefix": "m_p",
+        "SelectionPointSize": 4,
+        "SelectionBorderWidth": 1,
+        "SelectionBorderColor": [
+            0,
+            0,
+            255,
+            150
+        ],
+        "SelectionBackgroundColor": [
+            0,
+            0,
+            255,
+            50
+        ],
+        "OverwriteIncludes": [
+            {
+                "Search": "Standard",
+                "Replace": "../.."
+            }
+        ],
+        "OverwriteNamespaces": [
+            {
+                "Search": "standard",
+                "Replace": ""
+            }
+        ],
+        "WidgetsSection": "protected",
+        "GenerateGetters": false,
+        "HighlightBorderWidth": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "HighlightBorderColor": [
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ]
+        ],
+        "ExportAs": 1,
+        "DialogBoxPackage": "Standard",
+        "DialogBoxClass": "DialogBoxEx"
+    },
+    "Form": {
+        "Name": "DialogBoxGradientProto",
+        "Caption": "Edit Gradient",
+        "ClientSize": [
+            416,
+            168
+        ],
+        "State": "WindowState::Hidden",
+        "WindowPosition": "WindowPosition::MainFormCenter",
+        "HasMaximizeBox": false,
+        "HasMinimizeBox": false,
+        "HasSizeBox": false,
+        "OnPaint": "FormGradientProto_OnPaint",
+        "OnKeyUp": "FormGradientProto_OnKeyUp"
+    },
+    "Components": [
+        {
+            "Package": "Standard",
+            "ClassName": "ImageList",
+            "Name": "ImageList",
+            "Position": [
+                160,
+                24
+            ]
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "ColorDialog",
+            "Name": "ColorDialog1",
+            "UseDialogBox": true,
+            "OnApply": "ColorDialog1_OnApply",
+            "Position": [
+                192,
+                24
+            ]
+        }
+    ],
+    "Controls": [
+        {
+            "Package": "Standard",
+            "ClassName": "GradientEditor",
+            "Name": "GradientEditor",
+            "Transform": {
+                "Tx": 8,
+                "Ty": 8,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                400,
+                50
+            ],
+            "TabOrder": 1,
+            "OnChange": "GradientEditor_OnChange"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Panel",
+            "Name": "Panel",
+            "Transform": {
+                "Tx": 210,
+                "Ty": 62,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                198,
+                20
+            ],
+            "Cursor": "CursorType::Hand",
+            "Caption": "",
+            "UseMask": false,
+            "OnLeftMouseButtonUp": "Panel_OnLeftMouseButtonUp"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Edit",
+            "Name": "EditPosition",
+            "Transform": {
+                "Tx": 210,
+                "Ty": 86,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                198,
+                21
+            ],
+            "TabOrder": 3,
+            "Text": "",
+            "OnKillFocus": "EditPosition_OnKillFocus",
+            "OnChange": "EditPosition_OnChange"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Button",
+            "Name": "ButtonPrev",
+            "Transform": {
+                "Tx": 210,
+                "Ty": 110,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                68,
+                23
+            ],
+            "TabOrder": 4,
+            "Caption": "",
+            "OnClick": "ButtonPrev_OnClick"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Button",
+            "Name": "ButtonNext",
+            "Transform": {
+                "Tx": 340,
+                "Ty": 110,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                68,
+                23
+            ],
+            "TabOrder": 5,
+            "Caption": "",
+            "OnClick": "ButtonNext_OnClick"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Label",
+            "Name": "LabelActive",
+            "Transform": {
+                "Tx": 282,
+                "Ty": 110,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                54,
+                20
+            ],
+            "Caption": "0/0",
+            "CaptionHorizontalAlign": "TextAlign::Center",
+            "AutoSize": false
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Label",
+            "Name": "LabelType",
+            "Transform": {
+                "Tx": 8,
+                "Ty": 113,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Caption": "Type:"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "DropDown",
+            "Name": "DropDownType",
+            "Transform": {
+                "Tx": 61,
+                "Ty": 110,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                145,
+                23
+            ],
+            "TabOrder": 8,
+            "Editable": false,
+            "OpenDirection": "OpenDirection::Up",
+            "OnSelect": "DropDownType_OnSelect"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Button",
+            "Name": "ButtonOk",
+            "Transform": {
+                "Tx": 138,
+                "Ty": 137,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                68,
+                23
+            ],
+            "TabOrder": 9,
+            "Caption": "OK",
+            "OnClick": "ButtonOk_OnClick"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Button",
+            "Name": "ButtonCancel",
+            "Transform": {
+                "Tx": 210,
+                "Ty": 137,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                68,
+                23
+            ],
+            "TabOrder": 10,
+            "Caption": "Cancel",
+            "OnClick": "ButtonCancel_OnClick"
+        }
+    ]
+}

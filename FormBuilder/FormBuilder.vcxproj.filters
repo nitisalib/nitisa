@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Editor">
+      <UniqueIdentifier>{67909acb-02ad-48d6-a3b2-f7f12dd03c11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{f0b7870f-f713-49b9-98c4-c604595035af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Forms">
+      <UniqueIdentifier>{296405b1-d167-452e-adc8-ccf3313c08cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Forms\Main">
+      <UniqueIdentifier>{78dc5ab3-51f0-48fe-b1e5-e81c47fbbca2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Forms\Empty">
+      <UniqueIdentifier>{2cf75335-f902-47b4-9c38-0cd3526920d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Forms\Configuration">
+      <UniqueIdentifier>{5fa5ee61-c958-4e85-9931-937335941b36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exporters">
+      <UniqueIdentifier>{1ffd764e-1638-47ba-b65f-e8bfba4d121c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Loaders">
+      <UniqueIdentifier>{6d8b478a-afa4-4f6b-b955-0f13715a5953}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{0e7c0b75-7cdc-4562-877f-6ebfa9d3dad6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{2fdfaca5-1eab-4158-9cc9-e437e680cbce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Savers">
+      <UniqueIdentifier>{4b10d125-773d-47a4-8b24-68f653aa2614}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Editor\Editor.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Application.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Forms\Main\FormMain.cpp">
+      <Filter>Forms\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Forms\Main\FormMainService.cpp">
+      <Filter>Forms\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Forms\Empty\FormEmpty.cpp">
+      <Filter>Forms\Empty</Filter>
+    </ClCompile>
+    <ClCompile Include="Forms\Configuration\FormConfiguration.cpp">
+      <Filter>Forms\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Types.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\UpdateChecker.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Utils.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Exporters\ExporterHeaderForm.cpp">
+      <Filter>Exporters</Filter>
+    </ClCompile>
+    <ClCompile Include="Exporters\ExporterHeaderDialogBox.cpp">
+      <Filter>Exporters</Filter>
+    </ClCompile>
+    <ClCompile Include="Exporters\BaseExporter.cpp">
+      <Filter>Exporters</Filter>
+    </ClCompile>
+    <ClCompile Include="Savers\Saver.cpp">
+      <Filter>Savers</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Consts.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ComponentList.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ControlList.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Loaders\LoaderDefault.cpp">
+      <Filter>Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Forms\Configuration\DialogBoxConfiguration.cpp">
+      <Filter>Forms\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="Forms\Main\PackageComponentListener.cpp">
+      <Filter>Forms\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Forms\Main\PackageControlListener.cpp">
+      <Filter>Forms\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Editor\Editor.h">
+      <Filter>Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Application\Application.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Forms\Main\IFormMain.h">
+      <Filter>Forms\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Forms\Main\FormMain.h">
+      <Filter>Forms\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Forms\Main\FormMainService.h">
+      <Filter>Forms\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Forms\Empty\FormEmpty.h">
+      <Filter>Forms\Empty</Filter>
+    </ClInclude>
+    <ClInclude Include="Forms\Configuration\FormConfiguration.h">
+      <Filter>Forms\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="Forms\Configuration\IFormConfiguration.h">
+      <Filter>Forms\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IExporter.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\ILoader.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Types.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Enums.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\UpdateChecker.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utils.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Exporters\ExporterHeaderForm.h">
+      <Filter>Exporters</Filter>
+    </ClInclude>
+    <ClInclude Include="Exporters\ExporterHeaderDialogBox.h">
+      <Filter>Exporters</Filter>
+    </ClInclude>
+    <ClInclude Include="Exporters\BaseExporter.h">
+      <Filter>Exporters</Filter>
+    </ClInclude>
+    <ClInclude Include="Savers\Saver.h">
+      <Filter>Savers</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Consts.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ComponentList.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ControlList.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\ISaver.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Loaders\LoaderDefault.h">
+      <Filter>Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Forms\Configuration\IDialogBoxConfiguration.h">
+      <Filter>Forms\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="Forms\Configuration\DialogBoxConfiguration.h">
+      <Filter>Forms\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
+  </ItemGroup>
+</Project>

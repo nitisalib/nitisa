@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\autofit\autofit.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\base\ftbase.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\base\ftbbox.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\base\ftbdf.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\base\ftbitmap.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\base\ftcid.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\base\ftfstype.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\base\ftgasp.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\base\ftglyph.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\base\ftgxval.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\base\ftinit.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\base\ftmm.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\base\ftotval.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\base\ftpatent.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\base\ftpfr.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\base\ftstroke.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\base\ftsynth.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\base\ftsystem.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\base\fttype1.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\base\ftwinfnt.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\bdf\bdf.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\cache\ftcache.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\cff\cff.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\cid\type1cid.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\gzip\ftgzip.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\lzw\ftlzw.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\pcf\pcf.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\pfr\pfr.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\psaux\psaux.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\pshinter\pshinter.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\psnames\psnames.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\raster\raster.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\sfnt\sfnt.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\smooth\smooth.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\truetype\truetype.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\type1\type1.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\type42\type42.c" />
+    <ClCompile Include="..\..\..\Dependencies\freetype-2.9.1\src\winfonts\winfnt.c" />
+  </ItemGroup>
+</Project>

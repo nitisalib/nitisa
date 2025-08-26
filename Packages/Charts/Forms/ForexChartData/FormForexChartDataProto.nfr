@@ -1,0 +1,515 @@
+{
+    "Layout": "Windows Form",
+    "Version": "2.0",
+    "Settings": {
+        "GridX": true,
+        "GridY": true,
+        "GridRotate": true,
+        "GridXStep": 8,
+        "GridYStep": 8,
+        "GridRotateStep": 0.0174533,
+        "RotateShift": 2,
+        "GridPointSize": 1,
+        "GridPointColor": [
+            113,
+            21,
+            36,
+            255
+        ],
+        "Namespace": "charts",
+        "Prefix": "m_p",
+        "SelectionPointSize": 4,
+        "SelectionBorderWidth": 1,
+        "SelectionBorderColor": [
+            0,
+            0,
+            255,
+            150
+        ],
+        "SelectionBackgroundColor": [
+            0,
+            0,
+            255,
+            50
+        ],
+        "OverwriteIncludes": [
+            {
+                "Search": "Charts",
+                "Replace": "../.."
+            }
+        ],
+        "OverwriteNamespaces": [
+            {
+                "Search": "charts",
+                "Replace": ""
+            }
+        ],
+        "WidgetsSection": "protected",
+        "GenerateGetters": false,
+        "HighlightBorderWidth": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "HighlightBorderColor": [
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ]
+        ],
+        "ExportAs": 0,
+        "DialogBoxPackage": "",
+        "DialogBoxClass": ""
+    },
+    "Form": {
+        "Name": "FormForexChartDataProto",
+        "Caption": "Manage Forex Data",
+        "ClientSize": [
+            648,
+            360
+        ],
+        "State": "WindowState::Hidden",
+        "WindowPosition": "WindowPosition::MainFormCenter",
+        "HasMaximizeBox": false,
+        "HasMinimizeBox": false,
+        "HasSizeBox": false,
+        "OnKeyUp": "FormForexChartDataProto_OnKeyUp"
+    },
+    "Controls": [
+        {
+            "Package": "Standard",
+            "ClassName": "ListBox",
+            "Name": "ListBoxArray",
+            "Transform": {
+                "Tx": 8,
+                "Ty": 8,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                481,
+                313
+            ],
+            "TabOrder": 1,
+            "Multiselect": false,
+            "OnSelect": "ListBoxArray_OnSelect"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Button",
+            "Name": "ButtonAdd",
+            "Transform": {
+                "Tx": 536,
+                "Ty": 160,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "TabOrder": 4,
+            "Caption": "Add",
+            "OnClick": "ButtonAdd_OnClick"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Button",
+            "Name": "ButtonUpdate",
+            "Transform": {
+                "Tx": 536,
+                "Ty": 184,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "TabOrder": 5,
+            "Enabled": false,
+            "Caption": "Update",
+            "OnClick": "ButtonUpdate_OnClick"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Button",
+            "Name": "ButtonDelete",
+            "Transform": {
+                "Tx": 536,
+                "Ty": 216,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "TabOrder": 6,
+            "Enabled": false,
+            "Caption": "Delete",
+            "OnClick": "ButtonDelete_OnClick"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Button",
+            "Name": "ButtonClear",
+            "Transform": {
+                "Tx": 536,
+                "Ty": 240,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "TabOrder": 7,
+            "Enabled": false,
+            "Caption": "Clear",
+            "OnClick": "ButtonClear_OnClick"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Button",
+            "Name": "ButtonOk",
+            "Transform": {
+                "Tx": 8,
+                "Ty": 328,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "TabOrder": 8,
+            "Caption": "OK",
+            "OnClick": "ButtonOk_OnClick"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Button",
+            "Name": "ButtonCancel",
+            "Transform": {
+                "Tx": 120,
+                "Ty": 328,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "TabOrder": 9,
+            "Caption": "Cancel",
+            "OnClick": "ButtonCancel_OnClick"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Label",
+            "Name": "Label1",
+            "Transform": {
+                "Tx": 496,
+                "Ty": 60,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Caption": "Open:"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Label",
+            "Name": "Label2",
+            "Transform": {
+                "Tx": 496,
+                "Ty": 84,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Caption": "Close:"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Label",
+            "Name": "Label3",
+            "Transform": {
+                "Tx": 496,
+                "Ty": 108,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Caption": "Min:"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Label",
+            "Name": "Label4",
+            "Transform": {
+                "Tx": 496,
+                "Ty": 132,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Caption": "Max:"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Edit",
+            "Name": "EditOpen",
+            "Transform": {
+                "Tx": 536,
+                "Ty": 56,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                104,
+                21
+            ],
+            "TabOrder": 12,
+            "Text": "0.000000"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Edit",
+            "Name": "EditClose",
+            "Transform": {
+                "Tx": 536,
+                "Ty": 80,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                104,
+                21
+            ],
+            "TabOrder": 13,
+            "Text": "0.000000"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Edit",
+            "Name": "EditMin",
+            "Transform": {
+                "Tx": 536,
+                "Ty": 104,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                104,
+                21
+            ],
+            "TabOrder": 14,
+            "Text": "0.000000"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Edit",
+            "Name": "EditMax",
+            "Transform": {
+                "Tx": 536,
+                "Ty": 128,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                104,
+                21
+            ],
+            "TabOrder": 15,
+            "Text": "0.000000"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Label",
+            "Name": "Label5",
+            "Transform": {
+                "Tx": 496,
+                "Ty": 12,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Caption": "Date:"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "DatePicker",
+            "Name": "DatePicker",
+            "Transform": {
+                "Tx": 536,
+                "Ty": 8,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                104,
+                21
+            ],
+            "TabOrder": 17,
+            "DisplayMode": "DisplayMode::UpDown",
+            "ElementOrder": "ElementOrder::YearMonthDay",
+            "Separator1": "-",
+            "Separator2": "-"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "TimePicker",
+            "Name": "TimePicker",
+            "Transform": {
+                "Tx": 536,
+                "Ty": 32,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                104,
+                21
+            ],
+            "TabOrder": 18
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Label",
+            "Name": "Label6",
+            "Transform": {
+                "Tx": 496,
+                "Ty": 36,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Caption": "Time:"
+        }
+    ]
+}

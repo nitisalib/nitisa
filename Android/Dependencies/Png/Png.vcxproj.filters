@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Dependencies\lpng1634\pngerror.c" />
+    <ClCompile Include="..\..\..\Dependencies\lpng1634\pngget.c" />
+    <ClCompile Include="..\..\..\Dependencies\lpng1634\pngmem.c" />
+    <ClCompile Include="..\..\..\Dependencies\lpng1634\pngpread.c" />
+    <ClCompile Include="..\..\..\Dependencies\lpng1634\pngread.c" />
+    <ClCompile Include="..\..\..\Dependencies\lpng1634\pngrio.c" />
+    <ClCompile Include="..\..\..\Dependencies\lpng1634\pngrtran.c" />
+    <ClCompile Include="..\..\..\Dependencies\lpng1634\pngrutil.c" />
+    <ClCompile Include="..\..\..\Dependencies\lpng1634\pngset.c" />
+    <ClCompile Include="..\..\..\Dependencies\lpng1634\pngtrans.c" />
+    <ClCompile Include="..\..\..\Dependencies\lpng1634\pngwio.c" />
+    <ClCompile Include="..\..\..\Dependencies\lpng1634\pngwrite.c" />
+    <ClCompile Include="..\..\..\Dependencies\lpng1634\pngwtran.c" />
+    <ClCompile Include="..\..\..\Dependencies\lpng1634\pngwutil.c" />
+    <ClCompile Include="..\..\..\Dependencies\lpng1634\png.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pnglibconf.h" />
+  </ItemGroup>
+</Project>

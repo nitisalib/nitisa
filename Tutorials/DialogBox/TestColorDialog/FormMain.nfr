@@ -1,0 +1,73 @@
+{
+    "Layout": "Windows Form",
+    "Version": "2.0",
+    "Form": {
+        "Name": "FormMain",
+        "ClientSize": [
+            640,
+            480
+        ]
+    },
+    "Components": [
+        {
+            "Package": "Standard",
+            "ClassName": "ColorDialog",
+            "Name": "ColorDialog1",
+            "UseDialogBox": true,
+            "Position": [
+                100,
+                190
+            ]
+        }
+    ],
+    "Controls": [
+        {
+            "Package": "Standard",
+            "ClassName": "Button",
+            "Name": "Button1",
+            "Transform": {
+                "Tx": 10,
+                "Ty": 10,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                174,
+                43
+            ],
+            "TabOrder": 1,
+            "Caption": "Select color...",
+            "OnClick": "Button1_OnClick"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Panel",
+            "Name": "Panel1",
+            "Transform": {
+                "Tx": 10,
+                "Ty": 60,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                175,
+                115
+            ],
+            "Caption": ""
+        }
+    ]
+}

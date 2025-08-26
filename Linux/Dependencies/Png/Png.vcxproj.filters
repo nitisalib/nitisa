@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="scripts">
+      <UniqueIdentifier>{30301c3b-5270-48a9-b29a-fbd26a72f8d4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Dependencies\lpng1634\scripts\pnglibconf.h.prebuilt">
+      <Filter>scripts</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Dependencies\lpng1634\png.h" />
+    <ClInclude Include="..\..\..\Dependencies\lpng1634\pngconf.h" />
+    <ClInclude Include="..\..\..\Dependencies\lpng1634\pngdebug.h" />
+    <ClInclude Include="..\..\..\Dependencies\lpng1634\pnginfo.h" />
+    <ClInclude Include="..\..\..\Dependencies\lpng1634\pngpriv.h" />
+    <ClInclude Include="..\..\..\Dependencies\lpng1634\pngstruct.h" />
+    <ClInclude Include="pnglibconf.h" />
+  </ItemGroup>
+</Project>

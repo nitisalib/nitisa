@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Package">
+      <UniqueIdentifier>{48e15995-12e1-4313-a6db-20ac8000b2aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers">
+      <UniqueIdentifier>{7a409795-31c1-464f-b450-c106eff126d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Windows">
+      <UniqueIdentifier>{e92149d9-91d7-4507-99ce-dcd6ac98c1cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Windows\OpenGL-3.1">
+      <UniqueIdentifier>{b378009a-5b4c-49ce-a72d-99a2c5eec8af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Windows\OpenGL-4.5">
+      <UniqueIdentifier>{ed995ae6-1faa-41a5-b809-e373c8e98d75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Android">
+      <UniqueIdentifier>{9fb46953-4b52-4ef9-addb-52f0656f4d82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Linux">
+      <UniqueIdentifier>{cb8a6924-bc14-4c3e-a639-b890e042e6ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Linux\OpenGL-3.1">
+      <UniqueIdentifier>{aff2c51c-9cc6-4091-8fcf-3c1afa9757fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Linux\OpenGL-4.5">
+      <UniqueIdentifier>{892bd789-1e4a-4290-9bff-072cce3c8f42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{6e7e78df-40bd-461c-8621-cf22bdeb903e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL">
+      <UniqueIdentifier>{184497af-b9c1-404b-aa1a-aff73cd16208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL\4.6">
+      <UniqueIdentifier>{67b43943-274b-478e-9f39-768bcfff2847}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Linux">
+      <UniqueIdentifier>{94851e4e-6fa6-4cef-9ef6-68eb344aa45f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{72f030f5-fa5b-4c8d-86e0-e18e0c3e6932}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Linux\OpenGL">
+      <UniqueIdentifier>{49818fce-b22d-4a9d-924c-fadc927c1508}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Linux\OpenGL\Core">
+      <UniqueIdentifier>{cd7cd349-4251-444f-ba39-4852cb5584d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Linux\OpenGL\3.1">
+      <UniqueIdentifier>{a22cd5db-440d-401e-9fbc-964f650e8890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Linux\OpenGL\4.5">
+      <UniqueIdentifier>{6ce76631-54a5-42ad-b123-b1efabcf1823}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Linux\OpenGL\3.1\Debug">
+      <UniqueIdentifier>{3435bf1b-d29c-40e9-b2fb-3ee1a2cd8ed5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Linux\OpenGL\3.1\Release">
+      <UniqueIdentifier>{1f7edf80-e240-4b1e-a4ae-4f6433d40c16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Linux\OpenGL\4.5\Debug">
+      <UniqueIdentifier>{a54bd14c-e414-4226-bf78-5dd75d37bc20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Linux\OpenGL\4.5\Release">
+      <UniqueIdentifier>{2e9c6145-5fb8-4775-9c76-6e42ef1585f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL\Shaders">
+      <UniqueIdentifier>{6847cebb-e4d3-426c-b6a4-36625ee94c5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL\Shaders\GL45">
+      <UniqueIdentifier>{fb5f1b92-ce28-42f0-a65f-c254bb5f9425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL\Shaders\GL31-GLES30">
+      <UniqueIdentifier>{3a93539f-4beb-4f3e-af7e-6f601eba500b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Android\GLES-3.1">
+      <UniqueIdentifier>{484fc4e4-e337-473c-b09a-b92f5e9982bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL\Shaders\GL32-GLES31">
+      <UniqueIdentifier>{817ecd3e-2515-4baf-8648-cbfb2530e79a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Packages\Platform\Package\PackagePlatform.cpp">
+      <Filter>Package</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\PackagePlatformService.cpp">
+      <Filter>Package</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-3.1\PackageRendererWindowsOpenGL31d.cpp">
+      <Filter>Package\Renderers\Windows\OpenGL-3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-3.1\PackageRendererWindowsOpenGL31r.cpp">
+      <Filter>Package\Renderers\Windows\OpenGL-3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-4.5\PackageRendererWindowsOpenGL45r.cpp">
+      <Filter>Package\Renderers\Windows\OpenGL-4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-4.5\PackageRendererWindowsOpenGL45d.cpp">
+      <Filter>Package\Renderers\Windows\OpenGL-4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Android\GLES-3.1\PackageRendererAndroidGLES31d.cpp">
+      <Filter>Package\Renderers\Android\GLES-3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Android\GLES-3.1\PackageRendererAndroidGLES31r.cpp">
+      <Filter>Package\Renderers\Android\GLES-3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-3.1\PackageRendererLinuxOpenGL31d.cpp">
+      <Filter>Package\Renderers\Linux\OpenGL-3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-3.1\PackageRendererLinuxOpenGL31r.cpp">
+      <Filter>Package\Renderers\Linux\OpenGL-3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-4.5\PackageRendererLinuxOpenGL45d.cpp">
+      <Filter>Package\Renderers\Linux\OpenGL-4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-4.5\PackageRendererLinuxOpenGL45r.cpp">
+      <Filter>Package\Renderers\Linux\OpenGL-4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Core\Application.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Core\BasePlatformFont.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Core\Errors.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Core\Renderer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Core\Window.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\OpenGL\dgl.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\OpenGL\ngl-utils.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\OpenGL\ngl-common.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\OpenGL\OpenGL.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\OpenGL\ngl-linux.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\Application.cpp">
+      <Filter>Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\ApplicationService.cpp">
+      <Filter>Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\ClientSocket.cpp">
+      <Filter>Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\Dialogs.cpp">
+      <Filter>Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\File.cpp">
+      <Filter>Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\FileSystem.cpp">
+      <Filter>Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\Keyboard.cpp">
+      <Filter>Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\Mouse.cpp">
+      <Filter>Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\Network.cpp">
+      <Filter>Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\Picture.cpp">
+      <Filter>Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\PlatformFont.cpp">
+      <Filter>Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\Screen.cpp">
+      <Filter>Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\ServerSocket.cpp">
+      <Filter>Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\Socket.cpp">
+      <Filter>Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\System.cpp">
+      <Filter>Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\Thread.cpp">
+      <Filter>Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\Window.cpp">
+      <Filter>Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\WindowService.cpp">
+      <Filter>Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\OpenGL\Program.cpp">
+      <Filter>Linux\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\OpenGL\Core\BaseRenderer.cpp">
+      <Filter>Linux\OpenGL\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\OpenGL\3.1\Framebuffer.cpp">
+      <Filter>Linux\OpenGL\3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\OpenGL\3.1\ProgramBase.cpp">
+      <Filter>Linux\OpenGL\3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\OpenGL\3.1\ProgramMain.cpp">
+      <Filter>Linux\OpenGL\3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\OpenGL\3.1\ProgramMini.cpp">
+      <Filter>Linux\OpenGL\3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\OpenGL\3.1\Texture.cpp">
+      <Filter>Linux\OpenGL\3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\OpenGL\3.1\VertexArrayDynamic.cpp">
+      <Filter>Linux\OpenGL\3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\OpenGL\3.1\VertexArrayImmutable.cpp">
+      <Filter>Linux\OpenGL\3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\OpenGL\3.1\Debug\Renderer.cpp">
+      <Filter>Linux\OpenGL\3.1\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\OpenGL\3.1\Release\Renderer.cpp">
+      <Filter>Linux\OpenGL\3.1\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\OpenGL\4.5\Framebuffer.cpp">
+      <Filter>Linux\OpenGL\4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\OpenGL\4.5\ProgramBase.cpp">
+      <Filter>Linux\OpenGL\4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\OpenGL\4.5\ProgramMain.cpp">
+      <Filter>Linux\OpenGL\4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\OpenGL\4.5\ProgramMini.cpp">
+      <Filter>Linux\OpenGL\4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\OpenGL\4.5\Texture.cpp">
+      <Filter>Linux\OpenGL\4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\OpenGL\4.5\VertexArrayDynamic.cpp">
+      <Filter>Linux\OpenGL\4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\OpenGL\4.5\VertexArrayImmutable.cpp">
+      <Filter>Linux\OpenGL\4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\OpenGL\4.5\Debug\Renderer.cpp">
+      <Filter>Linux\OpenGL\4.5\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\OpenGL\4.5\Release\Renderer.cpp">
+      <Filter>Linux\OpenGL\4.5\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\OpenGL\4.5\TextureMultisample.cpp">
+      <Filter>Linux\OpenGL\4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Linux\OpenGL\3.1\TextureMultisample.cpp">
+      <Filter>Linux\OpenGL\3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Core\Db.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Core\DbConnection.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Core\DbStatement.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Packages\Platform\Package\PackagePlatform.h">
+      <Filter>Package</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\PackagePlatformService.h">
+      <Filter>Package</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-3.1\PackageRendererWindowsOpenGL31d.h">
+      <Filter>Package\Renderers\Windows\OpenGL-3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-3.1\PackageRendererWindowsOpenGL31r.h">
+      <Filter>Package\Renderers\Windows\OpenGL-3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-4.5\PackageRendererWindowsOpenGL45r.h">
+      <Filter>Package\Renderers\Windows\OpenGL-4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-4.5\PackageRendererWindowsOpenGL45d.h">
+      <Filter>Package\Renderers\Windows\OpenGL-4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Android\GLES-3.1\PackageRendererAndroidGLES31d.h">
+      <Filter>Package\Renderers\Android\GLES-3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Android\GLES-3.1\PackageRendererAndroidGLES31r.h">
+      <Filter>Package\Renderers\Android\GLES-3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-3.1\PackageRendererLinuxOpenGL31d.h">
+      <Filter>Package\Renderers\Linux\OpenGL-3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-3.1\PackageRendererLinuxOpenGL31r.h">
+      <Filter>Package\Renderers\Linux\OpenGL-3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-4.5\PackageRendererLinuxOpenGL45d.h">
+      <Filter>Package\Renderers\Linux\OpenGL-4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-4.5\PackageRendererLinuxOpenGL45r.h">
+      <Filter>Package\Renderers\Linux\OpenGL-4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Core\Application.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Core\BasePlatformFont.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Core\Errors.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Core\Renderer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Core\Window.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\OpenGL\dgl.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\OpenGL\ngl.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\OpenGL\OpenGL.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\OpenGL\4.6\glcorearb.h">
+      <Filter>OpenGL\4.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\OpenGL\4.6\glxext.h">
+      <Filter>OpenGL\4.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\OpenGL\4.6\khrplatform.h">
+      <Filter>OpenGL\4.6</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\stdafx.h" />
+    <ClInclude Include="..\..\Packages\Platform\Platform.h" />
+    <ClInclude Include="..\..\Packages\Platform\Linux\Application.h">
+      <Filter>Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\ApplicationService.h">
+      <Filter>Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\ClientSocket.h">
+      <Filter>Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\Dialogs.h">
+      <Filter>Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\File.h">
+      <Filter>Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\FileSystem.h">
+      <Filter>Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\Keyboard.h">
+      <Filter>Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\Mouse.h">
+      <Filter>Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\Network.h">
+      <Filter>Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\Picture.h">
+      <Filter>Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\PlatformFont.h">
+      <Filter>Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\Screen.h">
+      <Filter>Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\ServerSocket.h">
+      <Filter>Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\Socket.h">
+      <Filter>Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\System.h">
+      <Filter>Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\Thread.h">
+      <Filter>Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\Window.h">
+      <Filter>Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\WindowService.h">
+      <Filter>Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\OpenGL\Program.h">
+      <Filter>Linux\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\OpenGL\Core\BaseRenderer.h">
+      <Filter>Linux\OpenGL\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\OpenGL\3.1\Framebuffer.h">
+      <Filter>Linux\OpenGL\3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\OpenGL\3.1\ProgramBase.h">
+      <Filter>Linux\OpenGL\3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\OpenGL\3.1\ProgramMain.h">
+      <Filter>Linux\OpenGL\3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\OpenGL\3.1\ProgramMini.h">
+      <Filter>Linux\OpenGL\3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\OpenGL\3.1\Texture.h">
+      <Filter>Linux\OpenGL\3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\OpenGL\3.1\VertexArrayDynamic.h">
+      <Filter>Linux\OpenGL\3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\OpenGL\3.1\VertexArrayImmutable.h">
+      <Filter>Linux\OpenGL\3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\OpenGL\3.1\Debug\Renderer.h">
+      <Filter>Linux\OpenGL\3.1\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\OpenGL\3.1\Release\Renderer.h">
+      <Filter>Linux\OpenGL\3.1\Release</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\OpenGL\4.5\Framebuffer.h">
+      <Filter>Linux\OpenGL\4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\OpenGL\4.5\ProgramBase.h">
+      <Filter>Linux\OpenGL\4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\OpenGL\4.5\ProgramMain.h">
+      <Filter>Linux\OpenGL\4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\OpenGL\4.5\ProgramMini.h">
+      <Filter>Linux\OpenGL\4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\OpenGL\4.5\Texture.h">
+      <Filter>Linux\OpenGL\4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\OpenGL\4.5\VertexArrayDynamic.h">
+      <Filter>Linux\OpenGL\4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\OpenGL\4.5\VertexArrayImmutable.h">
+      <Filter>Linux\OpenGL\4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\OpenGL\4.5\Debug\Renderer.h">
+      <Filter>Linux\OpenGL\4.5\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\OpenGL\4.5\Release\Renderer.h">
+      <Filter>Linux\OpenGL\4.5\Release</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\OpenGL\4.5\TextureMultisample.h">
+      <Filter>Linux\OpenGL\4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Linux\OpenGL\3.1\TextureMultisample.h">
+      <Filter>Linux\OpenGL\3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Core\Db.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Core\DbConnection.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Core\DbStatement.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Packages\Platform\Data\DefaultFontData.inc">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\fragment-block.glsl">
+      <Filter>OpenGL\Shaders</Filter>
+    </None>
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\fragment-spline.glsl">
+      <Filter>OpenGL\Shaders</Filter>
+    </None>
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\fragment-utils.glsl">
+      <Filter>OpenGL\Shaders</Filter>
+    </None>
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\GL45\fragment-main.glsl">
+      <Filter>OpenGL\Shaders\GL45</Filter>
+    </None>
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\GL45\fragment-mini.glsl">
+      <Filter>OpenGL\Shaders\GL45</Filter>
+    </None>
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\GL45\vertex.glsl">
+      <Filter>OpenGL\Shaders\GL45</Filter>
+    </None>
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\GL31-GLES30\fragment-main.glsl">
+      <Filter>OpenGL\Shaders\GL31-GLES30</Filter>
+    </None>
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\GL31-GLES30\fragment-mini.glsl">
+      <Filter>OpenGL\Shaders\GL31-GLES30</Filter>
+    </None>
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\GL31-GLES30\vertex.glsl">
+      <Filter>OpenGL\Shaders\GL31-GLES30</Filter>
+    </None>
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\GL32-GLES31\fragment-main.glsl">
+      <Filter>OpenGL\Shaders\GL32-GLES31</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,26 @@
+{
+	"title": "Tablet",
+	"landscape" : false,
+	"left": {
+		"fill": "tablet-leftright-fill.png"
+	},
+	"top": {
+		"start": "tablet-top-start.png",
+		"middle": "tablet-top-middle.png",
+		"end": "tablet-top-end.png",
+		"fill": "tablet-top-fill.png"
+	},
+	"right": {
+		"fill": "tablet-leftright-fill.png"
+	},
+	"bottom": {
+		"start": "tablet-bottom-start.png",
+		"middle": "tablet-bottom-middle.png",
+		"end": "tablet-bottom-end.png",
+		"fill": "tablet-bottom-fill.png"
+	},
+	"size": {
+		"width": "1368",
+		"height": "1920"
+	}
+}

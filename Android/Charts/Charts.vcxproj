@@ -1,0 +1,776 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugRT|ARM">
+      <Configuration>DebugRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|ARM64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|x64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|x86">
+      <Configuration>DebugRT</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|ARM">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|ARM64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|x64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|x86">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Packages\Charts\Charts.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\BarChart\BarChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\DoughnutChart\DoughnutChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\ForexChart\ForexChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\ForexChart\ForexChartService.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\IBarChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\IDoughnutChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\IForexChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\ILineChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\IMultiBarChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\IPieChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\IPolarAreaChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\IRadarChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\ISemiDoughnutChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\ISemiPieChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\ISplineChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\IStackedBarChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\ISteppedLineChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\LineChart\LineChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\MultiBarChart\MultiBarChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\PieChart\PieChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\PolarAreaChart\PolarAreaChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\PolarAreaChart\PolarAreaChartService.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\RadarChart\RadarChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\RadarChart\RadarChartService.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\SemiDoughnutChart\SemiDoughnutChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\SemiPieChart\SemiPieChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\SplineChart\SplineChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\StackedBarChart\StackedBarChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Controls\SteppedLineChart\SteppedLineChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Core\BarChartRenderer.h" />
+    <ClInclude Include="..\..\Packages\Charts\Core\BezierChartRenderer.h" />
+    <ClInclude Include="..\..\Packages\Charts\Core\ChartData.h" />
+    <ClInclude Include="..\..\Packages\Charts\Core\ChartDataSet.h" />
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomCartesianChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomCartesianChartEventList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomCartesianChartPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomCartesianChartService.h" />
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomRadialChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomRadialChartEventList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomRadialChartPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomRadialChartService.h" />
+    <ClInclude Include="..\..\Packages\Charts\Core\Enums.h" />
+    <ClInclude Include="..\..\Packages\Charts\Core\LineChartRenderer.h" />
+    <ClInclude Include="..\..\Packages\Charts\Core\SteppedLineChartRenderer.h" />
+    <ClInclude Include="..\..\Packages\Charts\Core\Utils.h" />
+    <ClInclude Include="..\..\Packages\Charts\Forms\ChartDataSet\DialogBoxChartDataSet.h" />
+    <ClInclude Include="..\..\Packages\Charts\Forms\ChartDataSet\FormChartDataSet.h" />
+    <ClInclude Include="..\..\Packages\Charts\Forms\ChartDataSet\IDialogBoxChartDataSetProto.h" />
+    <ClInclude Include="..\..\Packages\Charts\Forms\ChartDataSet\IFormChartDataSetProto.h" />
+    <ClInclude Include="..\..\Packages\Charts\Forms\ForexChartData\DialogBoxForexChartData.h" />
+    <ClInclude Include="..\..\Packages\Charts\Forms\ForexChartData\FormForexChartData.h" />
+    <ClInclude Include="..\..\Packages\Charts\Forms\ForexChartData\IDialogBoxForexChartDataProto.h" />
+    <ClInclude Include="..\..\Packages\Charts\Forms\ForexChartData\IFormForexChartDataProto.h" />
+    <ClInclude Include="..\..\Packages\Charts\Forms\IFormChartDataSet.h" />
+    <ClInclude Include="..\..\Packages\Charts\Forms\IFormForexChartData.h" />
+    <ClInclude Include="..\..\Packages\Charts\Forms\IFormLineInterpolationPositionArray.h" />
+    <ClInclude Include="..\..\Packages\Charts\Forms\LineInterpolationPositionArray\DialogBoxLineInterpolationPositionArray.h" />
+    <ClInclude Include="..\..\Packages\Charts\Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArray.h" />
+    <ClInclude Include="..\..\Packages\Charts\Forms\LineInterpolationPositionArray\IDialogBoxLineInterpolationPositionArrayProto.h" />
+    <ClInclude Include="..\..\Packages\Charts\Forms\LineInterpolationPositionArray\IFormLineInterpolationPositionArrayProto.h" />
+    <ClInclude Include="..\..\Packages\Charts\Interfaces\ICartesianChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Interfaces\IChartData.h" />
+    <ClInclude Include="..\..\Packages\Charts\Interfaces\IChartDataSet.h" />
+    <ClInclude Include="..\..\Packages\Charts\Interfaces\IChartRenderer.h" />
+    <ClInclude Include="..\..\Packages\Charts\Interfaces\IRadialChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Interfaces\IUpdateListener.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\BarChart\BarChartEventList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\BarChart\BarChartPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\BarChart\PackageBarChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\DoughnutChart\DoughnutChartEventList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\DoughnutChart\DoughnutChartPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\DoughnutChart\PackageDoughnutChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\ForexChart\ForexChartEventList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\ForexChart\ForexChartPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\ForexChart\PackageForexChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\LineChart\LineChartEventList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\LineChart\LineChartPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\LineChart\PackageLineChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\MultiBarChart\MultiBarChartEventList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\MultiBarChart\MultiBarChartPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\MultiBarChart\PackageMultiBarChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\PieChart\PackagePieChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\PieChart\PieChartEventList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\PieChart\PieChartPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\PolarAreaChart\PackagePolarAreaChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\PolarAreaChart\PolarAreaChartEventList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\PolarAreaChart\PolarAreaChartPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\RadarChart\PackageRadarChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\RadarChart\RadarChartEventList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\RadarChart\RadarChartPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SemiDoughnutChart\PackageSemiDoughnutChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SemiDoughnutChart\SemiDoughnutChartEventList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SemiDoughnutChart\SemiDoughnutChartPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SemiPieChart\PackageSemiPieChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SemiPieChart\SemiPieChartEventList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SemiPieChart\SemiPieChartPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SplineChart\PackageSplineChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SplineChart\SplineChartEventList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SplineChart\SplineChartPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\StackedBarChart\PackageStackedBarChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\StackedBarChart\StackedBarChartEventList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\StackedBarChart\StackedBarChartPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SteppedLineChart\PackageSteppedLineChart.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SteppedLineChart\SteppedLineChartEventList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SteppedLineChart\SteppedLineChartPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Core\Consts.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\ChartDataSet\FormChartDataSetEventList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\ChartDataSet\FormChartDataSetPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\ChartDataSet\PackageFormChartDataSet.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\ForexChartData\FormForexChartDataEventList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\ForexChartData\FormForexChartDataPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\ForexChartData\PackageFormForexChartData.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArrayEventList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArrayPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\LineInterpolationPositionArray\PackageFormLineInterpolationPositionArray.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Interfaces\IPropertyChartDataSet.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Interfaces\IPropertyForexChartData.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Interfaces\IPropertyLineInterpolationPositionArray.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\PackageCharts.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\PackageChartsService.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Properties\PropertyChartDataSet.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Properties\PropertyForexChartData.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\Properties\PropertyLineInterpolationPositionArray.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\PropertyHandlers\ChartDataSet\PropertyHandlerChartDataSet.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\PropertyHandlers\ForexChartData\PropertyHandlerForexChartData.h" />
+    <ClInclude Include="..\..\Packages\Charts\Package\PropertyHandlers\LineInterpolationPositionArray\PropertyHandlerLineInterpolationPositionArray.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Packages\Charts\Controls\BarChart\BarChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Controls\DoughnutChart\DoughnutChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Controls\ForexChart\ForexChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Controls\ForexChart\ForexChartData.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Controls\ForexChart\ForexChartService.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Controls\LineChart\LineChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Controls\MultiBarChart\MultiBarChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Controls\PieChart\PieChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Controls\PolarAreaChart\PolarAreaChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Controls\PolarAreaChart\PolarAreaChartService.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Controls\RadarChart\RadarChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Controls\RadarChart\RadarChartService.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Controls\SemiDoughnutChart\SemiDoughnutChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Controls\SemiPieChart\SemiPieChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Controls\SplineChart\SplineChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Controls\StackedBarChart\StackedBarChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Controls\SteppedLineChart\SteppedLineChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Core\BarChartRenderer.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Core\BezierChartRenderer.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Core\ChartData.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Core\ChartDataSet.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomCartesianChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomCartesianChartEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomCartesianChartPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomCartesianChartService.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomRadialChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomRadialChartEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomRadialChartPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomRadialChartService.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Core\LineChartRenderer.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Core\SteppedLineChartRenderer.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Core\Utils.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Forms\ChartDataSet\DialogBoxChartDataSet.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Forms\ChartDataSet\FormChartDataSet.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Forms\ForexChartData\DialogBoxForexChartData.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Forms\ForexChartData\FormForexChartData.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Forms\LineInterpolationPositionArray\DialogBoxLineInterpolationPositionArray.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArray.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\BarChart\BarChartEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\BarChart\BarChartPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\BarChart\PackageBarChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\DoughnutChart\DoughnutChartEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\DoughnutChart\DoughnutChartPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\DoughnutChart\PackageDoughnutChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\ForexChart\ForexChartEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\ForexChart\ForexChartPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\ForexChart\PackageForexChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\LineChart\LineChartEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\LineChart\LineChartPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\LineChart\PackageLineChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\MultiBarChart\MultiBarChartEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\MultiBarChart\MultiBarChartPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\MultiBarChart\PackageMultiBarChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\PieChart\PackagePieChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\PieChart\PieChartEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\PieChart\PieChartPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\PolarAreaChart\PackagePolarAreaChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\PolarAreaChart\PolarAreaChartEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\PolarAreaChart\PolarAreaChartPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\RadarChart\PackageRadarChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\RadarChart\RadarChartEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\RadarChart\RadarChartPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SemiDoughnutChart\PackageSemiDoughnutChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SemiDoughnutChart\SemiDoughnutChartEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SemiDoughnutChart\SemiDoughnutChartPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SemiPieChart\PackageSemiPieChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SemiPieChart\SemiPieChartEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SemiPieChart\SemiPieChartPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SplineChart\PackageSplineChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SplineChart\SplineChartEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SplineChart\SplineChartPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\StackedBarChart\PackageStackedBarChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\StackedBarChart\StackedBarChartEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\StackedBarChart\StackedBarChartPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SteppedLineChart\PackageSteppedLineChart.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SteppedLineChart\SteppedLineChartEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SteppedLineChart\SteppedLineChartPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Core\Consts.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\ChartDataSet\FormChartDataSetEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\ChartDataSet\FormChartDataSetPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\ChartDataSet\PackageFormChartDataSet.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\ForexChartData\FormForexChartDataEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\ForexChartData\FormForexChartDataPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\ForexChartData\PackageFormForexChartData.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArrayEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArrayPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\LineInterpolationPositionArray\PackageFormLineInterpolationPositionArray.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\PackageCharts.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\PackageChartsService.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Properties\PropertyChartDataSet.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Properties\PropertyForexChartData.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\Properties\PropertyLineInterpolationPositionArray.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\PropertyHandlers\ChartDataSet\PropertyHandlerChartDataSet.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\PropertyHandlers\ForexChartData\PropertyHandlerForexChartData.cpp" />
+    <ClCompile Include="..\..\Packages\Charts\Package\PropertyHandlers\LineInterpolationPositionArray\PropertyHandlerLineInterpolationPositionArray.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{933867e8-814a-4c22-a07f-6fa94c89fa1e}</ProjectGuid>
+    <Keyword>Android</Keyword>
+    <RootNamespace>Charts</RootNamespace>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <ApplicationType>Android</ApplicationType>
+    <ApplicationTypeRevision>3.0</ApplicationTypeRevision>
+    <ProjectName>Charts</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x86\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Charts\x86\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x64\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Charts\x64\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Charts\ARM\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM64\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Charts\ARM64\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x86\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Charts\x86\DebugRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x64\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Charts\x64\DebugRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Charts\ARM\DebugRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM64\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Charts\ARM64\DebugRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x86\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Charts\x86\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x64\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Charts\x64\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Charts\ARM\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM64\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Charts\ARM64\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x86\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Charts\x86\ReleaseRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x64\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Charts\x64\ReleaseRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Charts\ARM\ReleaseRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM64\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Charts\ARM64\ReleaseRT\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

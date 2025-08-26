@@ -1,0 +1,1161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Ide.h" />
+    <ClInclude Include="Package\PackageIde.h">
+      <Filter>Package</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\PackageIdeService.h">
+      <Filter>Package</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IEventEditor.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\EventEditor\EventEditor.h">
+      <Filter>Controls\EventEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\EventEditor\EventEditorService.h">
+      <Filter>Controls\EventEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IPropertyEditor.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\PropertyEditor\PropertyEditor.h">
+      <Filter>Controls\PropertyEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\PropertyEditor\PropertyEditorService.h">
+      <Filter>Controls\PropertyEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IFormView.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\FormView\FormView.h">
+      <Filter>Controls\FormView</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\FormView\FormViewService.h">
+      <Filter>Controls\FormView</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IFormEditor.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\FormEditor\FormEditor.h">
+      <Filter>Controls\FormEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\FormEditor\FormEditorService.h">
+      <Filter>Controls\FormEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\EventEditor\PackageEventEditor.h">
+      <Filter>Package\Controls\EventEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\EventEditor\EventEditorPropertyList.h">
+      <Filter>Package\Controls\EventEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\EventEditor\EventEditorEventList.h">
+      <Filter>Package\Controls\EventEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\PropertyEditor\PackagePropertyEditor.h">
+      <Filter>Package\Controls\PropertyEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\PropertyEditor\PropertyEditorPropertyList.h">
+      <Filter>Package\Controls\PropertyEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\PropertyEditor\PropertyEditorEventList.h">
+      <Filter>Package\Controls\PropertyEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\FormView\PackageFormView.h">
+      <Filter>Package\Controls\FormView</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\FormView\FormViewPropertyList.h">
+      <Filter>Package\Controls\FormView</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\FormView\FormViewEventList.h">
+      <Filter>Package\Controls\FormView</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\FormEditor\PackageFormEditor.h">
+      <Filter>Package\Controls\FormEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\FormEditor\FormEditorPropertyList.h">
+      <Filter>Package\Controls\FormEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\FormEditor\FormEditorEventList.h">
+      <Filter>Package\Controls\FormEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IHierarchyEditor.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\HierarchyEditor\HierarchyEditor.h">
+      <Filter>Controls\HierarchyEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\HierarchyEditor\HierarchyEditorService.h">
+      <Filter>Controls\HierarchyEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\HierarchyEditor\ListItemHierarchyEditor.h">
+      <Filter>Controls\HierarchyEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\HierarchyEditor\PackageHierarchyEditor.h">
+      <Filter>Package\Controls\HierarchyEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\HierarchyEditor\HierarchyEditorPropertyList.h">
+      <Filter>Package\Controls\HierarchyEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\HierarchyEditor\HierarchyEditorEventList.h">
+      <Filter>Package\Controls\HierarchyEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewH2.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewH2\ViewH2.h">
+      <Filter>Controls\ViewH2</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewH2\ViewH2Service.h">
+      <Filter>Controls\ViewH2</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewV2.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewV2\ViewV2.h">
+      <Filter>Controls\ViewV2</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewV2\ViewV2Service.h">
+      <Filter>Controls\ViewV2</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewH3.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewH3\ViewH3.h">
+      <Filter>Controls\ViewH3</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewH3\ViewH3Service.h">
+      <Filter>Controls\ViewH3</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewV3.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewV3\ViewV3.h">
+      <Filter>Controls\ViewV3</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewV3\ViewV3Service.h">
+      <Filter>Controls\ViewV3</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewV2V1.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewV2V1\ViewV2V1.h">
+      <Filter>Controls\ViewV2V1</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewV2V1\ViewV2V1Service.h">
+      <Filter>Controls\ViewV2V1</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewV1V2.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewV1V2\ViewV1V2.h">
+      <Filter>Controls\ViewV1V2</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewV1V2\ViewV1V2Service.h">
+      <Filter>Controls\ViewV1V2</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewH2H1.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewH2H1\ViewH2H1.h">
+      <Filter>Controls\ViewH2H1</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewH2H1\ViewH2H1Service.h">
+      <Filter>Controls\ViewH2H1</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewH1H2.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewH1H2\ViewH1H2.h">
+      <Filter>Controls\ViewH1H2</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewH1H2\ViewH1H2Service.h">
+      <Filter>Controls\ViewH1H2</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewCross.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewCross\ViewCross.h">
+      <Filter>Controls\ViewCross</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewCross\ViewCrossService.h">
+      <Filter>Controls\ViewCross</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewV2V2.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewV2V2\ViewV2V2.h">
+      <Filter>Controls\ViewV2V2</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewV2V2\ViewV2V2Service.h">
+      <Filter>Controls\ViewV2V2</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewH2H2.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewH2H2\ViewH2H2.h">
+      <Filter>Controls\ViewH2H2</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewH2H2\ViewH2H2Service.h">
+      <Filter>Controls\ViewH2H2</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewV3V1.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewV3V1\ViewV3V1.h">
+      <Filter>Controls\ViewV3V1</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewV3V1\ViewV3V1Service.h">
+      <Filter>Controls\ViewV3V1</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewV1V3.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewV1V3\ViewV1V3.h">
+      <Filter>Controls\ViewV1V3</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewV1V3\ViewV1V3Service.h">
+      <Filter>Controls\ViewV1V3</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewH3H1.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewH3H1\ViewH3H1.h">
+      <Filter>Controls\ViewH3H1</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewH3H1\ViewH3H1Service.h">
+      <Filter>Controls\ViewH3H1</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewH1H3.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewH1H3\ViewH1H3.h">
+      <Filter>Controls\ViewH1H3</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewH1H3\ViewH1H3Service.h">
+      <Filter>Controls\ViewH1H3</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewV2BV1.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewV2BV1\ViewV2BV1.h">
+      <Filter>Controls\ViewV2BV1</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewV2BV1\ViewV2BV1Service.h">
+      <Filter>Controls\ViewV2BV1</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewV2TV1.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewV2TV1\ViewV2TV1.h">
+      <Filter>Controls\ViewV2TV1</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewV2TV1\ViewV2TV1Service.h">
+      <Filter>Controls\ViewV2TV1</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewV1V2T.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewV1V2T\ViewV1V2T.h">
+      <Filter>Controls\ViewV1V2T</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewV1V2T\ViewV1V2TService.h">
+      <Filter>Controls\ViewV1V2T</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewV1V2B.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewV1V2B\ViewV1V2B.h">
+      <Filter>Controls\ViewV1V2B</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewV1V2B\ViewV1V2BService.h">
+      <Filter>Controls\ViewV1V2B</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewH2LH1.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewH2LH1\ViewH2LH1.h">
+      <Filter>Controls\ViewH2LH1</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewH2LH1\ViewH2LH1Service.h">
+      <Filter>Controls\ViewH2LH1</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewH2RH1.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewH2RH1\ViewH2RH1.h">
+      <Filter>Controls\ViewH2RH1</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewH2RH1\ViewH2RH1Service.h">
+      <Filter>Controls\ViewH2RH1</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewH1H2L.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewH1H2L\ViewH1H2L.h">
+      <Filter>Controls\ViewH1H2L</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewH1H2L\ViewH1H2LService.h">
+      <Filter>Controls\ViewH1H2L</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IViewH1H2R.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewH1H2R\ViewH1H2R.h">
+      <Filter>Controls\ViewH1H2R</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ViewH1H2R\ViewH1H2RService.h">
+      <Filter>Controls\ViewH1H2R</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewCross\PackageViewCross.h">
+      <Filter>Package\Controls\ViewCross</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewCross\ViewCrossPropertyList.h">
+      <Filter>Package\Controls\ViewCross</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewCross\ViewCrossEventList.h">
+      <Filter>Package\Controls\ViewCross</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH1H2\PackageViewH1H2.h">
+      <Filter>Package\Controls\ViewH1H2</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH1H2\ViewH1H2PropertyList.h">
+      <Filter>Package\Controls\ViewH1H2</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH1H2\ViewH1H2EventList.h">
+      <Filter>Package\Controls\ViewH1H2</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH1H2L\PackageViewH1H2L.h">
+      <Filter>Package\Controls\ViewH1H2L</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH1H2L\ViewH1H2LPropertyList.h">
+      <Filter>Package\Controls\ViewH1H2L</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH1H2L\ViewH1H2LEventList.h">
+      <Filter>Package\Controls\ViewH1H2L</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH1H2R\PackageViewH1H2R.h">
+      <Filter>Package\Controls\ViewH1H2R</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH1H2R\ViewH1H2RPropertyList.h">
+      <Filter>Package\Controls\ViewH1H2R</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH1H2R\ViewH1H2REventList.h">
+      <Filter>Package\Controls\ViewH1H2R</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH1H3\PackageViewH1H3.h">
+      <Filter>Package\Controls\ViewH1H3</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH1H3\ViewH1H3PropertyList.h">
+      <Filter>Package\Controls\ViewH1H3</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH1H3\ViewH1H3EventList.h">
+      <Filter>Package\Controls\ViewH1H3</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH2\PackageViewH2.h">
+      <Filter>Package\Controls\ViewH2</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH2\ViewH2PropertyList.h">
+      <Filter>Package\Controls\ViewH2</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH2\ViewH2EventList.h">
+      <Filter>Package\Controls\ViewH2</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH2H1\PackageViewH2H1.h">
+      <Filter>Package\Controls\ViewH2H1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH2H1\ViewH2H1PropertyList.h">
+      <Filter>Package\Controls\ViewH2H1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH2H1\ViewH2H1EventList.h">
+      <Filter>Package\Controls\ViewH2H1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH2H2\PackageViewH2H2.h">
+      <Filter>Package\Controls\ViewH2H2</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH2H2\ViewH2H2PropertyList.h">
+      <Filter>Package\Controls\ViewH2H2</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH2H2\ViewH2H2EventList.h">
+      <Filter>Package\Controls\ViewH2H2</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH2LH1\PackageViewH2LH1.h">
+      <Filter>Package\Controls\ViewH2LH1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH2LH1\ViewH2LH1PropertyList.h">
+      <Filter>Package\Controls\ViewH2LH1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH2LH1\ViewH2LH1EventList.h">
+      <Filter>Package\Controls\ViewH2LH1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH2RH1\ViewH2RH1PropertyList.h">
+      <Filter>Package\Controls\ViewH2RH1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH2RH1\ViewH2RH1EventList.h">
+      <Filter>Package\Controls\ViewH2RH1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH2RH1\PackageViewH2RH1.h">
+      <Filter>Package\Controls\ViewH2RH1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH3\PackageViewH3.h">
+      <Filter>Package\Controls\ViewH3</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH3\ViewH3PropertyList.h">
+      <Filter>Package\Controls\ViewH3</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH3\ViewH3EventList.h">
+      <Filter>Package\Controls\ViewH3</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH3H1\PackageViewH3H1.h">
+      <Filter>Package\Controls\ViewH3H1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH3H1\ViewH3H1PropertyList.h">
+      <Filter>Package\Controls\ViewH3H1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewH3H1\ViewH3H1EventList.h">
+      <Filter>Package\Controls\ViewH3H1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV1V2\PackageViewV1V2.h">
+      <Filter>Package\Controls\ViewV1V2</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV1V2\ViewV1V2PropertyList.h">
+      <Filter>Package\Controls\ViewV1V2</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV1V2\ViewV1V2EventList.h">
+      <Filter>Package\Controls\ViewV1V2</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV1V2B\PackageViewV1V2B.h">
+      <Filter>Package\Controls\ViewV1V2B</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV1V2B\ViewV1V2BPropertyList.h">
+      <Filter>Package\Controls\ViewV1V2B</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV1V2B\ViewV1V2BEventList.h">
+      <Filter>Package\Controls\ViewV1V2B</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV1V2T\PackageViewV1V2T.h">
+      <Filter>Package\Controls\ViewV1V2T</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV1V2T\ViewV1V2TPropertyList.h">
+      <Filter>Package\Controls\ViewV1V2T</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV1V2T\ViewV1V2TEventList.h">
+      <Filter>Package\Controls\ViewV1V2T</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV1V3\PackageViewV1V3.h">
+      <Filter>Package\Controls\ViewV1V3</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV1V3\ViewV1V3PropertyList.h">
+      <Filter>Package\Controls\ViewV1V3</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV1V3\ViewV1V3EventList.h">
+      <Filter>Package\Controls\ViewV1V3</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV2\PackageViewV2.h">
+      <Filter>Package\Controls\ViewV2</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV2\ViewV2PropertyList.h">
+      <Filter>Package\Controls\ViewV2</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV2\ViewV2EventList.h">
+      <Filter>Package\Controls\ViewV2</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV2BV1\PackageViewV2BV1.h">
+      <Filter>Package\Controls\ViewV2BV1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV2BV1\ViewV2BV1PropertyList.h">
+      <Filter>Package\Controls\ViewV2BV1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV2BV1\ViewV2BV1EventList.h">
+      <Filter>Package\Controls\ViewV2BV1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV2TV1\PackageViewV2TV1.h">
+      <Filter>Package\Controls\ViewV2TV1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV2TV1\ViewV2TV1PropertyList.h">
+      <Filter>Package\Controls\ViewV2TV1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV2TV1\ViewV2TV1EventList.h">
+      <Filter>Package\Controls\ViewV2TV1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV2V1\PackageViewV2V1.h">
+      <Filter>Package\Controls\ViewV2V1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV2V1\ViewV2V1PropertyList.h">
+      <Filter>Package\Controls\ViewV2V1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV2V1\ViewV2V1EventList.h">
+      <Filter>Package\Controls\ViewV2V1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV2V2\PackageViewV2V2.h">
+      <Filter>Package\Controls\ViewV2V2</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV2V2\ViewV2V2PropertyList.h">
+      <Filter>Package\Controls\ViewV2V2</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV2V2\ViewV2V2EventList.h">
+      <Filter>Package\Controls\ViewV2V2</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV3\PackageViewV3.h">
+      <Filter>Package\Controls\ViewV3</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV3\ViewV3PropertyList.h">
+      <Filter>Package\Controls\ViewV3</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV3\ViewV3EventList.h">
+      <Filter>Package\Controls\ViewV3</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV3V1\PackageViewV3V1.h">
+      <Filter>Package\Controls\ViewV3V1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV3V1\ViewV3V1PropertyList.h">
+      <Filter>Package\Controls\ViewV3V1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\ViewV3V1\ViewV3V1EventList.h">
+      <Filter>Package\Controls\ViewV3V1</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IViewControl.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Package\PackageIde.cpp">
+      <Filter>Package</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\PackageIdeService.cpp">
+      <Filter>Package</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\EventEditor\EventEditor.cpp">
+      <Filter>Controls\EventEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\EventEditor\EventEditorService.cpp">
+      <Filter>Controls\EventEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\PropertyEditor\PropertyEditor.cpp">
+      <Filter>Controls\PropertyEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\EventEditor\DropDown.cpp">
+      <Filter>Controls\EventEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\EventEditor\DropDownListener.cpp">
+      <Filter>Controls\EventEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\EventEditor\Scroll.cpp">
+      <Filter>Controls\EventEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\EventEditor\ScrollListener.cpp">
+      <Filter>Controls\EventEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\PropertyEditor\Scroll.cpp">
+      <Filter>Controls\PropertyEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\PropertyEditor\ScrollListener.cpp">
+      <Filter>Controls\PropertyEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\PropertyEditor\PropertyEditorService.cpp">
+      <Filter>Controls\PropertyEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\PropertyEditor\PropertyHandlerListener.cpp">
+      <Filter>Controls\PropertyEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\FormView\FormView.cpp">
+      <Filter>Controls\FormView</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\FormView\FormViewService.cpp">
+      <Filter>Controls\FormView</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\FormEditor\FormEditor.cpp">
+      <Filter>Controls\FormEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\FormEditor\FormEditorService.cpp">
+      <Filter>Controls\FormEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\EventEditor\PackageEventEditor.cpp">
+      <Filter>Package\Controls\EventEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\EventEditor\EventEditorPropertyList.cpp">
+      <Filter>Package\Controls\EventEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\EventEditor\EventEditorEventList.cpp">
+      <Filter>Package\Controls\EventEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\PropertyEditor\PackagePropertyEditor.cpp">
+      <Filter>Package\Controls\PropertyEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\PropertyEditor\PropertyEditorPropertyList.cpp">
+      <Filter>Package\Controls\PropertyEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\PropertyEditor\PropertyEditorEventList.cpp">
+      <Filter>Package\Controls\PropertyEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\FormView\PackageFormView.cpp">
+      <Filter>Package\Controls\FormView</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\FormView\FormViewPropertyList.cpp">
+      <Filter>Package\Controls\FormView</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\FormView\FormViewEventList.cpp">
+      <Filter>Package\Controls\FormView</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\FormEditor\PackageFormEditor.cpp">
+      <Filter>Package\Controls\FormEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\FormEditor\FormEditorPropertyList.cpp">
+      <Filter>Package\Controls\FormEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\FormEditor\FormEditorEventList.cpp">
+      <Filter>Package\Controls\FormEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\HierarchyEditor\HierarchyEditor.cpp">
+      <Filter>Controls\HierarchyEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\HierarchyEditor\ListItemOwner.cpp">
+      <Filter>Controls\HierarchyEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\HierarchyEditor\HierarchyEditorService.cpp">
+      <Filter>Controls\HierarchyEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\HierarchyEditor\ListItemHierarchyEditor.cpp">
+      <Filter>Controls\HierarchyEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\HierarchyEditor\PackageHierarchyEditor.cpp">
+      <Filter>Package\Controls\HierarchyEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\HierarchyEditor\HierarchyEditorPropertyList.cpp">
+      <Filter>Package\Controls\HierarchyEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\HierarchyEditor\HierarchyEditorEventList.cpp">
+      <Filter>Package\Controls\HierarchyEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewH2\ViewH2.cpp">
+      <Filter>Controls\ViewH2</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewH2\ViewH2Service.cpp">
+      <Filter>Controls\ViewH2</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewV2\ViewV2.cpp">
+      <Filter>Controls\ViewV2</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewV2\ViewV2Service.cpp">
+      <Filter>Controls\ViewV2</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewH3\ViewH3.cpp">
+      <Filter>Controls\ViewH3</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewH3\ViewH3Service.cpp">
+      <Filter>Controls\ViewH3</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewV3\ViewV3.cpp">
+      <Filter>Controls\ViewV3</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewV3\ViewV3Service.cpp">
+      <Filter>Controls\ViewV3</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewV2V1\ViewV2V1.cpp">
+      <Filter>Controls\ViewV2V1</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewV2V1\ViewV2V1Service.cpp">
+      <Filter>Controls\ViewV2V1</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewV1V2\ViewV1V2.cpp">
+      <Filter>Controls\ViewV1V2</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewV1V2\ViewV1V2Service.cpp">
+      <Filter>Controls\ViewV1V2</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewH2H1\ViewH2H1.cpp">
+      <Filter>Controls\ViewH2H1</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewH2H1\ViewH2H1Service.cpp">
+      <Filter>Controls\ViewH2H1</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewH1H2\ViewH1H2.cpp">
+      <Filter>Controls\ViewH1H2</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewH1H2\ViewH1H2Service.cpp">
+      <Filter>Controls\ViewH1H2</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewCross\ViewCross.cpp">
+      <Filter>Controls\ViewCross</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewCross\ViewCrossService.cpp">
+      <Filter>Controls\ViewCross</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewV2V2\ViewV2V2.cpp">
+      <Filter>Controls\ViewV2V2</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewV2V2\ViewV2V2Service.cpp">
+      <Filter>Controls\ViewV2V2</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewH2H2\ViewH2H2.cpp">
+      <Filter>Controls\ViewH2H2</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewH2H2\ViewH2H2Service.cpp">
+      <Filter>Controls\ViewH2H2</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewV3V1\ViewV3V1.cpp">
+      <Filter>Controls\ViewV3V1</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewV3V1\ViewV3V1Service.cpp">
+      <Filter>Controls\ViewV3V1</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewV1V3\ViewV1V3.cpp">
+      <Filter>Controls\ViewV1V3</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewV1V3\ViewV1V3Service.cpp">
+      <Filter>Controls\ViewV1V3</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewH3H1\ViewH3H1.cpp">
+      <Filter>Controls\ViewH3H1</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewH3H1\ViewH3H1Service.cpp">
+      <Filter>Controls\ViewH3H1</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewH1H3\ViewH1H3.cpp">
+      <Filter>Controls\ViewH1H3</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewH1H3\ViewH1H3Service.cpp">
+      <Filter>Controls\ViewH1H3</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewV2BV1\ViewV2BV1.cpp">
+      <Filter>Controls\ViewV2BV1</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewV2BV1\ViewV2BV1Service.cpp">
+      <Filter>Controls\ViewV2BV1</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewV2TV1\ViewV2TV1.cpp">
+      <Filter>Controls\ViewV2TV1</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewV2TV1\ViewV2TV1Service.cpp">
+      <Filter>Controls\ViewV2TV1</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewV1V2T\ViewV1V2T.cpp">
+      <Filter>Controls\ViewV1V2T</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewV1V2T\ViewV1V2TService.cpp">
+      <Filter>Controls\ViewV1V2T</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewV1V2B\ViewV1V2B.cpp">
+      <Filter>Controls\ViewV1V2B</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewV1V2B\ViewV1V2BService.cpp">
+      <Filter>Controls\ViewV1V2B</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewH2LH1\ViewH2LH1.cpp">
+      <Filter>Controls\ViewH2LH1</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewH2LH1\ViewH2LH1Service.cpp">
+      <Filter>Controls\ViewH2LH1</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewH2RH1\ViewH2RH1.cpp">
+      <Filter>Controls\ViewH2RH1</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewH2RH1\ViwH2RH1Service.cpp">
+      <Filter>Controls\ViewH2RH1</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewH1H2L\ViewH1H2L.cpp">
+      <Filter>Controls\ViewH1H2L</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewH1H2L\ViewH1H2LService.cpp">
+      <Filter>Controls\ViewH1H2L</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewH1H2R\ViewH1H2R.cpp">
+      <Filter>Controls\ViewH1H2R</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\ViewH1H2R\ViewH1H2RService.cpp">
+      <Filter>Controls\ViewH1H2R</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewCross\PackageViewCross.cpp">
+      <Filter>Package\Controls\ViewCross</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewCross\ViewCrossPropertyList.cpp">
+      <Filter>Package\Controls\ViewCross</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewCross\ViewCrossEventList.cpp">
+      <Filter>Package\Controls\ViewCross</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH1H2\PackageViewH1H2.cpp">
+      <Filter>Package\Controls\ViewH1H2</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH1H2\ViewH1H2PropertyList.cpp">
+      <Filter>Package\Controls\ViewH1H2</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH1H2\ViewH1H2EventList.cpp">
+      <Filter>Package\Controls\ViewH1H2</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH1H2L\PackageViewH1H2L.cpp">
+      <Filter>Package\Controls\ViewH1H2L</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH1H2L\ViewH1H2LPropertyList.cpp">
+      <Filter>Package\Controls\ViewH1H2L</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH1H2L\ViewH1H2LEventList.cpp">
+      <Filter>Package\Controls\ViewH1H2L</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH1H2R\PackageViewH1H2R.cpp">
+      <Filter>Package\Controls\ViewH1H2R</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH1H2R\ViewH1H2RPropertyList.cpp">
+      <Filter>Package\Controls\ViewH1H2R</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH1H2R\ViewH1H2REventList.cpp">
+      <Filter>Package\Controls\ViewH1H2R</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH1H3\PackageViewH1H3.cpp">
+      <Filter>Package\Controls\ViewH1H3</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH1H3\ViewH1H3PropertyList.cpp">
+      <Filter>Package\Controls\ViewH1H3</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH1H3\ViewH1H3EventList.cpp">
+      <Filter>Package\Controls\ViewH1H3</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH2\PackageViewH2.cpp">
+      <Filter>Package\Controls\ViewH2</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH2\ViewH2PropertyList.cpp">
+      <Filter>Package\Controls\ViewH2</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH2\ViewH2EventList.cpp">
+      <Filter>Package\Controls\ViewH2</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH2H1\PackageViewH2H1.cpp">
+      <Filter>Package\Controls\ViewH2H1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH2H1\ViewH2H1PropertyList.cpp">
+      <Filter>Package\Controls\ViewH2H1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH2H1\ViewH2H1EventList.cpp">
+      <Filter>Package\Controls\ViewH2H1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH2H2\PackageViewH2H2.cpp">
+      <Filter>Package\Controls\ViewH2H2</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH2H2\ViewH2H2PropertyList.cpp">
+      <Filter>Package\Controls\ViewH2H2</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH2H2\ViewH2H2EventList.cpp">
+      <Filter>Package\Controls\ViewH2H2</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH2LH1\PackageViewH2LH1.cpp">
+      <Filter>Package\Controls\ViewH2LH1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH2LH1\ViewH2LH1PropertyList.cpp">
+      <Filter>Package\Controls\ViewH2LH1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH2LH1\ViewH2LH1EventList.cpp">
+      <Filter>Package\Controls\ViewH2LH1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH2RH1\PackageViewH2RH1.cpp">
+      <Filter>Package\Controls\ViewH2RH1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH2RH1\ViewH2RH1PropertyList.cpp">
+      <Filter>Package\Controls\ViewH2RH1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH2RH1\ViewH2RH1EventList.cpp">
+      <Filter>Package\Controls\ViewH2RH1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH3\PackageViewH3.cpp">
+      <Filter>Package\Controls\ViewH3</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH3\ViewH3PropertyList.cpp">
+      <Filter>Package\Controls\ViewH3</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH3\ViewH3EventList.cpp">
+      <Filter>Package\Controls\ViewH3</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH3H1\PackageViewH3H1.cpp">
+      <Filter>Package\Controls\ViewH3H1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH3H1\ViewH3H1PropertyList.cpp">
+      <Filter>Package\Controls\ViewH3H1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewH3H1\ViewH3H1EventList.cpp">
+      <Filter>Package\Controls\ViewH3H1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV1V2\PackageViewV1V2.cpp">
+      <Filter>Package\Controls\ViewV1V2</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV1V2\ViewV1V2PropertyList.cpp">
+      <Filter>Package\Controls\ViewV1V2</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV1V2\ViewV1V2EventList.cpp">
+      <Filter>Package\Controls\ViewV1V2</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV1V2B\PackageViewV1V2B.cpp">
+      <Filter>Package\Controls\ViewV1V2B</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV1V2B\ViewV1V2BPropertyList.cpp">
+      <Filter>Package\Controls\ViewV1V2B</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV1V2B\ViewV1V2BEventList.cpp">
+      <Filter>Package\Controls\ViewV1V2B</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV1V2T\PackageViewV1V2T.cpp">
+      <Filter>Package\Controls\ViewV1V2T</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV1V2T\ViewV1V2TPropertyList.cpp">
+      <Filter>Package\Controls\ViewV1V2T</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV1V2T\ViewV1V2TEventList.cpp">
+      <Filter>Package\Controls\ViewV1V2T</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV1V3\PackageViewV1V3.cpp">
+      <Filter>Package\Controls\ViewV1V3</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV1V3\ViewV1V3PropertyList.cpp">
+      <Filter>Package\Controls\ViewV1V3</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV1V3\ViewV1V3EventList.cpp">
+      <Filter>Package\Controls\ViewV1V3</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV2\PackageViewV2.cpp">
+      <Filter>Package\Controls\ViewV2</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV2\ViewV2PropertyList.cpp">
+      <Filter>Package\Controls\ViewV2</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV2\ViewV2EventList.cpp">
+      <Filter>Package\Controls\ViewV2</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV2BV1\PackageViewV2BV1.cpp">
+      <Filter>Package\Controls\ViewV2BV1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV2BV1\ViewV2BV1PropertyList.cpp">
+      <Filter>Package\Controls\ViewV2BV1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV2BV1\ViewV2BV1EventList.cpp">
+      <Filter>Package\Controls\ViewV2BV1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV2TV1\PackageViewV2TV1.cpp">
+      <Filter>Package\Controls\ViewV2TV1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV2TV1\ViewV2TV1PropertyList.cpp">
+      <Filter>Package\Controls\ViewV2TV1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV2TV1\ViewV2TV1EventList.cpp">
+      <Filter>Package\Controls\ViewV2TV1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV2V1\PackageViewV2V1.cpp">
+      <Filter>Package\Controls\ViewV2V1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV2V1\ViewV2V1PropertyList.cpp">
+      <Filter>Package\Controls\ViewV2V1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV2V1\ViewV2V1EventList.cpp">
+      <Filter>Package\Controls\ViewV2V1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV2V2\PackageViewV2V2.cpp">
+      <Filter>Package\Controls\ViewV2V2</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV2V2\ViewV2V2PropertyList.cpp">
+      <Filter>Package\Controls\ViewV2V2</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV2V2\ViewV2V2EventList.cpp">
+      <Filter>Package\Controls\ViewV2V2</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV3\PackageViewV3.cpp">
+      <Filter>Package\Controls\ViewV3</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV3\ViewV3PropertyList.cpp">
+      <Filter>Package\Controls\ViewV3</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV3\ViewV3EventList.cpp">
+      <Filter>Package\Controls\ViewV3</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV3V1\PackageViewV3V1.cpp">
+      <Filter>Package\Controls\ViewV3V1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV3V1\ViewV3V1PropertyList.cpp">
+      <Filter>Package\Controls\ViewV3V1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\ViewV3V1\ViewV3V1EventList.cpp">
+      <Filter>Package\Controls\ViewV3V1</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Controls">
+      <UniqueIdentifier>{9685a6dd-8df2-479a-b900-5eee81d9bc42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package">
+      <UniqueIdentifier>{31405bb7-4018-4b8d-a038-869c4791b6ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\EventEditor">
+      <UniqueIdentifier>{2f92e9b2-7926-49ab-8364-8ae71acf840a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\PropertyEditor">
+      <UniqueIdentifier>{8cda0b70-abda-4fb5-8be5-6a9c74148b0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\FormView">
+      <UniqueIdentifier>{2cfb7733-a6be-48f4-887e-50f57550117e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\FormEditor">
+      <UniqueIdentifier>{e7182295-d6b0-4d0e-b6ea-2cfc181072ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls">
+      <UniqueIdentifier>{46d78763-6340-46a7-9655-bc1b08dda27d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\EventEditor">
+      <UniqueIdentifier>{932c5915-0108-4c22-b7c0-e88829e391a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\PropertyEditor">
+      <UniqueIdentifier>{92a5ae04-ef87-485d-9a12-02adc4ed061f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\FormView">
+      <UniqueIdentifier>{d27682f2-e643-4d1b-af6e-e40ecabbcfeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\FormEditor">
+      <UniqueIdentifier>{4dc06e3d-70bd-47bb-a50d-d5e73b84155d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\HierarchyEditor">
+      <UniqueIdentifier>{22eb7e43-aaf0-4f01-97f2-fb994c3bf8c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\HierarchyEditor">
+      <UniqueIdentifier>{1c57e6f8-0af2-46cd-8437-169c05a87a25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewH2">
+      <UniqueIdentifier>{46555f85-9332-499a-867d-94bfc86adbca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewV2">
+      <UniqueIdentifier>{24654e6c-93f2-467c-8d2e-9449daf4724d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewH3">
+      <UniqueIdentifier>{5364ea26-6043-41c1-93fb-bd29e342af82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewV3">
+      <UniqueIdentifier>{8b0f048e-52c3-442d-9ed7-e36d15c3f207}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewV2V1">
+      <UniqueIdentifier>{fa57af6c-9f0c-49bd-9177-f620a1b1b873}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewV1V2">
+      <UniqueIdentifier>{15d28ca4-0dce-4ae7-8702-d376e62f4072}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewH2H1">
+      <UniqueIdentifier>{43cfa836-55bb-4000-b183-8798e4cd4b0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewH1H2">
+      <UniqueIdentifier>{a325abdf-11e9-4a4a-bc7c-4fe0ec46e83e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewCross">
+      <UniqueIdentifier>{d8558723-7296-4faf-b4d5-707efa6cdc28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewV2V2">
+      <UniqueIdentifier>{68ef7553-5bf9-45fb-80ed-e61cf3a43c40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewH2H2">
+      <UniqueIdentifier>{b51a7a34-39ab-45e3-947d-5e05352b7bc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewV3V1">
+      <UniqueIdentifier>{6b30cdad-689a-4c2b-b516-10cfc3f9c0a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewV1V3">
+      <UniqueIdentifier>{4df23570-450d-4241-ba37-682029f695e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewH3H1">
+      <UniqueIdentifier>{ba5fdbe0-51d6-414e-8b55-694734aeb55d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewH1H3">
+      <UniqueIdentifier>{27d6284a-e0b7-4719-9191-689f8e5ed779}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewV2BV1">
+      <UniqueIdentifier>{7affbf97-6711-4da9-a88c-b1d0686669ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewV2TV1">
+      <UniqueIdentifier>{fb8ac937-8c76-4bc8-b5cc-16cbf9ae09df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewV1V2T">
+      <UniqueIdentifier>{99fb0b04-f88f-481d-abf8-b7ed376e01b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewV1V2B">
+      <UniqueIdentifier>{2ae31204-6a46-427c-86fb-17b6d5b1267e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewH2LH1">
+      <UniqueIdentifier>{872dd427-a028-4675-a794-45fa22578cc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewH2RH1">
+      <UniqueIdentifier>{1460c5bd-167e-450e-b59f-17edaeebc927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewH1H2L">
+      <UniqueIdentifier>{7961ec9f-d0ab-41c0-a082-c107f967ad21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ViewH1H2R">
+      <UniqueIdentifier>{28a69672-7c1f-4d8c-8691-5fcfc88c0cd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewCross">
+      <UniqueIdentifier>{879319d5-cf2b-4f32-9eee-6d807282c924}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewH1H2">
+      <UniqueIdentifier>{44387e06-6eea-40c8-9c79-8193f48b8fab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewH1H2L">
+      <UniqueIdentifier>{988ae83d-f078-4342-9902-19b7edbde9f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewH1H3">
+      <UniqueIdentifier>{8d5409f9-3c70-4d68-a887-fa4190665bc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewH2">
+      <UniqueIdentifier>{15276f92-152f-4ddb-b169-db9608960d74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewH2H1">
+      <UniqueIdentifier>{8b590bbd-4350-4ebf-9102-d1bae1cc6ef4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewH2H2">
+      <UniqueIdentifier>{188dbd2a-0363-42e7-96d7-778d980e8335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewH2LH1">
+      <UniqueIdentifier>{11860e6c-30e0-4fd3-85e8-f675388132e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewH2RH1">
+      <UniqueIdentifier>{507d0e65-cbc5-4b22-b403-48a5642f0d4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewH3">
+      <UniqueIdentifier>{53612ebe-30d2-4742-b8b1-37b5eb81725b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewH3H1">
+      <UniqueIdentifier>{45099062-d4e9-479c-bb8e-03d86d8c2fc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewV1V2">
+      <UniqueIdentifier>{416df4b4-a918-4d0b-a8ea-3010018ee38e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewV1V2B">
+      <UniqueIdentifier>{5cddf98c-f32c-4b9a-8701-aef8d1605715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewV1V2T">
+      <UniqueIdentifier>{66220195-99f2-4186-8eda-bf86851f88c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewV1V3">
+      <UniqueIdentifier>{4f4963cb-6ec9-4ee1-b0d7-915667cb1503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewV2">
+      <UniqueIdentifier>{3debaa6f-1dd9-47dc-bfdf-7e00bd1dd46f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewV2BV1">
+      <UniqueIdentifier>{aeedffab-0d3f-4216-9dc1-4b1274138064}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewV2TV1">
+      <UniqueIdentifier>{594d89c7-6258-4fd3-99bb-95a83e8768d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewV2V1">
+      <UniqueIdentifier>{a20600fa-ea4b-4d89-a00c-336cfd12e929}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewV2V2">
+      <UniqueIdentifier>{806dade4-3bf8-4345-a250-68bc2627fa8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewV3">
+      <UniqueIdentifier>{38edd010-16a3-4203-be04-ca96c819e4b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewV3V1">
+      <UniqueIdentifier>{292a215c-a8fd-47ee-a44a-00318b0093bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ViewH1H2R">
+      <UniqueIdentifier>{dbbc188c-ffcf-49ad-b941-e4a8168c746a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{2ec8c522-c493-45a4-8d01-ec8f6b40d3e6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

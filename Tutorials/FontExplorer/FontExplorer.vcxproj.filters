@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Forms\Main\FormMain.cpp">
+      <Filter>Forms\Main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Forms">
+      <UniqueIdentifier>{c2325776-3f66-49c5-b404-d7ad2b6e6429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Forms\Main">
+      <UniqueIdentifier>{6b67dcd6-72d2-4e81-9788-3af063c932f4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms\Main\FormMain.nfr">
+      <Filter>Forms\Main</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Forms\Main\FormMain.h">
+      <Filter>Forms\Main</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

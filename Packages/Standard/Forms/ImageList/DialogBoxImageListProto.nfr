@@ -1,0 +1,270 @@
+{
+    "Layout": "Windows Form",
+    "Version": "2.0",
+    "Settings": {
+        "GridX": true,
+        "GridY": true,
+        "GridRotate": true,
+        "GridXStep": 8,
+        "GridYStep": 8,
+        "GridRotateStep": 0.0174533,
+        "RotateShift": 2,
+        "GridPointSize": 1,
+        "GridPointColor": [
+            113,
+            21,
+            36,
+            255
+        ],
+        "Namespace": "standard",
+        "Prefix": "m_p",
+        "SelectionPointSize": 4,
+        "SelectionBorderWidth": 1,
+        "SelectionBorderColor": [
+            0,
+            0,
+            255,
+            150
+        ],
+        "SelectionBackgroundColor": [
+            0,
+            0,
+            255,
+            50
+        ],
+        "OverwriteIncludes": [
+            {
+                "Search": "Standard",
+                "Replace": "../.."
+            }
+        ],
+        "OverwriteNamespaces": [
+            {
+                "Search": "standard",
+                "Replace": ""
+            }
+        ],
+        "WidgetsSection": "protected",
+        "GenerateGetters": false,
+        "HighlightBorderWidth": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "HighlightBorderColor": [
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ]
+        ],
+        "ExportAs": 1,
+        "DialogBoxPackage": "Standard",
+        "DialogBoxClass": "DialogBoxEx"
+    },
+    "Form": {
+        "Name": "DialogBoxImageListProto",
+        "Caption": "Image List",
+        "ClientSize": [
+            372,
+            150
+        ],
+        "State": "WindowState::Hidden",
+        "WindowPosition": "WindowPosition::MainFormCenter"
+    },
+    "Components": [
+        {
+            "Package": "Standard",
+            "ClassName": "ImageList",
+            "Name": "ImageList",
+            "Position": [
+                48,
+                40
+            ]
+        }
+    ],
+    "Controls": [
+        {
+            "Package": "Standard",
+            "ClassName": "Container",
+            "Name": "ContainerButtons",
+            "Transform": {
+                "Tx": 0,
+                "Ty": 111,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                372,
+                39
+            ],
+            "Align": "Align::Bottom",
+            "UseMask": false,
+            "Controls": [
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonAdd",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 8,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        68,
+                        23
+                    ],
+                    "TabOrder": 2,
+                    "Caption": "Add...",
+                    "OnClick": "ButtonAdd_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonDelete",
+                    "Transform": {
+                        "Tx": 80,
+                        "Ty": 8,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        68,
+                        23
+                    ],
+                    "TabOrder": 3,
+                    "Caption": "Delete",
+                    "OnClick": "ButtonDelete_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonClear",
+                    "Transform": {
+                        "Tx": 152,
+                        "Ty": 8,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        68,
+                        23
+                    ],
+                    "TabOrder": 4,
+                    "Caption": "Clear",
+                    "OnClick": "ButtonClear_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonOk",
+                    "Transform": {
+                        "Tx": 224,
+                        "Ty": 8,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        68,
+                        23
+                    ],
+                    "TabOrder": 5,
+                    "Caption": "OK",
+                    "OnClick": "ButtonOk_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonCancel",
+                    "Transform": {
+                        "Tx": 296,
+                        "Ty": 8,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        68,
+                        23
+                    ],
+                    "TabOrder": 6,
+                    "Caption": "Cancel",
+                    "OnClick": "ButtonCancel_OnClick"
+                }
+            ]
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "ImageListEditor",
+            "Name": "ImageListEditor",
+            "Size": [
+                372,
+                111
+            ],
+            "Align": "Align::Client",
+            "ImageList": "ImageList"
+        }
+    ]
+}

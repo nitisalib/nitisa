@@ -1,0 +1,1065 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Controls\IView.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\View\View.h">
+      <Filter>Controls\View</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\View\ViewService.h">
+      <Filter>Controls\View</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\I3DControl.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IMaterialControl.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ISolidMaterial.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\SolidMaterial\SolidMaterial.h">
+      <Filter>Controls\SolidMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\SolidMaterial\SolidMaterialService.h">
+      <Filter>Controls\SolidMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Shaders\Solid.h">
+      <Filter>Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\GouraudMaterial\GouraudMaterial.h">
+      <Filter>Controls\GouraudMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\GouraudMaterial\GouraudMaterialService.h">
+      <Filter>Controls\GouraudMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IGouraudMaterial.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Shaders\Gouraud.h">
+      <Filter>Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Shaders\Phong.h">
+      <Filter>Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IPhongMaterial.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\PhongMaterial\PhongMaterial.h">
+      <Filter>Controls\PhongMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\PhongMaterial\PhongMaterialService.h">
+      <Filter>Controls\PhongMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IPyramid.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\Pyramid\Pyramid.h">
+      <Filter>Controls\Pyramid</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ICylinder.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\Cylinder\Cylinder.h">
+      <Filter>Controls\Cylinder</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\3DControl.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\3DControlService.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ICone.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\Cone\Cone.h">
+      <Filter>Controls\Cone</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ITube.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\Tube\Tube.h">
+      <Filter>Controls\Tube</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IPlane.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\Plane\Plane.h">
+      <Filter>Controls\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ISphere.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\Sphere\Sphere.h">
+      <Filter>Controls\Sphere</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IBox.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\Box\Box.h">
+      <Filter>Controls\Box</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ITorus.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\Torus\Torus.h">
+      <Filter>Controls\Torus</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IHeightmap.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\Heightmap\Heightmap.h">
+      <Filter>Controls\Heightmap</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IJsonMesh.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\JsonMesh\JsonMesh.h">
+      <Filter>Controls\JsonMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IMesh.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\Mesh\Mesh.h">
+      <Filter>Controls\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\PackageOpenGL.h">
+      <Filter>Package</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\PackageOpenGLService.h">
+      <Filter>Package</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Box\PackageBox.h">
+      <Filter>Package\Controls\Box</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Box\BoxPropertyList.h">
+      <Filter>Package\Controls\Box</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Box\BoxEventList.h">
+      <Filter>Package\Controls\Box</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Cone\PackageCone.h">
+      <Filter>Package\Controls\Cone</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Cone\ConePropertyList.h">
+      <Filter>Package\Controls\Cone</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Cone\ConeEventList.h">
+      <Filter>Package\Controls\Cone</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Cylinder\PackageCylinder.h">
+      <Filter>Package\Controls\Cylinder</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Cylinder\CylinderPropertyList.h">
+      <Filter>Package\Controls\Cylinder</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Cylinder\CylinderEventList.h">
+      <Filter>Package\Controls\Cylinder</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\GouraudMaterial\PackageGouraudMaterial.h">
+      <Filter>Package\Controls\GouraudMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\GouraudMaterial\GouraudMaterialPropertyList.h">
+      <Filter>Package\Controls\GouraudMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\GouraudMaterial\GouraudMaterialEventList.h">
+      <Filter>Package\Controls\GouraudMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Heightmap\PackageHeightmap.h">
+      <Filter>Package\Controls\Heightmap</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Heightmap\HeightmapPropertyList.h">
+      <Filter>Package\Controls\Heightmap</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Heightmap\HeightmapEventList.h">
+      <Filter>Package\Controls\Heightmap</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\JsonMesh\PackageJsonMesh.h">
+      <Filter>Package\Controls\JsonMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\JsonMesh\JsonMeshPropertyList.h">
+      <Filter>Package\Controls\JsonMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\JsonMesh\JsonMeshEventList.h">
+      <Filter>Package\Controls\JsonMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Mesh\PackageMesh.h">
+      <Filter>Package\Controls\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Mesh\MeshPropertyList.h">
+      <Filter>Package\Controls\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Mesh\MeshEventList.h">
+      <Filter>Package\Controls\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\PhongMaterial\PackagePhongMaterial.h">
+      <Filter>Package\Controls\PhongMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\PhongMaterial\PhongMaterialPropertyList.h">
+      <Filter>Package\Controls\PhongMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\PhongMaterial\PhongMaterialEventList.h">
+      <Filter>Package\Controls\PhongMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Plane\PackagePlane.h">
+      <Filter>Package\Controls\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Plane\PlanePropertyList.h">
+      <Filter>Package\Controls\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Plane\PlaneEventList.h">
+      <Filter>Package\Controls\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Pyramid\PackagePyramid.h">
+      <Filter>Package\Controls\Pyramid</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Pyramid\PyramidPropertyList.h">
+      <Filter>Package\Controls\Pyramid</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Pyramid\PyramidEventList.h">
+      <Filter>Package\Controls\Pyramid</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\SolidMaterial\PackageSolidMaterial.h">
+      <Filter>Package\Controls\SolidMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\SolidMaterial\SolidMaterialPropertyList.h">
+      <Filter>Package\Controls\SolidMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\SolidMaterial\SolidMaterialEventList.h">
+      <Filter>Package\Controls\SolidMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Sphere\PackageSphere.h">
+      <Filter>Package\Controls\Sphere</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Sphere\SpherePropertyList.h">
+      <Filter>Package\Controls\Sphere</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Sphere\SphereEventList.h">
+      <Filter>Package\Controls\Sphere</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Torus\PackageTorus.h">
+      <Filter>Package\Controls\Torus</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Torus\TorusPropertyList.h">
+      <Filter>Package\Controls\Torus</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Torus\TorusEventList.h">
+      <Filter>Package\Controls\Torus</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Tube\PackageTube.h">
+      <Filter>Package\Controls\Tube</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Tube\TubePropertyList.h">
+      <Filter>Package\Controls\Tube</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Tube\TubeEventList.h">
+      <Filter>Package\Controls\Tube</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\View\PackageView.h">
+      <Filter>Package\Controls\View</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\View\ViewPropertyList.h">
+      <Filter>Package\Controls\View</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\View\ViewEventList.h">
+      <Filter>Package\Controls\View</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\PropertyHandlers\ControlMaterial\PropertyHandlerControlMaterial.h">
+      <Filter>Package\PropertyHandlers\ControlMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\Consts.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\3DControlEventList.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\3DControlPropertyList.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\MaterialControlEventList.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\MaterialControlPropertyList.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\Package3DControl.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\PackageMaterialControl.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyControlMaterial.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ICircle.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\Circle\Circle.h">
+      <Filter>Controls\Circle</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IDisk.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\Disk\Disk.h">
+      <Filter>Controls\Disk</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Circle\PackageCircle.h">
+      <Filter>Package\Controls\Circle</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Circle\CirclePropertyList.h">
+      <Filter>Package\Controls\Circle</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Circle\CircleEventList.h">
+      <Filter>Package\Controls\Circle</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Disk\PackageDisk.h">
+      <Filter>Package\Controls\Disk</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Disk\DiskPropertyList.h">
+      <Filter>Package\Controls\Disk</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Disk\DiskEventList.h">
+      <Filter>Package\Controls\Disk</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IBlinnPhongMaterial.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\BlinnPhongMaterial\BlinnPhongMaterial.h">
+      <Filter>Controls\BlinnPhongMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\BlinnPhongMaterial\BlinnPhongMaterialService.h">
+      <Filter>Controls\BlinnPhongMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Shaders\BlinnPhong.h">
+      <Filter>Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\BlinnPhongMaterial\PackageBlinnPhongMaterial.h">
+      <Filter>Package\Controls\BlinnPhongMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\BlinnPhongMaterial\BlinnPhongMaterialPropertyList.h">
+      <Filter>Package\Controls\BlinnPhongMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\BlinnPhongMaterial\BlinnPhongMaterialEventList.h">
+      <Filter>Package\Controls\BlinnPhongMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Shaders\Checker.h">
+      <Filter>Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\CheckerMaterial\CheckerMaterial.h">
+      <Filter>Controls\CheckerMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ICheckerMaterial.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\CheckerMaterial\CheckerMaterialService.h">
+      <Filter>Controls\CheckerMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\CheckerMaterial\PackageCheckerMaterial.h">
+      <Filter>Package\Controls\CheckerMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\CheckerMaterial\CheckerMaterialPropertyList.h">
+      <Filter>Package\Controls\CheckerMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\CheckerMaterial\CheckerMaterialEventList.h">
+      <Filter>Package\Controls\CheckerMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Shaders\Rim.h">
+      <Filter>Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\IRimMaterial.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\RimMaterial\RimMaterial.h">
+      <Filter>Controls\RimMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\RimMaterial\RimMaterialService.h">
+      <Filter>Controls\RimMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\RimMaterial\PackageRimMaterial.h">
+      <Filter>Package\Controls\RimMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\RimMaterial\RimMaterialPropertyList.h">
+      <Filter>Package\Controls\RimMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\RimMaterial\RimMaterialEventList.h">
+      <Filter>Package\Controls\RimMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\I3DObject.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\3DObject\3DObject.h">
+      <Filter>Controls\3DObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\3DObject\Package3DObject.h">
+      <Filter>Package\Controls\3DObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\3DObject\3DObjectPropertyList.h">
+      <Filter>Package\Controls\3DObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\3DObject\3DObjectEventList.h">
+      <Filter>Package\Controls\3DObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\ICustomMaterial.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\CustomMaterial\CustomMaterial.h">
+      <Filter>Controls\CustomMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\CustomMaterial\CustomMaterialService.h">
+      <Filter>Controls\CustomMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\CustomMaterial\PackageCustomMaterial.h">
+      <Filter>Package\Controls\CustomMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\CustomMaterial\CustomMaterialPropertyList.h">
+      <Filter>Package\Controls\CustomMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\CustomMaterial\CustomMaterialEventList.h">
+      <Filter>Package\Controls\CustomMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL.h" />
+    <ClInclude Include="Primitives\3D\Box\PrimitiveBox.h">
+      <Filter>Primitives\3D\Box</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Consts.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\2D\Circle\PrimitiveCircle.h">
+      <Filter>Primitives\2D\Circle</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\3D\Cone\PrimitiveCone.h">
+      <Filter>Primitives\3D\Cone</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\3D\Cylinder\PrimitiveCylinder.h">
+      <Filter>Primitives\3D\Cylinder</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\2D\Disk\PrimitiveDisk.h">
+      <Filter>Primitives\2D\Disk</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\2D\Plane\PrimitivePlane.h">
+      <Filter>Primitives\2D\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\3D\Pyramid\PrimitivePyramid.h">
+      <Filter>Primitives\3D\Pyramid</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\3D\Sphere\PrimitiveSphere.h">
+      <Filter>Primitives\3D\Sphere</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\3D\Torus\PrimitiveTorus.h">
+      <Filter>Primitives\3D\Torus</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives\3D\Tube\PrimitiveTube.h">
+      <Filter>Primitives\3D\Tube</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\I3DControlService.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyControlMaterial.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyControlMaterialState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyControlMaterialState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Controls\View\View.cpp">
+      <Filter>Controls\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\View\ViewService.cpp">
+      <Filter>Controls\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\View\Axes.cpp">
+      <Filter>Controls\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\View\Grid.cpp">
+      <Filter>Controls\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\SolidMaterial\SolidMaterial.cpp">
+      <Filter>Controls\SolidMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\SolidMaterial\SolidMaterialService.cpp">
+      <Filter>Controls\SolidMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Shaders\Solid.cpp">
+      <Filter>Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\GouraudMaterial\GouraudMaterial.cpp">
+      <Filter>Controls\GouraudMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\GouraudMaterial\GouraudMaterialService.cpp">
+      <Filter>Controls\GouraudMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Shaders\Gouraud.cpp">
+      <Filter>Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Shaders\Phong.cpp">
+      <Filter>Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\PhongMaterial\PhongMaterial.cpp">
+      <Filter>Controls\PhongMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\PhongMaterial\PhongMaterialService.cpp">
+      <Filter>Controls\PhongMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\Pyramid\Pyramid.cpp">
+      <Filter>Controls\Pyramid</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\Cylinder\Cylinder.cpp">
+      <Filter>Controls\Cylinder</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\3DControl.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\3DControlService.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\Cone\Cone.cpp">
+      <Filter>Controls\Cone</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\Tube\Tube.cpp">
+      <Filter>Controls\Tube</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\Plane\Plane.cpp">
+      <Filter>Controls\Plane</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\Sphere\Sphere.cpp">
+      <Filter>Controls\Sphere</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\Box\Box.cpp">
+      <Filter>Controls\Box</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\Torus\Torus.cpp">
+      <Filter>Controls\Torus</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\Heightmap\Heightmap.cpp">
+      <Filter>Controls\Heightmap</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\JsonMesh\JsonMesh.cpp">
+      <Filter>Controls\JsonMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\Mesh\Mesh.cpp">
+      <Filter>Controls\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\PackageOpenGL.cpp">
+      <Filter>Package</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\PackageOpenGLService.cpp">
+      <Filter>Package</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Box\PackageBox.cpp">
+      <Filter>Package\Controls\Box</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Box\BoxPropertyList.cpp">
+      <Filter>Package\Controls\Box</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Box\BoxEventList.cpp">
+      <Filter>Package\Controls\Box</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Cone\PackageCone.cpp">
+      <Filter>Package\Controls\Cone</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Cone\ConePropertyList.cpp">
+      <Filter>Package\Controls\Cone</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Cone\ConeEventList.cpp">
+      <Filter>Package\Controls\Cone</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Cylinder\PackageCylinder.cpp">
+      <Filter>Package\Controls\Cylinder</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Cylinder\CylinderPropertyList.cpp">
+      <Filter>Package\Controls\Cylinder</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Cylinder\CylinderEventList.cpp">
+      <Filter>Package\Controls\Cylinder</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\GouraudMaterial\PackageGouraudMaterial.cpp">
+      <Filter>Package\Controls\GouraudMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\GouraudMaterial\GouraudMaterialPropertyList.cpp">
+      <Filter>Package\Controls\GouraudMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\GouraudMaterial\GouraudMaterialEventList.cpp">
+      <Filter>Package\Controls\GouraudMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Heightmap\PackageHeightmap.cpp">
+      <Filter>Package\Controls\Heightmap</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Heightmap\HeightmapPropertyList.cpp">
+      <Filter>Package\Controls\Heightmap</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Heightmap\HeightmapEventList.cpp">
+      <Filter>Package\Controls\Heightmap</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\JsonMesh\PackageJsonMesh.cpp">
+      <Filter>Package\Controls\JsonMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\JsonMesh\JsonMeshPropertyList.cpp">
+      <Filter>Package\Controls\JsonMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\JsonMesh\JsonMeshEventList.cpp">
+      <Filter>Package\Controls\JsonMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Mesh\PackageMesh.cpp">
+      <Filter>Package\Controls\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Mesh\MeshPropertyList.cpp">
+      <Filter>Package\Controls\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Mesh\MeshEventList.cpp">
+      <Filter>Package\Controls\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\PhongMaterial\PackagePhongMaterial.cpp">
+      <Filter>Package\Controls\PhongMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\PhongMaterial\PhongMaterialPropertyList.cpp">
+      <Filter>Package\Controls\PhongMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\PhongMaterial\PhongMaterialEventList.cpp">
+      <Filter>Package\Controls\PhongMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Plane\PackagePlane.cpp">
+      <Filter>Package\Controls\Plane</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Plane\PlanePropertyList.cpp">
+      <Filter>Package\Controls\Plane</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Plane\PlaneEventList.cpp">
+      <Filter>Package\Controls\Plane</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Pyramid\PackagePyramid.cpp">
+      <Filter>Package\Controls\Pyramid</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Pyramid\PyramidPropertyList.cpp">
+      <Filter>Package\Controls\Pyramid</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Pyramid\PyramidEventList.cpp">
+      <Filter>Package\Controls\Pyramid</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\SolidMaterial\PackageSolidMaterial.cpp">
+      <Filter>Package\Controls\SolidMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\SolidMaterial\SolidMaterialPropertyList.cpp">
+      <Filter>Package\Controls\SolidMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\SolidMaterial\SolidMaterialEventList.cpp">
+      <Filter>Package\Controls\SolidMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Sphere\PackageSphere.cpp">
+      <Filter>Package\Controls\Sphere</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Sphere\SpherePropertyList.cpp">
+      <Filter>Package\Controls\Sphere</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Sphere\SphereEventList.cpp">
+      <Filter>Package\Controls\Sphere</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Torus\PackageTorus.cpp">
+      <Filter>Package\Controls\Torus</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Torus\TorusPropertyList.cpp">
+      <Filter>Package\Controls\Torus</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Torus\TorusEventList.cpp">
+      <Filter>Package\Controls\Torus</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Tube\PackageTube.cpp">
+      <Filter>Package\Controls\Tube</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Tube\TubePropertyList.cpp">
+      <Filter>Package\Controls\Tube</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Tube\TubeEventList.cpp">
+      <Filter>Package\Controls\Tube</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\View\PackageView.cpp">
+      <Filter>Package\Controls\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\View\ViewPropertyList.cpp">
+      <Filter>Package\Controls\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\View\ViewEventList.cpp">
+      <Filter>Package\Controls\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\PropertyHandlers\ControlMaterial\PropertyHandlerControlMaterial.cpp">
+      <Filter>Package\PropertyHandlers\ControlMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\Consts.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\3DControlEventList.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\3DControlPropertyList.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\MaterialControlEventList.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\MaterialControlPropertyList.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\Package3DControl.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\PackageMaterialControl.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyControlMaterial.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\Circle\Circle.cpp">
+      <Filter>Controls\Circle</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\Disk\Disk.cpp">
+      <Filter>Controls\Disk</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Circle\PackageCircle.cpp">
+      <Filter>Package\Controls\Circle</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Circle\CirclePropertyList.cpp">
+      <Filter>Package\Controls\Circle</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Circle\CircleEventList.cpp">
+      <Filter>Package\Controls\Circle</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Disk\PackageDisk.cpp">
+      <Filter>Package\Controls\Disk</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Disk\DiskPropertyList.cpp">
+      <Filter>Package\Controls\Disk</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Disk\DiskEventList.cpp">
+      <Filter>Package\Controls\Disk</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\BlinnPhongMaterial\BlinnPhongMaterial.cpp">
+      <Filter>Controls\BlinnPhongMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\BlinnPhongMaterial\BlinnPhongMaterialService.cpp">
+      <Filter>Controls\BlinnPhongMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Shaders\BlinnPhong.cpp">
+      <Filter>Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\BlinnPhongMaterial\PackageBlinnPhongMaterial.cpp">
+      <Filter>Package\Controls\BlinnPhongMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\BlinnPhongMaterial\BlinnPhongMaterialPropertyList.cpp">
+      <Filter>Package\Controls\BlinnPhongMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\BlinnPhongMaterial\BlinnPhongMaterialEventList.cpp">
+      <Filter>Package\Controls\BlinnPhongMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Shaders\Checker.cpp">
+      <Filter>Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\CheckerMaterial\CheckerMaterial.cpp">
+      <Filter>Controls\CheckerMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\CheckerMaterial\CheckerMaterialService.cpp">
+      <Filter>Controls\CheckerMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\CheckerMaterial\PackageCheckerMaterial.cpp">
+      <Filter>Package\Controls\CheckerMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\CheckerMaterial\CheckerMaterialPropertyList.cpp">
+      <Filter>Package\Controls\CheckerMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\CheckerMaterial\CheckerMaterialEventList.cpp">
+      <Filter>Package\Controls\CheckerMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Shaders\Rim.cpp">
+      <Filter>Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\RimMaterial\RimMaterial.cpp">
+      <Filter>Controls\RimMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\RimMaterial\RimMaterialService.cpp">
+      <Filter>Controls\RimMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\RimMaterial\PackageRimMaterial.cpp">
+      <Filter>Package\Controls\RimMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\RimMaterial\RimMaterialPropertyList.cpp">
+      <Filter>Package\Controls\RimMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\RimMaterial\RimMaterialEventList.cpp">
+      <Filter>Package\Controls\RimMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\3DObject\3DObject.cpp">
+      <Filter>Controls\3DObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\3DObject\Package3DObject.cpp">
+      <Filter>Package\Controls\3DObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\3DObject\3DObjectPropertyList.cpp">
+      <Filter>Package\Controls\3DObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\3DObject\3DObjectEventList.cpp">
+      <Filter>Package\Controls\3DObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\CustomMaterial\CustomMaterial.cpp">
+      <Filter>Controls\CustomMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\CustomMaterial\CustomMaterialService.cpp">
+      <Filter>Controls\CustomMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\CustomMaterial\PackageCustomMaterial.cpp">
+      <Filter>Package\Controls\CustomMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\CustomMaterial\CustomMaterialPropertyList.cpp">
+      <Filter>Package\Controls\CustomMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\CustomMaterial\CustomMaterialEventList.cpp">
+      <Filter>Package\Controls\CustomMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives\3D\Box\PrimitiveBox.cpp">
+      <Filter>Primitives\3D\Box</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Consts.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives\2D\Circle\PrimitiveCircle.cpp">
+      <Filter>Primitives\2D\Circle</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives\3D\Cone\PrimitiveCone.cpp">
+      <Filter>Primitives\3D\Cone</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives\3D\Cylinder\PrimitiveCylinder.cpp">
+      <Filter>Primitives\3D\Cylinder</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives\2D\Disk\PrimitiveDisk.cpp">
+      <Filter>Primitives\2D\Disk</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives\2D\Plane\PrimitivePlane.cpp">
+      <Filter>Primitives\2D\Plane</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives\3D\Pyramid\PrimitivePyramid.cpp">
+      <Filter>Primitives\3D\Pyramid</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives\3D\Sphere\PrimitiveSphere.cpp">
+      <Filter>Primitives\3D\Sphere</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives\3D\Torus\PrimitiveTorus.cpp">
+      <Filter>Primitives\3D\Torus</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives\3D\Tube\PrimitiveTube.cpp">
+      <Filter>Primitives\3D\Tube</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyControlMaterialState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Controls">
+      <UniqueIdentifier>{eb822822-febe-4548-9a2a-660b50640f72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\View">
+      <UniqueIdentifier>{e6bf64db-0dc5-4852-9ddd-a3c176540904}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{007dd82c-4063-4d2f-9945-6831b5dabc3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{c8574496-3b8a-41f0-946c-066f8fa4d2d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\SolidMaterial">
+      <UniqueIdentifier>{76701a44-0246-458f-8c83-6234c999051e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{f1283a80-3551-489f-a244-ea56c3d63611}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\GouraudMaterial">
+      <UniqueIdentifier>{442e8780-c498-401c-8d36-9ead5a6cecd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\PhongMaterial">
+      <UniqueIdentifier>{f5f97290-c568-4429-a2fc-2858a9afdfe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\Pyramid">
+      <UniqueIdentifier>{07405f72-85de-4077-964b-13043866f3fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\Cylinder">
+      <UniqueIdentifier>{dd4f832e-c16c-4f2a-b638-b9c28092b074}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\Cone">
+      <UniqueIdentifier>{15c2b9dc-694a-4d61-9295-3232aaeef8b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\Tube">
+      <UniqueIdentifier>{1d324cb2-dcd2-4093-bd85-f5205c680cbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\Plane">
+      <UniqueIdentifier>{36be8205-df7c-4738-8374-f2471f6bddc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\Sphere">
+      <UniqueIdentifier>{3f2945e8-dd7f-4cc8-bf39-45635636f4aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\Box">
+      <UniqueIdentifier>{7f06aaec-5d6c-4c2a-b3cb-501f851286d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\Torus">
+      <UniqueIdentifier>{e9a4c8f9-09b0-4b78-b67e-fdeafc49c091}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\Heightmap">
+      <UniqueIdentifier>{d21b3316-6567-4b18-a86f-0c40c5eaf057}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\JsonMesh">
+      <UniqueIdentifier>{5a330e26-6443-444e-87c8-e639826cb26f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\Mesh">
+      <UniqueIdentifier>{1ce32d9d-a7e5-43e5-a666-1e4752441dcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package">
+      <UniqueIdentifier>{9be76c56-7f4b-463a-93fc-9ac27adfbff2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls">
+      <UniqueIdentifier>{c4d895d0-c003-43ca-a789-d9204863412c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\Box">
+      <UniqueIdentifier>{c024d387-d4c5-4767-b3c5-a89d6c84ac82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\Cone">
+      <UniqueIdentifier>{94b5fa42-1946-42d2-a98b-960aee4dec14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\Cylinder">
+      <UniqueIdentifier>{20935366-025f-4490-8cd9-f9c971ffbee9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\GouraudMaterial">
+      <UniqueIdentifier>{b8484a3a-787f-411e-b457-7a1e57994a9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\Heightmap">
+      <UniqueIdentifier>{0720d423-0019-4da5-aba3-fdd30cf7f3b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\JsonMesh">
+      <UniqueIdentifier>{238a0643-0a2e-4352-9f63-9645a2bdf4db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\Mesh">
+      <UniqueIdentifier>{81fe8edd-b8a0-4fc9-8829-6002ca3f2931}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\PhongMaterial">
+      <UniqueIdentifier>{caffce7e-243e-475f-a428-4ceb7e0cec83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\Plane">
+      <UniqueIdentifier>{0344f018-faf2-4274-b6c3-6864987092a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\Pyramid">
+      <UniqueIdentifier>{4665971a-0df8-4279-8580-b61fe7031075}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\SolidMaterial">
+      <UniqueIdentifier>{5880d615-da05-4540-8fd0-dea3acf816ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\Sphere">
+      <UniqueIdentifier>{c6f195b7-a3dc-4671-97d7-3ce6bd43f027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\Torus">
+      <UniqueIdentifier>{bb381a6c-a96e-4d2f-9f1c-a1da09197e47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\Tube">
+      <UniqueIdentifier>{18b85ee2-8d10-416d-b449-004c665bc531}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\View">
+      <UniqueIdentifier>{0628e880-14e9-4165-bc4f-3eabb8d0d673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\PropertyHandlers">
+      <UniqueIdentifier>{5883f7e6-85a2-4eec-999a-f228e7e3da79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\PropertyHandlers\ControlMaterial">
+      <UniqueIdentifier>{b646ce65-8c5d-4ea1-93ea-f5ac35da7d7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Interfaces">
+      <UniqueIdentifier>{8c5beb05-f724-4c74-af9b-baeb32a6dcd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Core">
+      <UniqueIdentifier>{31b7da60-e0b2-4ba9-b4df-7bc1644fdb16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Properties">
+      <UniqueIdentifier>{18a8901e-384f-428c-a3ec-4a6acb94e157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\Circle">
+      <UniqueIdentifier>{046b8581-ca2f-4df6-9258-e1c076196135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\Disk">
+      <UniqueIdentifier>{88541eaf-9b23-4e5b-bd0c-1c5e204e6056}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\Circle">
+      <UniqueIdentifier>{d2b02087-1579-47c8-8229-5f8a6615707d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\Disk">
+      <UniqueIdentifier>{44886366-11b6-4081-82df-dfcd45f42e11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\BlinnPhongMaterial">
+      <UniqueIdentifier>{09f5c528-9981-42a2-82e9-bf6280ae1212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\BlinnPhongMaterial">
+      <UniqueIdentifier>{5cfc7f53-b517-41c8-8871-0abee4e0da81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\CheckerMaterial">
+      <UniqueIdentifier>{35ceaaf8-edde-4037-abad-946d9a796844}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\CheckerMaterial">
+      <UniqueIdentifier>{ab2df736-ccda-41c8-9ead-11ddaec732b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\RimMaterial">
+      <UniqueIdentifier>{7ae6b0b9-cbaa-4472-9513-720b6d7c7bdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\RimMaterial">
+      <UniqueIdentifier>{69b4c27e-0002-43c0-b4dc-04591b068e8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\3DObject">
+      <UniqueIdentifier>{29c95752-4ba6-4de0-a2e3-4b009c7f702d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\3DObject">
+      <UniqueIdentifier>{ae99d342-3d17-432b-b468-95daaca3ba71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\CustomMaterial">
+      <UniqueIdentifier>{f5d68832-12ee-401c-bb24-0e74951d584c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\CustomMaterial">
+      <UniqueIdentifier>{3bc14c5c-2b1f-4e4e-8607-842188055dd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives">
+      <UniqueIdentifier>{8d2d8449-5416-4f2c-aff5-1ee1f0b81558}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\2D">
+      <UniqueIdentifier>{28f4a2ab-48c7-403e-a9d0-4ea6873e3e25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\3D">
+      <UniqueIdentifier>{3c11858c-332c-4013-9fd6-f9ab89c7831c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\3D\Box">
+      <UniqueIdentifier>{4d989d7c-fbed-44f5-9968-c7db654c6a68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\2D\Circle">
+      <UniqueIdentifier>{d74512f3-1aaa-44bb-bc77-20c7f999bfa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\3D\Cone">
+      <UniqueIdentifier>{24e5a30a-67da-4c39-ab1e-4bab3460eb9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\3D\Cylinder">
+      <UniqueIdentifier>{0fd0ce01-8168-42d3-8d19-4edddbf7a538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\2D\Disk">
+      <UniqueIdentifier>{bb4f1b08-cb72-4aa5-8981-d5dde3747858}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\2D\Plane">
+      <UniqueIdentifier>{5798164f-dd9b-4c88-94bf-5d1f68134511}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\3D\Pyramid">
+      <UniqueIdentifier>{ff04ef9a-98d5-49b4-a5f0-9ce29520e642}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\3D\Sphere">
+      <UniqueIdentifier>{77785e01-2309-4f1b-8df9-ae4080607fbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\3D\Torus">
+      <UniqueIdentifier>{b2ade269-2f07-4320-9867-1950a99e6a7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\3D\Tube">
+      <UniqueIdentifier>{87eee27f-72b7-40cc-80db-8e46254a02d5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

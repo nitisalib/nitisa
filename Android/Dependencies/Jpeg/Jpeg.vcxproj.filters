@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jaricom.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcapimin.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcapistd.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcarith.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jccoefct.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jccolor.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcdctmgr.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jchuff.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcinit.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcmainct.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcmarker.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcmaster.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcomapi.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcparam.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcprepct.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jcsample.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jctrans.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdapimin.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdapistd.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdarith.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdatadst.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdatasrc.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdcoefct.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdcolor.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jddctmgr.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdhuff.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdinput.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdmainct.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdmarker.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdmaster.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdmerge.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdpostct.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdsample.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jdtrans.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jerror.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jfdctflt.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jfdctfst.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jfdctint.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jidctflt.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jidctfst.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jidctint.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jmemmgr.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jmemnobs.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jquant1.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jquant2.c" />
+    <ClCompile Include="..\..\..\Dependencies\jpeg-9c\jutils.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="jconfig.h" />
+  </ItemGroup>
+</Project>

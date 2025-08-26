@@ -1,0 +1,2310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugRT|ARM">
+      <Configuration>DebugRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|ARM64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|Win32">
+      <Configuration>DebugRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|x64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|ARM">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|ARM64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|Win32">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|x64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Components\AdminRights\AdminRights.h" />
+    <ClInclude Include="Components\ColorDialog\ColorDialog.h" />
+    <ClInclude Include="Components\ColorDialog\ColorDialogService.h" />
+    <ClInclude Include="Components\FindDialog\FindDialog.h" />
+    <ClInclude Include="Components\FindDialog\FindDialogService.h" />
+    <ClInclude Include="Components\IAdminRights.h" />
+    <ClInclude Include="Components\IColorDialog.h" />
+    <ClInclude Include="Components\IFindDialog.h" />
+    <ClInclude Include="Components\ImageList\ImageListService.h" />
+    <ClInclude Include="Components\IReplaceDialog.h" />
+    <ClInclude Include="Components\ISimpleXML.h" />
+    <ClInclude Include="Components\ISysBrowseFolderDialog.h" />
+    <ClInclude Include="Components\ISysColorDialog.h" />
+    <ClInclude Include="Components\ISysFontDialog.h" />
+    <ClInclude Include="Components\IImageList.h" />
+    <ClInclude Include="Components\ILogger.h" />
+    <ClInclude Include="Components\ImageList\ImageList.h" />
+    <ClInclude Include="Components\ISysOpenDialog.h" />
+    <ClInclude Include="Components\ISysOpenPictureDialog.h" />
+    <ClInclude Include="Components\ISysPageSetupDialog.h" />
+    <ClInclude Include="Components\ISysPrintDialog.h" />
+    <ClInclude Include="Components\ISysSaveDialog.h" />
+    <ClInclude Include="Components\ISysSavePictureDialog.h" />
+    <ClInclude Include="Components\ITaskBarProgress.h" />
+    <ClInclude Include="Components\ITCPClient.h" />
+    <ClInclude Include="Components\ITCPServer.h" />
+    <ClInclude Include="Components\ITimer.h" />
+    <ClInclude Include="Components\ITrayIcon.h" />
+    <ClInclude Include="Components\Logger\Logger.h" />
+    <ClInclude Include="Components\ReplaceDialog\ReplaceDialog.h" />
+    <ClInclude Include="Components\ReplaceDialog\ReplaceDialogService.h" />
+    <ClInclude Include="Components\SimpleXML\SimpleXML.h" />
+    <ClInclude Include="Components\SysBrowseFolderDialog\SysBrowseFolderDialog.h" />
+    <ClInclude Include="Components\SysColorDialog\SysColorDialog.h" />
+    <ClInclude Include="Components\SysFontDialog\SysFontDialog.h" />
+    <ClInclude Include="Components\SysOpenDialog\SysOpenDialog.h" />
+    <ClInclude Include="Components\SysOpenPictureDialog\SysOpenPictureDialog.h" />
+    <ClInclude Include="Components\SysPageSetupDialog\SysPageSetupDialog.h" />
+    <ClInclude Include="Components\SysPrintDialog\SysPrintDialog.h" />
+    <ClInclude Include="Components\SysSaveDialog\SysSaveDialog.h" />
+    <ClInclude Include="Components\SysSavePictureDialog\SysSavePictureDialog.h" />
+    <ClInclude Include="Components\TaskBarProgress\TaskBarProgress.h" />
+    <ClInclude Include="Components\TCPClient\TCPClient.h" />
+    <ClInclude Include="Components\TCPClient\TCPClientService.h" />
+    <ClInclude Include="Components\TCPServer\TCPServer.h" />
+    <ClInclude Include="Components\TCPServer\TCPServerService.h" />
+    <ClInclude Include="Components\Timer\Timer.h" />
+    <ClInclude Include="Components\Timer\TimerService.h" />
+    <ClInclude Include="Components\TrayIcon\TrayIcon.h" />
+    <ClInclude Include="Components\TrayIcon\TrayIconService.h" />
+    <ClInclude Include="Controls\AlphaBar\AlphaBar.h" />
+    <ClInclude Include="Controls\AlphaBar\AlphaBarService.h" />
+    <ClInclude Include="Controls\Bevel\Bevel.h" />
+    <ClInclude Include="Controls\Bevel\BevelService.h" />
+    <ClInclude Include="Controls\BitBtn\BitBtn.h" />
+    <ClInclude Include="Controls\BitBtn\BitBtnService.h" />
+    <ClInclude Include="Controls\Button\Button.h" />
+    <ClInclude Include="Controls\Button\ButtonService.h" />
+    <ClInclude Include="Controls\CheckBox\CheckBox.h" />
+    <ClInclude Include="Controls\CheckBox\CheckBoxService.h" />
+    <ClInclude Include="Controls\CheckListBox\CheckListBox.h" />
+    <ClInclude Include="Controls\ColorBox\ColorBox.h" />
+    <ClInclude Include="Controls\ColorListBox\ColorListBox.h" />
+    <ClInclude Include="Controls\ColorListBox\ColorListBoxListItem.h" />
+    <ClInclude Include="Controls\Container\Container.h" />
+    <ClInclude Include="Controls\Container\ContainerService.h" />
+    <ClInclude Include="Controls\CoolBar\CoolBar.h" />
+    <ClInclude Include="Controls\CoolBar\CoolBarService.h" />
+    <ClInclude Include="Controls\DatePicker\DatePicker.h" />
+    <ClInclude Include="Controls\DatePicker\DatePickerService.h" />
+    <ClInclude Include="Controls\DialogBoxEx\DialogBoxEx.h" />
+    <ClInclude Include="Controls\DialogBoxEx\DialogBoxExService.h" />
+    <ClInclude Include="Controls\DirectoryTree\DirectoryTree.h" />
+    <ClInclude Include="Controls\DirectoryTree\DirectoryTreeService.h" />
+    <ClInclude Include="Controls\DrawGrid\CustomGrid.h" />
+    <ClInclude Include="Controls\DrawGrid\CustomGridService.h" />
+    <ClInclude Include="Controls\DrawGrid\CustomDrawGrid.h" />
+    <ClInclude Include="Controls\DrawGrid\CustomDrawGridService.h" />
+    <ClInclude Include="Controls\DrawGrid\DrawGrid.h" />
+    <ClInclude Include="Controls\DriveDropDown\DriveDropDown.h" />
+    <ClInclude Include="Controls\DriveDropDown\DriveDropDownService.h" />
+    <ClInclude Include="Controls\DropDown\CustomDropDown.h" />
+    <ClInclude Include="Controls\DropDown\CustomDropDownService.h" />
+    <ClInclude Include="Controls\DropDown\DropDown.h" />
+    <ClInclude Include="Controls\EditCalc\EditCalc.h" />
+    <ClInclude Include="Controls\EditCalc\EditCalcService.h" />
+    <ClInclude Include="Controls\Edit\Edit.h" />
+    <ClInclude Include="Controls\Edit\EditService.h" />
+    <ClInclude Include="Controls\FileList\FileList.h" />
+    <ClInclude Include="Controls\FileList\FileListService.h" />
+    <ClInclude Include="Controls\FormStyleSolid\FormStyleSolid.h" />
+    <ClInclude Include="Controls\FormStyleSolid\FormStyleSolidService.h" />
+    <ClInclude Include="Controls\Frame\Frame.h" />
+    <ClInclude Include="Controls\Frame\FrameService.h" />
+    <ClInclude Include="Controls\GradientEditor\GradientEditor.h" />
+    <ClInclude Include="Controls\GradientEditor\GradientEditorService.h" />
+    <ClInclude Include="Controls\GroupBox\GroupBox.h" />
+    <ClInclude Include="Controls\GroupBox\GroupBoxService.h" />
+    <ClInclude Include="Controls\GroupFold\GroupFold.h" />
+    <ClInclude Include="Controls\GroupFold\GroupFoldService.h" />
+    <ClInclude Include="Controls\HotKey\HotKey.h" />
+    <ClInclude Include="Controls\HotKey\HotKeyService.h" />
+    <ClInclude Include="Controls\HSVBar\HSVBar.h" />
+    <ClInclude Include="Controls\HSVBar\HSVBarService.h" />
+    <ClInclude Include="Controls\HSVPlane\HSVPlane.h" />
+    <ClInclude Include="Controls\HSVPlane\HSVPlaneService.h" />
+    <ClInclude Include="Controls\IAlphaBar.h" />
+    <ClInclude Include="Controls\IBevel.h" />
+    <ClInclude Include="Controls\IBitBtn.h" />
+    <ClInclude Include="Controls\IButton.h" />
+    <ClInclude Include="Controls\IEditCalc.h" />
+    <ClInclude Include="Controls\IGroupFold.h" />
+    <ClInclude Include="Controls\IMultiButton.h" />
+    <ClInclude Include="Controls\ICheckBox.h" />
+    <ClInclude Include="Controls\ICheckListBox.h" />
+    <ClInclude Include="Controls\IColorBox.h" />
+    <ClInclude Include="Controls\IColorListBox.h" />
+    <ClInclude Include="Controls\IconButton\IconButton.h" />
+    <ClInclude Include="Controls\IconButton\IconButtonService.h" />
+    <ClInclude Include="Controls\IContainer.h" />
+    <ClInclude Include="Controls\ICoolBar.h" />
+    <ClInclude Include="Controls\IDatePicker.h" />
+    <ClInclude Include="Controls\IDialogBoxEx.h" />
+    <ClInclude Include="Controls\IDirectoryTree.h" />
+    <ClInclude Include="Controls\IDrawGrid.h" />
+    <ClInclude Include="Controls\IDriveDropDown.h" />
+    <ClInclude Include="Controls\IDropDown.h" />
+    <ClInclude Include="Controls\IEdit.h" />
+    <ClInclude Include="Controls\IFileList.h" />
+    <ClInclude Include="Controls\IFormStyleSolid.h" />
+    <ClInclude Include="Controls\IFrame.h" />
+    <ClInclude Include="Controls\IGradientEditor.h" />
+    <ClInclude Include="Controls\IGroupBox.h" />
+    <ClInclude Include="Controls\IHotKey.h" />
+    <ClInclude Include="Controls\IHSVBar.h" />
+    <ClInclude Include="Controls\IHSVPlane.h" />
+    <ClInclude Include="Controls\IIconButton.h" />
+    <ClInclude Include="Controls\IImage.h" />
+    <ClInclude Include="Controls\IImageListEditor.h" />
+    <ClInclude Include="Controls\ILabel.h" />
+    <ClInclude Include="Controls\IListBox.h" />
+    <ClInclude Include="Controls\ImageListEditor\ImageListEditor.h" />
+    <ClInclude Include="Controls\ImageListEditor\ImageListEditorService.h" />
+    <ClInclude Include="Controls\Image\Image.h" />
+    <ClInclude Include="Controls\Image\ImageService.h" />
+    <ClInclude Include="Controls\IMainMenu.h" />
+    <ClInclude Include="Controls\IMaskEdit.h" />
+    <ClInclude Include="Controls\IMemo.h" />
+    <ClInclude Include="Controls\IMonthCalendar.h" />
+    <ClInclude Include="Controls\IPageControl.h" />
+    <ClInclude Include="Controls\IPaintBox.h" />
+    <ClInclude Include="Controls\IPanel.h" />
+    <ClInclude Include="Controls\IPasswordEdit.h" />
+    <ClInclude Include="Controls\IPopupMenu.h" />
+    <ClInclude Include="Controls\IProgressBar.h" />
+    <ClInclude Include="Controls\IRadioButton.h" />
+    <ClInclude Include="Controls\IScrollBar.h" />
+    <ClInclude Include="Controls\IScrollBarLite.h" />
+    <ClInclude Include="Controls\IScrollBox.h" />
+    <ClInclude Include="Controls\IScrollList.h" />
+    <ClInclude Include="Controls\ISelect.h" />
+    <ClInclude Include="Controls\IShape.h" />
+    <ClInclude Include="Controls\ISpeedButton.h" />
+    <ClInclude Include="Controls\ISplitter.h" />
+    <ClInclude Include="Controls\IStatusBar.h" />
+    <ClInclude Include="Controls\IStringGrid.h" />
+    <ClInclude Include="Controls\ITimePicker.h" />
+    <ClInclude Include="Controls\IToggle.h" />
+    <ClInclude Include="Controls\IToolBar.h" />
+    <ClInclude Include="Controls\ITrackBar.h" />
+    <ClInclude Include="Controls\ITrackRange.h" />
+    <ClInclude Include="Controls\ITreeView.h" />
+    <ClInclude Include="Controls\IUpDown.h" />
+    <ClInclude Include="Controls\IUpDownEx.h" />
+    <ClInclude Include="Controls\IValueListEditor.h" />
+    <ClInclude Include="Controls\Label\Label.h" />
+    <ClInclude Include="Controls\Label\LabelService.h" />
+    <ClInclude Include="Controls\ListBox\CustomListBox.h" />
+    <ClInclude Include="Controls\ListBox\CustomListBoxService.h" />
+    <ClInclude Include="Controls\ListBox\ListBox.h" />
+    <ClInclude Include="Controls\ListBox\ListBoxListItem.h" />
+    <ClInclude Include="Controls\MainMenu\MainMenu.h" />
+    <ClInclude Include="Controls\MainMenu\MainMenuService.h" />
+    <ClInclude Include="Controls\MainMenu\MainMenuTransform.h" />
+    <ClInclude Include="Controls\MaskEdit\MaskEdit.h" />
+    <ClInclude Include="Controls\MaskEdit\MaskEditService.h" />
+    <ClInclude Include="Controls\Memo\Memo.h" />
+    <ClInclude Include="Controls\Memo\MemoService.h" />
+    <ClInclude Include="Controls\MonthCalendar\MonthCalendar.h" />
+    <ClInclude Include="Controls\MonthCalendar\MonthCalendarService.h" />
+    <ClInclude Include="Controls\MultiButton\MultiButton.h" />
+    <ClInclude Include="Controls\MultiButton\MultiButtonService.h" />
+    <ClInclude Include="Controls\PageControl\PageControl.h" />
+    <ClInclude Include="Controls\PageControl\PageControlService.h" />
+    <ClInclude Include="Controls\PageControl\TabSheet.h" />
+    <ClInclude Include="Controls\PageControl\TabSheetService.h" />
+    <ClInclude Include="Controls\PageControl\TabSheetTransform.h" />
+    <ClInclude Include="Controls\PaintBox\PaintBox.h" />
+    <ClInclude Include="Controls\PaintBox\PaintBoxService.h" />
+    <ClInclude Include="Controls\Panel\Panel.h" />
+    <ClInclude Include="Controls\Panel\PanelService.h" />
+    <ClInclude Include="Controls\PasswordEdit\PasswordEdit.h" />
+    <ClInclude Include="Controls\PasswordEdit\PasswordEditService.h" />
+    <ClInclude Include="Controls\PopupMenu\PopupMenu.h" />
+    <ClInclude Include="Controls\PopupMenu\PopupMenuService.h" />
+    <ClInclude Include="Controls\PopupMenu\PopupMenuTransform.h" />
+    <ClInclude Include="Controls\ProgressBar\ProgressBar.h" />
+    <ClInclude Include="Controls\ProgressBar\ProgressBarService.h" />
+    <ClInclude Include="Controls\RadioButton\RadioButton.h" />
+    <ClInclude Include="Controls\RadioButton\RadioButtonService.h" />
+    <ClInclude Include="Controls\ScrollBarLite\ScrollBarLite.h" />
+    <ClInclude Include="Controls\ScrollBarLite\ScrollBarLiteService.h" />
+    <ClInclude Include="Controls\ScrollBar\ScrollBar.h" />
+    <ClInclude Include="Controls\ScrollBar\ScrollBarService.h" />
+    <ClInclude Include="Controls\ScrollBox\ScrollBox.h" />
+    <ClInclude Include="Controls\ScrollBox\ScrollBoxService.h" />
+    <ClInclude Include="Controls\ScrollList\ScrollList.h" />
+    <ClInclude Include="Controls\ScrollList\ScrollListService.h" />
+    <ClInclude Include="Controls\Select\Select.h" />
+    <ClInclude Include="Controls\Select\SelectService.h" />
+    <ClInclude Include="Controls\Shape\Shape.h" />
+    <ClInclude Include="Controls\Shape\ShapeService.h" />
+    <ClInclude Include="Controls\SpeedButton\SpeedButton.h" />
+    <ClInclude Include="Controls\SpeedButton\SpeedButtonService.h" />
+    <ClInclude Include="Controls\Splitter\Splitter.h" />
+    <ClInclude Include="Controls\Splitter\SplitterService.h" />
+    <ClInclude Include="Controls\StatusBar\StatusBar.h" />
+    <ClInclude Include="Controls\StatusBar\StatusBarService.h" />
+    <ClInclude Include="Controls\StatusBar\StatusBarTransform.h" />
+    <ClInclude Include="Controls\StringGrid\CustomStringGrid.h" />
+    <ClInclude Include="Controls\StringGrid\CustomStringGridService.h" />
+    <ClInclude Include="Controls\StringGrid\StringGrid.h" />
+    <ClInclude Include="Controls\TimePicker\TimePicker.h" />
+    <ClInclude Include="Controls\TimePicker\TimePickerService.h" />
+    <ClInclude Include="Controls\Toggle\Toggle.h" />
+    <ClInclude Include="Controls\Toggle\ToggleService.h" />
+    <ClInclude Include="Controls\ToolBar\ToolBar.h" />
+    <ClInclude Include="Controls\ToolBar\ToolBarService.h" />
+    <ClInclude Include="Controls\TrackBar\TrackBar.h" />
+    <ClInclude Include="Controls\TrackBar\TrackBarService.h" />
+    <ClInclude Include="Controls\TrackRange\TrackRange.h" />
+    <ClInclude Include="Controls\TrackRange\TrackRangeService.h" />
+    <ClInclude Include="Controls\TreeView\CustomTreeView.h" />
+    <ClInclude Include="Controls\TreeView\CustomTreeViewListItemOwner.h" />
+    <ClInclude Include="Controls\TreeView\CustomTreeViewService.h" />
+    <ClInclude Include="Controls\TreeView\TreeView.h" />
+    <ClInclude Include="Controls\TreeView\TreeViewListItemOwner.h" />
+    <ClInclude Include="Controls\TreeView\TreeViewService.h" />
+    <ClInclude Include="Controls\UpDownEx\UpDownEx.h" />
+    <ClInclude Include="Controls\UpDownEx\UpDownExService.h" />
+    <ClInclude Include="Controls\UpDown\UpDown.h" />
+    <ClInclude Include="Controls\UpDown\UpDownService.h" />
+    <ClInclude Include="Controls\ValueListEditor\ValueListEditor.h" />
+    <ClInclude Include="Controls\ValueListEditor\ValueListEditorService.h" />
+    <ClInclude Include="Forms\BoolArray\DialogBoxBoolArray.h" />
+    <ClInclude Include="Forms\BoolArray\FormBoolArray.h" />
+    <ClInclude Include="Forms\BoolArray\IDialogBoxBoolArrayProto.h" />
+    <ClInclude Include="Forms\BoolArray\IFormBoolArrayProto.h" />
+    <ClInclude Include="Forms\BorderColor\DialogBoxBorderColor.h" />
+    <ClInclude Include="Forms\BorderColor\FormBorderColor.h" />
+    <ClInclude Include="Forms\BorderColor\IDialogBoxBorderColorProto.h" />
+    <ClInclude Include="Forms\BorderColor\IFormBorderColorProto.h" />
+    <ClInclude Include="Forms\ColorArray\DialogBoxColorArray.h" />
+    <ClInclude Include="Forms\ColorArray\FormColorArray.h" />
+    <ClInclude Include="Forms\ColorArray\IDialogBoxColorArrayProto.h" />
+    <ClInclude Include="Forms\ColorArray\IFormColorArrayProto.h" />
+    <ClInclude Include="Forms\Color\DialogBoxColor.h" />
+    <ClInclude Include="Forms\Color\FormColor.h" />
+    <ClInclude Include="Forms\Color\IDialogBoxColorProto.h" />
+    <ClInclude Include="Forms\Color\IFormColorProto.h" />
+    <ClInclude Include="Forms\Find\DialogBoxFind.h" />
+    <ClInclude Include="Forms\Find\FormFind.h" />
+    <ClInclude Include="Forms\Find\IDialogBoxFindProto.h" />
+    <ClInclude Include="Forms\Find\IFormFindProto.h" />
+    <ClInclude Include="Forms\FloatArray\FormFloatArray.h" />
+    <ClInclude Include="Forms\FloatArray\DialogBoxFloatArray.h" />
+    <ClInclude Include="Forms\FloatArray\IDialogBoxFloatArrayProto.h" />
+    <ClInclude Include="Forms\FloatArray\IFormFloatArrayProto.h" />
+    <ClInclude Include="Forms\Gradient\DialogBoxGradient.h" />
+    <ClInclude Include="Forms\Gradient\FormGradient.h" />
+    <ClInclude Include="Forms\Gradient\IDialogBoxGradientProto.h" />
+    <ClInclude Include="Forms\Gradient\IFormGradientProto.h" />
+    <ClInclude Include="Forms\HotkeyList\DialogBoxHotkeyList.h" />
+    <ClInclude Include="Forms\HotkeyList\FormHotkeyList.h" />
+    <ClInclude Include="Forms\HotkeyList\IDialogBoxHotkeyListProto.h" />
+    <ClInclude Include="Forms\HotkeyList\IFormHotkeyListProto.h" />
+    <ClInclude Include="Forms\Hotkey\DialogBoxHotkey.h" />
+    <ClInclude Include="Forms\Hotkey\FormHotkey.h" />
+    <ClInclude Include="Forms\Hotkey\IDialogBoxHotkeyProto.h" />
+    <ClInclude Include="Forms\Hotkey\IFormHotkeyProto.h" />
+    <ClInclude Include="Forms\IFormBoolArray.h" />
+    <ClInclude Include="Forms\IFormColor.h" />
+    <ClInclude Include="Forms\IFormColorArray.h" />
+    <ClInclude Include="Forms\IFormPointD.h" />
+    <ClInclude Include="Forms\IFormFind.h" />
+    <ClInclude Include="Forms\IFormFloatArray.h" />
+    <ClInclude Include="Forms\IFormGradient.h" />
+    <ClInclude Include="Forms\IFormHotkey.h" />
+    <ClInclude Include="Forms\IFormHotkeyList.h" />
+    <ClInclude Include="Forms\IFormImage.h" />
+    <ClInclude Include="Forms\IFormImageList.h" />
+    <ClInclude Include="Forms\IFormPointL.h" />
+    <ClInclude Include="Forms\IFormIntegerArray.h" />
+    <ClInclude Include="Forms\IFormMask.h" />
+    <ClInclude Include="Forms\IFormMatrix.h" />
+    <ClInclude Include="Forms\IFormMemo.h" />
+    <ClInclude Include="Forms\IFormMenuListItem.h" />
+    <ClInclude Include="Forms\IFormPoint.h" />
+    <ClInclude Include="Forms\IFormPointB.h" />
+    <ClInclude Include="Forms\IFormPointF.h" />
+    <ClInclude Include="Forms\IFormRect.h" />
+    <ClInclude Include="Forms\IFormRectB.h" />
+    <ClInclude Include="Forms\IFormBorderColor.h" />
+    <ClInclude Include="Forms\IFormRectD.h" />
+    <ClInclude Include="Forms\IFormRectF.h" />
+    <ClInclude Include="Forms\IFormRectL.h" />
+    <ClInclude Include="Forms\IFormReplace.h" />
+    <ClInclude Include="Forms\IFormSelectListItem.h" />
+    <ClInclude Include="Forms\IFormTransform.h" />
+    <ClInclude Include="Forms\ImageList\DialogBoxImageList.h" />
+    <ClInclude Include="Forms\ImageList\FormImageList.h" />
+    <ClInclude Include="Forms\ImageList\IDialogBoxImageListProto.h" />
+    <ClInclude Include="Forms\ImageList\IFormImageListProto.h" />
+    <ClInclude Include="Forms\Image\DialogBoxImage.h" />
+    <ClInclude Include="Forms\Image\FormImage.h" />
+    <ClInclude Include="Forms\Image\IDialogBoxImageProto.h" />
+    <ClInclude Include="Forms\Image\IFormImageProto.h" />
+    <ClInclude Include="Forms\IntegerArray\DialogBoxIntegerArray.h" />
+    <ClInclude Include="Forms\IntegerArray\FormIntegerArray.h" />
+    <ClInclude Include="Forms\IntegerArray\IDialogBoxIntegerArrayProto.h" />
+    <ClInclude Include="Forms\IntegerArray\IFormIntegerArrayProto.h" />
+    <ClInclude Include="Forms\Mask\DialogBoxMask.h" />
+    <ClInclude Include="Forms\Mask\FormMask.h" />
+    <ClInclude Include="Forms\Mask\IDialogBoxMaskProto.h" />
+    <ClInclude Include="Forms\Mask\IFormMaskProto.h" />
+    <ClInclude Include="Forms\Matrix\DialogBoxMatrix.h" />
+    <ClInclude Include="Forms\Matrix\FormMatrix.h" />
+    <ClInclude Include="Forms\Matrix\IDialogBoxMatrixProto.h" />
+    <ClInclude Include="Forms\Matrix\IFormMatrixProto.h" />
+    <ClInclude Include="Forms\Memo\DialogBoxMemo.h" />
+    <ClInclude Include="Forms\Memo\FormMemo.h" />
+    <ClInclude Include="Forms\Memo\IDialogBoxMemoProto.h" />
+    <ClInclude Include="Forms\Memo\IFormMemoProto.h" />
+    <ClInclude Include="Forms\MenuListItem\DialogBoxMenuListItem.h" />
+    <ClInclude Include="Forms\MenuListItem\FormMenuListItem.h" />
+    <ClInclude Include="Forms\MenuListItem\IDialogBoxMenuListItemProto.h" />
+    <ClInclude Include="Forms\MenuListItem\IFormMenuListItemProto.h" />
+    <ClInclude Include="Forms\PointB\DialogBoxPointB.h" />
+    <ClInclude Include="Forms\PointB\FormPointB.h" />
+    <ClInclude Include="Forms\PointB\IDialogBoxPointBProto.h" />
+    <ClInclude Include="Forms\PointB\IFormPointBProto.h" />
+    <ClInclude Include="Forms\PointD\DialogBoxPointD.h" />
+    <ClInclude Include="Forms\PointD\FormPointD.h" />
+    <ClInclude Include="Forms\PointD\IDialogBoxPointDProto.h" />
+    <ClInclude Include="Forms\PointD\IFormPointDProto.h" />
+    <ClInclude Include="Forms\PointF\DialogBoxPointF.h" />
+    <ClInclude Include="Forms\PointF\FormPointF.h" />
+    <ClInclude Include="Forms\PointF\IDialogBoxPointFProto.h" />
+    <ClInclude Include="Forms\PointF\IFormPointFProto.h" />
+    <ClInclude Include="Forms\PointL\DialogBoxPointL.h" />
+    <ClInclude Include="Forms\PointL\FormPointL.h" />
+    <ClInclude Include="Forms\PointL\IDialogBoxPointLProto.h" />
+    <ClInclude Include="Forms\PointL\IFormPointLProto.h" />
+    <ClInclude Include="Forms\Point\DialogBoxPoint.h" />
+    <ClInclude Include="Forms\Point\FormPoint.h" />
+    <ClInclude Include="Forms\Point\IDialogBoxPointProto.h" />
+    <ClInclude Include="Forms\Point\IFormPointProto.h" />
+    <ClInclude Include="Forms\RectB\DialogBoxRectB.h" />
+    <ClInclude Include="Forms\RectB\FormRectB.h" />
+    <ClInclude Include="Forms\RectB\IDialogBoxRectBProto.h" />
+    <ClInclude Include="Forms\RectB\IFormRectBProto.h" />
+    <ClInclude Include="Forms\RectD\DialogBoxRectD.h" />
+    <ClInclude Include="Forms\RectD\FormRectD.h" />
+    <ClInclude Include="Forms\RectD\IDialogBoxRectDProto.h" />
+    <ClInclude Include="Forms\RectD\IFormRectDProto.h" />
+    <ClInclude Include="Forms\RectF\DialogBoxRectF.h" />
+    <ClInclude Include="Forms\RectF\FormRectF.h" />
+    <ClInclude Include="Forms\RectF\IDialogBoxRectFProto.h" />
+    <ClInclude Include="Forms\RectF\IFormRectFProto.h" />
+    <ClInclude Include="Forms\RectL\DialogBoxRectL.h" />
+    <ClInclude Include="Forms\RectL\FormRectL.h" />
+    <ClInclude Include="Forms\RectL\IDialogBoxRectLProto.h" />
+    <ClInclude Include="Forms\RectL\IFormRectLProto.h" />
+    <ClInclude Include="Forms\Rect\DialogBoxRect.h" />
+    <ClInclude Include="Forms\Rect\FormRect.h" />
+    <ClInclude Include="Forms\Rect\IDialogBoxRectProto.h" />
+    <ClInclude Include="Forms\Rect\IFormRectProto.h" />
+    <ClInclude Include="Forms\Replace\DialogBoxReplace.h" />
+    <ClInclude Include="Forms\Replace\FormReplace.h" />
+    <ClInclude Include="Forms\Replace\IDialogBoxReplaceProto.h" />
+    <ClInclude Include="Forms\Replace\IFormReplaceProto.h" />
+    <ClInclude Include="Forms\SelectListItem\DialogBoxSelectListItem.h" />
+    <ClInclude Include="Forms\SelectListItem\FormSelectListItem.h" />
+    <ClInclude Include="Forms\SelectListItem\IDialogBoxSelectListItemProto.h" />
+    <ClInclude Include="Forms\SelectListItem\IFormSelectListItemProto.h" />
+    <ClInclude Include="Forms\Transform\DialogBoxTransform.h" />
+    <ClInclude Include="Forms\Transform\FormTransform.h" />
+    <ClInclude Include="Forms\Transform\IDialogBoxTransformProto.h" />
+    <ClInclude Include="Forms\Transform\IFormTransformProto.h" />
+    <ClInclude Include="ListItems\CheckBox\ListItemCheckBox.h" />
+    <ClInclude Include="ListItems\CheckBox\ListItemCheckBoxService.h" />
+    <ClInclude Include="ListItems\Color\ListItemColor.h" />
+    <ClInclude Include="ListItems\Color\ListItemColorService.h" />
+    <ClInclude Include="ListItems\Icon\ListItemIcon.h" />
+    <ClInclude Include="ListItems\Icon\ListItemIconService.h" />
+    <ClInclude Include="ListItems\IListItemMultiButton.h" />
+    <ClInclude Include="ListItems\IListItemCheckBox.h" />
+    <ClInclude Include="ListItems\IListItemColor.h" />
+    <ClInclude Include="ListItems\IListItemIcon.h" />
+    <ClInclude Include="ListItems\IListItemLabel.h" />
+    <ClInclude Include="ListItems\IListItemMenu.h" />
+    <ClInclude Include="ListItems\IListItemRadioButton.h" />
+    <ClInclude Include="ListItems\IListItemSelectCategory.h" />
+    <ClInclude Include="ListItems\IListItemSelectLabel.h" />
+    <ClInclude Include="ListItems\IListItemStatusPanel.h" />
+    <ClInclude Include="ListItems\IListItemStatusPanelLabel.h" />
+    <ClInclude Include="ListItems\IListItemTreeViewLabel.h" />
+    <ClInclude Include="ListItems\Label\ListItemLabel.h" />
+    <ClInclude Include="ListItems\Label\ListItemLabelService.h" />
+    <ClInclude Include="ListItems\MenuCheckBox\ListItemMenuCheckBox.h" />
+    <ClInclude Include="ListItems\MenuCheckBox\ListItemMenuCheckBoxService.h" />
+    <ClInclude Include="ListItems\MenuLabel\ListItemMenuLabel.h" />
+    <ClInclude Include="ListItems\MenuLabel\ListItemMenuLabelService.h" />
+    <ClInclude Include="ListItems\MenuRadioButton\ListItemMenuRadioButton.h" />
+    <ClInclude Include="ListItems\MenuRadioButton\ListItemMenuRadioButtonService.h" />
+    <ClInclude Include="ListItems\MenuSeparator\ListItemMenuSeparator.h" />
+    <ClInclude Include="ListItems\MenuSeparator\ListItemMenuSeparatorService.h" />
+    <ClInclude Include="ListItems\Menu\ListItemMenu.h" />
+    <ClInclude Include="ListItems\Menu\ListItemMenuService.h" />
+    <ClInclude Include="ListItems\MultiButton\ListItemMultiButton.h" />
+    <ClInclude Include="ListItems\SelectCategory\ListItemSelectCategory.h" />
+    <ClInclude Include="ListItems\SelectLabel\ListItemSelectLabel.h" />
+    <ClInclude Include="ListItems\StatusPanelLabel\ListItemStatusPanelLabel.h" />
+    <ClInclude Include="ListItems\StatusPanelLabel\ListItemStatusPanelLabelService.h" />
+    <ClInclude Include="ListItems\StatusPanel\ListItemStatusPanel.h" />
+    <ClInclude Include="ListItems\TreeViewLabel\ListItemTreeViewLabel.h" />
+    <ClInclude Include="ListItems\TreeViewLabel\ListItemTreeViewLabelService.h" />
+    <ClInclude Include="Package\Components\AdminRights\AdminRightsEventList.h" />
+    <ClInclude Include="Package\Components\AdminRights\AdminRightsPropertyList.h" />
+    <ClInclude Include="Package\Components\AdminRights\PackageAdminRights.h" />
+    <ClInclude Include="Package\Components\ColorDialog\ColorDialogEventList.h" />
+    <ClInclude Include="Package\Components\ColorDialog\ColorDialogPropertyList.h" />
+    <ClInclude Include="Package\Components\ColorDialog\PackageColorDialog.h" />
+    <ClInclude Include="Package\Components\FindDialog\FindDialogEventList.h" />
+    <ClInclude Include="Package\Components\FindDialog\FindDialogPropertyList.h" />
+    <ClInclude Include="Package\Components\FindDialog\PackageFindDialog.h" />
+    <ClInclude Include="Package\Components\ImageList\PackageImageList.h" />
+    <ClInclude Include="Package\Components\ImageList\ImageListEventList.h" />
+    <ClInclude Include="Package\Components\ImageList\ImageListPropertyList.h" />
+    <ClInclude Include="Package\Components\Logger\LoggerEventList.h" />
+    <ClInclude Include="Package\Components\Logger\LoggerPropertyList.h" />
+    <ClInclude Include="Package\Components\Logger\PackageLogger.h" />
+    <ClInclude Include="Package\Components\ReplaceDialog\PackageReplaceDialog.h" />
+    <ClInclude Include="Package\Components\ReplaceDialog\ReplaceDialogEventList.h" />
+    <ClInclude Include="Package\Components\ReplaceDialog\ReplaceDialogPropertyList.h" />
+    <ClInclude Include="Package\Components\SimpleXML\PackageSimpleXML.h" />
+    <ClInclude Include="Package\Components\SimpleXML\SimpleXMLEventList.h" />
+    <ClInclude Include="Package\Components\SimpleXML\SimpleXMLPropertyList.h" />
+    <ClInclude Include="Package\Components\SysBrowseFolderDialog\PackageSysBrowseFolderDialog.h" />
+    <ClInclude Include="Package\Components\SysBrowseFolderDialog\SysBrowseFolderDialogEventList.h" />
+    <ClInclude Include="Package\Components\SysBrowseFolderDialog\SysBrowseFolderDialogPropertyList.h" />
+    <ClInclude Include="Package\Components\SysColorDialog\PackageSysColorDialog.h" />
+    <ClInclude Include="Package\Components\SysColorDialog\SysColorDialogEventList.h" />
+    <ClInclude Include="Package\Components\SysColorDialog\SysColorDialogPropertyList.h" />
+    <ClInclude Include="Package\Components\SysFontDialog\PackageSysFontDialog.h" />
+    <ClInclude Include="Package\Components\SysFontDialog\SysFontDialogEventList.h" />
+    <ClInclude Include="Package\Components\SysFontDialog\SysFontDialogPropertyList.h" />
+    <ClInclude Include="Package\Components\SysOpenDialog\PackageSysOpenDialog.h" />
+    <ClInclude Include="Package\Components\SysOpenDialog\SysOpenDialogEventList.h" />
+    <ClInclude Include="Package\Components\SysOpenDialog\SysOpenDialogPropertyList.h" />
+    <ClInclude Include="Package\Components\SysOpenPictureDialog\PackageSysOpenPictureDialog.h" />
+    <ClInclude Include="Package\Components\SysOpenPictureDialog\SysOpenPictureDialogEventList.h" />
+    <ClInclude Include="Package\Components\SysOpenPictureDialog\SysOpenPictureDialogPropertyList.h" />
+    <ClInclude Include="Package\Components\SysPageSetupDialog\PackageSysPageSetupDialog.h" />
+    <ClInclude Include="Package\Components\SysPageSetupDialog\SysPageSetupDialogEventList.h" />
+    <ClInclude Include="Package\Components\SysPageSetupDialog\SysPageSetupDialogPropertyList.h" />
+    <ClInclude Include="Package\Components\SysPrintDialog\PackageSysPrintDialog.h" />
+    <ClInclude Include="Package\Components\SysPrintDialog\SysPrintDialogEventList.h" />
+    <ClInclude Include="Package\Components\SysPrintDialog\SysPrintDialogPropertyList.h" />
+    <ClInclude Include="Package\Components\SysSaveDialog\PackageSysSaveDialog.h" />
+    <ClInclude Include="Package\Components\SysSaveDialog\SysSaveDialogEventList.h" />
+    <ClInclude Include="Package\Components\SysSaveDialog\SysSaveDialogPropertyList.h" />
+    <ClInclude Include="Package\Components\SysSavePictureDialog\PackageSysSavePictureDialog.h" />
+    <ClInclude Include="Package\Components\SysSavePictureDialog\SysSavePictureDialogEventList.h" />
+    <ClInclude Include="Package\Components\SysSavePictureDialog\SysSavePictureDialogPropertyList.h" />
+    <ClInclude Include="Package\Components\TaskBarProgress\PackageTaskBarProgress.h" />
+    <ClInclude Include="Package\Components\TaskBarProgress\TaskBarProgressEventList.h" />
+    <ClInclude Include="Package\Components\TaskBarProgress\TaskBarProgressPropertyList.h" />
+    <ClInclude Include="Package\Components\TCPClient\PackageTCPClient.h" />
+    <ClInclude Include="Package\Components\TCPClient\TCPClientEventList.h" />
+    <ClInclude Include="Package\Components\TCPClient\TCPClientPropertyList.h" />
+    <ClInclude Include="Package\Components\TCPServer\PackageTCPServer.h" />
+    <ClInclude Include="Package\Components\TCPServer\TCPServerEventList.h" />
+    <ClInclude Include="Package\Components\TCPServer\TCPServerPropertyList.h" />
+    <ClInclude Include="Package\Components\Timer\PackageTimer.h" />
+    <ClInclude Include="Package\Components\Timer\TimerEventList.h" />
+    <ClInclude Include="Package\Components\Timer\TimerPropertyList.h" />
+    <ClInclude Include="Package\Components\TrayIcon\PackageTrayIcon.h" />
+    <ClInclude Include="Package\Components\TrayIcon\TrayIconEventList.h" />
+    <ClInclude Include="Package\Components\TrayIcon\TrayIconPropertyList.h" />
+    <ClInclude Include="Package\Controls\AlphaBar\AlphaBarEventList.h" />
+    <ClInclude Include="Package\Controls\AlphaBar\AlphaBarPropertyList.h" />
+    <ClInclude Include="Package\Controls\AlphaBar\PackageAlphaBar.h" />
+    <ClInclude Include="Package\Controls\Bevel\BevelEventList.h" />
+    <ClInclude Include="Package\Controls\Bevel\BevelPropertyList.h" />
+    <ClInclude Include="Package\Controls\Bevel\PackageBevel.h" />
+    <ClInclude Include="Package\Controls\BitBtn\BitBtnEventList.h" />
+    <ClInclude Include="Package\Controls\BitBtn\BitBtnPropertyList.h" />
+    <ClInclude Include="Package\Controls\BitBtn\PackageBitBtn.h" />
+    <ClInclude Include="Package\Controls\Button\PackageButton.h" />
+    <ClInclude Include="Package\Controls\Button\ButtonEventList.h" />
+    <ClInclude Include="Package\Controls\Button\ButtonPropertyList.h" />
+    <ClInclude Include="Package\Controls\CheckBox\PackageCheckBox.h" />
+    <ClInclude Include="Package\Controls\CheckBox\CheckBoxEventList.h" />
+    <ClInclude Include="Package\Controls\CheckBox\CheckBoxPropertyList.h" />
+    <ClInclude Include="Package\Controls\CheckListBox\PackageCheckListBox.h" />
+    <ClInclude Include="Package\Controls\CheckListBox\CheckListBoxEventList.h" />
+    <ClInclude Include="Package\Controls\CheckListBox\CheckListBoxPropertyList.h" />
+    <ClInclude Include="Package\Controls\ColorBox\PackageColorBox.h" />
+    <ClInclude Include="Package\Controls\ColorBox\ColorBoxEventList.h" />
+    <ClInclude Include="Package\Controls\ColorBox\ColorBoxPropertyList.h" />
+    <ClInclude Include="Package\Controls\ColorListBox\PackageColorListBox.h" />
+    <ClInclude Include="Package\Controls\ColorListBox\ColorListBoxEventList.h" />
+    <ClInclude Include="Package\Controls\ColorListBox\ColorListBoxPropertyList.h" />
+    <ClInclude Include="Package\Controls\Container\PackageContainer.h" />
+    <ClInclude Include="Package\Controls\Container\ContainerEventList.h" />
+    <ClInclude Include="Package\Controls\Container\ContainerPropertyList.h" />
+    <ClInclude Include="Package\Controls\CoolBar\CoolBarEventList.h" />
+    <ClInclude Include="Package\Controls\CoolBar\CoolBarPropertyList.h" />
+    <ClInclude Include="Package\Controls\CoolBar\PackageCoolBar.h" />
+    <ClInclude Include="Package\Controls\DatePicker\DatePickerEventList.h" />
+    <ClInclude Include="Package\Controls\DatePicker\DatePickerPropertyList.h" />
+    <ClInclude Include="Package\Controls\DatePicker\PackageDatePicker.h" />
+    <ClInclude Include="Package\Controls\DialogBoxEx\DialogBoxExEventList.h" />
+    <ClInclude Include="Package\Controls\DialogBoxEx\DialogBoxExPropertyList.h" />
+    <ClInclude Include="Package\Controls\DialogBoxEx\PackageDialogBoxEx.h" />
+    <ClInclude Include="Package\Controls\DirectoryTree\DirectoryTreeEventList.h" />
+    <ClInclude Include="Package\Controls\DirectoryTree\DirectoryTreePropertyList.h" />
+    <ClInclude Include="Package\Controls\DirectoryTree\PackageDirectoryTree.h" />
+    <ClInclude Include="Package\Controls\DrawGrid\CustomDrawGridEventList.h" />
+    <ClInclude Include="Package\Controls\DrawGrid\CustomDrawGridPropertyList.h" />
+    <ClInclude Include="Package\Controls\DrawGrid\CustomGridEventList.h" />
+    <ClInclude Include="Package\Controls\DrawGrid\CustomGridPropertyList.h" />
+    <ClInclude Include="Package\Controls\DrawGrid\DrawGridEventList.h" />
+    <ClInclude Include="Package\Controls\DrawGrid\DrawGridPropertyList.h" />
+    <ClInclude Include="Package\Controls\DrawGrid\PackageCustomDrawGrid.h" />
+    <ClInclude Include="Package\Controls\DrawGrid\PackageCustomGrid.h" />
+    <ClInclude Include="Package\Controls\DrawGrid\PackageDrawGrid.h" />
+    <ClInclude Include="Package\Controls\DriveDropDown\DriveDropDownEventList.h" />
+    <ClInclude Include="Package\Controls\DriveDropDown\DriveDropDownPropertyList.h" />
+    <ClInclude Include="Package\Controls\DriveDropDown\PackageDriveDropDown.h" />
+    <ClInclude Include="Package\Controls\DropDown\CustomDropDownEventList.h" />
+    <ClInclude Include="Package\Controls\DropDown\CustomDropDownPropertyList.h" />
+    <ClInclude Include="Package\Controls\DropDown\PackageCustomDropDown.h" />
+    <ClInclude Include="Package\Controls\DropDown\PackageDropDown.h" />
+    <ClInclude Include="Package\Controls\DropDown\DropDownEventList.h" />
+    <ClInclude Include="Package\Controls\DropDown\DropDownPropertyList.h" />
+    <ClInclude Include="Package\Controls\EditCalc\EditCalcEventList.h" />
+    <ClInclude Include="Package\Controls\EditCalc\EditCalcPropertyList.h" />
+    <ClInclude Include="Package\Controls\EditCalc\PackageEditCalc.h" />
+    <ClInclude Include="Package\Controls\Edit\PackageEdit.h" />
+    <ClInclude Include="Package\Controls\Edit\EditEventList.h" />
+    <ClInclude Include="Package\Controls\Edit\EditPropertyList.h" />
+    <ClInclude Include="Package\Controls\FileList\FileListEventList.h" />
+    <ClInclude Include="Package\Controls\FileList\FileListPropertyList.h" />
+    <ClInclude Include="Package\Controls\FileList\PackageFileList.h" />
+    <ClInclude Include="Package\Controls\FormStyleSolid\FormStyleSolidEventList.h" />
+    <ClInclude Include="Package\Controls\FormStyleSolid\FormStyleSolidPropertyList.h" />
+    <ClInclude Include="Package\Controls\FormStyleSolid\PackageFormStyleSolid.h" />
+    <ClInclude Include="Package\Controls\Frame\FrameEventList.h" />
+    <ClInclude Include="Package\Controls\Frame\FramePropertyList.h" />
+    <ClInclude Include="Package\Controls\Frame\PackageFrame.h" />
+    <ClInclude Include="Package\Controls\GradientEditor\GradientEditorEventList.h" />
+    <ClInclude Include="Package\Controls\GradientEditor\GradientEditorPropertyList.h" />
+    <ClInclude Include="Package\Controls\GradientEditor\PackageGradientEditor.h" />
+    <ClInclude Include="Package\Controls\GroupBox\PackageGroupBox.h" />
+    <ClInclude Include="Package\Controls\GroupBox\GroupBoxEventList.h" />
+    <ClInclude Include="Package\Controls\GroupBox\GroupBoxPropertyList.h" />
+    <ClInclude Include="Package\Controls\GroupFold\GroupFoldEventList.h" />
+    <ClInclude Include="Package\Controls\GroupFold\GroupFoldPropertyList.h" />
+    <ClInclude Include="Package\Controls\GroupFold\PackageGroupFold.h" />
+    <ClInclude Include="Package\Controls\HotKey\HotKeyEventList.h" />
+    <ClInclude Include="Package\Controls\HotKey\HotKeyPropertyList.h" />
+    <ClInclude Include="Package\Controls\HotKey\PackageHotKey.h" />
+    <ClInclude Include="Package\Controls\HSVBar\HSVBarEventList.h" />
+    <ClInclude Include="Package\Controls\HSVBar\HSVBarPropertyList.h" />
+    <ClInclude Include="Package\Controls\HSVBar\PackageHSVBar.h" />
+    <ClInclude Include="Package\Controls\HSVPlane\HSVPlaneEventList.h" />
+    <ClInclude Include="Package\Controls\HSVPlane\HSVPlanePropertyList.h" />
+    <ClInclude Include="Package\Controls\HSVPlane\PackageHSVPlane.h" />
+    <ClInclude Include="Package\Controls\IconButton\IconButtonEventList.h" />
+    <ClInclude Include="Package\Controls\IconButton\IconButtonPropertyList.h" />
+    <ClInclude Include="Package\Controls\IconButton\PackageIconButton.h" />
+    <ClInclude Include="Package\Controls\ImageListEditor\ImageListEditorEventList.h" />
+    <ClInclude Include="Package\Controls\ImageListEditor\ImageListEditorPropertyList.h" />
+    <ClInclude Include="Package\Controls\ImageListEditor\PackageImageListEditor.h" />
+    <ClInclude Include="Package\Controls\Image\PackageImage.h" />
+    <ClInclude Include="Package\Controls\Image\ImageEventList.h" />
+    <ClInclude Include="Package\Controls\Image\ImagePropertyList.h" />
+    <ClInclude Include="Package\Controls\Label\PackageLabel.h" />
+    <ClInclude Include="Package\Controls\Label\LabelEventList.h" />
+    <ClInclude Include="Package\Controls\Label\LabelPropertyList.h" />
+    <ClInclude Include="Package\Controls\ListBox\CustomListBoxEventList.h" />
+    <ClInclude Include="Package\Controls\ListBox\CustomListBoxPropertyList.h" />
+    <ClInclude Include="Package\Controls\ListBox\PackageCustomListBox.h" />
+    <ClInclude Include="Package\Controls\ListBox\PackageListBox.h" />
+    <ClInclude Include="Package\Controls\ListBox\ListBoxEventList.h" />
+    <ClInclude Include="Package\Controls\ListBox\ListBoxPropertyList.h" />
+    <ClInclude Include="Package\Controls\MainMenu\PackageMainMenu.h" />
+    <ClInclude Include="Package\Controls\MainMenu\MainMenuEventList.h" />
+    <ClInclude Include="Package\Controls\MainMenu\MainMenuPropertyList.h" />
+    <ClInclude Include="Package\Controls\MaskEdit\MaskEditEventList.h" />
+    <ClInclude Include="Package\Controls\MaskEdit\MaskEditPropertyList.h" />
+    <ClInclude Include="Package\Controls\MaskEdit\PackageMaskEdit.h" />
+    <ClInclude Include="Package\Controls\Memo\PackageMemo.h" />
+    <ClInclude Include="Package\Controls\Memo\MemoEventList.h" />
+    <ClInclude Include="Package\Controls\Memo\MemoPropertyList.h" />
+    <ClInclude Include="Package\Controls\MonthCalendar\MonthCalendarEventList.h" />
+    <ClInclude Include="Package\Controls\MonthCalendar\MonthCalendarPropertyList.h" />
+    <ClInclude Include="Package\Controls\MonthCalendar\PackageMonthCalendar.h" />
+    <ClInclude Include="Package\Controls\MultiButton\MultiButtonEventList.h" />
+    <ClInclude Include="Package\Controls\MultiButton\MultiButtonPropertyList.h" />
+    <ClInclude Include="Package\Controls\MultiButton\PackageMultiButton.h" />
+    <ClInclude Include="Package\Controls\PageControl\PackagePageControl.h" />
+    <ClInclude Include="Package\Controls\PageControl\PageControlEventList.h" />
+    <ClInclude Include="Package\Controls\PageControl\PageControlPropertyList.h" />
+    <ClInclude Include="Package\Controls\PaintBox\PackagePaintBox.h" />
+    <ClInclude Include="Package\Controls\PaintBox\PaintBoxEventList.h" />
+    <ClInclude Include="Package\Controls\PaintBox\PaintBoxPropertyList.h" />
+    <ClInclude Include="Package\Controls\Panel\PackagePanel.h" />
+    <ClInclude Include="Package\Controls\Panel\PanelEventList.h" />
+    <ClInclude Include="Package\Controls\Panel\PanelPropertyList.h" />
+    <ClInclude Include="Package\Controls\PasswordEdit\PackagePasswordEdit.h" />
+    <ClInclude Include="Package\Controls\PasswordEdit\PasswordEditEventList.h" />
+    <ClInclude Include="Package\Controls\PasswordEdit\PasswordEditPropertyList.h" />
+    <ClInclude Include="Package\Controls\PopupMenu\PackagePopupMenu.h" />
+    <ClInclude Include="Package\Controls\PopupMenu\PopupMenuEventList.h" />
+    <ClInclude Include="Package\Controls\PopupMenu\PopupMenuPropertyList.h" />
+    <ClInclude Include="Package\Controls\ProgressBar\PackageProgressBar.h" />
+    <ClInclude Include="Package\Controls\ProgressBar\ProgressBarEventList.h" />
+    <ClInclude Include="Package\Controls\ProgressBar\ProgressBarPropertyList.h" />
+    <ClInclude Include="Package\Controls\RadioButton\PackageRadioButton.h" />
+    <ClInclude Include="Package\Controls\RadioButton\RadioButtonEventList.h" />
+    <ClInclude Include="Package\Controls\RadioButton\RadioButtonPropertyList.h" />
+    <ClInclude Include="Package\Controls\ScrollBarLite\PackageScrollBarLite.h" />
+    <ClInclude Include="Package\Controls\ScrollBarLite\ScrollBarLiteEventList.h" />
+    <ClInclude Include="Package\Controls\ScrollBarLite\ScrollBarLitePropertyList.h" />
+    <ClInclude Include="Package\Controls\ScrollBar\PackageScrollBar.h" />
+    <ClInclude Include="Package\Controls\ScrollBar\ScrollBarEventList.h" />
+    <ClInclude Include="Package\Controls\ScrollBar\ScrollBarPropertyList.h" />
+    <ClInclude Include="Package\Controls\ScrollBox\PackageScrollBox.h" />
+    <ClInclude Include="Package\Controls\ScrollBox\ScrollBoxEventList.h" />
+    <ClInclude Include="Package\Controls\ScrollBox\ScrollBoxPropertyList.h" />
+    <ClInclude Include="Package\Controls\ScrollList\PackageScrollList.h" />
+    <ClInclude Include="Package\Controls\ScrollList\ScrollListEventList.h" />
+    <ClInclude Include="Package\Controls\ScrollList\ScrollListPropertyList.h" />
+    <ClInclude Include="Package\Controls\Select\PackageSelect.h" />
+    <ClInclude Include="Package\Controls\Select\SelectEventList.h" />
+    <ClInclude Include="Package\Controls\Select\SelectPropertyList.h" />
+    <ClInclude Include="Package\Controls\Shape\PackageShape.h" />
+    <ClInclude Include="Package\Controls\Shape\ShapeEventList.h" />
+    <ClInclude Include="Package\Controls\Shape\ShapePropertyList.h" />
+    <ClInclude Include="Package\Controls\SpeedButton\PackageSpeedButton.h" />
+    <ClInclude Include="Package\Controls\SpeedButton\SpeedButtonEventList.h" />
+    <ClInclude Include="Package\Controls\SpeedButton\SpeedButtonPropertyList.h" />
+    <ClInclude Include="Package\Controls\Splitter\PackageSplitter.h" />
+    <ClInclude Include="Package\Controls\Splitter\SplitterEventList.h" />
+    <ClInclude Include="Package\Controls\Splitter\SplitterPropertyList.h" />
+    <ClInclude Include="Package\Controls\StatusBar\PackageStatusBar.h" />
+    <ClInclude Include="Package\Controls\StatusBar\StatusBarEventList.h" />
+    <ClInclude Include="Package\Controls\StatusBar\StatusBarPropertyList.h" />
+    <ClInclude Include="Package\Controls\StringGrid\CustomStringGridEventList.h" />
+    <ClInclude Include="Package\Controls\StringGrid\CustomStringGridPropertyList.h" />
+    <ClInclude Include="Package\Controls\StringGrid\PackageCustomStringGrid.h" />
+    <ClInclude Include="Package\Controls\StringGrid\PackageStringGrid.h" />
+    <ClInclude Include="Package\Controls\StringGrid\StringGridEventList.h" />
+    <ClInclude Include="Package\Controls\StringGrid\StringGridPropertyList.h" />
+    <ClInclude Include="Package\Controls\TabSheet\PackageTabSheet.h" />
+    <ClInclude Include="Package\Controls\TabSheet\TabSheetEventList.h" />
+    <ClInclude Include="Package\Controls\TabSheet\TabSheetPropertyList.h" />
+    <ClInclude Include="Package\Controls\TimePicker\PackageTimePicker.h" />
+    <ClInclude Include="Package\Controls\TimePicker\TimePickerEventList.h" />
+    <ClInclude Include="Package\Controls\TimePicker\TimePickerPropertyList.h" />
+    <ClInclude Include="Package\Controls\Toggle\PackageToggle.h" />
+    <ClInclude Include="Package\Controls\Toggle\ToggleEventList.h" />
+    <ClInclude Include="Package\Controls\Toggle\TogglePropertyList.h" />
+    <ClInclude Include="Package\Controls\ToolBar\PackageToolBar.h" />
+    <ClInclude Include="Package\Controls\ToolBar\ToolBarEventList.h" />
+    <ClInclude Include="Package\Controls\ToolBar\ToolBarPropertyList.h" />
+    <ClInclude Include="Package\Controls\TrackBar\PackageTrackBar.h" />
+    <ClInclude Include="Package\Controls\TrackBar\TrackBarEventList.h" />
+    <ClInclude Include="Package\Controls\TrackBar\TrackBarPropertyList.h" />
+    <ClInclude Include="Package\Controls\TrackRange\PackageTrackRange.h" />
+    <ClInclude Include="Package\Controls\TrackRange\TrackRangeEventList.h" />
+    <ClInclude Include="Package\Controls\TrackRange\TrackRangePropertyList.h" />
+    <ClInclude Include="Package\Controls\TreeView\CustomTreeViewEventList.h" />
+    <ClInclude Include="Package\Controls\TreeView\CustomTreeViewPropertyList.h" />
+    <ClInclude Include="Package\Controls\TreeView\PackageCustomTreeView.h" />
+    <ClInclude Include="Package\Controls\TreeView\PackageTreeView.h" />
+    <ClInclude Include="Package\Controls\TreeView\TreeViewEventList.h" />
+    <ClInclude Include="Package\Controls\TreeView\TreeViewPropertyList.h" />
+    <ClInclude Include="Package\Controls\UpDownEx\PackageUpDownEx.h" />
+    <ClInclude Include="Package\Controls\UpDownEx\UpDownExEventList.h" />
+    <ClInclude Include="Package\Controls\UpDownEx\UpDownExPropertyList.h" />
+    <ClInclude Include="Package\Controls\UpDown\PackageUpDown.h" />
+    <ClInclude Include="Package\Controls\UpDown\UpDownEventList.h" />
+    <ClInclude Include="Package\Controls\UpDown\UpDownPropertyList.h" />
+    <ClInclude Include="Package\Controls\ValueListEditor\PackageValueListEditor.h" />
+    <ClInclude Include="Package\Controls\ValueListEditor\ValueListEditorEventList.h" />
+    <ClInclude Include="Package\Controls\ValueListEditor\ValueListEditorPropertyList.h" />
+    <ClInclude Include="Package\Core\Consts.h" />
+    <ClInclude Include="Package\Core\PropertyHandlerDropDown.h" />
+    <ClInclude Include="Package\Core\PropertyHandlerModal.h" />
+    <ClInclude Include="Package\Core\PropertyHandlerTextInput.h" />
+    <ClInclude Include="Package\Core\PropertyHandlerTextInputListener.h" />
+    <ClInclude Include="Package\Forms\BoolArray\FormBoolArrayEventList.h" />
+    <ClInclude Include="Package\Forms\BoolArray\FormBoolArrayPropertyList.h" />
+    <ClInclude Include="Package\Forms\BoolArray\PackageFormBoolArray.h" />
+    <ClInclude Include="Package\Forms\BorderColor\FormBorderColorEventList.h" />
+    <ClInclude Include="Package\Forms\BorderColor\FormBorderColorPropertyList.h" />
+    <ClInclude Include="Package\Forms\BorderColor\PackageFormBorderColor.h" />
+    <ClInclude Include="Package\Forms\ColorArray\FormColorArrayEventList.h" />
+    <ClInclude Include="Package\Forms\ColorArray\FormColorArrayPropertyList.h" />
+    <ClInclude Include="Package\Forms\ColorArray\PackageFormColorArray.h" />
+    <ClInclude Include="Package\Forms\Color\FormColorEventList.h" />
+    <ClInclude Include="Package\Forms\Color\FormColorPropertyList.h" />
+    <ClInclude Include="Package\Forms\Color\PackageFormColor.h" />
+    <ClInclude Include="Package\Forms\Find\FormFindEventList.h" />
+    <ClInclude Include="Package\Forms\Find\FormFindPropertyList.h" />
+    <ClInclude Include="Package\Forms\Find\PackageFormFind.h" />
+    <ClInclude Include="Package\Forms\FloatArray\FormFloatArrayEventList.h" />
+    <ClInclude Include="Package\Forms\FloatArray\FormFloatArrayPropertyList.h" />
+    <ClInclude Include="Package\Forms\FloatArray\PackageFormFloatArray.h" />
+    <ClInclude Include="Package\Forms\Gradient\FormGradientEventList.h" />
+    <ClInclude Include="Package\Forms\Gradient\FormGradientPropertyList.h" />
+    <ClInclude Include="Package\Forms\Gradient\PackageFormGradient.h" />
+    <ClInclude Include="Package\Forms\HotkeyList\FormHotkeyListEventList.h" />
+    <ClInclude Include="Package\Forms\HotkeyList\FormHotkeyListPropertyList.h" />
+    <ClInclude Include="Package\Forms\HotkeyList\PackageFormHotkeyList.h" />
+    <ClInclude Include="Package\Forms\Hotkey\FormHotkeyEventList.h" />
+    <ClInclude Include="Package\Forms\Hotkey\FormHotkeyPropertyList.h" />
+    <ClInclude Include="Package\Forms\Hotkey\PackageFormHotkey.h" />
+    <ClInclude Include="Package\Forms\ImageList\FormImageListEventList.h" />
+    <ClInclude Include="Package\Forms\ImageList\FormImageListPropertyList.h" />
+    <ClInclude Include="Package\Forms\ImageList\PackageFormImageList.h" />
+    <ClInclude Include="Package\Forms\Image\FormImageEventList.h" />
+    <ClInclude Include="Package\Forms\Image\FormImagePropertyList.h" />
+    <ClInclude Include="Package\Forms\Image\PackageFormImage.h" />
+    <ClInclude Include="Package\Forms\IntegerArray\FormIntegerArrayEventList.h" />
+    <ClInclude Include="Package\Forms\IntegerArray\FormIntegerArrayPropertyList.h" />
+    <ClInclude Include="Package\Forms\IntegerArray\PackageFormIntegerArray.h" />
+    <ClInclude Include="Package\Forms\Mask\FormMaskEventList.h" />
+    <ClInclude Include="Package\Forms\Mask\FormMaskPropertyList.h" />
+    <ClInclude Include="Package\Forms\Mask\PackageFormMask.h" />
+    <ClInclude Include="Package\Forms\Matrix\FormMatrixEventList.h" />
+    <ClInclude Include="Package\Forms\Matrix\FormMatrixPropertyList.h" />
+    <ClInclude Include="Package\Forms\Matrix\PackageFormMatrix.h" />
+    <ClInclude Include="Package\Forms\Memo\FormMemoEventList.h" />
+    <ClInclude Include="Package\Forms\Memo\FormMemoPropertyList.h" />
+    <ClInclude Include="Package\Forms\Memo\PackageFormMemo.h" />
+    <ClInclude Include="Package\Forms\MenuListItem\FormMenuListItemEventList.h" />
+    <ClInclude Include="Package\Forms\MenuListItem\FormMenuListItemPropertyList.h" />
+    <ClInclude Include="Package\Forms\MenuListItem\PackageFormMenuListItem.h" />
+    <ClInclude Include="Package\Forms\PointB\FormPointBEventList.h" />
+    <ClInclude Include="Package\Forms\PointB\FormPointBPropertyList.h" />
+    <ClInclude Include="Package\Forms\PointB\PackageFormPointB.h" />
+    <ClInclude Include="Package\Forms\PointD\FormPointDEventList.h" />
+    <ClInclude Include="Package\Forms\PointD\FormPointDPropertyList.h" />
+    <ClInclude Include="Package\Forms\PointD\PackageFormPointD.h" />
+    <ClInclude Include="Package\Forms\PointF\FormPointFEventList.h" />
+    <ClInclude Include="Package\Forms\PointF\FormPointFPropertyList.h" />
+    <ClInclude Include="Package\Forms\PointF\PackageFormPointF.h" />
+    <ClInclude Include="Package\Forms\PointL\FormPointLEventList.h" />
+    <ClInclude Include="Package\Forms\PointL\FormPointLPropertyList.h" />
+    <ClInclude Include="Package\Forms\PointL\PackageFormPointL.h" />
+    <ClInclude Include="Package\Forms\Point\FormPointEventList.h" />
+    <ClInclude Include="Package\Forms\Point\FormPointPropertyList.h" />
+    <ClInclude Include="Package\Forms\Point\PackageFormPoint.h" />
+    <ClInclude Include="Package\Forms\RectB\FormRectBEventList.h" />
+    <ClInclude Include="Package\Forms\RectB\FormRectBPropertyList.h" />
+    <ClInclude Include="Package\Forms\RectB\PackageFormRectB.h" />
+    <ClInclude Include="Package\Forms\RectD\FormRectDEventList.h" />
+    <ClInclude Include="Package\Forms\RectD\FormRectDPropertyList.h" />
+    <ClInclude Include="Package\Forms\RectD\PackageFormRectD.h" />
+    <ClInclude Include="Package\Forms\RectF\FormRectFEventList.h" />
+    <ClInclude Include="Package\Forms\RectF\FormRectFPropertyList.h" />
+    <ClInclude Include="Package\Forms\RectF\PackageFormRectF.h" />
+    <ClInclude Include="Package\Forms\RectL\FormRectLEventList.h" />
+    <ClInclude Include="Package\Forms\RectL\FormRectLPropertyList.h" />
+    <ClInclude Include="Package\Forms\RectL\PackageFormRectL.h" />
+    <ClInclude Include="Package\Forms\Rect\FormRectEventList.h" />
+    <ClInclude Include="Package\Forms\Rect\FormRectPropertyList.h" />
+    <ClInclude Include="Package\Forms\Rect\PackageFormRect.h" />
+    <ClInclude Include="Package\Forms\Replace\FormReplaceEventList.h" />
+    <ClInclude Include="Package\Forms\Replace\FormReplacePropertyList.h" />
+    <ClInclude Include="Package\Forms\Replace\PackageFormReplace.h" />
+    <ClInclude Include="Package\Forms\SelectListItem\FormSelectListItemEventList.h" />
+    <ClInclude Include="Package\Forms\SelectListItem\FormSelectListItemPropertyList.h" />
+    <ClInclude Include="Package\Forms\SelectListItem\PackageFormSelectListItem.h" />
+    <ClInclude Include="Package\Forms\Transform\FormTransformEventList.h" />
+    <ClInclude Include="Package\Forms\Transform\FormTransformPropertyList.h" />
+    <ClInclude Include="Package\Forms\Transform\PackageFormTransform.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyComponentImageList.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyComponentImageListState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyControlDirectoryTree.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyControlDirectoryTreeState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyControlEdit.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyControlEditState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyControlFileList.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyControlFileListState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyControlHSVPlane.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyControlHSVPlaneState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyHotkeyList.h" />
+    <ClInclude Include="Package\ListItems\CheckBox\ListItemCheckBoxPropertyList.h" />
+    <ClInclude Include="Package\ListItems\CheckBox\PackageListItemCheckBox.h" />
+    <ClInclude Include="Package\ListItems\Color\ListItemColorPropertyList.h" />
+    <ClInclude Include="Package\ListItems\Color\PackageListItemColor.h" />
+    <ClInclude Include="Package\ListItems\Icon\ListItemIconPropertyList.h" />
+    <ClInclude Include="Package\ListItems\Icon\PackageListItemIcon.h" />
+    <ClInclude Include="Package\ListItems\Label\ListItemLabelPropertyList.h" />
+    <ClInclude Include="Package\ListItems\Label\PackageListItemLabel.h" />
+    <ClInclude Include="Package\ListItems\MenuCheckBox\ListItemMenuCheckBoxPropertyList.h" />
+    <ClInclude Include="Package\ListItems\MenuCheckBox\PackageListItemMenuCheckBox.h" />
+    <ClInclude Include="Package\ListItems\MenuLabel\ListItemMenuLabelPropertyList.h" />
+    <ClInclude Include="Package\ListItems\MenuLabel\PackageListItemMenuLabel.h" />
+    <ClInclude Include="Package\ListItems\MenuRadioButton\ListItemMenuRadioButtonPropertyList.h" />
+    <ClInclude Include="Package\ListItems\MenuRadioButton\PackageListItemMenuRadioButton.h" />
+    <ClInclude Include="Package\ListItems\MenuSeparator\ListItemMenuSeparatorPropertyList.h" />
+    <ClInclude Include="Package\ListItems\MenuSeparator\PackageListItemMenuSeparator.h" />
+    <ClInclude Include="Package\ListItems\Menu\ListItemMenuPropertyList.h" />
+    <ClInclude Include="Package\ListItems\Menu\PackageListItemMenu.h" />
+    <ClInclude Include="Package\ListItems\MultiButton\ListItemMultiButtonPropertyList.h" />
+    <ClInclude Include="Package\ListItems\MultiButton\PackageListItemMultiButton.h" />
+    <ClInclude Include="Package\ListItems\SelectCategory\ListItemSelectCategoryPropertyList.h" />
+    <ClInclude Include="Package\ListItems\SelectCategory\PackageListItemSelectCategory.h" />
+    <ClInclude Include="Package\ListItems\SelectLabel\ListItemSelectLabelPropertyList.h" />
+    <ClInclude Include="Package\ListItems\SelectLabel\PackageListItemSelectLabel.h" />
+    <ClInclude Include="Package\ListItems\StatusPanelLabel\ListItemStatusPanelLabelPropertyList.h" />
+    <ClInclude Include="Package\ListItems\StatusPanelLabel\PackageListItemStatusPanelLabel.h" />
+    <ClInclude Include="Package\ListItems\StatusPanel\ListItemStatusPanelPropertyList.h" />
+    <ClInclude Include="Package\ListItems\StatusPanel\PackageListItemStatusPanel.h" />
+    <ClInclude Include="Package\ListItems\TreeViewLabel\ListItemTreeViewLabelPropertyList.h" />
+    <ClInclude Include="Package\ListItems\TreeViewLabel\PackageListItemTreeViewLabel.h" />
+    <ClInclude Include="Package\PackageStandardService.h" />
+    <ClInclude Include="Package\Properties\PropertyComponentImageList.h" />
+    <ClInclude Include="Package\Properties\PropertyComponentImageListState.h" />
+    <ClInclude Include="Package\Properties\PropertyControlDirectoryTree.h" />
+    <ClInclude Include="Package\Properties\PropertyControlDirectoryTreeState.h" />
+    <ClInclude Include="Package\Properties\PropertyControlEdit.h" />
+    <ClInclude Include="Package\Properties\PropertyControlEditState.h" />
+    <ClInclude Include="Package\Properties\PropertyControlFileList.h" />
+    <ClInclude Include="Package\Properties\PropertyControlFileListState.h" />
+    <ClInclude Include="Package\Properties\PropertyControlHSVPlane.h" />
+    <ClInclude Include="Package\Properties\PropertyControlHSVPlaneState.h" />
+    <ClInclude Include="Package\Properties\PropertyHotkeyList.h" />
+    <ClInclude Include="Package\PropertyHandlers\BoolArray\PropertyHandlerBoolArray.h" />
+    <ClInclude Include="Package\PropertyHandlers\Bool\PropertyHandlerBool.h" />
+    <ClInclude Include="Package\PropertyHandlers\BorderColor\PropertyHandlerBorderColor.h" />
+    <ClInclude Include="Package\PropertyHandlers\ColorArray\PropertyHandlerColorArray.h" />
+    <ClInclude Include="Package\PropertyHandlers\Color\PropertyHandlerColor.h" />
+    <ClInclude Include="Package\PropertyHandlers\ComponentImageList\PropertyHandlerComponentImageList.h" />
+    <ClInclude Include="Package\PropertyHandlers\ControlDirectoryTree\PropertyHandlerControlDirectoryTree.h" />
+    <ClInclude Include="Package\PropertyHandlers\ControlEdit\PropertyHandlerControlEdit.h" />
+    <ClInclude Include="Package\PropertyHandlers\ControlFileList\PropertyHandlerControlFileList.h" />
+    <ClInclude Include="Package\PropertyHandlers\ControlHSVPlane\PropertyHandlerControlHSVPlane.h" />
+    <ClInclude Include="Package\PropertyHandlers\Double\PropertyHandlerDouble.h" />
+    <ClInclude Include="Package\PropertyHandlers\Enum\PropertyHandlerEnum.h" />
+    <ClInclude Include="Package\PropertyHandlers\FloatArray\PropertyHandlerFloatArray.h" />
+    <ClInclude Include="Package\PropertyHandlers\Float\PropertyHandlerFloat.h" />
+    <ClInclude Include="Package\PropertyHandlers\Font\PropertyHandlerFont.h" />
+    <ClInclude Include="Package\PropertyHandlers\Gradient\PropertyHandlerGradient.h" />
+    <ClInclude Include="Package\PropertyHandlers\HotkeyList\PropertyHandlerHotkeyList.h" />
+    <ClInclude Include="Package\PropertyHandlers\Hotkey\PropertyHandlerHotkey.h" />
+    <ClInclude Include="Package\PropertyHandlers\Identifier\PropertyHandlerIdentifier.h" />
+    <ClInclude Include="Package\PropertyHandlers\ImageList\PropertyHandlerImageList.h" />
+    <ClInclude Include="Package\PropertyHandlers\Image\PropertyHandlerImage.h" />
+    <ClInclude Include="Package\PropertyHandlers\Int64\PropertyHandlerInt64.h" />
+    <ClInclude Include="Package\PropertyHandlers\IntegerArray\PropertyHandlerIntegerArray.h" />
+    <ClInclude Include="Package\PropertyHandlers\Integer\PropertyHandlerInteger.h" />
+    <ClInclude Include="Package\PropertyHandlers\Mask\PropertyHandlerMask.h" />
+    <ClInclude Include="Package\PropertyHandlers\Matrix\PropertyHandlerMatrix.h" />
+    <ClInclude Include="Package\PropertyHandlers\PointB\PropertyHandlerPointB.h" />
+    <ClInclude Include="Package\PropertyHandlers\PointD\PropertyHandlerPointD.h" />
+    <ClInclude Include="Package\PropertyHandlers\PointF\PropertyHandlerPointF.h" />
+    <ClInclude Include="Package\PropertyHandlers\PointL\PropertyHandlerPointL.h" />
+    <ClInclude Include="Package\PropertyHandlers\Point\PropertyHandlerPoint.h" />
+    <ClInclude Include="Package\PropertyHandlers\RectB\PropertyHandlerRectB.h" />
+    <ClInclude Include="Package\PropertyHandlers\RectD\PropertyHandlerRectD.h" />
+    <ClInclude Include="Package\PropertyHandlers\RectF\PropertyHandlerRectF.h" />
+    <ClInclude Include="Package\PropertyHandlers\RectL\PropertyHandlerRectL.h" />
+    <ClInclude Include="Package\PropertyHandlers\Rect\PropertyHandlerRect.h" />
+    <ClInclude Include="Package\PropertyHandlers\String\PropertyHandlerString.h" />
+    <ClInclude Include="Package\PropertyHandlers\Style\PropertyHandlerStyle.h" />
+    <ClInclude Include="Package\PropertyHandlers\Text\PropertyHandlerText.h" />
+    <ClInclude Include="Package\PropertyHandlers\Transform\PropertyHandlerTransform.h" />
+    <ClInclude Include="Package\PackageStandard.h" />
+    <ClInclude Include="Standard.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Components\AdminRights\AdminRights.cpp" />
+    <ClCompile Include="Components\ColorDialog\ColorDialog.cpp" />
+    <ClCompile Include="Components\ColorDialog\ColorDialogService.cpp" />
+    <ClCompile Include="Components\ColorDialog\DialogBoxListener.cpp" />
+    <ClCompile Include="Components\FindDialog\DialogBoxListener.cpp" />
+    <ClCompile Include="Components\FindDialog\FindDialog.cpp" />
+    <ClCompile Include="Components\FindDialog\FindDialogService.cpp" />
+    <ClCompile Include="Components\ImageList\ImageList.cpp" />
+    <ClCompile Include="Components\ImageList\ImageListService.cpp" />
+    <ClCompile Include="Components\Logger\Logger.cpp" />
+    <ClCompile Include="Components\ReplaceDialog\DialogBoxListener.cpp" />
+    <ClCompile Include="Components\ReplaceDialog\ReplaceDialog.cpp" />
+    <ClCompile Include="Components\ReplaceDialog\ReplaceDialogService.cpp" />
+    <ClCompile Include="Components\SimpleXML\SimpleXML.cpp" />
+    <ClCompile Include="Components\SysBrowseFolderDialog\SysBrowseFolderDialog.cpp" />
+    <ClCompile Include="Components\SysColorDialog\SysColorDialog.cpp" />
+    <ClCompile Include="Components\SysFontDialog\SysFontDialog.cpp" />
+    <ClCompile Include="Components\SysOpenDialog\SysOpenDialog.cpp" />
+    <ClCompile Include="Components\SysOpenPictureDialog\SysOpenPictureDialog.cpp" />
+    <ClCompile Include="Components\SysPageSetupDialog\SysPageSetupDialog.cpp" />
+    <ClCompile Include="Components\SysPrintDialog\SysPrintDialog.cpp" />
+    <ClCompile Include="Components\SysSaveDialog\SysSaveDialog.cpp" />
+    <ClCompile Include="Components\SysSavePictureDialog\SysSavePictureDialog.cpp" />
+    <ClCompile Include="Components\TaskBarProgress\TaskBarProgress.cpp" />
+    <ClCompile Include="Components\TCPClient\TCPClient.cpp" />
+    <ClCompile Include="Components\TCPClient\TCPClientService.cpp" />
+    <ClCompile Include="Components\TCPServer\Client.cpp" />
+    <ClCompile Include="Components\TCPServer\ThreadListener.cpp" />
+    <ClCompile Include="Components\TCPServer\ServerSocketListener.cpp" />
+    <ClCompile Include="Components\TCPServer\TCPServer.cpp" />
+    <ClCompile Include="Components\TCPServer\TCPServerService.cpp" />
+    <ClCompile Include="Components\Timer\Timer.cpp" />
+    <ClCompile Include="Components\Timer\TimerService.cpp" />
+    <ClCompile Include="Components\TrayIcon\TrayIcon.cpp" />
+    <ClCompile Include="Components\TrayIcon\TrayIconListener.cpp" />
+    <ClCompile Include="Components\TrayIcon\TrayIconService.cpp" />
+    <ClCompile Include="Controls\AlphaBar\AlphaBar.cpp" />
+    <ClCompile Include="Controls\AlphaBar\AlphaBarService.cpp" />
+    <ClCompile Include="Controls\Bevel\Bevel.cpp" />
+    <ClCompile Include="Controls\Bevel\BevelService.cpp" />
+    <ClCompile Include="Controls\BitBtn\BitBtn.cpp" />
+    <ClCompile Include="Controls\BitBtn\BitBtnService.cpp" />
+    <ClCompile Include="Controls\Button\Button.cpp" />
+    <ClCompile Include="Controls\Button\ButtonService.cpp" />
+    <ClCompile Include="Controls\CheckBox\CheckBox.cpp" />
+    <ClCompile Include="Controls\CheckBox\CheckBoxService.cpp" />
+    <ClCompile Include="Controls\CheckListBox\CheckListBox.cpp" />
+    <ClCompile Include="Controls\ColorBox\ColorBox.cpp" />
+    <ClCompile Include="Controls\ColorListBox\ColorListBox.cpp" />
+    <ClCompile Include="Controls\ColorListBox\ColorListBoxListItem.cpp" />
+    <ClCompile Include="Controls\Container\Container.cpp" />
+    <ClCompile Include="Controls\Container\ContainerService.cpp" />
+    <ClCompile Include="Controls\CoolBar\CoolBar.cpp" />
+    <ClCompile Include="Controls\CoolBar\CoolBarService.cpp" />
+    <ClCompile Include="Controls\CoolBar\Scroll.cpp" />
+    <ClCompile Include="Controls\CoolBar\ExtraListScrollListener.cpp" />
+    <ClCompile Include="Controls\CoolBar\ToogleListScrollListener.cpp" />
+    <ClCompile Include="Controls\DatePicker\BuiltIn.cpp" />
+    <ClCompile Include="Controls\DatePicker\DatePicker.cpp" />
+    <ClCompile Include="Controls\DatePicker\DatePickerService.cpp" />
+    <ClCompile Include="Controls\DatePicker\Listener.cpp" />
+    <ClCompile Include="Controls\DialogBoxEx\DialogBoxEx.cpp" />
+    <ClCompile Include="Controls\DialogBoxEx\DialogBoxExService.cpp" />
+    <ClCompile Include="Controls\DirectoryTree\DirectoryTree.cpp" />
+    <ClCompile Include="Controls\DirectoryTree\DirectoryTreeService.cpp" />
+    <ClCompile Include="Controls\DirectoryTree\Owner.cpp" />
+    <ClCompile Include="Controls\DirectoryTree\RootListItem.cpp" />
+    <ClCompile Include="Controls\DirectoryTree\Scroll.cpp" />
+    <ClCompile Include="Controls\DirectoryTree\ScrollListener.cpp" />
+    <ClCompile Include="Controls\DrawGrid\CustomGrid.cpp" />
+    <ClCompile Include="Controls\DrawGrid\CustomGridListItemOwner.cpp" />
+    <ClCompile Include="Controls\DrawGrid\CustomGridScroll.cpp" />
+    <ClCompile Include="Controls\DrawGrid\CustomGridScrollListener.cpp" />
+    <ClCompile Include="Controls\DrawGrid\CustomGridService.cpp" />
+    <ClCompile Include="Controls\DrawGrid\CustomDrawGrid.cpp" />
+    <ClCompile Include="Controls\DrawGrid\CustomDrawGridService.cpp" />
+    <ClCompile Include="Controls\DrawGrid\DrawGrid.cpp" />
+    <ClCompile Include="Controls\DriveDropDown\DriveDropDown.cpp" />
+    <ClCompile Include="Controls\DriveDropDown\DriveDropDownService.cpp" />
+    <ClCompile Include="Controls\DriveDropDown\DropDown.cpp" />
+    <ClCompile Include="Controls\DriveDropDown\Listener.cpp" />
+    <ClCompile Include="Controls\DriveDropDown\Owner.cpp" />
+    <ClCompile Include="Controls\DropDown\CustomDropDown.cpp" />
+    <ClCompile Include="Controls\DropDown\CustomDropDownDropDown.cpp" />
+    <ClCompile Include="Controls\DropDown\CustomDropDownDropDownListener.cpp" />
+    <ClCompile Include="Controls\DropDown\CustomDropDownService.cpp" />
+    <ClCompile Include="Controls\DropDown\DropDown.cpp" />
+    <ClCompile Include="Controls\EditCalc\EditCalc.cpp" />
+    <ClCompile Include="Controls\EditCalc\EditCalcService.cpp" />
+    <ClCompile Include="Controls\Edit\Edit.cpp" />
+    <ClCompile Include="Controls\Edit\EditListener.cpp" />
+    <ClCompile Include="Controls\Edit\EditService.cpp" />
+    <ClCompile Include="Controls\Edit\EditTextInput.cpp" />
+    <ClCompile Include="Controls\FileList\FileList.cpp" />
+    <ClCompile Include="Controls\FileList\FileListService.cpp" />
+    <ClCompile Include="Controls\FileList\Item.cpp" />
+    <ClCompile Include="Controls\FileList\Owner.cpp" />
+    <ClCompile Include="Controls\FileList\Scroll.cpp" />
+    <ClCompile Include="Controls\FileList\ScrollListener.cpp" />
+    <ClCompile Include="Controls\FormStyleSolid\FormStyleSolid.cpp" />
+    <ClCompile Include="Controls\FormStyleSolid\FormStyleSolidService.cpp" />
+    <ClCompile Include="Controls\Frame\Frame.cpp" />
+    <ClCompile Include="Controls\Frame\FrameService.cpp" />
+    <ClCompile Include="Controls\GradientEditor\GradientEditor.cpp" />
+    <ClCompile Include="Controls\GradientEditor\GradientEditorService.cpp" />
+    <ClCompile Include="Controls\GroupBox\GroupBox.cpp" />
+    <ClCompile Include="Controls\GroupBox\GroupBoxService.cpp" />
+    <ClCompile Include="Controls\GroupFold\GroupFold.cpp" />
+    <ClCompile Include="Controls\GroupFold\GroupFoldService.cpp" />
+    <ClCompile Include="Controls\HotKey\HotKey.cpp" />
+    <ClCompile Include="Controls\HotKey\HotKeyService.cpp" />
+    <ClCompile Include="Controls\HSVBar\HSVBar.cpp" />
+    <ClCompile Include="Controls\HSVBar\HSVBarService.cpp" />
+    <ClCompile Include="Controls\HSVPlane\HSVPlane.cpp" />
+    <ClCompile Include="Controls\HSVPlane\HSVPlaneService.cpp" />
+    <ClCompile Include="Controls\IconButton\IconButton.cpp" />
+    <ClCompile Include="Controls\IconButton\IconButtonService.cpp" />
+    <ClCompile Include="Controls\ImageListEditor\ImageListEditor.cpp" />
+    <ClCompile Include="Controls\ImageListEditor\ImageListEditorScroll.cpp" />
+    <ClCompile Include="Controls\ImageListEditor\ImageListEditorScrollListener.cpp" />
+    <ClCompile Include="Controls\ImageListEditor\ImageListEditorService.cpp" />
+    <ClCompile Include="Controls\Image\Image.cpp" />
+    <ClCompile Include="Controls\Image\ImageService.cpp" />
+    <ClCompile Include="Controls\Label\Label.cpp" />
+    <ClCompile Include="Controls\Label\LabelService.cpp" />
+    <ClCompile Include="Controls\ListBox\CustomListBox.cpp" />
+    <ClCompile Include="Controls\ListBox\CustomListBoxItemOwner.cpp" />
+    <ClCompile Include="Controls\ListBox\CustomListBoxScroll.cpp" />
+    <ClCompile Include="Controls\ListBox\CustomListBoxScrollListener.cpp" />
+    <ClCompile Include="Controls\ListBox\CustomListBoxService.cpp" />
+    <ClCompile Include="Controls\ListBox\ListBox.cpp" />
+    <ClCompile Include="Controls\ListBox\ListBoxListItem.cpp" />
+    <ClCompile Include="Controls\MainMenu\MainMenu.cpp" />
+    <ClCompile Include="Controls\MainMenu\MainMenuListItemOwner.cpp" />
+    <ClCompile Include="Controls\MainMenu\MainMenuService.cpp" />
+    <ClCompile Include="Controls\MainMenu\MainMenuTransform.cpp" />
+    <ClCompile Include="Controls\MaskEdit\MaskEdit.cpp" />
+    <ClCompile Include="Controls\MaskEdit\MaskEditAttempt.cpp" />
+    <ClCompile Include="Controls\MaskEdit\MaskEditDefaultValidator.cpp" />
+    <ClCompile Include="Controls\MaskEdit\MaskEditListener.cpp" />
+    <ClCompile Include="Controls\MaskEdit\MaskEditService.cpp" />
+    <ClCompile Include="Controls\MaskEdit\MaskEditTextInput.cpp" />
+    <ClCompile Include="Controls\Memo\Memo.cpp" />
+    <ClCompile Include="Controls\Memo\MemoScroll.cpp" />
+    <ClCompile Include="Controls\Memo\MemoScrollListener.cpp" />
+    <ClCompile Include="Controls\Memo\MemoService.cpp" />
+    <ClCompile Include="Controls\Memo\MemoTextArea.cpp" />
+    <ClCompile Include="Controls\Memo\MemoTextAreaListener.cpp" />
+    <ClCompile Include="Controls\MonthCalendar\BuiltIn.cpp" />
+    <ClCompile Include="Controls\MonthCalendar\Listener.cpp" />
+    <ClCompile Include="Controls\MonthCalendar\MonthCalendar.cpp" />
+    <ClCompile Include="Controls\MonthCalendar\MonthCalendarService.cpp" />
+    <ClCompile Include="Controls\MultiButton\MultiButton.cpp" />
+    <ClCompile Include="Controls\MultiButton\MultiButtonService.cpp" />
+    <ClCompile Include="Controls\MultiButton\Owner.cpp" />
+    <ClCompile Include="Controls\PageControl\TabSheet.cpp" />
+    <ClCompile Include="Controls\PageControl\PageControl.cpp" />
+    <ClCompile Include="Controls\PageControl\PageControlService.cpp" />
+    <ClCompile Include="Controls\PageControl\TabSheetService.cpp" />
+    <ClCompile Include="Controls\PageControl\TabSheetTransform.cpp" />
+    <ClCompile Include="Controls\PaintBox\PaintBox.cpp" />
+    <ClCompile Include="Controls\PaintBox\PaintBoxService.cpp" />
+    <ClCompile Include="Controls\Panel\Panel.cpp" />
+    <ClCompile Include="Controls\Panel\PanelService.cpp" />
+    <ClCompile Include="Controls\PasswordEdit\PasswordEdit.cpp" />
+    <ClCompile Include="Controls\PasswordEdit\PasswordEditListener.cpp" />
+    <ClCompile Include="Controls\PasswordEdit\PasswordEditService.cpp" />
+    <ClCompile Include="Controls\PasswordEdit\PasswordEditTextInput.cpp" />
+    <ClCompile Include="Controls\PopupMenu\PopupMenu.cpp" />
+    <ClCompile Include="Controls\PopupMenu\PopupMenuListItemOwner.cpp" />
+    <ClCompile Include="Controls\PopupMenu\PopupMenuService.cpp" />
+    <ClCompile Include="Controls\PopupMenu\PopupMenuTransform.cpp" />
+    <ClCompile Include="Controls\ProgressBar\ProgressBar.cpp" />
+    <ClCompile Include="Controls\ProgressBar\ProgressBarService.cpp" />
+    <ClCompile Include="Controls\RadioButton\RadioButton.cpp" />
+    <ClCompile Include="Controls\RadioButton\RadioButtonService.cpp" />
+    <ClCompile Include="Controls\ScrollBarLite\ScrollBarLite.cpp" />
+    <ClCompile Include="Controls\ScrollBarLite\ScrollBarLiteScroll.cpp" />
+    <ClCompile Include="Controls\ScrollBarLite\ScrollBarLiteScrollListener.cpp" />
+    <ClCompile Include="Controls\ScrollBarLite\ScrollBarLiteService.cpp" />
+    <ClCompile Include="Controls\ScrollBar\ScrollBar.cpp" />
+    <ClCompile Include="Controls\ScrollBar\ScrollBarScroll.cpp" />
+    <ClCompile Include="Controls\ScrollBar\ScrollBarScrollListener.cpp" />
+    <ClCompile Include="Controls\ScrollBar\ScrollBarService.cpp" />
+    <ClCompile Include="Controls\ScrollBox\ScrollBox.cpp" />
+    <ClCompile Include="Controls\ScrollBox\ScrollBoxScroll.cpp" />
+    <ClCompile Include="Controls\ScrollBox\ScrollBoxScrollListener.cpp" />
+    <ClCompile Include="Controls\ScrollBox\ScrollBoxService.cpp" />
+    <ClCompile Include="Controls\ScrollList\ScrollList.cpp" />
+    <ClCompile Include="Controls\ScrollList\ScrollListService.cpp" />
+    <ClCompile Include="Controls\Select\Select.cpp" />
+    <ClCompile Include="Controls\Select\SelectService.cpp" />
+    <ClCompile Include="Controls\Shape\Shape.cpp" />
+    <ClCompile Include="Controls\Shape\ShapeService.cpp" />
+    <ClCompile Include="Controls\SpeedButton\SpeedButton.cpp" />
+    <ClCompile Include="Controls\SpeedButton\SpeedButtonService.cpp" />
+    <ClCompile Include="Controls\Splitter\Splitter.cpp" />
+    <ClCompile Include="Controls\Splitter\SplitterService.cpp" />
+    <ClCompile Include="Controls\StatusBar\StatusBar.cpp" />
+    <ClCompile Include="Controls\StatusBar\StatusBarListItemOwner.cpp" />
+    <ClCompile Include="Controls\StatusBar\StatusBarService.cpp" />
+    <ClCompile Include="Controls\StatusBar\StatusBarTransform.cpp" />
+    <ClCompile Include="Controls\StringGrid\CustomStringGrid.cpp" />
+    <ClCompile Include="Controls\StringGrid\CustomStringGridService.cpp" />
+    <ClCompile Include="Controls\StringGrid\StringGrid.cpp" />
+    <ClCompile Include="Controls\StringGrid\TextInput.cpp" />
+    <ClCompile Include="Controls\StringGrid\TextInputListener.cpp" />
+    <ClCompile Include="Controls\TimePicker\TimePicker.cpp" />
+    <ClCompile Include="Controls\TimePicker\TimePickerService.cpp" />
+    <ClCompile Include="Controls\Toggle\Toggle.cpp" />
+    <ClCompile Include="Controls\Toggle\ToggleService.cpp" />
+    <ClCompile Include="Controls\ToolBar\ToolBar.cpp" />
+    <ClCompile Include="Controls\ToolBar\ToolBarService.cpp" />
+    <ClCompile Include="Controls\TrackBar\TrackBar.cpp" />
+    <ClCompile Include="Controls\TrackBar\TrackBarService.cpp" />
+    <ClCompile Include="Controls\TrackRange\TrackRange.cpp" />
+    <ClCompile Include="Controls\TrackRange\TrackRangeService.cpp" />
+    <ClCompile Include="Controls\TreeView\CustomTreeView.cpp" />
+    <ClCompile Include="Controls\TreeView\CustomTreeViewListItemOwner.cpp" />
+    <ClCompile Include="Controls\TreeView\CustomTreeViewRootListItem.cpp" />
+    <ClCompile Include="Controls\TreeView\CustomTreeViewScroll.cpp" />
+    <ClCompile Include="Controls\TreeView\CustomTreeViewScrollListener.cpp" />
+    <ClCompile Include="Controls\TreeView\CustomTreeViewService.cpp" />
+    <ClCompile Include="Controls\TreeView\TreeView.cpp" />
+    <ClCompile Include="Controls\TreeView\TreeViewListItemOwner.cpp" />
+    <ClCompile Include="Controls\TreeView\TreeViewService.cpp" />
+    <ClCompile Include="Controls\UpDownEx\EditSpliceService.cpp" />
+    <ClCompile Include="Controls\UpDownEx\UpDownEx.cpp" />
+    <ClCompile Include="Controls\UpDownEx\UpDownExService.cpp" />
+    <ClCompile Include="Controls\UpDown\EditSpliceService.cpp" />
+    <ClCompile Include="Controls\UpDown\UpDown.cpp" />
+    <ClCompile Include="Controls\UpDown\UpDownService.cpp" />
+    <ClCompile Include="Controls\ValueListEditor\ValueListEditor.cpp" />
+    <ClCompile Include="Controls\ValueListEditor\ValueListEditorService.cpp" />
+    <ClCompile Include="Forms\BoolArray\DialogBoxBoolArray.cpp" />
+    <ClCompile Include="Forms\BoolArray\FormBoolArray.cpp" />
+    <ClCompile Include="Forms\BorderColor\DialogBoxBorderColor.cpp" />
+    <ClCompile Include="Forms\BorderColor\FormBorderColor.cpp" />
+    <ClCompile Include="Forms\ColorArray\DialogBoxColorArray.cpp" />
+    <ClCompile Include="Forms\ColorArray\FormColorArray.cpp" />
+    <ClCompile Include="Forms\Color\DialogBoxColor.cpp" />
+    <ClCompile Include="Forms\Color\FormColor.cpp" />
+    <ClCompile Include="Forms\Find\DialogBoxFind.cpp" />
+    <ClCompile Include="Forms\Find\FormFind.cpp" />
+    <ClCompile Include="Forms\FloatArray\DialogBoxFloatArray.cpp" />
+    <ClCompile Include="Forms\FloatArray\FormFloatArray.cpp" />
+    <ClCompile Include="Forms\Gradient\DialogBoxGradient.cpp" />
+    <ClCompile Include="Forms\Gradient\FormGradient.cpp" />
+    <ClCompile Include="Forms\HotkeyList\DialogBoxHotkeyList.cpp" />
+    <ClCompile Include="Forms\HotkeyList\FormHotkeyList.cpp" />
+    <ClCompile Include="Forms\Hotkey\DialogBoxHotkey.cpp" />
+    <ClCompile Include="Forms\Hotkey\FormHotkey.cpp" />
+    <ClCompile Include="Forms\ImageList\DialogBoxImageList.cpp" />
+    <ClCompile Include="Forms\ImageList\FormImageList.cpp" />
+    <ClCompile Include="Forms\Image\DialogBoxImage.cpp" />
+    <ClCompile Include="Forms\Image\FormImage.cpp" />
+    <ClCompile Include="Forms\IntegerArray\DialogBoxIntegerArray.cpp" />
+    <ClCompile Include="Forms\IntegerArray\FormIntegerArray.cpp" />
+    <ClCompile Include="Forms\Mask\DialogBoxMask.cpp" />
+    <ClCompile Include="Forms\Mask\FormMask.cpp" />
+    <ClCompile Include="Forms\Matrix\DialogBoxMatrix.cpp" />
+    <ClCompile Include="Forms\Matrix\FormMatrix.cpp" />
+    <ClCompile Include="Forms\Memo\DialogBoxMemo.cpp" />
+    <ClCompile Include="Forms\Memo\FormMemo.cpp" />
+    <ClCompile Include="Forms\MenuListItem\DialogBoxMenuListItem.cpp" />
+    <ClCompile Include="Forms\MenuListItem\FormMenuListItem.cpp" />
+    <ClCompile Include="Forms\PointB\DialogBoxPointB.cpp" />
+    <ClCompile Include="Forms\PointB\FormPointB.cpp" />
+    <ClCompile Include="Forms\PointD\DialogBoxPointD.cpp" />
+    <ClCompile Include="Forms\PointD\FormPointD.cpp" />
+    <ClCompile Include="Forms\PointF\DialogBoxPointF.cpp" />
+    <ClCompile Include="Forms\PointF\FormPointF.cpp" />
+    <ClCompile Include="Forms\PointL\DialogBoxPointL.cpp" />
+    <ClCompile Include="Forms\PointL\FormPointL.cpp" />
+    <ClCompile Include="Forms\Point\DialogBoxPoint.cpp" />
+    <ClCompile Include="Forms\Point\FormPoint.cpp" />
+    <ClCompile Include="Forms\RectB\DialogBoxRectB.cpp" />
+    <ClCompile Include="Forms\RectB\FormRectB.cpp" />
+    <ClCompile Include="Forms\RectD\DialogBoxRectD.cpp" />
+    <ClCompile Include="Forms\RectD\FormRectD.cpp" />
+    <ClCompile Include="Forms\RectF\DialogBoxRectF.cpp" />
+    <ClCompile Include="Forms\RectF\FormRectF.cpp" />
+    <ClCompile Include="Forms\RectL\DialogBoxRectL.cpp" />
+    <ClCompile Include="Forms\RectL\FormRectL.cpp" />
+    <ClCompile Include="Forms\Rect\DialogBoxRect.cpp" />
+    <ClCompile Include="Forms\Rect\FormRect.cpp" />
+    <ClCompile Include="Forms\Replace\DialogBoxReplace.cpp" />
+    <ClCompile Include="Forms\Replace\FormReplace.cpp" />
+    <ClCompile Include="Forms\SelectListItem\DialogBoxSelectListItem.cpp" />
+    <ClCompile Include="Forms\SelectListItem\FormSelectListItem.cpp" />
+    <ClCompile Include="Forms\Transform\DialogBoxTransform.cpp" />
+    <ClCompile Include="Forms\Transform\FormTransform.cpp" />
+    <ClCompile Include="ListItems\CheckBox\ListItemCheckBox.cpp" />
+    <ClCompile Include="ListItems\CheckBox\ListItemCheckBoxService.cpp" />
+    <ClCompile Include="ListItems\Color\ListItemColor.cpp" />
+    <ClCompile Include="ListItems\Color\ListItemColorService.cpp" />
+    <ClCompile Include="ListItems\Icon\ListItemIcon.cpp" />
+    <ClCompile Include="ListItems\Icon\ListItemIconService.cpp" />
+    <ClCompile Include="ListItems\Label\ListItemLabel.cpp" />
+    <ClCompile Include="ListItems\Label\ListItemLabelService.cpp" />
+    <ClCompile Include="ListItems\MenuCheckBox\ListItemMenuCheckBox.cpp" />
+    <ClCompile Include="ListItems\MenuCheckBox\ListItemMenuCheckBoxService.cpp" />
+    <ClCompile Include="ListItems\MenuLabel\ListItemMenuLabel.cpp" />
+    <ClCompile Include="ListItems\MenuLabel\ListItemMenuLabelService.cpp" />
+    <ClCompile Include="ListItems\MenuRadioButton\ListItemMenuRadioButton.cpp" />
+    <ClCompile Include="ListItems\MenuRadioButton\ListItemMenuRadioButtonService.cpp" />
+    <ClCompile Include="ListItems\MenuSeparator\ListItemMenuSeparator.cpp" />
+    <ClCompile Include="ListItems\MenuSeparator\ListItemMenuSeparatorService.cpp" />
+    <ClCompile Include="ListItems\Menu\ListItemMenu.cpp" />
+    <ClCompile Include="ListItems\Menu\ListItemMenuService.cpp" />
+    <ClCompile Include="ListItems\MultiButton\ListItemMultiButton.cpp" />
+    <ClCompile Include="ListItems\SelectCategory\ListItemSelectCategory.cpp" />
+    <ClCompile Include="ListItems\SelectLabel\ListItemSelectLabel.cpp" />
+    <ClCompile Include="ListItems\StatusPanelLabel\ListItemStatusPanelLabel.cpp" />
+    <ClCompile Include="ListItems\StatusPanelLabel\ListItemStatusPanelLabelService.cpp" />
+    <ClCompile Include="ListItems\StatusPanel\ListItemStatusPanel.cpp" />
+    <ClCompile Include="ListItems\TreeViewLabel\ListItemTreeViewLabel.cpp" />
+    <ClCompile Include="ListItems\TreeViewLabel\ListItemTreeViewLabelService.cpp" />
+    <ClCompile Include="Package\Components\AdminRights\AdminRightsEventList.cpp" />
+    <ClCompile Include="Package\Components\AdminRights\AdminRightsPropertyList.cpp" />
+    <ClCompile Include="Package\Components\AdminRights\PackageAdminRights.cpp" />
+    <ClCompile Include="Package\Components\ColorDialog\ColorDialogEventList.cpp" />
+    <ClCompile Include="Package\Components\ColorDialog\ColorDialogPropertyList.cpp" />
+    <ClCompile Include="Package\Components\ColorDialog\PackageColorDialog.cpp" />
+    <ClCompile Include="Package\Components\FindDialog\FindDialogEventList.cpp" />
+    <ClCompile Include="Package\Components\FindDialog\FindDialogPropertyList.cpp" />
+    <ClCompile Include="Package\Components\FindDialog\PackageFindDialog.cpp" />
+    <ClCompile Include="Package\Components\ImageList\PackageImageList.cpp" />
+    <ClCompile Include="Package\Components\ImageList\ImageListEventList.cpp" />
+    <ClCompile Include="Package\Components\ImageList\ImageListPropertyList.cpp" />
+    <ClCompile Include="Package\Components\Logger\LoggerEventList.cpp" />
+    <ClCompile Include="Package\Components\Logger\LoggerPropertyList.cpp" />
+    <ClCompile Include="Package\Components\Logger\PackageLogger.cpp" />
+    <ClCompile Include="Package\Components\ReplaceDialog\PackageReplaceDialog.cpp" />
+    <ClCompile Include="Package\Components\ReplaceDialog\ReplaceDialogEventList.cpp" />
+    <ClCompile Include="Package\Components\ReplaceDialog\ReplaceDialogPropertyList.cpp" />
+    <ClCompile Include="Package\Components\SimpleXML\PackageSimpleXML.cpp" />
+    <ClCompile Include="Package\Components\SimpleXML\SimpleXMLEventList.cpp" />
+    <ClCompile Include="Package\Components\SimpleXML\SimpleXMLPropertyList.cpp" />
+    <ClCompile Include="Package\Components\SysBrowseFolderDialog\PackageSysBrowseFolderDialog.cpp" />
+    <ClCompile Include="Package\Components\SysBrowseFolderDialog\SysBrowseFolderDialogEventList.cpp" />
+    <ClCompile Include="Package\Components\SysBrowseFolderDialog\SysBrowseFolderDialogPropertyList.cpp" />
+    <ClCompile Include="Package\Components\SysColorDialog\PackageSysColorDialog.cpp" />
+    <ClCompile Include="Package\Components\SysColorDialog\SysColorDialogEventList.cpp" />
+    <ClCompile Include="Package\Components\SysColorDialog\SysColorDialogPropertyList.cpp" />
+    <ClCompile Include="Package\Components\SysFontDialog\PackageSysFontDialog.cpp" />
+    <ClCompile Include="Package\Components\SysFontDialog\SysFontDialogEventList.cpp" />
+    <ClCompile Include="Package\Components\SysFontDialog\SysFontDialogPropertyList.cpp" />
+    <ClCompile Include="Package\Components\SysOpenDialog\PackageSysOpenDialog.cpp" />
+    <ClCompile Include="Package\Components\SysOpenDialog\SysOpenDialogEventList.cpp" />
+    <ClCompile Include="Package\Components\SysOpenDialog\SysOpenDialogPropertyList.cpp" />
+    <ClCompile Include="Package\Components\SysOpenPictureDialog\PackageSysOpenPictureDialog.cpp" />
+    <ClCompile Include="Package\Components\SysOpenPictureDialog\SysOpenPictureDialogEventList.cpp" />
+    <ClCompile Include="Package\Components\SysOpenPictureDialog\SysOpenPictureDialogPropertyList.cpp" />
+    <ClCompile Include="Package\Components\SysPageSetupDialog\PackageSysPageSetupDialog.cpp" />
+    <ClCompile Include="Package\Components\SysPageSetupDialog\SysPageSetupDialogEventList.cpp" />
+    <ClCompile Include="Package\Components\SysPageSetupDialog\SysPageSetupDialogPropertyList.cpp" />
+    <ClCompile Include="Package\Components\SysPrintDialog\PackageSysPrintDialog.cpp" />
+    <ClCompile Include="Package\Components\SysPrintDialog\SysPrintDialogEventList.cpp" />
+    <ClCompile Include="Package\Components\SysPrintDialog\SysPrintDialogPropertyList.cpp" />
+    <ClCompile Include="Package\Components\SysSaveDialog\PackageSysSaveDialog.cpp" />
+    <ClCompile Include="Package\Components\SysSaveDialog\SysSaveDialogEventList.cpp" />
+    <ClCompile Include="Package\Components\SysSaveDialog\SysSaveDialogPropertyList.cpp" />
+    <ClCompile Include="Package\Components\SysSavePictureDialog\PackageSysSavePictureDialog.cpp" />
+    <ClCompile Include="Package\Components\SysSavePictureDialog\SysSavePictureDialogEventList.cpp" />
+    <ClCompile Include="Package\Components\SysSavePictureDialog\SysSavePictureDialogPropertyList.cpp" />
+    <ClCompile Include="Package\Components\TaskBarProgress\PackageTaskBarProgress.cpp" />
+    <ClCompile Include="Package\Components\TaskBarProgress\TaskBarProgressEventList.cpp" />
+    <ClCompile Include="Package\Components\TaskBarProgress\TaskBarProgressPropertyList.cpp" />
+    <ClCompile Include="Package\Components\TCPClient\PackageTCPClient.cpp" />
+    <ClCompile Include="Package\Components\TCPClient\TCPClientEventList.cpp" />
+    <ClCompile Include="Package\Components\TCPClient\TCPClientPropertyList.cpp" />
+    <ClCompile Include="Package\Components\TCPServer\PackageTCPServer.cpp" />
+    <ClCompile Include="Package\Components\TCPServer\TCPServerEventList.cpp" />
+    <ClCompile Include="Package\Components\TCPServer\TCPServerPropertyList.cpp" />
+    <ClCompile Include="Package\Components\Timer\PackageTimer.cpp" />
+    <ClCompile Include="Package\Components\Timer\TimerEventList.cpp" />
+    <ClCompile Include="Package\Components\Timer\TimerPropertyList.cpp" />
+    <ClCompile Include="Package\Components\TrayIcon\PackageTrayIcon.cpp" />
+    <ClCompile Include="Package\Components\TrayIcon\TrayIconEventList.cpp" />
+    <ClCompile Include="Package\Components\TrayIcon\TrayIconPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\AlphaBar\AlphaBarEventList.cpp" />
+    <ClCompile Include="Package\Controls\AlphaBar\AlphaBarPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\AlphaBar\PackageAlphaBar.cpp" />
+    <ClCompile Include="Package\Controls\Bevel\BevelEventList.cpp" />
+    <ClCompile Include="Package\Controls\Bevel\BevelPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\Bevel\PackageBevel.cpp" />
+    <ClCompile Include="Package\Controls\BitBtn\BitBtnEventList.cpp" />
+    <ClCompile Include="Package\Controls\BitBtn\BitBtnPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\BitBtn\PackageBitBtn.cpp" />
+    <ClCompile Include="Package\Controls\Button\PackageButton.cpp" />
+    <ClCompile Include="Package\Controls\Button\ButtonEventList.cpp" />
+    <ClCompile Include="Package\Controls\Button\ButtonPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\CheckBox\PackageCheckBox.cpp" />
+    <ClCompile Include="Package\Controls\CheckBox\CheckBoxEventList.cpp" />
+    <ClCompile Include="Package\Controls\CheckBox\CheckBoxPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\CheckListBox\PackageCheckListBox.cpp" />
+    <ClCompile Include="Package\Controls\CheckListBox\CheckListBoxEventList.cpp" />
+    <ClCompile Include="Package\Controls\CheckListBox\CheckListBoxPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\ColorBox\PackageColorBox.cpp" />
+    <ClCompile Include="Package\Controls\ColorBox\ColorBoxEventList.cpp" />
+    <ClCompile Include="Package\Controls\ColorBox\ColorBoxPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\ColorListBox\PackageColorListBox.cpp" />
+    <ClCompile Include="Package\Controls\ColorListBox\ColorListBoxEventList.cpp" />
+    <ClCompile Include="Package\Controls\ColorListBox\ColorListBoxPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\Container\PackageContainer.cpp" />
+    <ClCompile Include="Package\Controls\Container\ContainerEventList.cpp" />
+    <ClCompile Include="Package\Controls\Container\ContainerPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\CoolBar\CoolBarEventList.cpp" />
+    <ClCompile Include="Package\Controls\CoolBar\CoolBarPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\CoolBar\PackageCoolBar.cpp" />
+    <ClCompile Include="Package\Controls\DatePicker\DatePickerEventList.cpp" />
+    <ClCompile Include="Package\Controls\DatePicker\DatePickerPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\DatePicker\PackageDatePicker.cpp" />
+    <ClCompile Include="Package\Controls\DialogBoxEx\DialogBoxExEventList.cpp" />
+    <ClCompile Include="Package\Controls\DialogBoxEx\DialogBoxExPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\DialogBoxEx\PackageDialogBoxEx.cpp" />
+    <ClCompile Include="Package\Controls\DirectoryTree\DirectoryTreeEventList.cpp" />
+    <ClCompile Include="Package\Controls\DirectoryTree\DirectoryTreePropertyList.cpp" />
+    <ClCompile Include="Package\Controls\DirectoryTree\PackageDirectoryTree.cpp" />
+    <ClCompile Include="Package\Controls\DrawGrid\CustomDrawGridEventList.cpp" />
+    <ClCompile Include="Package\Controls\DrawGrid\CustomDrawGridPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\DrawGrid\CustomGridEventList.cpp" />
+    <ClCompile Include="Package\Controls\DrawGrid\CustomGridPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\DrawGrid\DrawGridEventList.cpp" />
+    <ClCompile Include="Package\Controls\DrawGrid\DrawGridPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\DrawGrid\PackageCustomDrawGrid.cpp" />
+    <ClCompile Include="Package\Controls\DrawGrid\PackageCustomGrid.cpp" />
+    <ClCompile Include="Package\Controls\DrawGrid\PackageDrawGrid.cpp" />
+    <ClCompile Include="Package\Controls\DriveDropDown\DriveDropDownEventList.cpp" />
+    <ClCompile Include="Package\Controls\DriveDropDown\DriveDropDownPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\DriveDropDown\PackageDriveDropDown.cpp" />
+    <ClCompile Include="Package\Controls\DropDown\CustomDropDownEventList.cpp" />
+    <ClCompile Include="Package\Controls\DropDown\CustomDropDownPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\DropDown\PackageCustomDropDown.cpp" />
+    <ClCompile Include="Package\Controls\DropDown\PackageDropDown.cpp" />
+    <ClCompile Include="Package\Controls\DropDown\DropDownEventList.cpp" />
+    <ClCompile Include="Package\Controls\DropDown\DropDownPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\EditCalc\EditCalcEventList.cpp" />
+    <ClCompile Include="Package\Controls\EditCalc\EditCalcPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\EditCalc\PackageEditCalc.cpp" />
+    <ClCompile Include="Package\Controls\Edit\PackageEdit.cpp" />
+    <ClCompile Include="Package\Controls\Edit\EditEventList.cpp" />
+    <ClCompile Include="Package\Controls\Edit\EditPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\FileList\FileListEventList.cpp" />
+    <ClCompile Include="Package\Controls\FileList\FileListPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\FileList\PackageFileList.cpp" />
+    <ClCompile Include="Package\Controls\FormStyleSolid\FormStyleSolidEventList.cpp" />
+    <ClCompile Include="Package\Controls\FormStyleSolid\FormStyleSolidPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\FormStyleSolid\PackageFormStyleSolid.cpp" />
+    <ClCompile Include="Package\Controls\Frame\FrameEventList.cpp" />
+    <ClCompile Include="Package\Controls\Frame\FramePropertyList.cpp" />
+    <ClCompile Include="Package\Controls\Frame\PackageFrame.cpp" />
+    <ClCompile Include="Package\Controls\GradientEditor\GradientEditorEventList.cpp" />
+    <ClCompile Include="Package\Controls\GradientEditor\GradientEditorPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\GradientEditor\PackageGradientEditor.cpp" />
+    <ClCompile Include="Package\Controls\GroupBox\PackageGroupBox.cpp" />
+    <ClCompile Include="Package\Controls\GroupBox\GroupBoxEventList.cpp" />
+    <ClCompile Include="Package\Controls\GroupBox\GroupBoxPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\GroupFold\GroupFoldEventList.cpp" />
+    <ClCompile Include="Package\Controls\GroupFold\GroupFoldPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\GroupFold\PackageGroupFold.cpp" />
+    <ClCompile Include="Package\Controls\HotKey\HotKeyEventList.cpp" />
+    <ClCompile Include="Package\Controls\HotKey\HotKeyPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\HotKey\PackageHotKey.cpp" />
+    <ClCompile Include="Package\Controls\HSVBar\HSVBarEventList.cpp" />
+    <ClCompile Include="Package\Controls\HSVBar\HSVBarPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\HSVBar\PackageHSVBar.cpp" />
+    <ClCompile Include="Package\Controls\HSVPlane\HSVPlaneEventList.cpp" />
+    <ClCompile Include="Package\Controls\HSVPlane\HSVPlanePropertyList.cpp" />
+    <ClCompile Include="Package\Controls\HSVPlane\PackageHSVPlane.cpp" />
+    <ClCompile Include="Package\Controls\IconButton\IconButtonEventList.cpp" />
+    <ClCompile Include="Package\Controls\IconButton\IconButtonPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\IconButton\PackageIconButton.cpp" />
+    <ClCompile Include="Package\Controls\ImageListEditor\ImageListEditorEventList.cpp" />
+    <ClCompile Include="Package\Controls\ImageListEditor\ImageListEditorPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\ImageListEditor\PackageImageListEditor.cpp" />
+    <ClCompile Include="Package\Controls\Image\PackageImage.cpp" />
+    <ClCompile Include="Package\Controls\Image\ImageEventList.cpp" />
+    <ClCompile Include="Package\Controls\Image\ImagePropertyList.cpp" />
+    <ClCompile Include="Package\Controls\Label\PackageLabel.cpp" />
+    <ClCompile Include="Package\Controls\Label\LabelEventList.cpp" />
+    <ClCompile Include="Package\Controls\Label\LabelPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\ListBox\CustomListBoxEventList.cpp" />
+    <ClCompile Include="Package\Controls\ListBox\CustomListBoxPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\ListBox\PackageCustomListBox.cpp" />
+    <ClCompile Include="Package\Controls\ListBox\PackageListBox.cpp" />
+    <ClCompile Include="Package\Controls\ListBox\ListBoxEventList.cpp" />
+    <ClCompile Include="Package\Controls\ListBox\ListBoxPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\MainMenu\PackageMainMenu.cpp" />
+    <ClCompile Include="Package\Controls\MainMenu\MainMenuEventList.cpp" />
+    <ClCompile Include="Package\Controls\MainMenu\MainMenuPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\MaskEdit\MaskEditEventList.cpp" />
+    <ClCompile Include="Package\Controls\MaskEdit\MaskEditPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\MaskEdit\PackageMaskEdit.cpp" />
+    <ClCompile Include="Package\Controls\Memo\PackageMemo.cpp" />
+    <ClCompile Include="Package\Controls\Memo\MemoEventList.cpp" />
+    <ClCompile Include="Package\Controls\Memo\MemoPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\MonthCalendar\MonthCalendarEventList.cpp" />
+    <ClCompile Include="Package\Controls\MonthCalendar\MonthCalendarPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\MonthCalendar\PackageMonthCalendar.cpp" />
+    <ClCompile Include="Package\Controls\MultiButton\MultiButtonEventList.cpp" />
+    <ClCompile Include="Package\Controls\MultiButton\MultiButtonPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\MultiButton\PackageMultiButton.cpp" />
+    <ClCompile Include="Package\Controls\PageControl\PackagePageControl.cpp" />
+    <ClCompile Include="Package\Controls\PageControl\PageControlEventList.cpp" />
+    <ClCompile Include="Package\Controls\PageControl\PageControlPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\PaintBox\PackagePaintBox.cpp" />
+    <ClCompile Include="Package\Controls\PaintBox\PaintBoxEventList.cpp" />
+    <ClCompile Include="Package\Controls\PaintBox\PaintBoxPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\Panel\PackagePanel.cpp" />
+    <ClCompile Include="Package\Controls\Panel\PanelEventList.cpp" />
+    <ClCompile Include="Package\Controls\Panel\PanelPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\PasswordEdit\PackagePasswordEdit.cpp" />
+    <ClCompile Include="Package\Controls\PasswordEdit\PasswordEditEventList.cpp" />
+    <ClCompile Include="Package\Controls\PasswordEdit\PasswordEditPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\PopupMenu\PackagePopupMenu.cpp" />
+    <ClCompile Include="Package\Controls\PopupMenu\PopupMenuEventList.cpp" />
+    <ClCompile Include="Package\Controls\PopupMenu\PopupMenuPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\ProgressBar\PackageProgressBar.cpp" />
+    <ClCompile Include="Package\Controls\ProgressBar\ProgressBarEventList.cpp" />
+    <ClCompile Include="Package\Controls\ProgressBar\ProgressBarPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\RadioButton\PackageRadioButton.cpp" />
+    <ClCompile Include="Package\Controls\RadioButton\RadioButtonEventList.cpp" />
+    <ClCompile Include="Package\Controls\RadioButton\RadioButtonPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\ScrollBarLite\PackageScrollBarLite.cpp" />
+    <ClCompile Include="Package\Controls\ScrollBarLite\ScrollBarLiteEventList.cpp" />
+    <ClCompile Include="Package\Controls\ScrollBarLite\ScrollBarLitePropertyList.cpp" />
+    <ClCompile Include="Package\Controls\ScrollBar\PackageScrollBar.cpp" />
+    <ClCompile Include="Package\Controls\ScrollBar\ScrollBarEventList.cpp" />
+    <ClCompile Include="Package\Controls\ScrollBar\ScrollBarPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\ScrollBox\PackageScrollBox.cpp" />
+    <ClCompile Include="Package\Controls\ScrollBox\ScrollBoxEventList.cpp" />
+    <ClCompile Include="Package\Controls\ScrollBox\ScrollBoxPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\ScrollList\PackageScrollList.cpp" />
+    <ClCompile Include="Package\Controls\ScrollList\ScrollListEventList.cpp" />
+    <ClCompile Include="Package\Controls\ScrollList\ScrollListPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\Select\PackageSelect.cpp" />
+    <ClCompile Include="Package\Controls\Select\SelectEventList.cpp" />
+    <ClCompile Include="Package\Controls\Select\SelectPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\Shape\PackageShape.cpp" />
+    <ClCompile Include="Package\Controls\Shape\ShapeEventList.cpp" />
+    <ClCompile Include="Package\Controls\Shape\ShapePropertyList.cpp" />
+    <ClCompile Include="Package\Controls\SpeedButton\SpeedButtonPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\SpeedButton\PackageSpeedButton.cpp" />
+    <ClCompile Include="Package\Controls\SpeedButton\SpeedButtonEventList.cpp" />
+    <ClCompile Include="Package\Controls\Splitter\PackageSplitter.cpp" />
+    <ClCompile Include="Package\Controls\Splitter\SplitterEventList.cpp" />
+    <ClCompile Include="Package\Controls\Splitter\SplitterPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\StatusBar\PackageStatusBar.cpp" />
+    <ClCompile Include="Package\Controls\StatusBar\StatusBarEventList.cpp" />
+    <ClCompile Include="Package\Controls\StatusBar\StatusBarPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\StringGrid\CustomStringGridEventList.cpp" />
+    <ClCompile Include="Package\Controls\StringGrid\CustomStringGridPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\StringGrid\PackageCustomStringGrid.cpp" />
+    <ClCompile Include="Package\Controls\StringGrid\PackageStringGrid.cpp" />
+    <ClCompile Include="Package\Controls\StringGrid\StringGridEventList.cpp" />
+    <ClCompile Include="Package\Controls\StringGrid\StringGridPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\TabSheet\PackageTabSheet.cpp" />
+    <ClCompile Include="Package\Controls\TabSheet\TabSheetEventList.cpp" />
+    <ClCompile Include="Package\Controls\TabSheet\TabSheetPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\TimePicker\PackageTimePicker.cpp" />
+    <ClCompile Include="Package\Controls\TimePicker\TimePickerEventList.cpp" />
+    <ClCompile Include="Package\Controls\TimePicker\TimePickerPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\Toggle\PackageToggle.cpp" />
+    <ClCompile Include="Package\Controls\Toggle\ToggleEventList.cpp" />
+    <ClCompile Include="Package\Controls\Toggle\TogglePropertyList.cpp" />
+    <ClCompile Include="Package\Controls\ToolBar\PackageToolBar.cpp" />
+    <ClCompile Include="Package\Controls\ToolBar\ToolBarEventList.cpp" />
+    <ClCompile Include="Package\Controls\ToolBar\ToolBarPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\TrackBar\PackageTrackBar.cpp" />
+    <ClCompile Include="Package\Controls\TrackBar\TrackBarEventList.cpp" />
+    <ClCompile Include="Package\Controls\TrackBar\TrackBarPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\TrackRange\PackageTrackRange.cpp" />
+    <ClCompile Include="Package\Controls\TrackRange\TrackRangeEventList.cpp" />
+    <ClCompile Include="Package\Controls\TrackRange\TrackRangePropertyList.cpp" />
+    <ClCompile Include="Package\Controls\TreeView\CustomTreeViewEventList.cpp" />
+    <ClCompile Include="Package\Controls\TreeView\CustomTreeViewPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\TreeView\PackageCustomTreeView.cpp" />
+    <ClCompile Include="Package\Controls\TreeView\PackageTreeView.cpp" />
+    <ClCompile Include="Package\Controls\TreeView\TreeViewEventList.cpp" />
+    <ClCompile Include="Package\Controls\TreeView\TreeViewPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\UpDownEx\PackageUpDownEx.cpp" />
+    <ClCompile Include="Package\Controls\UpDownEx\UpDownExEventList.cpp" />
+    <ClCompile Include="Package\Controls\UpDownEx\UpDownExPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\UpDown\PackageUpDown.cpp" />
+    <ClCompile Include="Package\Controls\UpDown\UpDownEventList.cpp" />
+    <ClCompile Include="Package\Controls\UpDown\UpDownPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\ValueListEditor\PackageValueListEditor.cpp" />
+    <ClCompile Include="Package\Controls\ValueListEditor\ValueListEditorEventList.cpp" />
+    <ClCompile Include="Package\Controls\ValueListEditor\ValueListEditorPropertyList.cpp" />
+    <ClCompile Include="Package\Core\Consts.cpp" />
+    <ClCompile Include="Package\Core\PropertyHandlerDropDown.cpp" />
+    <ClCompile Include="Package\Core\PropertyHandlerDropDownListener.cpp" />
+    <ClCompile Include="Package\Core\PropertyHandlerModal.cpp" />
+    <ClCompile Include="Package\Core\PropertyHandlerTextInput.cpp" />
+    <ClCompile Include="Package\Core\PropertyHandlerTextInputListener.cpp" />
+    <ClCompile Include="Package\Forms\BoolArray\FormBoolArrayEventList.cpp" />
+    <ClCompile Include="Package\Forms\BoolArray\FormBoolArrayPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\BoolArray\PackageFormBoolArray.cpp" />
+    <ClCompile Include="Package\Forms\BorderColor\FormBorderColorEventList.cpp" />
+    <ClCompile Include="Package\Forms\BorderColor\FormBorderColorPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\BorderColor\PackageFormBorderColor.cpp" />
+    <ClCompile Include="Package\Forms\ColorArray\FormColorArrayEventList.cpp" />
+    <ClCompile Include="Package\Forms\ColorArray\FormColorArrayPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\ColorArray\PackageFormColorArray.cpp" />
+    <ClCompile Include="Package\Forms\Color\FormColorEventList.cpp" />
+    <ClCompile Include="Package\Forms\Color\FormColorPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\Color\PackageFormColor.cpp" />
+    <ClCompile Include="Package\Forms\Find\FormFindEventList.cpp" />
+    <ClCompile Include="Package\Forms\Find\FormFindPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\Find\PackageFormFind.cpp" />
+    <ClCompile Include="Package\Forms\FloatArray\FormFloatArrayEventList.cpp" />
+    <ClCompile Include="Package\Forms\FloatArray\FormFloatArrayPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\FloatArray\PackageFormFloatArray.cpp" />
+    <ClCompile Include="Package\Forms\Gradient\FormGradientEventList.cpp" />
+    <ClCompile Include="Package\Forms\Gradient\FormGradientPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\Gradient\PackageFormGradient.cpp" />
+    <ClCompile Include="Package\Forms\HotkeyList\FormHotkeyListEventList.cpp" />
+    <ClCompile Include="Package\Forms\HotkeyList\FormHotkeyListPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\HotkeyList\PackageFormHotkeyList.cpp" />
+    <ClCompile Include="Package\Forms\Hotkey\FormHotkeyEventList.cpp" />
+    <ClCompile Include="Package\Forms\Hotkey\FormHotkeyPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\Hotkey\PackageFormHotkey.cpp" />
+    <ClCompile Include="Package\Forms\ImageList\FormImageListEventList.cpp" />
+    <ClCompile Include="Package\Forms\ImageList\FormImageListPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\ImageList\PackageFormImageList.cpp" />
+    <ClCompile Include="Package\Forms\Image\FormImageEventList.cpp" />
+    <ClCompile Include="Package\Forms\Image\FormImagePropertyList.cpp" />
+    <ClCompile Include="Package\Forms\Image\PackageFormImage.cpp" />
+    <ClCompile Include="Package\Forms\IntegerArray\FormIntegerArrayEventList.cpp" />
+    <ClCompile Include="Package\Forms\IntegerArray\FormIntegerArrayPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\IntegerArray\PackageFormIntegerArray.cpp" />
+    <ClCompile Include="Package\Forms\Mask\FormMaskEventList.cpp" />
+    <ClCompile Include="Package\Forms\Mask\FormMaskPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\Mask\PackageFormMask.cpp" />
+    <ClCompile Include="Package\Forms\Matrix\FormMatrixEventList.cpp" />
+    <ClCompile Include="Package\Forms\Matrix\FormMatrixPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\Matrix\PackageFormMatrix.cpp" />
+    <ClCompile Include="Package\Forms\Memo\FormMemoEventList.cpp" />
+    <ClCompile Include="Package\Forms\Memo\FormMemoPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\Memo\PackageFormMemo.cpp" />
+    <ClCompile Include="Package\Forms\MenuListItem\FormMenuListItemEventList.cpp" />
+    <ClCompile Include="Package\Forms\MenuListItem\FormMenuListItemPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\MenuListItem\PackageFormMenuListItem.cpp" />
+    <ClCompile Include="Package\Forms\PointB\FormPointBEventList.cpp" />
+    <ClCompile Include="Package\Forms\PointB\FormPointBPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\PointB\PackageFormPointB.cpp" />
+    <ClCompile Include="Package\Forms\PointD\FormPointDEventList.cpp" />
+    <ClCompile Include="Package\Forms\PointD\FormPointDPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\PointD\PackageFormPointD.cpp" />
+    <ClCompile Include="Package\Forms\PointF\FormPointFEventList.cpp" />
+    <ClCompile Include="Package\Forms\PointF\FormPointFPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\PointF\PackageFormPointF.cpp" />
+    <ClCompile Include="Package\Forms\PointL\FormPointLEventList.cpp" />
+    <ClCompile Include="Package\Forms\PointL\FormPointLPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\PointL\PackageFormPointL.cpp" />
+    <ClCompile Include="Package\Forms\Point\FormPointEventList.cpp" />
+    <ClCompile Include="Package\Forms\Point\FormPointPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\Point\PackageFormPoint.cpp" />
+    <ClCompile Include="Package\Forms\RectB\FormRectBEventList.cpp" />
+    <ClCompile Include="Package\Forms\RectB\FormRectBPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\RectB\PackageFormRectB.cpp" />
+    <ClCompile Include="Package\Forms\RectD\FormRectDEventList.cpp" />
+    <ClCompile Include="Package\Forms\RectD\FormRectDPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\RectD\PackageFormRectD.cpp" />
+    <ClCompile Include="Package\Forms\RectF\FormRectFEventList.cpp" />
+    <ClCompile Include="Package\Forms\RectF\FormRectFPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\RectF\PackageFormRectF.cpp" />
+    <ClCompile Include="Package\Forms\RectL\FormRectLEventList.cpp" />
+    <ClCompile Include="Package\Forms\RectL\FormRectLPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\RectL\PackageFormRectL.cpp" />
+    <ClCompile Include="Package\Forms\Rect\FormRectEventList.cpp" />
+    <ClCompile Include="Package\Forms\Rect\FormRectPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\Rect\PackageFormRect.cpp" />
+    <ClCompile Include="Package\Forms\Replace\FormReplaceEventList.cpp" />
+    <ClCompile Include="Package\Forms\Replace\FormReplacePropertyList.cpp" />
+    <ClCompile Include="Package\Forms\Replace\PackageFormReplace.cpp" />
+    <ClCompile Include="Package\Forms\SelectListItem\FormSelectListItemEventList.cpp" />
+    <ClCompile Include="Package\Forms\SelectListItem\FormSelectListItemPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\SelectListItem\PackageFormSelectListItem.cpp" />
+    <ClCompile Include="Package\Forms\Transform\FormTransformEventList.cpp" />
+    <ClCompile Include="Package\Forms\Transform\FormTransformPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\Transform\PackageFormTransform.cpp" />
+    <ClCompile Include="Package\ListItems\CheckBox\ListItemCheckBoxPropertyList.cpp" />
+    <ClCompile Include="Package\ListItems\CheckBox\PackageListItemCheckBox.cpp" />
+    <ClCompile Include="Package\ListItems\Color\ListItemColorPropertyList.cpp" />
+    <ClCompile Include="Package\ListItems\Color\PackageListItemColor.cpp" />
+    <ClCompile Include="Package\ListItems\Icon\ListItemIconPropertyList.cpp" />
+    <ClCompile Include="Package\ListItems\Icon\PackageListItemIcon.cpp" />
+    <ClCompile Include="Package\ListItems\Label\ListItemLabelPropertyList.cpp" />
+    <ClCompile Include="Package\ListItems\Label\PackageListItemLabel.cpp" />
+    <ClCompile Include="Package\ListItems\MenuCheckBox\ListItemMenuCheckBoxPropertyList.cpp" />
+    <ClCompile Include="Package\ListItems\MenuCheckBox\PackageListItemMenuCheckBox.cpp" />
+    <ClCompile Include="Package\ListItems\MenuLabel\ListItemMenuLabelPropertyList.cpp" />
+    <ClCompile Include="Package\ListItems\MenuLabel\PackageListItemMenuLabel.cpp" />
+    <ClCompile Include="Package\ListItems\MenuRadioButton\ListItemMenuRadioButtonPropertyList.cpp" />
+    <ClCompile Include="Package\ListItems\MenuRadioButton\PackageListItemMenuRadioButton.cpp" />
+    <ClCompile Include="Package\ListItems\MenuSeparator\ListItemMenuSeparatorPropertyList.cpp" />
+    <ClCompile Include="Package\ListItems\MenuSeparator\PackageListItemMenuSeparator.cpp" />
+    <ClCompile Include="Package\ListItems\Menu\ListItemMenuPropertyList.cpp" />
+    <ClCompile Include="Package\ListItems\Menu\PackageListItemMenu.cpp" />
+    <ClCompile Include="Package\ListItems\MultiButton\ListItemMultiButtonPropertyList.cpp" />
+    <ClCompile Include="Package\ListItems\MultiButton\PackageListItemMultiButton.cpp" />
+    <ClCompile Include="Package\ListItems\SelectCategory\ListItemSelectCategoryPropertyList.cpp" />
+    <ClCompile Include="Package\ListItems\SelectCategory\PackageListItemSelectCategory.cpp" />
+    <ClCompile Include="Package\ListItems\SelectLabel\ListItemSelectLabelPropertyList.cpp" />
+    <ClCompile Include="Package\ListItems\SelectLabel\PackageListItemSelectLabel.cpp" />
+    <ClCompile Include="Package\ListItems\StatusPanelLabel\ListItemStatusPanelLabelPropertyList.cpp" />
+    <ClCompile Include="Package\ListItems\StatusPanelLabel\PackageListItemStatusPanelLabel.cpp" />
+    <ClCompile Include="Package\ListItems\StatusPanel\ListItemStatusPanelPropertyList.cpp" />
+    <ClCompile Include="Package\ListItems\StatusPanel\PackageListItemStatusPanel.cpp" />
+    <ClCompile Include="Package\ListItems\TreeViewLabel\ListItemTreeViewLabelPropertyList.cpp" />
+    <ClCompile Include="Package\ListItems\TreeViewLabel\PackageListItemTreeViewLabel.cpp" />
+    <ClCompile Include="Package\PackageStandardService.cpp" />
+    <ClCompile Include="Package\Properties\PropertyComponentImageList.cpp" />
+    <ClCompile Include="Package\Properties\PropertyComponentImageListState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyControlDirectoryTree.cpp" />
+    <ClCompile Include="Package\Properties\PropertyControlDirectoryTreeState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyControlEdit.cpp" />
+    <ClCompile Include="Package\Properties\PropertyControlEditState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyControlFileList.cpp" />
+    <ClCompile Include="Package\Properties\PropertyControlFileListState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyControlHSVPlane.cpp" />
+    <ClCompile Include="Package\Properties\PropertyControlHSVPlaneState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyHotkeyList.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\BoolArray\PropertyHandlerBoolArray.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\Bool\PropertyHandlerBool.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\BorderColor\PropertyHandlerBorderColor.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\ColorArray\PropertyHandlerColorArray.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\Color\PropertyHandlerColor.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\ComponentImageList\PropertyHandlerComponentImageList.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\ControlDirectoryTree\PropertyHandlerControlDirectoryTree.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\ControlEdit\PropertyHandlerControlEdit.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\ControlFileList\PropertyHandlerControlFileList.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\ControlHSVPlane\PropertyHandlerControlHSVPlane.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\Double\PropertyHandlerDouble.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\Enum\PropertyHandlerEnum.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\FloatArray\PropertyHandlerFloatArray.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\Float\PropertyHandlerFloat.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\Font\PropertyHandlerFont.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\Gradient\PropertyHandlerGradient.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\HotkeyList\PropertyHandlerHotkeyList.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\Hotkey\PropertyHandlerHotkey.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\Identifier\PropertyHandlerIdentifier.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\ImageList\PropertyHandlerImageList.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\Image\PropertyHandlerImage.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\Int64\PropertyHandlerInt64.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\IntegerArray\PropertyHandlerIntegerArray.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\Integer\PropertyHandlerInteger.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\Mask\PropertyHandlerMask.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\Matrix\PropertyHandlerMatrix.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\PointB\PropertyHandlerPointB.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\PointD\PropertyHandlerPointD.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\PointF\PropertyHandlerPointF.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\PointL\PropertyHandlerPointL.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\Point\PropertyHandlerPoint.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\RectB\PropertyHandlerRectB.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\RectD\PropertyHandlerRectD.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\RectF\PropertyHandlerRectF.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\RectL\PropertyHandlerRectL.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\Rect\PropertyHandlerRect.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\String\PropertyHandlerString.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\Style\PropertyHandlerStyle.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\Text\PropertyHandlerText.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\Transform\PropertyHandlerTransform.cpp" />
+    <ClCompile Include="Package\PackageStandard.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{10F45887-94B3-484F-8601-B1F6F3519FAF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>StandardRT</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x86\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Standard\x86\Debug\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x64\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Standard\x64\Debug\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Standard\ARM\Debug\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM64\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Standard\ARM64\Debug\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x86\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Standard\x86\DebugRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x64\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Standard\x64\DebugRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Standard\ARM\DebugRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM64\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Standard\ARM64\DebugRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x86\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Standard\x86\Release\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x64\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Standard\x64\Release\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Standard\ARM\Release\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM64\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Standard\ARM64\Release\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x86\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Standard\x86\ReleaseRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x64\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Standard\x64\ReleaseRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Standard\ARM\ReleaseRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM64\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Standard\ARM64\ReleaseRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib />
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib />
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib />
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib />
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

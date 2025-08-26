@@ -1,0 +1,26 @@
+{
+	"title": "Windows Form",
+	"landscape" : false,
+	"left": {
+		"fill": "windows-form-leftright-fill.png"
+	},
+	"top": {
+		"start": "windows-form-top-start.png",
+		"end": "windows-form-top-end.png",
+		"fill": "windows-form-top-fill.png"
+	},
+	"right": {
+		"fill": "windows-form-leftright-fill.png"
+	},
+	"bottom": {
+		"start": "windows-form-bottom-start.png",
+		"end": "windows-form-bottom-end.png",
+		"fill": "windows-form-bottom-fill.png"
+	},
+	"caption": {
+		"border": "top",
+		"horizontal_align": "left",
+		"vertical_align": "middle",
+		"padding": [8, 0, 0, 0]
+	}
+}

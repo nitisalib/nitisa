@@ -1,0 +1,674 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugRT|ARM">
+      <Configuration>DebugRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|ARM64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|x64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|x86">
+      <Configuration>DebugRT</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|ARM">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|ARM64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|x64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|x86">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2811bf54-7aa5-48b8-9ea1-36cca015845e}</ProjectGuid>
+    <Keyword>Android</Keyword>
+    <RootNamespace>Platform</RootNamespace>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <ApplicationType>Android</ApplicationType>
+    <ApplicationTypeRevision>3.0</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x86\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Platform\x86\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x64\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Platform\x64\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Platform\ARM\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM64\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Platform\ARM64\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x86\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Platform\x86\DebugRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x64\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Platform\x64\DebugRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Platform\ARM\DebugRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM64\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Platform\ARM64\DebugRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x86\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Platform\x86\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x64\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Platform\x64\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Platform\ARM\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM64\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Platform\ARM64\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x86\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Platform\x86\ReleaseRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x64\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Platform\x64\ReleaseRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Platform\ARM\ReleaseRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM64\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Platform\ARM64\ReleaseRT\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;../../Dependencies/freetype-2.9.1/include;../../Dependencies/jpeg-9c;../../Dependencies/lpng1634;../Dependencies/Jpeg;../Dependencies/Png;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;../../Dependencies/freetype-2.9.1/include;../../Dependencies/jpeg-9c;../../Dependencies/lpng1634;../Dependencies/Jpeg;../Dependencies/Png;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;../../Dependencies/freetype-2.9.1/include;../../Dependencies/jpeg-9c;../../Dependencies/lpng1634;../Dependencies/Jpeg;../Dependencies/Png;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;../../Dependencies/freetype-2.9.1/include;../../Dependencies/jpeg-9c;../../Dependencies/lpng1634;../Dependencies/Jpeg;../Dependencies/Png;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;../../Dependencies/freetype-2.9.1/include;../../Dependencies/jpeg-9c;../../Dependencies/lpng1634;../Dependencies/Jpeg;../Dependencies/Png;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;../../Dependencies/freetype-2.9.1/include;../../Dependencies/jpeg-9c;../../Dependencies/lpng1634;../Dependencies/Jpeg;../Dependencies/Png;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;../../Dependencies/freetype-2.9.1/include;../../Dependencies/jpeg-9c;../../Dependencies/lpng1634;../Dependencies/Jpeg;../Dependencies/Png;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;../../Dependencies/freetype-2.9.1/include;../../Dependencies/jpeg-9c;../../Dependencies/lpng1634;../Dependencies/Jpeg;../Dependencies/Png;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;../../Dependencies/freetype-2.9.1/include;../../Dependencies/jpeg-9c;../../Dependencies/lpng1634;../Dependencies/Jpeg;../Dependencies/Png;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;../../Dependencies/freetype-2.9.1/include;../../Dependencies/jpeg-9c;../../Dependencies/lpng1634;../Dependencies/Jpeg;../Dependencies/Png;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;../../Dependencies/freetype-2.9.1/include;../../Dependencies/jpeg-9c;../../Dependencies/lpng1634;../Dependencies/Jpeg;../Dependencies/Png;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;../../Dependencies/freetype-2.9.1/include;../../Dependencies/jpeg-9c;../../Dependencies/lpng1634;../Dependencies/Jpeg;../Dependencies/Png;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;../../Dependencies/freetype-2.9.1/include;../../Dependencies/jpeg-9c;../../Dependencies/lpng1634;../Dependencies/Jpeg;../Dependencies/Png;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;../../Dependencies/freetype-2.9.1/include;../../Dependencies/jpeg-9c;../../Dependencies/lpng1634;../Dependencies/Jpeg;../Dependencies/Png;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;../../Dependencies/freetype-2.9.1/include;../../Dependencies/jpeg-9c;../../Dependencies/lpng1634;../Dependencies/Jpeg;../Dependencies/Png;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;../../Dependencies/freetype-2.9.1/include;../../Dependencies/jpeg-9c;../../Dependencies/lpng1634;../Dependencies/Jpeg;../Dependencies/Png;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Packages\Platform\Android\Application.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\ApplicationService.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\ClientSocket.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\Dialogs.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\File.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\FileSystem.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\3.1\Debug\Renderer.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\3.1\Release\Renderer.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\Core\BaseRenderer.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\Framebuffer.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\Program.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\ProgramBase.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\ProgramMain.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\ProgramMini.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\Texture.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\TextureMultisample.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\VertexArrayDynamic.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\VertexArrayImmutable.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\Keyboard.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\Mouse.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\NativeApplication.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\Network.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\Picture.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\PlatformFont.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\Screen.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\ServerSocket.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\Socket.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\System.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\Thread.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\Window.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\WindowService.h" />
+    <ClInclude Include="..\..\Packages\Platform\Core\Application.h" />
+    <ClInclude Include="..\..\Packages\Platform\Core\BasePlatformFont.h" />
+    <ClInclude Include="..\..\Packages\Platform\Core\Db.h" />
+    <ClInclude Include="..\..\Packages\Platform\Core\DbConnection.h" />
+    <ClInclude Include="..\..\Packages\Platform\Core\DbStatement.h" />
+    <ClInclude Include="..\..\Packages\Platform\Core\Errors.h" />
+    <ClInclude Include="..\..\Packages\Platform\Core\Renderer.h" />
+    <ClInclude Include="..\..\Packages\Platform\Core\Window.h" />
+    <ClInclude Include="..\..\Packages\Platform\OpenGL\dgl.h" />
+    <ClInclude Include="..\..\Packages\Platform\OpenGL\ngl.h" />
+    <ClInclude Include="..\..\Packages\Platform\OpenGL\OpenGL.h" />
+    <ClInclude Include="..\..\Packages\Platform\Package\PackagePlatform.h" />
+    <ClInclude Include="..\..\Packages\Platform\Package\PackagePlatformService.h" />
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Android\GLES-3.1\PackageRendererAndroidGLES31d.h" />
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Android\GLES-3.1\PackageRendererAndroidGLES31r.h" />
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-3.1\PackageRendererLinuxOpenGL31d.h" />
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-3.1\PackageRendererLinuxOpenGL31r.h" />
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-4.5\PackageRendererLinuxOpenGL45d.h" />
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-4.5\PackageRendererLinuxOpenGL45r.h" />
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-3.1\PackageRendererWindowsOpenGL31d.h" />
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-3.1\PackageRendererWindowsOpenGL31r.h" />
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-4.5\PackageRendererWindowsOpenGL45d.h" />
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-4.5\PackageRendererWindowsOpenGL45r.h" />
+    <ClInclude Include="..\..\Packages\Platform\Platform.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Packages\Platform\Android\Application.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\ApplicationService.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\ClientSocket.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\Dialogs.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\File.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\FileSystem.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\3.1\Debug\Renderer.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\3.1\Release\Renderer.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\Core\BaseRenderer.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\Framebuffer.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\Program.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\ProgramBase.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\ProgramMain.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\ProgramMini.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\Texture.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\TextureMultisample.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\VertexArrayDynamic.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\VertexArrayImmutable.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\Keyboard.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\Mouse.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\NativeApplication.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\Network.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\Picture.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\PlatformFont.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\Screen.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\ServerSocket.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\Socket.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\System.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\Thread.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\Window.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Android\WindowService.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Core\Application.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Core\BasePlatformFont.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Core\Db.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Core\DbConnection.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Core\DbStatement.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Core\Errors.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Core\Renderer.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Core\Window.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\OpenGL\dgl.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\OpenGL\ngl-android.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\OpenGL\ngl-common.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\OpenGL\ngl-utils.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\OpenGL\OpenGL.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Package\PackagePlatform.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Package\PackagePlatformService.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Android\GLES-3.1\PackageRendererAndroidGLES31d.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Android\GLES-3.1\PackageRendererAndroidGLES31r.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-3.1\PackageRendererLinuxOpenGL31d.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-3.1\PackageRendererLinuxOpenGL31r.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-4.5\PackageRendererLinuxOpenGL45d.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-4.5\PackageRendererLinuxOpenGL45r.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-3.1\PackageRendererWindowsOpenGL31d.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-3.1\PackageRendererWindowsOpenGL31r.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-4.5\PackageRendererWindowsOpenGL45d.cpp" />
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-4.5\PackageRendererWindowsOpenGL45r.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Packages\Platform\Data\DefaultFontData.inc" />
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\fragment-block.glsl" />
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\fragment-spline.glsl" />
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\fragment-utils.glsl" />
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\GL31-GLES30\fragment-main.glsl" />
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\GL31-GLES30\fragment-mini.glsl" />
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\GL31-GLES30\vertex.glsl" />
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\GL32-GLES31\fragment-main.glsl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

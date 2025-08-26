@@ -1,0 +1,622 @@
+{
+    "Layout": "Windows Form",
+    "Version": "2.0",
+    "Form": {
+        "Name": "FormMain",
+        "Caption": "COVID-19 modeling",
+        "ClientSize": [
+            836,
+            609
+        ],
+        "State": "WindowState::Maximized",
+        "OnResize": "FormMain_OnResize"
+    },
+    "Controls": [
+        {
+            "Package": "Standard",
+            "ClassName": "Container",
+            "Name": "Container1",
+            "Transform": {
+                "Tx": 651,
+                "Ty": 0,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                185,
+                609
+            ],
+            "Align": "Align::Right",
+            "Controls": [
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "Label1",
+                    "Transform": {
+                        "Tx": 10,
+                        "Ty": 14,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "Population:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditPopulation",
+                    "Transform": {
+                        "Tx": 80,
+                        "Ty": 10,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        80,
+                        21
+                    ],
+                    "TabOrder": 3,
+                    "Text": "1000000"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "UpDown",
+                    "Name": "UpDownPopulation",
+                    "Size": [
+                        18,
+                        21
+                    ],
+                    "Min": 10000,
+                    "Max": 50000000,
+                    "Value": 1000000,
+                    "AssignedTo": "EditPopulation",
+                    "Transform": {
+                        "Tx": 160,
+                        "Ty": 10,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    }
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "Label2",
+                    "Transform": {
+                        "Tx": 10,
+                        "Ty": 44,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "Infected:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditInfected",
+                    "Transform": {
+                        "Tx": 80,
+                        "Ty": 40,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        80,
+                        21
+                    ],
+                    "TabOrder": 6,
+                    "Text": "1"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "UpDown",
+                    "Name": "UpDownInfected",
+                    "Size": [
+                        18,
+                        21
+                    ],
+                    "Min": 1,
+                    "Max": 1000000,
+                    "Value": 1,
+                    "AssignedTo": "EditInfected",
+                    "Transform": {
+                        "Tx": 160,
+                        "Ty": 40,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    }
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "Label3",
+                    "Transform": {
+                        "Tx": 10,
+                        "Ty": 74,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "Infectious:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditInfectious",
+                    "Transform": {
+                        "Tx": 80,
+                        "Ty": 70,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        80,
+                        21
+                    ],
+                    "TabOrder": 9,
+                    "Text": "3.00"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "UpDownEx",
+                    "Name": "UpDownExInfectious",
+                    "Size": [
+                        18,
+                        21
+                    ],
+                    "Min": 1,
+                    "Max": 10,
+                    "Value": 3,
+                    "Step": 0.01,
+                    "AssignedTo": "EditInfectious",
+                    "Transform": {
+                        "Tx": 160,
+                        "Ty": 70,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Signs": 2
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "Label4",
+                    "Transform": {
+                        "Tx": 10,
+                        "Ty": 104,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "Days:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditDays",
+                    "Transform": {
+                        "Tx": 80,
+                        "Ty": 100,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        80,
+                        21
+                    ],
+                    "TabOrder": 12,
+                    "Text": "180"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "UpDown",
+                    "Name": "UpDownDays",
+                    "Size": [
+                        18,
+                        21
+                    ],
+                    "Min": 10,
+                    "Max": 3000,
+                    "Value": 180,
+                    "AssignedTo": "EditDays",
+                    "Transform": {
+                        "Tx": 160,
+                        "Ty": 100,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    }
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonCalculate",
+                    "Transform": {
+                        "Tx": 10,
+                        "Ty": 160,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        167,
+                        23
+                    ],
+                    "TabOrder": 14,
+                    "Caption": "Calculate",
+                    "OnClick": "ButtonCalculate_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "Label5",
+                    "Transform": {
+                        "Tx": 10,
+                        "Ty": 224,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "Total cases:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditTotalCases",
+                    "Transform": {
+                        "Tx": 80,
+                        "Ty": 220,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 19,
+                    "Text": "",
+                    "ReadOnly": true
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "Label6",
+                    "Transform": {
+                        "Tx": 10,
+                        "Ty": 254,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "Max sick:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditMaxSick",
+                    "Transform": {
+                        "Tx": 80,
+                        "Ty": 250,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 21,
+                    "Text": "",
+                    "ReadOnly": true
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "Label7",
+                    "Transform": {
+                        "Tx": 10,
+                        "Ty": 284,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "Max daily:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditMaxDaily",
+                    "Transform": {
+                        "Tx": 80,
+                        "Ty": 280,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        100,
+                        21
+                    ],
+                    "TabOrder": 23,
+                    "Text": "",
+                    "ReadOnly": true
+                }
+            ]
+        },
+        {
+            "Package": "Charts",
+            "ClassName": "SplineChart",
+            "Name": "SplineChartMain",
+            "Size": [
+                651,
+                210
+            ],
+            "Align": "Align::Top",
+            "DataSet": null,
+            "LabelPadding": [
+                64,
+                16
+            ],
+            "ChartNormalPointSizes": [
+                0
+            ],
+            "ChartActivePointSizes": [
+                0
+            ],
+            "ChartLineColors": [
+                [
+                    128,
+                    128,
+                    128,
+                    255
+                ],
+                [
+                    255,
+                    0,
+                    0,
+                    255
+                ],
+                [
+                    0,
+                    128,
+                    0,
+                    255
+                ],
+                [
+                    88,
+                    255,
+                    196,
+                    200
+                ],
+                [
+                    220,
+                    20,
+                    60,
+                    200
+                ],
+                [
+                    160,
+                    113,
+                    255,
+                    200
+                ],
+                [
+                    205,
+                    206,
+                    210,
+                    200
+                ],
+                [
+                    255,
+                    166,
+                    77,
+                    200
+                ]
+            ]
+        },
+        {
+            "Package": "Charts",
+            "ClassName": "SplineChart",
+            "Name": "SplineChartInfectious",
+            "Transform": {
+                "Tx": 0,
+                "Ty": 399,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                651,
+                210
+            ],
+            "Align": "Align::Bottom",
+            "AutoRange": [
+                true,
+                false
+            ],
+            "DataSet": null,
+            "LabelPadding": [
+                64,
+                16
+            ],
+            "LabelSigns": [
+                0,
+                2
+            ],
+            "ChartNormalPointSizes": [
+                0
+            ],
+            "ChartActivePointSizes": [
+                0
+            ]
+        },
+        {
+            "Package": "Charts",
+            "ClassName": "BarChart",
+            "Name": "BarChartCases",
+            "Transform": {
+                "Tx": 0,
+                "Ty": 210,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                651,
+                189
+            ],
+            "Align": "Align::Client",
+            "DataSet": null,
+            "LabelPadding": [
+                64,
+                16
+            ],
+            "BorderWidth": {
+                "PointState::Normal": 1,
+                "PointState::Active": 1
+            },
+            "BarWidth": 3
+        }
+    ]
+}

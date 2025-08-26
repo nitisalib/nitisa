@@ -1,0 +1,26 @@
+{
+	"title": "Tablet(landscape)",
+	"landscape" : true,
+	"left": {
+		"start": "tablet-top-start.png",
+		"middle": "tablet-top-middle.png",
+		"end": "tablet-top-end.png",
+		"fill": "tablet-top-fill.png"
+	},
+	"top": {
+		"fill": "tablet-leftright-fill.png"
+	},
+	"right": {
+		"start": "tablet(landscape)-right-start.png",
+		"middle": "tablet(landscape)-right-middle.png",
+		"end": "tablet(landscape)-right-end.png",
+		"fill": "tablet(landscape)-right-fill.png"
+	},
+	"bottom": {
+		"fill": "tablet(landscape)-bottom-fill.png"
+	},
+	"size": {
+		"width": "1920",
+		"height": "1368"
+	}
+}

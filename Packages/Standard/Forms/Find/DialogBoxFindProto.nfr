@@ -1,0 +1,296 @@
+{
+    "Layout": "Windows Form",
+    "Version": "2.0",
+    "Settings": {
+        "GridX": true,
+        "GridY": true,
+        "GridRotate": true,
+        "GridXStep": 8,
+        "GridYStep": 8,
+        "GridRotateStep": 0.0174533,
+        "RotateShift": 2,
+        "GridPointSize": 1,
+        "GridPointColor": [
+            113,
+            21,
+            36,
+            255
+        ],
+        "Namespace": "standard",
+        "Prefix": "m_p",
+        "SelectionPointSize": 4,
+        "SelectionBorderWidth": 1,
+        "SelectionBorderColor": [
+            0,
+            0,
+            255,
+            150
+        ],
+        "SelectionBackgroundColor": [
+            0,
+            0,
+            255,
+            50
+        ],
+        "OverwriteIncludes": [
+            {
+                "Search": "Standard",
+                "Replace": "../.."
+            }
+        ],
+        "OverwriteNamespaces": [
+            {
+                "Search": "standard",
+                "Replace": ""
+            }
+        ],
+        "WidgetsSection": "protected",
+        "GenerateGetters": false,
+        "HighlightBorderWidth": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "HighlightBorderColor": [
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ]
+        ],
+        "ExportAs": 1,
+        "DialogBoxPackage": "Standard",
+        "DialogBoxClass": "DialogBoxEx"
+    },
+    "Form": {
+        "Name": "DialogBoxFindProto",
+        "Caption": "Find",
+        "ClientSize": [
+            576,
+            97
+        ],
+        "State": "WindowState::Hidden",
+        "WindowPosition": "WindowPosition::MainFormCenter",
+        "HasMaximizeBox": false,
+        "HasMinimizeBox": false,
+        "HasSizeBox": false,
+        "OnKeyUp": "FormFindProto_OnKeyUp"
+    },
+    "Controls": [
+        {
+            "Package": "Standard",
+            "ClassName": "Label",
+            "Name": "Label1",
+            "Transform": {
+                "Tx": 8,
+                "Ty": 12,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Caption": "Find what:"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Edit",
+            "Name": "EditText",
+            "Transform": {
+                "Tx": 104,
+                "Ty": 8,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                352,
+                21
+            ],
+            "TabOrder": 2,
+            "Text": "",
+            "OnKeyUp": "EditText_OnKeyUp",
+            "OnChange": "EditText_OnChange"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "CheckBox",
+            "Name": "CheckBoxWords",
+            "Transform": {
+                "Tx": 8,
+                "Ty": 48,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "TabOrder": 3,
+            "Caption": "Match whole words"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "CheckBox",
+            "Name": "CheckBoxCase",
+            "Transform": {
+                "Tx": 8,
+                "Ty": 72,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "TabOrder": 4,
+            "Caption": "Match case"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "GroupBox",
+            "Name": "GroupBox1",
+            "Transform": {
+                "Tx": 192,
+                "Ty": 32,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                265,
+                57
+            ],
+            "Caption": "Direction",
+            "UseMask": false,
+            "Controls": [
+                {
+                    "Package": "Standard",
+                    "ClassName": "RadioButton",
+                    "Name": "RadioButtonDown",
+                    "Transform": {
+                        "Tx": 88,
+                        "Ty": 24,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "TabOrder": 6,
+                    "Caption": "Down",
+                    "Checked": true
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "RadioButton",
+                    "Name": "RadioButtonUp",
+                    "Transform": {
+                        "Tx": 16,
+                        "Ty": 24,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "TabOrder": 7,
+                    "Caption": "Up"
+                }
+            ]
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Button",
+            "Name": "ButtonSearch",
+            "Transform": {
+                "Tx": 464,
+                "Ty": 8,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "TabOrder": 8,
+            "Enabled": false,
+            "Caption": "Find next",
+            "OnClick": "ButtonSearch_OnClick"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Button",
+            "Name": "ButtonCancel",
+            "Transform": {
+                "Tx": 464,
+                "Ty": 40,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "TabOrder": 9,
+            "Caption": "Cancel",
+            "OnClick": "ButtonCancel_OnClick"
+        }
+    ]
+}

@@ -1,0 +1,1231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugRT|ARM">
+      <Configuration>DebugRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|ARM64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|x64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|x86">
+      <Configuration>DebugRT</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|ARM">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|ARM64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|x64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|x86">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3364eb0e-e842-415a-beba-10fb0cfb385b}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>Charts</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{2238F9CD-F817-4ECC-BD14-2524D2669B35}</LinuxProjectType>
+    <ProjectName>Charts</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\x86\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Charts\x86\Debug\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Charts;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\x64\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Charts\x64\Debug\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Charts;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\ARM\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Charts\ARM\Debug\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Charts;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\ARM64\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Charts\ARM64\Debug\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Charts;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\x86\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Charts\x86\DebugRT\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Charts;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\x86\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Charts\x64\DebugRT\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Charts;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\ARM\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Charts\ARM\DebugRT\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Charts;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\ARM64\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Charts\ARM64\DebugRT\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Charts;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\x86\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Charts\x86\Release\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Charts;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\x64\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Charts\x64\Release\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Charts;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\ARM\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Charts\ARM\Release\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Charts;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\ARM64\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Charts\ARM64\Release\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Charts;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\x86\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Charts\x86\ReleaseRT\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Charts;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\x64\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Charts\x64\ReleaseRT\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Charts;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\ARM\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Charts\ARM\ReleaseRT\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Charts;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\ARM64\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Charts\ARM64\ReleaseRT\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Charts;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Packages\Charts\Charts.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Charts.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\BarChart\BarChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/BarChart/BarChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\DoughnutChart\DoughnutChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/DoughnutChart/DoughnutChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\ForexChart\ForexChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/ForexChart/ForexChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\ForexChart\ForexChartService.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/ForexChart/ForexChartService.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\IBarChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/IBarChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\IDoughnutChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/IDoughnutChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\IForexChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/IForexChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\ILineChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/ILineChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\IMultiBarChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/IMultiBarChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\IPieChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/IPieChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\IPolarAreaChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/IPolarAreaChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\IRadarChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/IRadarChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\ISemiDoughnutChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/ISemiDoughnutChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\ISemiPieChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/ISemiPieChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\ISplineChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/ISplineChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\IStackedBarChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/IStackedBarChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\ISteppedLineChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/ISteppedLineChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\LineChart\LineChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/LineChart/LineChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\MultiBarChart\MultiBarChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/MultiBarChart/MultiBarChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\PieChart\PieChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/PieChart/PieChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\PolarAreaChart\PolarAreaChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/PolarAreaChart/PolarAreaChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\PolarAreaChart\PolarAreaChartService.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/PolarAreaChart/PolarAreaChartService.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\RadarChart\RadarChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/RadarChart/RadarChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\RadarChart\RadarChartService.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/RadarChart/RadarChartService.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\SemiDoughnutChart\SemiDoughnutChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/SemiDoughnutChart/SemiDoughnutChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\SemiPieChart\SemiPieChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/SemiPieChart/SemiPieChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\SplineChart\SplineChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/SplineChart/SplineChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\StackedBarChart\StackedBarChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/StackedBarChart/StackedBarChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\SteppedLineChart\SteppedLineChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/SteppedLineChart/SteppedLineChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\BarChartRenderer.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/BarChartRenderer.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\BezierChartRenderer.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/BezierChartRenderer.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\ChartData.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/ChartData.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\ChartDataSet.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/ChartDataSet.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomCartesianChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/CustomCartesianChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomCartesianChartEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/CustomCartesianChartEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomCartesianChartPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/CustomCartesianChartPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomCartesianChartService.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/CustomCartesianChartService.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomRadialChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/CustomRadialChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomRadialChartEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/CustomRadialChartEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomRadialChartPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/CustomRadialChartPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomRadialChartService.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/CustomRadialChartService.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\Enums.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/Enums.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\LineChartRenderer.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/LineChartRenderer.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\SteppedLineChartRenderer.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/SteppedLineChartRenderer.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\Utils.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/Utils.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\ChartDataSet\DialogBoxChartDataSet.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Forms/ChartDataSet/DialogBoxChartDataSet.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\ChartDataSet\FormChartDataSet.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Forms/ChartDataSet/FormChartDataSet.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\ChartDataSet\IDialogBoxChartDataSetProto.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Forms/ChartDataSet/IDialogBoxChartDataSetProto.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\ChartDataSet\IFormChartDataSetProto.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Forms/ChartDataSet/IFormChartDataSetProto.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\ForexChartData\DialogBoxForexChartData.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Forms/ForexChartData/DialogBoxForexChartData.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\ForexChartData\FormForexChartData.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Forms/ForexChartData/FormForexChartData.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\ForexChartData\IDialogBoxForexChartDataProto.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Forms/ForexChartData/IDialogBoxForexChartDataProto.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\ForexChartData\IFormForexChartDataProto.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Forms/ForexChartData/IFormForexChartDataProto.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\IFormChartDataSet.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Forms/IFormChartDataSet.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\IFormForexChartData.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Forms/IFormForexChartData.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\IFormLineInterpolationPositionArray.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Forms/IFormLineInterpolationPositionArray.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\LineInterpolationPositionArray\DialogBoxLineInterpolationPositionArray.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Forms/LineInterpolationPositionArray/DialogBoxLineInterpolationPositionArray.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArray.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Forms/LineInterpolationPositionArray/FormLineInterpolationPositionArray.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\LineInterpolationPositionArray\IDialogBoxLineInterpolationPositionArrayProto.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Forms/LineInterpolationPositionArray/IDialogBoxLineInterpolationPositionArrayProto.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\LineInterpolationPositionArray\IFormLineInterpolationPositionArrayProto.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Forms/LineInterpolationPositionArray/IFormLineInterpolationPositionArrayProto.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Interfaces\ICartesianChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Interfaces/ICartesianChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Interfaces\IChartData.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Interfaces/IChartData.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Interfaces\IChartDataSet.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Interfaces/IChartDataSet.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Interfaces\IChartRenderer.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Interfaces/IChartRenderer.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Interfaces\IRadialChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Interfaces/IRadialChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Interfaces\IUpdateListener.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Interfaces/IUpdateListener.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\BarChart\BarChartEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/BarChart/BarChartEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\BarChart\BarChartPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/BarChart/BarChartPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\BarChart\PackageBarChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/BarChart/PackageBarChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\DoughnutChart\DoughnutChartEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/DoughnutChart/DoughnutChartEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\DoughnutChart\DoughnutChartPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/DoughnutChart/DoughnutChartPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\DoughnutChart\PackageDoughnutChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/DoughnutChart/PackageDoughnutChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\ForexChart\ForexChartEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/ForexChart/ForexChartEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\ForexChart\ForexChartPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/ForexChart/ForexChartPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\ForexChart\PackageForexChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/ForexChart/PackageForexChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\LineChart\LineChartEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/LineChart/LineChartEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\LineChart\LineChartPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/LineChart/LineChartPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\LineChart\PackageLineChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/LineChart/PackageLineChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\MultiBarChart\MultiBarChartEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/MultiBarChart/MultiBarChartEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\MultiBarChart\MultiBarChartPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/MultiBarChart/MultiBarChartPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\MultiBarChart\PackageMultiBarChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/MultiBarChart/PackageMultiBarChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\PieChart\PackagePieChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/PieChart/PackagePieChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\PieChart\PieChartEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/PieChart/PieChartEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\PieChart\PieChartPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/PieChart/PieChartPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\PolarAreaChart\PackagePolarAreaChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/PolarAreaChart/PackagePolarAreaChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\PolarAreaChart\PolarAreaChartEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/PolarAreaChart/PolarAreaChartEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\PolarAreaChart\PolarAreaChartPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/PolarAreaChart/PolarAreaChartPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\RadarChart\PackageRadarChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/RadarChart/PackageRadarChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\RadarChart\RadarChartEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/RadarChart/RadarChartEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\RadarChart\RadarChartPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/RadarChart/RadarChartPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SemiDoughnutChart\PackageSemiDoughnutChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SemiDoughnutChart/PackageSemiDoughnutChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SemiDoughnutChart\SemiDoughnutChartEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SemiDoughnutChart/SemiDoughnutChartEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SemiDoughnutChart\SemiDoughnutChartPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SemiDoughnutChart/SemiDoughnutChartPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SemiPieChart\PackageSemiPieChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SemiPieChart/PackageSemiPieChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SemiPieChart\SemiPieChartEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SemiPieChart/SemiPieChartEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SemiPieChart\SemiPieChartPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SemiPieChart/SemiPieChartPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SplineChart\PackageSplineChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SplineChart/PackageSplineChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SplineChart\SplineChartEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SplineChart/SplineChartEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SplineChart\SplineChartPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SplineChart/SplineChartPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\StackedBarChart\PackageStackedBarChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/StackedBarChart/PackageStackedBarChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\StackedBarChart\StackedBarChartEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/StackedBarChart/StackedBarChartEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\StackedBarChart\StackedBarChartPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/StackedBarChart/StackedBarChartPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SteppedLineChart\PackageSteppedLineChart.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SteppedLineChart/PackageSteppedLineChart.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SteppedLineChart\SteppedLineChartEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SteppedLineChart/SteppedLineChartEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SteppedLineChart\SteppedLineChartPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SteppedLineChart/SteppedLineChartPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Core\Consts.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Core/Consts.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\ChartDataSet\FormChartDataSetEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Forms/ChartDataSet/FormChartDataSetEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\ChartDataSet\FormChartDataSetPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Forms/ChartDataSet/FormChartDataSetPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\ChartDataSet\PackageFormChartDataSet.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Forms/ChartDataSet/PackageFormChartDataSet.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\ForexChartData\FormForexChartDataEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Forms/ForexChartData/FormForexChartDataEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\ForexChartData\FormForexChartDataPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Forms/ForexChartData/FormForexChartDataPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\ForexChartData\PackageFormForexChartData.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Forms/ForexChartData/PackageFormForexChartData.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArrayEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Forms/LineInterpolationPositionArray/FormLineInterpolationPositionArrayEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArrayPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Forms/LineInterpolationPositionArray/FormLineInterpolationPositionArrayPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\LineInterpolationPositionArray\PackageFormLineInterpolationPositionArray.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Forms/LineInterpolationPositionArray/PackageFormLineInterpolationPositionArray.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Interfaces\IPropertyChartDataSet.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Interfaces/IPropertyChartDataSet.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Interfaces\IPropertyForexChartData.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Interfaces/IPropertyForexChartData.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Interfaces\IPropertyLineInterpolationPositionArray.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Interfaces/IPropertyLineInterpolationPositionArray.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\PackageCharts.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/PackageCharts.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\PackageChartsService.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/PackageChartsService.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Properties\PropertyChartDataSet.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Properties/PropertyChartDataSet.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Properties\PropertyForexChartData.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Properties/PropertyForexChartData.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Properties\PropertyLineInterpolationPositionArray.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Properties/PropertyLineInterpolationPositionArray.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\PropertyHandlers\ChartDataSet\PropertyHandlerChartDataSet.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/PropertyHandlers/ChartDataSet/PropertyHandlerChartDataSet.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\PropertyHandlers\ForexChartData\PropertyHandlerForexChartData.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/PropertyHandlers/ForexChartData/PropertyHandlerForexChartData.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\PropertyHandlers\LineInterpolationPositionArray\PropertyHandlerLineInterpolationPositionArray.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/PropertyHandlers/LineInterpolationPositionArray/PropertyHandlerLineInterpolationPositionArray.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\stdafx.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/stdafx.h</RemoteFile>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Packages\Charts\Controls\BarChart\BarChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/BarChart/BarChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\DoughnutChart\DoughnutChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/DoughnutChart/DoughnutChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\ForexChart\ForexChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/FoxeChart/ForexChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\ForexChart\ForexChartData.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/ForexChart/ForexChartData.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\ForexChart\ForexChartService.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/ForexChart/ForexChartService.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\LineChart\LineChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/LineChart/LineChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\MultiBarChart\MultiBarChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/MultiBarChart/MultiBarChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\PieChart\PieChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/PieChart/PieChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\PolarAreaChart\PolarAreaChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/PolarAreaChart/PolarAreaChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\PolarAreaChart\PolarAreaChartService.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/PolarAreaChart/PolarAreaChartService.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\RadarChart\RadarChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/RadarChart/RadarChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\RadarChart\RadarChartService.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/RadarChart/RadarChartService.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\SemiDoughnutChart\SemiDoughnutChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/SemiDoughnutChart/SemiDoughnutChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\SemiPieChart\SemiPieChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/SemiPieChart/SemiPieChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\SplineChart\SplineChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/SplineChart/SplineChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\StackedBarChart\StackedBarChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/StackedBarChart/StackedBarChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\SteppedLineChart\SteppedLineChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Controls/SteppedLineChart/SteppedLineChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\BarChartRenderer.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/BarChartRenderer.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\BezierChartRenderer.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/BezierChartRenderer.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\ChartData.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/ChartData.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\ChartDataSet.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/ChartDataSet.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomCartesianChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/CustomCartesianChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomCartesianChartEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/CustomCartesianChartEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomCartesianChartPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/CustomCartesianChartPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomCartesianChartService.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/CustomCartesianChartService.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomRadialChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/CustomRadialChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomRadialChartEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/CustomRadialChartEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomRadialChartPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/CustomRadialChartPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomRadialChartService.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/CustomRadialChartService.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\LineChartRenderer.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/LineChartRenderer.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\SteppedLineChartRenderer.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/SteppedLineChartRenderer.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\Utils.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Core/Utils.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Forms\ChartDataSet\DialogBoxChartDataSet.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Forms/ChartDataSet/DialogBoxChartDataSet.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Forms\ChartDataSet\FormChartDataSet.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Forms/ChartDataSet/FormChartDataSet.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Forms\ForexChartData\DialogBoxForexChartData.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Forms/ChartDataSet/DialogBoxForexChartData.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Forms\ForexChartData\FormForexChartData.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Forms/ChartDataSet/FormForexChartData.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Forms\LineInterpolationPositionArray\DialogBoxLineInterpolationPositionArray.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Forms/LineInterpolationPositionArray/DialogBoxLineInterpolationPositionArray.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArray.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Forms/LineInterpolationPositionArray/FormLineInterpolationPositionArray.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\BarChart\BarChartEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/BarChart/BarChartEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\BarChart\BarChartPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/BarChart/BarChartPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\BarChart\PackageBarChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/BarChart/PackageBarChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\DoughnutChart\DoughnutChartEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/DoughnutChart/DoughnutChartEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\DoughnutChart\DoughnutChartPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/DoughnutChart/DoughnutChartPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\DoughnutChart\PackageDoughnutChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/DoughnutChart/PackageDoughnutChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\ForexChart\ForexChartEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/ForexChart/ForexChartEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\ForexChart\ForexChartPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/ForexChart/ForexChartPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\ForexChart\PackageForexChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/ForexChart/PackageForexChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\LineChart\LineChartEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/LineChart/LineChartEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\LineChart\LineChartPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/LineChart/LineChartPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\LineChart\PackageLineChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/LineChart/PackageLineChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\MultiBarChart\MultiBarChartEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/MultiBarChart/MultiBarChartEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\MultiBarChart\MultiBarChartPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/MultiBarChart/MultiBarChartPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\MultiBarChart\PackageMultiBarChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/MultiBarChart/PackageMultiBarChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\PieChart\PackagePieChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/PieChart/PackagePieChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\PieChart\PieChartEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/PieChart/PieChartEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\PieChart\PieChartPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/PieChart/PieChartPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\PolarAreaChart\PackagePolarAreaChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/PolarAreaChart/PackagePolarAreaChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\PolarAreaChart\PolarAreaChartEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/PolarAreaChart/PolarAreaChartEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\PolarAreaChart\PolarAreaChartPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/PolarAreaChart/PolarAreaChartPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\RadarChart\PackageRadarChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/RadarChart/PackageRadarChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\RadarChart\RadarChartEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/RadarChart/RadarChartEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\RadarChart\RadarChartPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/RadarChart/RadarChartPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SemiDoughnutChart\PackageSemiDoughnutChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SemiDoughnutChart/PackageSemiDoughnutChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SemiDoughnutChart\SemiDoughnutChartEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SemiDoughnutChart/SemiDoughnutChartEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SemiDoughnutChart\SemiDoughnutChartPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SemiDoughnutChart/SemiDoughnutChartPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SemiPieChart\PackageSemiPieChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SemiPieChart/PackageSemiPieChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SemiPieChart\SemiPieChartEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SemiPieChart/SemiPieChartEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SemiPieChart\SemiPieChartPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SemiPieChart/SemiPieChartPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SplineChart\PackageSplineChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SplineChart/PackageSplineChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SplineChart\SplineChartEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SplineChart/SplineChartEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SplineChart\SplineChartPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SplineChart/SplineChartPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\StackedBarChart\PackageStackedBarChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/StackedBarChart/PackageStackedBarChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\StackedBarChart\StackedBarChartEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/StackedBarChart/StackedBarChartEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\StackedBarChart\StackedBarChartPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/StackedBarChart/StackedBarChartPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SteppedLineChart\PackageSteppedLineChart.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SteppedLineChart/PackageSteppedLineChart.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SteppedLineChart\SteppedLineChartEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SteppedLineChart/SteppedLineChartEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SteppedLineChart\SteppedLineChartPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Controls/SteppedLineChart/SteppedLineChartPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Core\Consts.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Core/Consts.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\ChartDataSet\FormChartDataSetEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Forms/ChartDataSet/FormChartDataSetEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\ChartDataSet\FormChartDataSetPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Forms/ChartDataSet/FormChartDataSetPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\ChartDataSet\PackageFormChartDataSet.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Forms/ChartDataSet/PackageFormChartDataSet.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\ForexChartData\FormForexChartDataEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Forms/ForexChartData/FormForexChartDataEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\ForexChartData\FormForexChartDataPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Forms/ForexChartData/FormForexChartDataPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\ForexChartData\PackageFormForexChartData.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Forms/ForexChartData/PackageFormForexChartData.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArrayEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Forms/LineInterpolationPositionArray/FormLineInterpolationPositionArrayEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArrayPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Forms/LineInterpolationPositionArray/FormLineInterpolationPositionArrayPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\LineInterpolationPositionArray\PackageFormLineInterpolationPositionArray.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Forms/LineInterpolationPositionArray/PackageFormLineInterpolationPositionArray.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\PackageCharts.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/PackageCharts.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\PackageChartsService.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/PackageChartsService.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Properties\PropertyChartDataSet.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Properties/PropertyChartDataSet.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Properties\PropertyForexChartData.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Properties/PropertyForexChartData.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Properties\PropertyLineInterpolationPositionArray.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/Properties/PropertyLineInterpolationPositionArray.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\PropertyHandlers\ChartDataSet\PropertyHandlerChartDataSet.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/PropertyHandlers/ChartDataSet/PropertyHandlerChartDataSet.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\PropertyHandlers\ForexChartData\PropertyHandlerForexChartData.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/PropertyHandlers/ForexChartData/PropertyHandlerForexChartData.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\PropertyHandlers\LineInterpolationPositionArray\PropertyHandlerLineInterpolationPositionArray.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Charts/Package/PropertyHandlers/LineInterpolationPositionArray/PropertyHandlerLineInterpolationPositionArray.cpp</RemoteFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

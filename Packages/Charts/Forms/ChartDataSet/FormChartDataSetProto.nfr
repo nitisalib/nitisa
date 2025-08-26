@@ -1,0 +1,541 @@
+{
+    "Layout": "Windows Form",
+    "Version": "2.0",
+    "Settings": {
+        "GridX": true,
+        "GridY": true,
+        "GridRotate": true,
+        "GridXStep": 8,
+        "GridYStep": 8,
+        "GridRotateStep": 0.0174533,
+        "RotateShift": 2,
+        "GridPointSize": 1,
+        "GridPointColor": [
+            113,
+            21,
+            36,
+            255
+        ],
+        "Namespace": "charts",
+        "Prefix": "m_p",
+        "SelectionPointSize": 4,
+        "SelectionBorderWidth": 1,
+        "SelectionBorderColor": [
+            0,
+            0,
+            255,
+            150
+        ],
+        "SelectionBackgroundColor": [
+            0,
+            0,
+            255,
+            50
+        ],
+        "OverwriteIncludes": [
+            {
+                "Search": "Charts",
+                "Replace": "../.."
+            }
+        ],
+        "OverwriteNamespaces": [
+            {
+                "Search": "charts",
+                "Replace": ""
+            }
+        ],
+        "WidgetsSection": "protected",
+        "GenerateGetters": false,
+        "HighlightBorderWidth": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "HighlightBorderColor": [
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ]
+        ],
+        "ExportAs": 0,
+        "DialogBoxPackage": "",
+        "DialogBoxClass": ""
+    },
+    "Form": {
+        "Name": "FormChartDataSetProto",
+        "Caption": "Manage Chart Dataset",
+        "ClientSize": [
+            922,
+            442
+        ],
+        "State": "WindowState::Hidden",
+        "WindowPosition": "WindowPosition::ScreenCenter",
+        "HasMaximizeBox": false,
+        "HasMinimizeBox": false,
+        "HasSizeBox": false
+    },
+    "Controls": [
+        {
+            "Package": "Standard",
+            "ClassName": "GroupBox",
+            "Name": "GroupBox1",
+            "Transform": {
+                "Tx": 8,
+                "Ty": 8,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                305,
+                425
+            ],
+            "Caption": "Datas",
+            "UseMask": false,
+            "Controls": [
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonAddData",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 24,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "TabOrder": 2,
+                    "Enabled": false,
+                    "Caption": "Add",
+                    "OnClick": "ButtonAddData_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditDataName",
+                    "Transform": {
+                        "Tx": 120,
+                        "Ty": 24,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        176,
+                        21
+                    ],
+                    "TabOrder": 3,
+                    "Enabled": false,
+                    "Text": "Data #1",
+                    "Placeholder": "Data name"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonDeleteData",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 80,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "TabOrder": 4,
+                    "Enabled": false,
+                    "Caption": "Delete",
+                    "OnClick": "ButtonDeleteData_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "ListBox",
+                    "Name": "ListBoxDatas",
+                    "Transform": {
+                        "Tx": 120,
+                        "Ty": 48,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        177,
+                        369
+                    ],
+                    "TabOrder": 5,
+                    "Multiselect": false,
+                    "OnSelect": "ListBoxDatas_OnSelect",
+                    "OnDeselect": "ListBoxDatas_OnDeselect"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonUpdateData",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 48,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "TabOrder": 6,
+                    "Enabled": false,
+                    "Caption": "Update",
+                    "OnClick": "ButtonUpdateData_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonClearDatas",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 104,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "TabOrder": 18,
+                    "Enabled": false,
+                    "Caption": "Clear",
+                    "OnClick": "ButtonClearDatas_OnClick"
+                }
+            ]
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "GroupBox",
+            "Name": "GroupBox2",
+            "Transform": {
+                "Tx": 320,
+                "Ty": 8,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                593,
+                425
+            ],
+            "Caption": "Points",
+            "UseMask": false,
+            "Controls": [
+                {
+                    "Package": "Standard",
+                    "ClassName": "ListBox",
+                    "Name": "ListBoxPoints",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 24,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        353,
+                        393
+                    ],
+                    "TabOrder": 8,
+                    "Multiselect": false,
+                    "OnSelect": "ListBoxPoints_OnSelect",
+                    "OnDeselect": "ListBoxPoints_OnDeselect"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "Label1",
+                    "Transform": {
+                        "Tx": 368,
+                        "Ty": 28,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "X:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "Label2",
+                    "Transform": {
+                        "Tx": 368,
+                        "Ty": 52,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "Y:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "Label3",
+                    "Transform": {
+                        "Tx": 368,
+                        "Ty": 76,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Caption": "Label:"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditX",
+                    "Transform": {
+                        "Tx": 408,
+                        "Ty": 24,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        176,
+                        21
+                    ],
+                    "TabOrder": 12,
+                    "Enabled": false,
+                    "Text": "0",
+                    "Placeholder": "X coordinate"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditY",
+                    "Transform": {
+                        "Tx": 408,
+                        "Ty": 48,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        176,
+                        21
+                    ],
+                    "TabOrder": 13,
+                    "Enabled": false,
+                    "Text": "0",
+                    "Placeholder": "Y coordinate"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditLabel",
+                    "Transform": {
+                        "Tx": 408,
+                        "Ty": 72,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        176,
+                        21
+                    ],
+                    "TabOrder": 14,
+                    "Enabled": false,
+                    "Text": "Item #0",
+                    "Placeholder": "Point label"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonAddPoint",
+                    "Transform": {
+                        "Tx": 480,
+                        "Ty": 96,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "TabOrder": 15,
+                    "Enabled": false,
+                    "Caption": "Add",
+                    "OnClick": "ButtonAddPoint_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonUpdatePoint",
+                    "Transform": {
+                        "Tx": 480,
+                        "Ty": 120,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "TabOrder": 16,
+                    "Enabled": false,
+                    "Caption": "Update",
+                    "OnClick": "ButtonUpdatePoint_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonDeletePoint",
+                    "Transform": {
+                        "Tx": 480,
+                        "Ty": 152,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "TabOrder": 17,
+                    "Enabled": false,
+                    "Caption": "Delete",
+                    "OnClick": "ButtonDeletePoint_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonClearPoints",
+                    "Transform": {
+                        "Tx": 480,
+                        "Ty": 176,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "TabOrder": 19,
+                    "Enabled": false,
+                    "Caption": "Clear",
+                    "OnClick": "ButtonClearPoints_OnClick"
+                }
+            ]
+        }
+    ]
+}

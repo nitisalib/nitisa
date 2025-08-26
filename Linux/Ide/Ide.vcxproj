@@ -1,0 +1,1593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugRT|ARM">
+      <Configuration>DebugRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|ARM64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|x64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|x86">
+      <Configuration>DebugRT</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|ARM">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|ARM64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|x64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|x86">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1dc739db-1122-49d3-8c9d-d030e05e2bdf}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>Ide</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{2238F9CD-F817-4ECC-BD14-2524D2669B35}</LinuxProjectType>
+    <ProjectName>Ide</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfStl>libstdc++_static</UseOfStl>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\x86\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Ide\x86\Debug\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Ide;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\x64\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Ide\x64\Debug\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Ide;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\ARM\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Ide\ARM\Debug\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Ide;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\ARM64\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Ide\ARM64\Debug\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Ide;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\x86\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Ide\x86\DebugRT\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Ide;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\x86\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Ide\x64\DebugRT\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Ide;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\ARM\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Ide\ARM\DebugRT\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Ide;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\ARM64\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Ide\ARM64\DebugRT\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Ide;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\x86\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Ide\x86\Release\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Ide;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\x64\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Ide\x64\Release\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Ide;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\ARM\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Ide\ARM\Release\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Ide;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\ARM64\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Ide\ARM64\Release\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Ide;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\x86\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Ide\x86\ReleaseRT\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Ide;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\x64\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Ide\x64\ReleaseRT\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Ide;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\ARM\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Ide\ARM\ReleaseRT\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Ide;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <OutDir>$(SolutionOutputDir)bin\Linux\ARM64\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Linux\Ide\ARM64\ReleaseRT\</IntDir>
+    <RemoteProjectDir>$(RemoteRootDir)/Nitisa/$(Version)/Packages/$(ProjectName)</RemoteProjectDir>
+    <IncludePath>$(ProjectDir)../../Ide;$(ProjectDir)../..;$(ProjectDir)../../Packages</IncludePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Packages\Ide\Controls\EventEditor\EventEditor.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/EventEditor/EventEditor.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\EventEditor\EventEditorService.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/EventEditor/EventEditorService.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\FormEditor\FormEditor.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/FormEditor/FormEditor.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\FormEditor\FormEditorService.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/FormEditor/FormEditorService.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\FormView\FormView.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/FormView/FormView.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\FormView\FormViewService.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/FormView/FormViewService.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\HierarchyEditor\HierarchyEditor.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/HierarchyEditor/HierarchyEditor.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\HierarchyEditor\HierarchyEditorService.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/HierarchyEditor/HierarchyEditorService.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\HierarchyEditor\ListItemHierarchyEditor.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/HierarchyEditor/ListItemHierarchyEditor.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IEventEditor.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IEventEditor.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IFormEditor.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IFormEditor.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IFormView.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IFormView.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IHierarchyEditor.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IHierarchyEditor.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IPropertyEditor.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IPropertyEditor.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewCross.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewCross.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewH1H2.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewH1H2.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewH1H2L.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewH1H2L.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewH1H2R.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewH1H2R.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewH1H3.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewH1H3.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewH2.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewH2.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewH2H1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewH2H1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewH2H2.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewH2H2.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewH2LH1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewH2LH1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewH2RH1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewH2RH1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewH3.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewH3.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewH3H1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewH3H1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewV1V2.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewV1V2.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewV1V2B.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewV1V2B.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewV1V2T.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewV1V2T.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewV1V3.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewV1V3.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewV2.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewV2.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewV2BV1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewV2BV1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewV2TV1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewV2TV1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewV2V1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewV2V1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewV2V2.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewV2V2.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewV3.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewV3.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewV3V1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/IViewV3V1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\PropertyEditor\PropertyEditor.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/PropertyEditor/PropertyEditor.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\PropertyEditor\PropertyEditorService.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/PropertyEditor/PropertyEditorService.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewCross\ViewCross.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewCross/ViewCross.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewCross\ViewCrossService.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewCross/ViewCrossService.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH1H2L\ViewH1H2L.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH1H2L/ViewH1H2L.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH1H2L\ViewH1H2LService.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH1H2L/ViewH1H2LService.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH1H2R\ViewH1H2R.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH1H2R/ViewH1H2R.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH1H2R\ViewH1H2RService.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH1H2R/ViewH1H2RService.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH1H2\ViewH1H2.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH1H2/ViewH1H2.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH1H2\ViewH1H2Service.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH1H2/ViewH1H2Service.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH1H3\ViewH1H3.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH1H3/ViewH1H3.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH1H3\ViewH1H3Service.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH1H3/ViewH1H3Service.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH2H1\ViewH2H1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH2H1/ViewH2H1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH2H1\ViewH2H1Service.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH2H1/ViewH2H1Service.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH2H2\ViewH2H2.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH2H2/ViewH2H2.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH2H2\ViewH2H2Service.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH2H2/ViewH2H2Service.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH2LH1\ViewH2LH1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH2LH1/ViewH2LH1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH2LH1\ViewH2LH1Service.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH2LH1/ViewH2LH1Service.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH2RH1\ViewH2RH1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH2RH1/ViewH2RH1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH2RH1\ViewH2RH1Service.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH2RH1/ViewH2RH1Service.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH2\ViewH2.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH2/ViewH2.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH2\ViewH2Service.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH2/ViewH2Service.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH3H1\ViewH3H1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH3H1/ViewH3H1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH3H1\ViewH3H1Service.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH3H1/ViewH3H1Service.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH3\ViewH3.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH3/ViewH3.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH3\ViewH3Service.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH3/ViewH3Service.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV1V2B\ViewV1V2B.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV1V2B/ViewV1V2B.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV1V2B\ViewV1V2BService.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV1V2B/ViewV1V2BService.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV1V2T\ViewV1V2T.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV1V2T/ViewV1V2T.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV1V2T\ViewV1V2TService.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV1V2T/ViewV1V2TService.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV1V2\ViewV1V2.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV1V2/ViewV1V2.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV1V2\ViewV1V2Service.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV1V2/ViewV1V2Service.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV1V3\ViewV1V3.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV1V3/ViewV1V3.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV1V3\ViewV1V3Service.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV1V3/ViewV1V3Service.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV2BV1\ViewV2BV1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV2BV1/ViewV2BV1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV2BV1\ViewV2BV1Service.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV2BV1/ViewV2BV1Service.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV2TV1\ViewV2TV1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV2TV1/ViewV2TV1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV2TV1\ViewV2TV1Service.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV2TV1/ViewV2TV1Service.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV2V1\ViewV2V1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV2V1/ViewV2V1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV2V1\ViewV2V1Service.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV2V1/ViewV2V1Service.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV2V2\ViewV2V2.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV2V2/ViewV2V2.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV2V2\ViewV2V2Service.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV2V2/ViewV2V2Service.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV2\ViewV2.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV2/ViewV2.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV2\ViewV2Service.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV2/ViewV2Service.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV3V1\ViewV3V1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV3V1/ViewV3V1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV3V1\ViewV3V1Service.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV3V1/ViewV3V1Service.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV3\ViewV3.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV3/ViewV3.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV3\ViewV3Service.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV3/ViewV3Service.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Ide.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Ide.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Interfaces\IViewControl.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Interfaces/IViewControl.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\EventEditor\EventEditorEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/EventEditor/EventEditorEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\EventEditor\EventEditorPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/EventEditor/EventEditorPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\EventEditor\PackageEventEditor.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/EventEditor/PackageEventEditor.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\FormEditor\FormEditorEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/FormEditor/FormEditorEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\FormEditor\FormEditorPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/FormEditor/FormEditorPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\FormEditor\PackageFormEditor.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/FormEditor/PackageFormEditor.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\FormView\FormViewEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/FormView/FormViewEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\FormView\FormViewPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/FormView/FormViewPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\FormView\PackageFormView.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/FormView/PackageFormView.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\HierarchyEditor\HierarchyEditorEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/HierarchyEditor/HierarchyEditorEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\HierarchyEditor\HierarchyEditorPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/HierarchyEditor/HierarchyEditorPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\HierarchyEditor\PackageHierarchyEditor.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/HierarchyEditor/PackageHierarchyEditor.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\PropertyEditor\PackagePropertyEditor.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/PropertyEditor/PackagePropertyEditor.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\PropertyEditor\PropertyEditorEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/PropertyEditor/PropertyEditorEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\PropertyEditor\PropertyEditorPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/PropertyEditor/PropertyEditorPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewCross\PackageViewCross.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewCross/PackageViewCross.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewCross\ViewCrossEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewCross/ViewCrossEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewCross\ViewCrossPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewCross/ViewCrossPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H2L\PackageViewH1H2L.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H2L/PackageViewH1H2L.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H2L\ViewH1H2LEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H2L/ViewH1H2LEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H2L\ViewH1H2LPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H2L/ViewH1H2LPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H2R\PackageViewH1H2R.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H2R/PackageViewH1H2R.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H2R\ViewH1H2REventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H2R/ViewH1H2REventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H2R\ViewH1H2RPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H2R/ViewH1H2RPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H2\PackageViewH1H2.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H2/PackageViewH1H2.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H2\ViewH1H2EventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H2/ViewH1H2EventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H2\ViewH1H2PropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H2/ViewH1H2PropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H3\PackageViewH1H3.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H3/PackageViewH1H3.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H3\ViewH1H3EventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H3/ViewH1H3EventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H3\ViewH1H3PropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H3/ViewH1H3PropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2H1\PackageViewH2H1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2H1/PackageViewH2H1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2H1\ViewH2H1EventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2H1/ViewH2H1EventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2H1\ViewH2H1PropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2H1/ViewH2H1PropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2H2\PackageViewH2H2.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2H2/PackageViewH2H2.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2H2\ViewH2H2EventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2H2/ViewH2H2EventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2H2\ViewH2H2PropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2H2/ViewH2H2PropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2LH1\PackageViewH2LH1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2LH1/PackageViewH2LH1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2LH1\ViewH2LH1EventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2LH1/ViewH2LH1EventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2LH1\ViewH2LH1PropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2LH1/ViewH2LH1PropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2RH1\PackageViewH2RH1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2RH1/PackageViewH2RH1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2RH1\ViewH2RH1EventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2RH1/ViewH2RH1EventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2RH1\ViewH2RH1PropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2RH1/ViewH2RH1PropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2\PackageViewH2.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2/PackageViewH2.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2\ViewH2EventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2/ViewH2EventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2\ViewH2PropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2/ViewH2PropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH3H1\PackageViewH3H1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH3H1/PackageViewH3H1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH3H1\ViewH3H1EventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH3H1/ViewH3H1EventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH3H1\ViewH3H1PropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH3H1/ViewH3H1PropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH3\PackageViewH3.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH3/PackageViewH3.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH3\ViewH3EventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH3/ViewH3EventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH3\ViewH3PropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH3/ViewH3PropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V2B\PackageViewV1V2B.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V2B/PackageViewV1V2B.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V2B\ViewV1V2BEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V2B/ViewV1V2BEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V2B\ViewV1V2BPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V2B/ViewV1V2BPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V2T\PackageViewV1V2T.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V2T/PackageViewV1V2T.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V2T\ViewV1V2TEventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V2T/ViewV1V2TEventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V2T\ViewV1V2TPropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V2T/ViewV1V2TPropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V2\PackageViewV1V2.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V2/PackageViewV1V2.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V2\ViewV1V2EventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V2/ViewV1V2EventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V2\ViewV1V2PropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V2/ViewV1V2PropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V3\PackageViewV1V3.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V3/PackageViewV1V3.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V3\ViewV1V3EventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V3/ViewV1V3EventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V3\ViewV1V3PropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V3/ViewV1V3PropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2BV1\PackageViewV2BV1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2BV1/PackageViewV2BV1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2BV1\ViewV2BV1EventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2BV1/ViewV2BV1EventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2BV1\ViewV2BV1PropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2BV1/ViewV2BV1PropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2TV1\PackageViewV2TV1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2TV1/PackageViewV2TV1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2TV1\ViewV2TV1EventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2TV1/ViewV2TV1EventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2TV1\ViewV2TV1PropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2TV1/ViewV2TV1PropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2V1\PackageViewV2V1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2V1/PackageViewV2V1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2V1\ViewV2V1EventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2V1/ViewV2V1EventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2V1\ViewV2V1PropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2V1/ViewV2V1PropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2V2\PackageViewV2V2.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2V2/PackageViewV2V2.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2V2\ViewV2V2EventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2V2/ViewV2V2EventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2V2\ViewV2V2PropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2V2/ViewV2V2PropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2\PackageViewV2.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2/PackageViewV2.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2\ViewV2EventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2/ViewV2EventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2\ViewV2PropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2/ViewV2PropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV3V1\PackageViewV3V1.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV3V1/PackageViewV3V1.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV3V1\ViewV3V1EventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV3V1/ViewV3V1EventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV3V1\ViewV3V1PropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV3V1/ViewV3V1PropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV3\PackageViewV3.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV3/PackageViewV3.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV3\ViewV3EventList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV3/ViewV3EventList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV3\ViewV3PropertyList.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV3/ViewV3PropertyList.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\PackageIde.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/PackageIde.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\Package\PackageIdeService.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/PackageIdeService.h</RemoteFile>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Ide\stdafx.h">
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/stdafx.h</RemoteFile>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Packages\Ide\Controls\EventEditor\DropDown.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/EventEditor/DropDown.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\EventEditor\DropDownListener.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/EventEditor/DropDownListener.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\EventEditor\EventEditor.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/EventEditor/EventEditor.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\EventEditor\EventEditorService.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/EventEditor/EventEditorService.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\EventEditor\Scroll.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/EventEditor/Scroll.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\EventEditor\ScrollListener.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/EventEditor/ScrollListener.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\FormEditor\FormEditor.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/FormEditor/FormEditor.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\FormEditor\FormEditorService.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/FormEditor/FormEditorService.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\FormView\FormView.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/FormView/FormView.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\FormView\FormViewService.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/FormView/FormViewService.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\HierarchyEditor\HierarchyEditor.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/HierarchyEditor/HierarchyEditor.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\HierarchyEditor\HierarchyEditorService.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/HierarchyEditor/HierarchyEditorService.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\HierarchyEditor\ListItemHierarchyEditor.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/HierarchyEditor/ListItemHierarchyEditor.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\HierarchyEditor\ListItemOwner.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/HierarchyEditor/ListItemOwner.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\PropertyEditor\PropertyEditor.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/PropertyEditor/PropertyEditor.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\PropertyEditor\PropertyEditorService.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/PropertyEditor/PropertyEditorService.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\PropertyEditor\PropertyHandlerListener.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/PropertyEditor/PropertyHandlerListener.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\PropertyEditor\Scroll.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/PropertyEditor/Scroll.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\PropertyEditor\ScrollListener.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/PropertyEditor/ScrollListener.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewCross\ViewCross.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewCross/ViewCross.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewCross\ViewCrossService.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewCross/ViewCrossService.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH1H2L\ViewH1H2L.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH1H2L/ViewH1H2L.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH1H2L\ViewH1H2LService.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH1H2L/ViewH1H2LService.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH1H2R\ViewH1H2R.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH1H2R/ViewH1H2R.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH1H2R\ViewH1H2RService.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH1H2R/ViewH1H2RService.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH1H2\ViewH1H2.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH1H2/ViewH1H2.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH1H2\ViewH1H2Service.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH1H2/ViewH1H2Service.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH1H3\ViewH1H3.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH1H3/ViewH1H3.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH1H3\ViewH1H3Service.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH1H3/ViewH1H3Service.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH2H1\ViewH2H1.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH2H1/ViewH2H1.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH2H1\ViewH2H1Service.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH2H1/ViewH2H1Service.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH2H2\ViewH2H2.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH2H2/ViewH2H2.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH2H2\ViewH2H2Service.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH2H2/ViewH2H2Service.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH2LH1\ViewH2LH1.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH2LH1/ViewH2LH1.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH2LH1\ViewH2LH1Service.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH2LH1/ViewH2LH1Service.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH2RH1\ViewH2RH1.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH2RH1/ViewH2RH1.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH2RH1\ViwH2RH1Service.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH2RH1/ViewH2RH1Service.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH2\ViewH2.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH2/ViewH2.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH2\ViewH2Service.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH2/ViewH2Service.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH3H1\ViewH3H1.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH3H1/ViewH3H1.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH3H1\ViewH3H1Service.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH3H1/ViewH3H1Service.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH3\ViewH3.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH3/ViewH3.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH3\ViewH3Service.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewH3/ViewH3Service.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV1V2B\ViewV1V2B.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV1V2B/ViewV1V2B.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV1V2B\ViewV1V2BService.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV1V2B/ViewV1V2BService.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV1V2T\ViewV1V2T.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV1V2T/ViewV1V2T.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV1V2T\ViewV1V2TService.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV1V2T/ViewV1V2TService.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV1V2\ViewV1V2.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV1V2/ViewV1V2.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV1V2\ViewV1V2Service.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV1V2/ViewV1V2Service.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV1V3\ViewV1V3.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV1V3/ViewV1V3.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV1V3\ViewV1V3Service.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV1V3/ViewV1V3Service.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV2BV1\ViewV2BV1.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV2BV1/ViewV2BV1.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV2BV1\ViewV2BV1Service.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV2BV1/ViewV2BV1Service.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV2TV1\ViewV2TV1.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV2TV1/ViewV2TV1.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV2TV1\ViewV2TV1Service.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV2TV1/ViewV2TV1Service.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV2V1\ViewV2V1.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV2V1/ViewV2V1.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV2V1\ViewV2V1Service.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV2V1/ViewV2V1Service.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV2V2\ViewV2V2.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV2V2/ViewV2V2.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV2V2\ViewV2V2Service.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV2V2/ViewV2V2Service.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV2\ViewV2.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV2/ViewV2.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV2\ViewV2Service.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV2/ViewV2Service.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV3V1\ViewV3V1.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV3V1/ViewV3V1.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV3V1\ViewV3V1Service.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV3V1/ViewV3V1Service.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV3\ViewV3.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV3/ViewV3.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV3\ViewV3Service.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Controls/ViewV3/ViewV3Service.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\EventEditor\EventEditorEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/EventEditor/EventEditorEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\EventEditor\EventEditorPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/EventEditor/EventEditorPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\EventEditor\PackageEventEditor.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/EventEditor/PackageEventEditor.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\FormEditor\FormEditorEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/FormEditor/FormEditorEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\FormEditor\FormEditorPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/FormEditor/FormEditorPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\FormEditor\PackageFormEditor.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/FormEditor/PackageFormEditor.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\FormView\FormViewEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/FormView/FormViewEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\FormView\FormViewPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/FormView/FormViewPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\FormView\PackageFormView.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/FormView/PackageFormView.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\HierarchyEditor\HierarchyEditorEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/HierarchyEditor/HierarchyEditorEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\HierarchyEditor\HierarchyEditorPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/HierarchyEditor/HierarchyEditorPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\HierarchyEditor\PackageHierarchyEditor.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/HierarchyEditor/PackageHierarchyEditor.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\PropertyEditor\PackagePropertyEditor.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/PropertyEditor/PackagePropertyEditor.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\PropertyEditor\PropertyEditorEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/PropertyEditor/PropertyEditorEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\PropertyEditor\PropertyEditorPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/PropertyEditor/PropertyEditorPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewCross\PackageViewCross.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewCross/PackageViewCross.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewCross\ViewCrossEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewCross/ViewCrossEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewCross\ViewCrossPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewCross/ViewCrossPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H2L\PackageViewH1H2L.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H2L/PackageViewH1H2L.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H2L\ViewH1H2LEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H2L/ViewH1H2LEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H2L\ViewH1H2LPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H2L/ViewH1H2LPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H2R\PackageViewH1H2R.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H2R/PackageViewH1H2R.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H2R\ViewH1H2REventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H2R/ViewH1H2REventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H2R\ViewH1H2RPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H2R/ViewH1H2RPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H2\PackageViewH1H2.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H2/PackageViewH1H2.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H2\ViewH1H2EventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H2/ViewH1H2EventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H2\ViewH1H2PropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H2/ViewH1H2PropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H3\PackageViewH1H3.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H3/PackageViewH1H3.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H3\ViewH1H3EventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H3/ViewH1H3EventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H3\ViewH1H3PropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH1H3/ViewH1H3PropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2H1\PackageViewH2H1.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2H1/PackageViewH2H1.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2H1\ViewH2H1EventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2H1/ViewH2H1EventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2H1\ViewH2H1PropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2H1/ViewH2H1PropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2H2\PackageViewH2H2.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/Viewh2H2/PackageViewH2H2.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2H2\ViewH2H2EventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/Viewh2H2/ViewH2H2EventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2H2\ViewH2H2PropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2H2/ViewH2H2PropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2LH1\PackageViewH2LH1.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2LH1/PackageViewH2LH1.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2LH1\ViewH2LH1EventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2LH1/ViewH2LH1EventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2LH1\ViewH2LH1PropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2LH1/ViewH2LH1PropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2RH1\PackageViewH2RH1.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2RH1/PackageViewH2RH1.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2RH1\ViewH2RH1EventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2RH1/ViewH2RH1EventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2RH1\ViewH2RH1PropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2RH1/ViewH2RH1PropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2\PackageViewH2.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2/PackageViewH2.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2\ViewH2EventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2/ViewH2EventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2\ViewH2PropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH2/ViewH2PropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH3H1\PackageViewH3H1.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH3H1/PackageViewH3H1.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH3H1\ViewH3H1EventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH3H1/ViewH3H1EventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH3H1\ViewH3H1PropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH3H1/ViewH3H1PropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH3\PackageViewH3.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH3/PackageViewH3.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH3\ViewH3EventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH3/ViewH3EventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH3\ViewH3PropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewH3/ViewH3PropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V2B\PackageViewV1V2B.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V2B/PackageViewV1V2B.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V2B\ViewV1V2BEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V2B/ViewV1V2BEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V2B\ViewV1V2BPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V2B/ViewV1V2BPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V2T\PackageViewV1V2T.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V2T/PackageViewV1V2T.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V2T\ViewV1V2TEventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V2T/ViewV1V2TEventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V2T\ViewV1V2TPropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V2T/ViewV1V2TPropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V2\PackageViewV1V2.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V2/PackageViewV1V2.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V2\ViewV1V2EventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V2/ViewV1V2EventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V2\ViewV1V2PropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V2/ViewV1V2PropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V3\PackageViewV1V3.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V3/PackageViewV1V3.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V3\ViewV1V3EventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V3/ViewV1V3EventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V3\ViewV1V3PropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV1V3/ViewV1V3PropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2BV1\PackageViewV2BV1.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2BV1/PackageViewV2BV1.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2BV1\ViewV2BV1EventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2BV1/ViewV2BV1EventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2BV1\ViewV2BV1PropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2BV1/ViewV2BV1PropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2TV1\PackageViewV2TV1.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2TV1/PackageViewV2TV1.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2TV1\ViewV2TV1EventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2TV1/ViewV2TV1EventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2TV1\ViewV2TV1PropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2TV1/ViewV2TV1PropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2V1\PackageViewV2V1.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2V1/PackageViewV2V1.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2V1\ViewV2V1EventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2V1/ViewV2V1EventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2V1\ViewV2V1PropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2V1/ViewV2V1PropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2V2\PackageViewV2V2.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2V2/PackageViewV2V2.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2V2\ViewV2V2EventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2V2/ViewV2V2EventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2V2\ViewV2V2PropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2V2/ViewV2V2PropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2\PackageViewV2.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/Viewv2/PackageViewV2.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2\ViewV2EventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV2/ViewV2EventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2\ViewV2PropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/Viewv2/ViewV2PropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV3V1\PackageViewV3V1.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV3V1/PackageViewV3V1.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV3V1\ViewV3V1EventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV3V1/ViewV3V1EventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV3V1\ViewV3V1PropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV3V1/ViewV3V1PropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV3\PackageViewV3.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV3/PackageViewV3.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV3\ViewV3EventList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV3/ViewV3EventList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV3\ViewV3PropertyList.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/Controls/ViewV3/ViewV3PropertyList.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\PackageIde.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/PackageIde.cpp</RemoteFile>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Ide\Package\PackageIdeService.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+      <RemoteFile>$(RemoteRootDir)/Nitisa/$(Version)/Packages/Ide/Package/PackageIdeService.cpp</RemoteFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'">
+    <RemotePostBuildEvent>
+      <Command>cd $(RemoteRootDir)/Nitisa/$(Version);./build.sh $(ProjectName) $(Configuration) $(Platform) $(Branch) Packages/$(ProjectName)</Command>
+      <Message>Start remote building</Message>
+      <AdditionalSourcesToCopyMapping Condition="'$(Branch)'=='master'">/tmp/$(TargetFileName):=$(OutDir)$(TargetFileName)</AdditionalSourcesToCopyMapping>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

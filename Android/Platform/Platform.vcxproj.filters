@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="..\..\Packages\Platform\Core\BasePlatformFont.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Core\Errors.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\OpenGL\dgl.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\OpenGL\ngl.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\OpenGL\OpenGL.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\PackagePlatform.h">
+      <Filter>Package</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\PackagePlatformService.h">
+      <Filter>Package</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-3.1\PackageRendererWindowsOpenGL31d.h">
+      <Filter>Package\Renderers\Windows\OpenGL-3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-3.1\PackageRendererWindowsOpenGL31r.h">
+      <Filter>Package\Renderers\Windows\OpenGL-3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-4.5\PackageRendererWindowsOpenGL45r.h">
+      <Filter>Package\Renderers\Windows\OpenGL-4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-4.5\PackageRendererWindowsOpenGL45d.h">
+      <Filter>Package\Renderers\Windows\OpenGL-4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-3.1\PackageRendererLinuxOpenGL31d.h">
+      <Filter>Package\Renderers\Linux\OpenGL-3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-3.1\PackageRendererLinuxOpenGL31r.h">
+      <Filter>Package\Renderers\Linux\OpenGL-3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-4.5\PackageRendererLinuxOpenGL45d.h">
+      <Filter>Package\Renderers\Linux\OpenGL-4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-4.5\PackageRendererLinuxOpenGL45r.h">
+      <Filter>Package\Renderers\Linux\OpenGL-4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Platform.h" />
+    <ClInclude Include="..\..\Packages\Platform\Android\Application.h">
+      <Filter>Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\ApplicationService.h">
+      <Filter>Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\ClientSocket.h">
+      <Filter>Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\Dialogs.h">
+      <Filter>Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\File.h">
+      <Filter>Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\FileSystem.h">
+      <Filter>Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\Keyboard.h">
+      <Filter>Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\Mouse.h">
+      <Filter>Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\NativeApplication.h">
+      <Filter>Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\Network.h">
+      <Filter>Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\Picture.h">
+      <Filter>Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\PlatformFont.h">
+      <Filter>Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\Screen.h">
+      <Filter>Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\ServerSocket.h">
+      <Filter>Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\Socket.h">
+      <Filter>Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\System.h">
+      <Filter>Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\Thread.h">
+      <Filter>Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\Window.h">
+      <Filter>Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\WindowService.h">
+      <Filter>Android</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\Framebuffer.h">
+      <Filter>Android\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\Program.h">
+      <Filter>Android\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\ProgramBase.h">
+      <Filter>Android\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\ProgramMain.h">
+      <Filter>Android\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\ProgramMini.h">
+      <Filter>Android\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\Texture.h">
+      <Filter>Android\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\VertexArrayDynamic.h">
+      <Filter>Android\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\VertexArrayImmutable.h">
+      <Filter>Android\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\Core\BaseRenderer.h">
+      <Filter>Android\GLES\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Core\Application.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Core\Renderer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Core\Window.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\3.1\Debug\Renderer.h">
+      <Filter>Android\GLES\3.1\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\3.1\Release\Renderer.h">
+      <Filter>Android\GLES\3.1\Release</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Android\GLES-3.1\PackageRendererAndroidGLES31d.h">
+      <Filter>Package\Renderers\Android\GLES-3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Package\Renderers\Android\GLES-3.1\PackageRendererAndroidGLES31r.h">
+      <Filter>Package\Renderers\Android\GLES-3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Android\GLES\TextureMultisample.h">
+      <Filter>Android\GLES</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Core\Db.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Core\DbConnection.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Platform\Core\DbStatement.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{6ddf90f3-6029-4cc9-a8bc-55bfd26a314b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL">
+      <UniqueIdentifier>{d5a9dabe-5011-48ff-8f53-023ca08c3299}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package">
+      <UniqueIdentifier>{a901c0d0-2cc9-40cb-9ce8-ab73569d7ebd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers">
+      <UniqueIdentifier>{117c1790-7fc0-4e69-aa55-e025d14c1825}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Windows">
+      <UniqueIdentifier>{1cf6bff2-92b7-4fbe-8182-010fd244cd70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Windows\OpenGL-3.1">
+      <UniqueIdentifier>{90b1d73d-5773-4d70-b5c0-0d0401dbc4a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Windows\OpenGL-4.5">
+      <UniqueIdentifier>{4c7f857d-f313-4677-9d04-2c1c2a7ddcb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Android">
+      <UniqueIdentifier>{74021bd4-27f0-4b59-8fbf-7c2fbb120428}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Linux">
+      <UniqueIdentifier>{137afa61-da28-4bb8-9d74-667184798290}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Linux\OpenGL-3.1">
+      <UniqueIdentifier>{2346447e-49ed-4215-89c2-0e6a4f206c4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Linux\OpenGL-4.5">
+      <UniqueIdentifier>{80a270a5-e023-4062-aada-a4b717a9f040}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Android">
+      <UniqueIdentifier>{ab23b082-07fa-4ce4-b5ad-62a8cda9433d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Android\GLES">
+      <UniqueIdentifier>{179d7c6c-7d49-4203-8d71-d826d7b8fe9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Android\GLES\Core">
+      <UniqueIdentifier>{35a88f4d-c338-40ee-84b2-91747c666bf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{b193f2a8-9da2-443b-94a3-18730e9d58f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL\Shaders">
+      <UniqueIdentifier>{f782e559-7ed2-442a-9c52-8269135212f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Android\GLES\3.1">
+      <UniqueIdentifier>{d15661bf-942b-4de6-84f8-95f94ef31783}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Android\GLES\3.1\Debug">
+      <UniqueIdentifier>{7a6021f3-e38f-47d7-b24e-b58bc3651f9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Android\GLES\3.1\Release">
+      <UniqueIdentifier>{510bf6b6-9f0a-44b1-9df3-922ab46062ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Android\GLES-3.1">
+      <UniqueIdentifier>{49445df7-1f95-4d2e-a232-33243084b502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL\Shaders\GL32-GLES31">
+      <UniqueIdentifier>{361bae5e-6e2e-4b87-9e65-442891d67adb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL\Shaders\GL31-GLES30">
+      <UniqueIdentifier>{8d5707c2-0e89-4f32-9a49-4230657c566c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Packages\Platform\Core\BasePlatformFont.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Core\Errors.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\OpenGL\dgl.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\OpenGL\ngl-android.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\OpenGL\ngl-utils.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\OpenGL\ngl-common.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\OpenGL\OpenGL.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\PackagePlatform.cpp">
+      <Filter>Package</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\PackagePlatformService.cpp">
+      <Filter>Package</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-3.1\PackageRendererWindowsOpenGL31d.cpp">
+      <Filter>Package\Renderers\Windows\OpenGL-3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-3.1\PackageRendererWindowsOpenGL31r.cpp">
+      <Filter>Package\Renderers\Windows\OpenGL-3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-4.5\PackageRendererWindowsOpenGL45r.cpp">
+      <Filter>Package\Renderers\Windows\OpenGL-4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Windows\OpenGL-4.5\PackageRendererWindowsOpenGL45d.cpp">
+      <Filter>Package\Renderers\Windows\OpenGL-4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-3.1\PackageRendererLinuxOpenGL31d.cpp">
+      <Filter>Package\Renderers\Linux\OpenGL-3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-3.1\PackageRendererLinuxOpenGL31r.cpp">
+      <Filter>Package\Renderers\Linux\OpenGL-3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-4.5\PackageRendererLinuxOpenGL45d.cpp">
+      <Filter>Package\Renderers\Linux\OpenGL-4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Linux\OpenGL-4.5\PackageRendererLinuxOpenGL45r.cpp">
+      <Filter>Package\Renderers\Linux\OpenGL-4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\Application.cpp">
+      <Filter>Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\ApplicationService.cpp">
+      <Filter>Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\ClientSocket.cpp">
+      <Filter>Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\Dialogs.cpp">
+      <Filter>Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\File.cpp">
+      <Filter>Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\FileSystem.cpp">
+      <Filter>Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\Keyboard.cpp">
+      <Filter>Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\Mouse.cpp">
+      <Filter>Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\NativeApplication.cpp">
+      <Filter>Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\Network.cpp">
+      <Filter>Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\Picture.cpp">
+      <Filter>Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\PlatformFont.cpp">
+      <Filter>Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\Screen.cpp">
+      <Filter>Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\ServerSocket.cpp">
+      <Filter>Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\Socket.cpp">
+      <Filter>Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\System.cpp">
+      <Filter>Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\Thread.cpp">
+      <Filter>Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\Window.cpp">
+      <Filter>Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\WindowService.cpp">
+      <Filter>Android</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\Framebuffer.cpp">
+      <Filter>Android\GLES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\Program.cpp">
+      <Filter>Android\GLES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\ProgramBase.cpp">
+      <Filter>Android\GLES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\ProgramMain.cpp">
+      <Filter>Android\GLES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\ProgramMini.cpp">
+      <Filter>Android\GLES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\Texture.cpp">
+      <Filter>Android\GLES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\VertexArrayDynamic.cpp">
+      <Filter>Android\GLES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\VertexArrayImmutable.cpp">
+      <Filter>Android\GLES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\Core\BaseRenderer.cpp">
+      <Filter>Android\GLES\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Core\Application.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Core\Renderer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Core\Window.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\3.1\Debug\Renderer.cpp">
+      <Filter>Android\GLES\3.1\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\3.1\Release\Renderer.cpp">
+      <Filter>Android\GLES\3.1\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Android\GLES-3.1\PackageRendererAndroidGLES31d.cpp">
+      <Filter>Package\Renderers\Android\GLES-3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Package\Renderers\Android\GLES-3.1\PackageRendererAndroidGLES31r.cpp">
+      <Filter>Package\Renderers\Android\GLES-3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Android\GLES\TextureMultisample.cpp">
+      <Filter>Android\GLES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Core\Db.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Core\DbConnection.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Platform\Core\DbStatement.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Packages\Platform\Data\DefaultFontData.inc">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\fragment-block.glsl">
+      <Filter>OpenGL\Shaders</Filter>
+    </None>
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\fragment-spline.glsl">
+      <Filter>OpenGL\Shaders</Filter>
+    </None>
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\fragment-utils.glsl">
+      <Filter>OpenGL\Shaders</Filter>
+    </None>
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\GL31-GLES30\fragment-main.glsl">
+      <Filter>OpenGL\Shaders\GL31-GLES30</Filter>
+    </None>
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\GL31-GLES30\fragment-mini.glsl">
+      <Filter>OpenGL\Shaders\GL31-GLES30</Filter>
+    </None>
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\GL31-GLES30\vertex.glsl">
+      <Filter>OpenGL\Shaders\GL31-GLES30</Filter>
+    </None>
+    <None Include="..\..\Packages\Platform\OpenGL\Shaders\GL32-GLES31\fragment-main.glsl">
+      <Filter>OpenGL\Shaders\GL32-GLES31</Filter>
+    </None>
+  </ItemGroup>
+</Project>

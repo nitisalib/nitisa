@@ -1,0 +1,26 @@
+{
+	"title": "Phone",
+	"landscape" : false,
+	"left": {
+		"fill": "phone-leftright-fill.png"
+	},
+	"top": {
+		"start": "phone-top-start.png",
+		"middle": "phone-top-middle.png",
+		"end": "phone-top-end.png",
+		"fill": "phone-top-fill.png"
+	},
+	"right": {
+		"fill": "phone-leftright-fill.png"
+	},
+	"bottom": {
+		"start": "phone-bottom-start.png",
+		"middle": "phone-bottom-middle.png",
+		"end": "phone-bottom-end.png",
+		"fill": "phone-bottom-fill.png"
+	},
+	"size": {
+		"width": "670",
+		"height": "1280"
+	}
+}

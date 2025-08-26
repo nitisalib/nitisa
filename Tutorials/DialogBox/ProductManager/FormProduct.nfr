@@ -1,0 +1,303 @@
+{
+    "Layout": "Windows Form",
+    "Version": "2.0",
+    "Settings": {
+        "GridX": true,
+        "GridY": true,
+        "GridRotate": true,
+        "GridXStep": 8,
+        "GridYStep": 8,
+        "GridRotateStep": 0.0174533,
+        "RotateShift": 2,
+        "GridPointSize": 1,
+        "GridPointColor": [
+            113,
+            21,
+            36,
+            255
+        ],
+        "Namespace": "app",
+        "Prefix": "m_p",
+        "SelectionPointSize": 4,
+        "SelectionBorderWidth": 1,
+        "SelectionBorderColor": [
+            0,
+            0,
+            255,
+            150
+        ],
+        "SelectionBackgroundColor": [
+            0,
+            0,
+            255,
+            50
+        ],
+        "OverwriteIncludes": null,
+        "OverwriteNamespaces": null,
+        "WidgetsSection": "protected",
+        "GenerateGetters": false,
+        "HighlightBorderWidth": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "HighlightBorderColor": [
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ]
+        ],
+        "ExportAs": 0,
+        "DialogBoxPackage": "",
+        "DialogBoxClass": ""
+    },
+    "Form": {
+        "Name": "{type}Product",
+        "ClientSize": [
+            233,
+            119
+        ],
+        "State": "WindowState::Hidden",
+        "WindowPosition": "WindowPosition::MainFormCenter",
+        "HasMaximizeBox": false,
+        "HasMinimizeBox": false,
+        "HasSizeBox": false
+    },
+    "Controls": [
+        {
+            "Package": "Standard",
+            "ClassName": "Label",
+            "Name": "Label1",
+            "Transform": {
+                "Tx": 8,
+                "Ty": 12,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Caption": "Name:"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Label",
+            "Name": "Label2",
+            "Transform": {
+                "Tx": 8,
+                "Ty": 36,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Caption": "Price:"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Label",
+            "Name": "Label3",
+            "Transform": {
+                "Tx": 8,
+                "Ty": 60,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Caption": "Quantity:"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Edit",
+            "Name": "EditName",
+            "Transform": {
+                "Tx": 88,
+                "Ty": 8,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                136,
+                21
+            ],
+            "TabOrder": 4,
+            "Text": "Edit1"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Edit",
+            "Name": "EditPrice",
+            "Transform": {
+                "Tx": 88,
+                "Ty": 32,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "TabOrder": 5,
+            "Text": "1.00"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Edit",
+            "Name": "EditQuantity",
+            "Transform": {
+                "Tx": 88,
+                "Ty": 56,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "TabOrder": 6,
+            "Text": "0"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "UpDownEx",
+            "Name": "UpDownExPrice",
+            "Size": [
+                18,
+                21
+            ],
+            "Max": 1000,
+            "Value": 1,
+            "Step": 0.5,
+            "AssignedTo": "EditPrice",
+            "Transform": {
+                "Tx": 208,
+                "Ty": 32,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Signs": 2
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "UpDown",
+            "Name": "UpDownQuantity",
+            "Size": [
+                18,
+                21
+            ],
+            "Max": 1000,
+            "AssignedTo": "EditQuantity",
+            "Transform": {
+                "Tx": 208,
+                "Ty": 56,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            }
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Button",
+            "Name": "ButtonOk",
+            "Transform": {
+                "Tx": 8,
+                "Ty": 88,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "TabOrder": 9,
+            "Caption": "OK",
+            "OnClick": "ButtonOk_OnClick"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Button",
+            "Name": "ButtonCancel",
+            "Transform": {
+                "Tx": 120,
+                "Ty": 88,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "TabOrder": 10,
+            "Caption": "Cancel",
+            "OnClick": "ButtonCancel_OnClick"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Extended.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Package\PackageExtended.h">
+      <Filter>Package</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\PackageExtendedService.h">
+      <Filter>Package</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Package\PackageExtended.cpp">
+      <Filter>Package</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\PackageExtendedService.cpp">
+      <Filter>Package</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Package">
+      <UniqueIdentifier>{6293f428-1048-4ce0-9c42-b4682afd1178}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

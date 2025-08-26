@@ -1,0 +1,234 @@
+{
+    "Layout": "Windows Form",
+    "Version": "2.0",
+    "Settings": {
+        "GridX": true,
+        "GridY": true,
+        "GridRotate": true,
+        "GridXStep": 8,
+        "GridYStep": 8,
+        "GridRotateStep": 0.0174533,
+        "RotateShift": 2,
+        "GridPointSize": 1,
+        "GridPointColor": [
+            113,
+            21,
+            36,
+            255
+        ],
+        "Namespace": "app",
+        "Prefix": "m_p",
+        "SelectionPointSize": 4,
+        "SelectionBorderWidth": 1,
+        "SelectionBorderColor": [
+            0,
+            0,
+            255,
+            150
+        ],
+        "SelectionBackgroundColor": [
+            0,
+            0,
+            255,
+            50
+        ],
+        "OverwriteIncludes": null,
+        "OverwriteNamespaces": null,
+        "WidgetsSection": "protected",
+        "GenerateGetters": false,
+        "HighlightBorderWidth": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "HighlightBorderColor": [
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ]
+        ],
+        "ExportAs": 0,
+        "DialogBoxPackage": "",
+        "DialogBoxClass": ""
+    },
+    "Form": {
+        "Name": "FormMain",
+        "Caption": "Product manager",
+        "ClientSize": [
+            622,
+            440
+        ],
+        "State": "WindowState::Maximized"
+    },
+    "Controls": [
+        {
+            "Package": "Standard",
+            "ClassName": "Container",
+            "Name": "Container1",
+            "Transform": {
+                "Tx": 501,
+                "Ty": 0,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                121,
+                440
+            ],
+            "Align": "Align::Right",
+            "UseMask": false,
+            "Controls": [
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonAdd",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 8,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "TabOrder": 2,
+                    "Caption": "Add product...",
+                    "OnClick": "ButtonAdd_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonEdit",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 40,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "TabOrder": 3,
+                    "Caption": "Edit product...",
+                    "OnClick": "ButtonEdit_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonDelete",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 72,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "TabOrder": 4,
+                    "Caption": "Delete products",
+                    "OnClick": "ButtonDelete_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonClear",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 104,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "TabOrder": 7,
+                    "Caption": "Clear",
+                    "OnClick": "ButtonClear_OnClick"
+                }
+            ]
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "GroupBox",
+            "Name": "GroupBox1",
+            "Size": [
+                501,
+                440
+            ],
+            "Align": "Align::Client",
+            "Caption": "Products",
+            "UseMask": false,
+            "Controls": [
+                {
+                    "Package": "Standard",
+                    "ClassName": "CheckListBox",
+                    "Name": "CheckListBoxProducts",
+                    "Transform": {
+                        "Tx": 5,
+                        "Ty": 15,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        491,
+                        420
+                    ],
+                    "TabOrder": 6,
+                    "Align": "Align::Client"
+                }
+            ]
+        }
+    ]
+}

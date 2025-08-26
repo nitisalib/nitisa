@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{2b63a61f-03d3-4524-a8a7-a1647fb2febf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL">
+      <UniqueIdentifier>{47fcd2f8-bc4c-46e1-95e0-8f9d54e239c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{462ac223-ccea-49a7-abd6-a9300a22c9ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package">
+      <UniqueIdentifier>{b163ddb2-236e-4e9e-b851-d995fac438b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers">
+      <UniqueIdentifier>{994224cb-fdc6-4d3f-a76e-93bb40a5664f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL\4.6">
+      <UniqueIdentifier>{76a178bd-cc7d-40af-a969-bfa29b28a777}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\OpenGL">
+      <UniqueIdentifier>{2a7a783d-814d-40a3-b705-c5255a7f5393}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\OpenGL\3.1">
+      <UniqueIdentifier>{4f5e933b-b374-4d2a-bc1c-8a8c720a6007}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\OpenGL\4.5">
+      <UniqueIdentifier>{c0e4bffb-bd6c-4f20-b6cc-f292c93aae79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\OpenGL\Core">
+      <UniqueIdentifier>{0d4958da-118d-482c-934e-7a9ee69cf03b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\OpenGL\3.1\Debug">
+      <UniqueIdentifier>{b9c672e8-9ccc-4afc-a19d-aafe6f6dd854}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\OpenGL\3.1\Release">
+      <UniqueIdentifier>{3d2c18bf-f0b6-44b7-9534-8842fd44ec01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\OpenGL\4.5\Debug">
+      <UniqueIdentifier>{bdc25b85-cabb-4eaa-8c88-39cbc98ab127}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\OpenGL\4.5\Release">
+      <UniqueIdentifier>{dc2be3b8-2849-4a53-9571-81adbdfe4a0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Windows">
+      <UniqueIdentifier>{8277341b-3952-49ec-9fce-ff9e5d681f8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Windows\OpenGL-3.1">
+      <UniqueIdentifier>{fd75cc77-c40d-456c-9311-1f4780e30fbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Windows\OpenGL-4.5">
+      <UniqueIdentifier>{c31978ca-8ccd-4695-95b1-d8c5aa538ea9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Android">
+      <UniqueIdentifier>{cb040367-13f0-48b7-9851-283e038213d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Android\GLES-3.1">
+      <UniqueIdentifier>{b5e3c11d-223b-4fef-84a1-8323da2f067c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Linux">
+      <UniqueIdentifier>{bd495ef9-75c2-4dea-a7ec-6a9affd831c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Linux\OpenGL-3.1">
+      <UniqueIdentifier>{cbb604da-2c0e-472e-b61a-696c280ad4fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Renderers\Linux\OpenGL-4.5">
+      <UniqueIdentifier>{9fb28a61-2f3a-46de-b795-ddd73cfa88dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL\Shaders">
+      <UniqueIdentifier>{ca6fdf5b-552b-4119-8d2b-06de4f617893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL\Shaders\GL45">
+      <UniqueIdentifier>{745781e5-04eb-42f0-b035-add891077cfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL\Shaders\GL31-GLES30">
+      <UniqueIdentifier>{83caf8ed-5bf4-4e31-992a-047d29e7080a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL\Shaders\GL32-GLES31">
+      <UniqueIdentifier>{c309518f-4e1f-4187-8282-efb388f01026}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Package\PackagePlatform.h">
+      <Filter>Package</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\PackagePlatformService.h">
+      <Filter>Package</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\dgl.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\ngl.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\OpenGL.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\4.6\glcorearb.h">
+      <Filter>OpenGL\4.6</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\4.6\khrplatform.h">
+      <Filter>OpenGL\4.6</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL\4.6\wglext.h">
+      <Filter>OpenGL\4.6</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\BasePlatformFont.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\Application.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\ApplicationService.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\ClientSocket.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\Dialogs.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\File.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\FileSystem.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\Keyboard.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\Mouse.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\Network.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\Picture.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\PlatformFont.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\Screen.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\ServerSocket.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\Socket.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\System.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\Thread.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\Window.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\WindowService.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\OpenGL\Program.h">
+      <Filter>Windows\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\OpenGL\Core\BaseRenderer.h">
+      <Filter>Windows\OpenGL\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\OpenGL\3.1\Framebuffer.h">
+      <Filter>Windows\OpenGL\3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\OpenGL\3.1\ProgramBase.h">
+      <Filter>Windows\OpenGL\3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\OpenGL\3.1\ProgramMain.h">
+      <Filter>Windows\OpenGL\3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\OpenGL\3.1\ProgramMini.h">
+      <Filter>Windows\OpenGL\3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\OpenGL\3.1\Texture.h">
+      <Filter>Windows\OpenGL\3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\OpenGL\3.1\VertexArrayDynamic.h">
+      <Filter>Windows\OpenGL\3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\OpenGL\3.1\VertexArrayImmutable.h">
+      <Filter>Windows\OpenGL\3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\OpenGL\3.1\Debug\Renderer.h">
+      <Filter>Windows\OpenGL\3.1\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\OpenGL\3.1\Release\Renderer.h">
+      <Filter>Windows\OpenGL\3.1\Release</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\OpenGL\4.5\Framebuffer.h">
+      <Filter>Windows\OpenGL\4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\OpenGL\4.5\ProgramBase.h">
+      <Filter>Windows\OpenGL\4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\OpenGL\4.5\ProgramMain.h">
+      <Filter>Windows\OpenGL\4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\OpenGL\4.5\ProgramMini.h">
+      <Filter>Windows\OpenGL\4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\OpenGL\4.5\Texture.h">
+      <Filter>Windows\OpenGL\4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\OpenGL\4.5\VertexArrayDynamic.h">
+      <Filter>Windows\OpenGL\4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\OpenGL\4.5\VertexArrayImmutable.h">
+      <Filter>Windows\OpenGL\4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\OpenGL\4.5\Debug\Renderer.h">
+      <Filter>Windows\OpenGL\4.5\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\OpenGL\4.5\Release\Renderer.h">
+      <Filter>Windows\OpenGL\4.5\Release</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Errors.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Package\Renderers\Windows\OpenGL-4.5\PackageRendererWindowsOpenGL45d.h">
+      <Filter>Package\Renderers\Windows\OpenGL-4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Renderers\Windows\OpenGL-4.5\PackageRendererWindowsOpenGL45r.h">
+      <Filter>Package\Renderers\Windows\OpenGL-4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Renderers\Windows\OpenGL-3.1\PackageRendererWindowsOpenGL31d.h">
+      <Filter>Package\Renderers\Windows\OpenGL-3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Renderers\Windows\OpenGL-3.1\PackageRendererWindowsOpenGL31r.h">
+      <Filter>Package\Renderers\Windows\OpenGL-3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Renderers\Android\GLES-3.1\PackageRendererAndroidGLES31d.h">
+      <Filter>Package\Renderers\Android\GLES-3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Renderers\Android\GLES-3.1\PackageRendererAndroidGLES31r.h">
+      <Filter>Package\Renderers\Android\GLES-3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Renderers\Linux\OpenGL-4.5\PackageRendererLinuxOpenGL45d.h">
+      <Filter>Package\Renderers\Linux\OpenGL-4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Renderers\Linux\OpenGL-4.5\PackageRendererLinuxOpenGL45r.h">
+      <Filter>Package\Renderers\Linux\OpenGL-4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Renderers\Linux\OpenGL-3.1\PackageRendererLinuxOpenGL31d.h">
+      <Filter>Package\Renderers\Linux\OpenGL-3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Renderers\Linux\OpenGL-3.1\PackageRendererLinuxOpenGL31r.h">
+      <Filter>Package\Renderers\Linux\OpenGL-3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Application.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Renderer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Window.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\OpenGL\4.5\TextureMultisample.h">
+      <Filter>Windows\OpenGL\4.5</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\OpenGL\3.1\TextureMultisample.h">
+      <Filter>Windows\OpenGL\3.1</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Db.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\DbConnection.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\DbStatement.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Package\PackagePlatform.cpp">
+      <Filter>Package</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\PackagePlatformService.cpp">
+      <Filter>Package</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\dgl.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\OpenGL.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\BasePlatformFont.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\Application.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\ApplicationService.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\ClientSocket.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\Dialogs.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\File.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\FileSystem.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\Keyboard.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\Mouse.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\Network.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\Picture.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\PlatformFont.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\Screen.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\ServerSocket.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\Socket.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\System.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\Thread.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\Window.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\WindowService.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\OpenGL\Program.cpp">
+      <Filter>Windows\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\OpenGL\Core\BaseRenderer.cpp">
+      <Filter>Windows\OpenGL\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\OpenGL\3.1\Framebuffer.cpp">
+      <Filter>Windows\OpenGL\3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\OpenGL\3.1\ProgramBase.cpp">
+      <Filter>Windows\OpenGL\3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\OpenGL\3.1\ProgramMain.cpp">
+      <Filter>Windows\OpenGL\3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\OpenGL\3.1\ProgramMini.cpp">
+      <Filter>Windows\OpenGL\3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\OpenGL\3.1\Texture.cpp">
+      <Filter>Windows\OpenGL\3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\OpenGL\3.1\VertexArrayDynamic.cpp">
+      <Filter>Windows\OpenGL\3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\OpenGL\3.1\VertexArrayImmutable.cpp">
+      <Filter>Windows\OpenGL\3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\OpenGL\3.1\Debug\Renderer.cpp">
+      <Filter>Windows\OpenGL\3.1\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\OpenGL\3.1\Release\Renderer.cpp">
+      <Filter>Windows\OpenGL\3.1\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\OpenGL\4.5\Framebuffer.cpp">
+      <Filter>Windows\OpenGL\4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\OpenGL\4.5\ProgramBase.cpp">
+      <Filter>Windows\OpenGL\4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\OpenGL\4.5\ProgramMain.cpp">
+      <Filter>Windows\OpenGL\4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\OpenGL\4.5\ProgramMini.cpp">
+      <Filter>Windows\OpenGL\4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\OpenGL\4.5\Texture.cpp">
+      <Filter>Windows\OpenGL\4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\OpenGL\4.5\VertexArrayDynamic.cpp">
+      <Filter>Windows\OpenGL\4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\OpenGL\4.5\VertexArrayImmutable.cpp">
+      <Filter>Windows\OpenGL\4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\OpenGL\4.5\Debug\Renderer.cpp">
+      <Filter>Windows\OpenGL\4.5\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\OpenGL\4.5\Release\Renderer.cpp">
+      <Filter>Windows\OpenGL\4.5\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Errors.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Package\Renderers\Windows\OpenGL-4.5\PackageRendererWindowsOpenGL45d.cpp">
+      <Filter>Package\Renderers\Windows\OpenGL-4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Renderers\Windows\OpenGL-4.5\PackageRendererWindowsOpenGL45r.cpp">
+      <Filter>Package\Renderers\Windows\OpenGL-4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Renderers\Windows\OpenGL-3.1\PackageRendererWindowsOpenGL31d.cpp">
+      <Filter>Package\Renderers\Windows\OpenGL-3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Renderers\Windows\OpenGL-3.1\PackageRendererWindowsOpenGL31r.cpp">
+      <Filter>Package\Renderers\Windows\OpenGL-3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Renderers\Android\GLES-3.1\PackageRendererAndroidGLES31d.cpp">
+      <Filter>Package\Renderers\Android\GLES-3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Renderers\Android\GLES-3.1\PackageRendererAndroidGLES31r.cpp">
+      <Filter>Package\Renderers\Android\GLES-3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Renderers\Linux\OpenGL-4.5\PackageRendererLinuxOpenGL45d.cpp">
+      <Filter>Package\Renderers\Linux\OpenGL-4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Renderers\Linux\OpenGL-4.5\PackageRendererLinuxOpenGL45r.cpp">
+      <Filter>Package\Renderers\Linux\OpenGL-4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Renderers\Linux\OpenGL-3.1\PackageRendererLinuxOpenGL31d.cpp">
+      <Filter>Package\Renderers\Linux\OpenGL-3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Renderers\Linux\OpenGL-3.1\PackageRendererLinuxOpenGL31r.cpp">
+      <Filter>Package\Renderers\Linux\OpenGL-3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\ngl-utils.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\ngl-windows.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL\ngl-common.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Application.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Renderer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Window.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\OpenGL\4.5\TextureMultisample.cpp">
+      <Filter>Windows\OpenGL\4.5</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\OpenGL\3.1\TextureMultisample.cpp">
+      <Filter>Windows\OpenGL\3.1</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Db.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\DbConnection.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\DbStatement.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OpenGL\Shaders\fragment-block.glsl">
+      <Filter>OpenGL\Shaders</Filter>
+    </None>
+    <None Include="OpenGL\Shaders\fragment-spline.glsl">
+      <Filter>OpenGL\Shaders</Filter>
+    </None>
+    <None Include="OpenGL\Shaders\fragment-utils.glsl">
+      <Filter>OpenGL\Shaders</Filter>
+    </None>
+    <None Include="OpenGL\Shaders\GL45\fragment-main.glsl">
+      <Filter>OpenGL\Shaders\GL45</Filter>
+    </None>
+    <None Include="OpenGL\Shaders\GL45\fragment-mini.glsl">
+      <Filter>OpenGL\Shaders\GL45</Filter>
+    </None>
+    <None Include="OpenGL\Shaders\GL45\vertex.glsl">
+      <Filter>OpenGL\Shaders\GL45</Filter>
+    </None>
+    <None Include="OpenGL\Shaders\GL31-GLES30\fragment-main.glsl">
+      <Filter>OpenGL\Shaders\GL31-GLES30</Filter>
+    </None>
+    <None Include="OpenGL\Shaders\GL31-GLES30\fragment-mini.glsl">
+      <Filter>OpenGL\Shaders\GL31-GLES30</Filter>
+    </None>
+    <None Include="OpenGL\Shaders\GL31-GLES30\vertex.glsl">
+      <Filter>OpenGL\Shaders\GL31-GLES30</Filter>
+    </None>
+    <None Include="OpenGL\Shaders\GL32-GLES31\fragment-main.glsl">
+      <Filter>OpenGL\Shaders\GL32-GLES31</Filter>
+    </None>
+  </ItemGroup>
+</Project>

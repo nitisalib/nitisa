@@ -1,0 +1,87 @@
+{
+    "Layout": "Windows Form",
+    "Version": "2.0",
+    "Form": {
+        "Name": "FormSplash",
+        "ClientSize": [
+            391,
+            226
+        ],
+        "WindowPosition": "WindowPosition::ScreenCenter",
+        "HasCaption": false,
+        "HasMaximizeBox": false,
+        "HasMinimizeBox": false,
+        "HasSizeBox": false,
+        "HasSystemMenu": false,
+        "HasClientEdge": false,
+        "HasWindowEdge": false,
+        "IsPopup": true,
+        "OnClose": "FormSplash_OnClose"
+    },
+    "Controls": [
+        {
+            "Package": "Standard",
+            "ClassName": "ProgressBar",
+            "Name": "ProgressBar",
+            "Transform": {
+                "Tx": 0,
+                "Ty": 209,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                391,
+                17
+            ],
+            "Align": "Align::Bottom"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Label",
+            "Name": "Label1",
+            "Font": {
+                "FontName": "Tahoma",
+                "Height": -64,
+                "Weight": 3,
+                "Distance": 0,
+                "Color": [
+                    0,
+                    0,
+                    0,
+                    255
+                ],
+                "ShadowShift": [
+                    0,
+                    0
+                ],
+                "ShadowRadius": 1,
+                "ShadowColor": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "Italic": false,
+                "Underline": false,
+                "StrikeOut": false,
+                "Monospace": false
+            },
+            "UseParentFont": false,
+            "Align": "Align::Client",
+            "Size": [
+                391,
+                209
+            ],
+            "Caption": "Loading...",
+            "CaptionHorizontalAlign": "TextAlign::Center",
+            "AutoSize": false
+        }
+    ]
+}

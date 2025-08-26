@@ -1,0 +1,878 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugRT|ARM">
+      <Configuration>DebugRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|ARM64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|x64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|x86">
+      <Configuration>DebugRT</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|ARM">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|ARM64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|x64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|x86">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{a7fd4a33-eb7b-45d1-83ee-ba30cae71c25}</ProjectGuid>
+    <Keyword>Android</Keyword>
+    <RootNamespace>Ide</RootNamespace>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <ApplicationType>Android</ApplicationType>
+    <ApplicationTypeRevision>3.0</ApplicationTypeRevision>
+    <ProjectName>Ide</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x86\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Ide\x86\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x64\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Ide\x64\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Ide\ARM\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM64\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Ide\ARM64\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x86\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Ide\x86\DebugRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x64\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Ide\x64\DebugRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Ide\ARM\DebugRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM64\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Ide\ARM64\DebugRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x86\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Ide\x86\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x64\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Ide\x64\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Ide\ARM\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM64\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Ide\ARM64\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x86\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Ide\x86\ReleaseRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x64\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Ide\x64\ReleaseRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Ide\ARM\ReleaseRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM64\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Ide\ARM64\ReleaseRT\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(ProjectDir)../../Packages;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Packages\Ide\Controls\EventEditor\EventEditor.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\EventEditor\EventEditorService.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\FormEditor\FormEditor.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\FormEditor\FormEditorService.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\FormView\FormView.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\FormView\FormViewService.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\HierarchyEditor\HierarchyEditor.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\HierarchyEditor\HierarchyEditorService.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\HierarchyEditor\ListItemHierarchyEditor.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IEventEditor.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IFormEditor.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IFormView.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IHierarchyEditor.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IPropertyEditor.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewCross.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewH1H2.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewH1H2L.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewH1H2R.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewH1H3.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewH2.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewH2H1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewH2H2.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewH2LH1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewH2RH1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewH3.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewH3H1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewV1V2.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewV1V2B.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewV1V2T.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewV1V3.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewV2.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewV2BV1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewV2TV1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewV2V1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewV2V2.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewV3.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\IViewV3V1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\PropertyEditor\PropertyEditor.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\PropertyEditor\PropertyEditorService.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewCross\ViewCross.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewCross\ViewCrossService.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH1H2L\ViewH1H2L.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH1H2L\ViewH1H2LService.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH1H2R\ViewH1H2R.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH1H2R\ViewH1H2RService.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH1H2\ViewH1H2.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH1H2\ViewH1H2Service.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH1H3\ViewH1H3.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH1H3\ViewH1H3Service.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH2H1\ViewH2H1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH2H1\ViewH2H1Service.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH2H2\ViewH2H2.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH2H2\ViewH2H2Service.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH2LH1\ViewH2LH1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH2LH1\ViewH2LH1Service.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH2RH1\ViewH2RH1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH2RH1\ViewH2RH1Service.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH2\ViewH2.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH2\ViewH2Service.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH3H1\ViewH3H1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH3H1\ViewH3H1Service.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH3\ViewH3.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewH3\ViewH3Service.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV1V2B\ViewV1V2B.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV1V2B\ViewV1V2BService.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV1V2T\ViewV1V2T.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV1V2T\ViewV1V2TService.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV1V2\ViewV1V2.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV1V2\ViewV1V2Service.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV1V3\ViewV1V3.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV1V3\ViewV1V3Service.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV2BV1\ViewV2BV1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV2BV1\ViewV2BV1Service.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV2TV1\ViewV2TV1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV2TV1\ViewV2TV1Service.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV2V1\ViewV2V1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV2V1\ViewV2V1Service.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV2V2\ViewV2V2.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV2V2\ViewV2V2Service.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV2\ViewV2.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV2\ViewV2Service.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV3V1\ViewV3V1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV3V1\ViewV3V1Service.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV3\ViewV3.h" />
+    <ClInclude Include="..\..\Packages\Ide\Controls\ViewV3\ViewV3Service.h" />
+    <ClInclude Include="..\..\Packages\Ide\Ide.h" />
+    <ClInclude Include="..\..\Packages\Ide\Interfaces\IViewControl.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\EventEditor\EventEditorEventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\EventEditor\EventEditorPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\EventEditor\PackageEventEditor.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\FormEditor\FormEditorEventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\FormEditor\FormEditorPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\FormEditor\PackageFormEditor.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\FormView\FormViewEventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\FormView\FormViewPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\FormView\PackageFormView.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\HierarchyEditor\HierarchyEditorEventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\HierarchyEditor\HierarchyEditorPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\HierarchyEditor\PackageHierarchyEditor.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\PropertyEditor\PackagePropertyEditor.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\PropertyEditor\PropertyEditorEventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\PropertyEditor\PropertyEditorPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewCross\PackageViewCross.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewCross\ViewCrossEventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewCross\ViewCrossPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H2L\PackageViewH1H2L.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H2L\ViewH1H2LEventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H2L\ViewH1H2LPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H2R\PackageViewH1H2R.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H2R\ViewH1H2REventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H2R\ViewH1H2RPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H2\PackageViewH1H2.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H2\ViewH1H2EventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H2\ViewH1H2PropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H3\PackageViewH1H3.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H3\ViewH1H3EventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH1H3\ViewH1H3PropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2H1\PackageViewH2H1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2H1\ViewH2H1EventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2H1\ViewH2H1PropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2H2\PackageViewH2H2.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2H2\ViewH2H2EventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2H2\ViewH2H2PropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2LH1\PackageViewH2LH1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2LH1\ViewH2LH1EventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2LH1\ViewH2LH1PropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2RH1\PackageViewH2RH1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2RH1\ViewH2RH1EventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2RH1\ViewH2RH1PropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2\PackageViewH2.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2\ViewH2EventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH2\ViewH2PropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH3H1\PackageViewH3H1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH3H1\ViewH3H1EventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH3H1\ViewH3H1PropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH3\PackageViewH3.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH3\ViewH3EventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewH3\ViewH3PropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V2B\PackageViewV1V2B.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V2B\ViewV1V2BEventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V2B\ViewV1V2BPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V2T\PackageViewV1V2T.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V2T\ViewV1V2TEventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V2T\ViewV1V2TPropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V2\PackageViewV1V2.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V2\ViewV1V2EventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V2\ViewV1V2PropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V3\PackageViewV1V3.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V3\ViewV1V3EventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV1V3\ViewV1V3PropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2BV1\PackageViewV2BV1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2BV1\ViewV2BV1EventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2BV1\ViewV2BV1PropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2TV1\PackageViewV2TV1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2TV1\ViewV2TV1EventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2TV1\ViewV2TV1PropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2V1\PackageViewV2V1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2V1\ViewV2V1EventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2V1\ViewV2V1PropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2V2\PackageViewV2V2.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2V2\ViewV2V2EventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2V2\ViewV2V2PropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2\PackageViewV2.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2\ViewV2EventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV2\ViewV2PropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV3V1\PackageViewV3V1.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV3V1\ViewV3V1EventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV3V1\ViewV3V1PropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV3\PackageViewV3.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV3\ViewV3EventList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\Controls\ViewV3\ViewV3PropertyList.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\PackageIde.h" />
+    <ClInclude Include="..\..\Packages\Ide\Package\PackageIdeService.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Packages\Ide\Controls\EventEditor\DropDown.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\EventEditor\DropDownListener.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\EventEditor\EventEditor.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\EventEditor\EventEditorService.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\EventEditor\Scroll.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\EventEditor\ScrollListener.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\FormEditor\FormEditor.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\FormEditor\FormEditorService.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\FormView\FormView.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\FormView\FormViewService.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\HierarchyEditor\HierarchyEditor.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\HierarchyEditor\HierarchyEditorService.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\HierarchyEditor\ListItemHierarchyEditor.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\HierarchyEditor\ListItemOwner.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\PropertyEditor\PropertyEditor.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\PropertyEditor\PropertyEditorService.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\PropertyEditor\PropertyHandlerListener.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\PropertyEditor\Scroll.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\PropertyEditor\ScrollListener.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewCross\ViewCross.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewCross\ViewCrossService.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH1H2L\ViewH1H2L.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH1H2L\ViewH1H2LService.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH1H2R\ViewH1H2R.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH1H2R\ViewH1H2RService.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH1H2\ViewH1H2.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH1H2\ViewH1H2Service.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH1H3\ViewH1H3.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH1H3\ViewH1H3Service.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH2H1\ViewH2H1.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH2H1\ViewH2H1Service.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH2H2\ViewH2H2.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH2H2\ViewH2H2Service.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH2LH1\ViewH2LH1.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH2LH1\ViewH2LH1Service.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH2RH1\ViewH2RH1.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH2RH1\ViwH2RH1Service.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH2\ViewH2.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH2\ViewH2Service.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH3H1\ViewH3H1.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH3H1\ViewH3H1Service.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH3\ViewH3.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewH3\ViewH3Service.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV1V2B\ViewV1V2B.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV1V2B\ViewV1V2BService.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV1V2T\ViewV1V2T.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV1V2T\ViewV1V2TService.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV1V2\ViewV1V2.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV1V2\ViewV1V2Service.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV1V3\ViewV1V3.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV1V3\ViewV1V3Service.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV2BV1\ViewV2BV1.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV2BV1\ViewV2BV1Service.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV2TV1\ViewV2TV1.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV2TV1\ViewV2TV1Service.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV2V1\ViewV2V1.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV2V1\ViewV2V1Service.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV2V2\ViewV2V2.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV2V2\ViewV2V2Service.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV2\ViewV2.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV2\ViewV2Service.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV3V1\ViewV3V1.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV3V1\ViewV3V1Service.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV3\ViewV3.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Controls\ViewV3\ViewV3Service.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\EventEditor\EventEditorEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\EventEditor\EventEditorPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\EventEditor\PackageEventEditor.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\FormEditor\FormEditorEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\FormEditor\FormEditorPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\FormEditor\PackageFormEditor.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\FormView\FormViewEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\FormView\FormViewPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\FormView\PackageFormView.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\HierarchyEditor\HierarchyEditorEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\HierarchyEditor\HierarchyEditorPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\HierarchyEditor\PackageHierarchyEditor.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\PropertyEditor\PackagePropertyEditor.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\PropertyEditor\PropertyEditorEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\PropertyEditor\PropertyEditorPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewCross\PackageViewCross.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewCross\ViewCrossEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewCross\ViewCrossPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H2L\PackageViewH1H2L.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H2L\ViewH1H2LEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H2L\ViewH1H2LPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H2R\PackageViewH1H2R.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H2R\ViewH1H2REventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H2R\ViewH1H2RPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H2\PackageViewH1H2.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H2\ViewH1H2EventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H2\ViewH1H2PropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H3\PackageViewH1H3.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H3\ViewH1H3EventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH1H3\ViewH1H3PropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2H1\PackageViewH2H1.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2H1\ViewH2H1EventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2H1\ViewH2H1PropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2H2\PackageViewH2H2.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2H2\ViewH2H2EventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2H2\ViewH2H2PropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2LH1\PackageViewH2LH1.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2LH1\ViewH2LH1EventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2LH1\ViewH2LH1PropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2RH1\PackageViewH2RH1.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2RH1\ViewH2RH1EventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2RH1\ViewH2RH1PropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2\PackageViewH2.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2\ViewH2EventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH2\ViewH2PropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH3H1\PackageViewH3H1.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH3H1\ViewH3H1EventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH3H1\ViewH3H1PropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH3\PackageViewH3.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH3\ViewH3EventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewH3\ViewH3PropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V2B\PackageViewV1V2B.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V2B\ViewV1V2BEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V2B\ViewV1V2BPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V2T\PackageViewV1V2T.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V2T\ViewV1V2TEventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V2T\ViewV1V2TPropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V2\PackageViewV1V2.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V2\ViewV1V2EventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V2\ViewV1V2PropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V3\PackageViewV1V3.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V3\ViewV1V3EventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV1V3\ViewV1V3PropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2BV1\PackageViewV2BV1.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2BV1\ViewV2BV1EventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2BV1\ViewV2BV1PropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2TV1\PackageViewV2TV1.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2TV1\ViewV2TV1EventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2TV1\ViewV2TV1PropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2V1\PackageViewV2V1.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2V1\ViewV2V1EventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2V1\ViewV2V1PropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2V2\PackageViewV2V2.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2V2\ViewV2V2EventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2V2\ViewV2V2PropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2\PackageViewV2.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2\ViewV2EventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV2\ViewV2PropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV3V1\PackageViewV3V1.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV3V1\ViewV3V1EventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV3V1\ViewV3V1PropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV3\PackageViewV3.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV3\ViewV3EventList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\Controls\ViewV3\ViewV3PropertyList.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\PackageIde.cpp" />
+    <ClCompile Include="..\..\Packages\Ide\Package\PackageIdeService.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

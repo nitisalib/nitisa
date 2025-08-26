@@ -1,0 +1,226 @@
+{
+    "Layout": "Windows Form",
+    "Version": "2.0",
+    "Form": {
+        "Name": "FormMain",
+        "Caption": "Matrix calculator",
+        "ClientSize": [
+            955,
+            142
+        ],
+        "WindowPosition": "WindowPosition::ScreenCenter",
+        "HasMaximizeBox": false,
+        "HasSizeBox": false
+    },
+    "Controls": [
+        {
+            "Package": "Standard",
+            "ClassName": "GroupBox",
+            "Name": "GroupBox1",
+            "Transform": {
+                "Tx": 10,
+                "Ty": 10,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                272,
+                122
+            ],
+            "Caption": "Matrix A",
+            "UseMask": false,
+            "Controls": [
+                {
+                    "Package": "Standard",
+                    "ClassName": "StringGrid",
+                    "Name": "StringGridA",
+                    "Transform": {
+                        "Tx": 5,
+                        "Ty": 15,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        262,
+                        102
+                    ],
+                    "TabOrder": 2,
+                    "Align": "Align::Client",
+                    "Multiselect": false,
+                    "Columns": 4,
+                    "Rows": 4,
+                    "FixedColumns": 0,
+                    "FixedRows": 0
+                }
+            ]
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "GroupBox",
+            "Name": "GroupBox3",
+            "Transform": {
+                "Tx": 320,
+                "Ty": 10,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                272,
+                122
+            ],
+            "Caption": "Matrix B",
+            "UseMask": false,
+            "Controls": [
+                {
+                    "Package": "Standard",
+                    "ClassName": "StringGrid",
+                    "Name": "StringGridB",
+                    "Transform": {
+                        "Tx": 5,
+                        "Ty": 15,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        262,
+                        102
+                    ],
+                    "TabOrder": 9,
+                    "Align": "Align::Client",
+                    "Multiselect": false,
+                    "Columns": 4,
+                    "Rows": 4,
+                    "FixedColumns": 0,
+                    "FixedRows": 0
+                }
+            ]
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Button",
+            "Name": "ButtonCalculate",
+            "Transform": {
+                "Tx": 600,
+                "Ty": 63,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                64,
+                23
+            ],
+            "TabOrder": 10,
+            "Caption": "=",
+            "OnClick": "ButtonCalculate_OnClick"
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "GroupBox",
+            "Name": "GroupBox4",
+            "Transform": {
+                "Tx": 674,
+                "Ty": 10,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                272,
+                122
+            ],
+            "Caption": "Result",
+            "UseMask": false,
+            "Controls": [
+                {
+                    "Package": "Standard",
+                    "ClassName": "StringGrid",
+                    "Name": "StringGridResult",
+                    "Transform": {
+                        "Tx": 5,
+                        "Ty": 15,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        262,
+                        102
+                    ],
+                    "TabOrder": 12,
+                    "Enabled": false,
+                    "Align": "Align::Client",
+                    "Columns": 4,
+                    "Rows": 4,
+                    "FixedColumns": 0,
+                    "FixedRows": 0
+                }
+            ]
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Label",
+            "Name": "Label1",
+            "Transform": {
+                "Tx": 300,
+                "Ty": 70,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Caption": "*"
+        }
+    ]
+}

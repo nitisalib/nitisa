@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="CoolWidgets.h" />
+    <ClInclude Include="Controls\IRegistration.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\Registration\Registration.h">
+      <Filter>Controls\Registration</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls\Registration\RegistrationService.h">
+      <Filter>Controls\Registration</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Registration\PackageRegistration.h">
+      <Filter>Package\Controls\Registration</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Registration\RegistrationPropertyList.h">
+      <Filter>Package\Controls\Registration</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Controls\Registration\RegistrationEventList.h">
+      <Filter>Package\Controls\Registration</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\PackageCoolWidgets.h">
+      <Filter>Package</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\PackageCoolWidgetsService.h">
+      <Filter>Package</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyRegistrationData.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyRegistrationDataState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyRegistrationData.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyRegistrationDataState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\Utils.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Forms\RegistrationData\IFormRegistrationDataProto.h">
+      <Filter>Forms\RegistrationData</Filter>
+    </ClInclude>
+    <ClInclude Include="Forms\IFormRegistrationData.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="Forms\RegistrationData\FormRegistrationData.h">
+      <Filter>Forms\RegistrationData</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\PropertyHandlers\RegistrationData\PropertyHandlerRegistrationData.h">
+      <Filter>Package\PropertyHandlers\RegistrationData</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Forms\RegistrationData\FormRegistrationDataPropertyList.h">
+      <Filter>Package\Forms\RegistrationData</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Forms\RegistrationData\FormRegistrationDataEventList.h">
+      <Filter>Package\Forms\RegistrationData</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Forms\RegistrationData\PackageFormRegistrationData.h">
+      <Filter>Package\Forms\RegistrationData</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Controls\Registration\Registration.cpp">
+      <Filter>Controls\Registration</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\Registration\RegistrationService.cpp">
+      <Filter>Controls\Registration</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\Registration\TextInput.cpp">
+      <Filter>Controls\Registration</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\Registration\TextInputListener.cpp">
+      <Filter>Controls\Registration</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\Registration\MonthCalendar.cpp">
+      <Filter>Controls\Registration</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls\Registration\MonthCalendarListener.cpp">
+      <Filter>Controls\Registration</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Registration\RegistrationPropertyList.cpp">
+      <Filter>Package\Controls\Registration</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Registration\RegistrationEventList.cpp">
+      <Filter>Package\Controls\Registration</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Controls\Registration\PackageRegistration.cpp">
+      <Filter>Package\Controls\Registration</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\PackageCoolWidgets.cpp">
+      <Filter>Package</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\PackageCoolWidgetsService.cpp">
+      <Filter>Package</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyRegistrationData.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\Utils.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyRegistrationDataState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Forms\RegistrationData\FormRegistrationData.cpp">
+      <Filter>Forms\RegistrationData</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\PropertyHandlers\RegistrationData\PropertyHandlerRegistrationData.cpp">
+      <Filter>Package\PropertyHandlers\RegistrationData</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Forms\RegistrationData\FormRegistrationDataPropertyList.cpp">
+      <Filter>Package\Forms\RegistrationData</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Forms\RegistrationData\FormRegistrationDataEventList.cpp">
+      <Filter>Package\Forms\RegistrationData</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Forms\RegistrationData\PackageFormRegistrationData.cpp">
+      <Filter>Package\Forms\RegistrationData</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Controls">
+      <UniqueIdentifier>{07898ef1-d909-4d67-8479-1e677d1f0804}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\Registration">
+      <UniqueIdentifier>{7e88fd08-e56e-45f0-a672-c2d46948cebb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package">
+      <UniqueIdentifier>{daf8b708-0d1c-4d3b-a204-882c6a2babc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls">
+      <UniqueIdentifier>{20f6b15e-3a02-4635-a1a3-a676f3fc5e78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\Registration">
+      <UniqueIdentifier>{da05c1c9-d5b0-4875-99b9-2dc2888d4be5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Interfaces">
+      <UniqueIdentifier>{f75d9d50-b6ca-40fb-9896-97aa7d26f9a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Properties">
+      <UniqueIdentifier>{52ffbe0b-4bb5-4495-bd43-0ddd51e01679}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Core">
+      <UniqueIdentifier>{58df2215-0762-4a68-bc8f-def988a4a5f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Forms">
+      <UniqueIdentifier>{13c25ffe-bad3-48e5-bfb4-6d46ef3b90cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Forms\RegistrationData">
+      <UniqueIdentifier>{0dc833cc-55c7-49ce-9b50-3d9a2066326e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\PropertyHandlers">
+      <UniqueIdentifier>{0b72cb58-6619-4d3a-9084-fb9965ed4422}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\PropertyHandlers\RegistrationData">
+      <UniqueIdentifier>{faaf5e47-872c-4aee-a277-333d77d030b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Forms">
+      <UniqueIdentifier>{38c92888-56d1-4ede-9c76-fe92d0124df1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Forms\RegistrationData">
+      <UniqueIdentifier>{887f53ae-2258-4c59-ab5e-0b3269ad0ce4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms\RegistrationData\FormRegistrationDataProto.nfr">
+      <Filter>Forms\RegistrationData</Filter>
+    </None>
+  </ItemGroup>
+</Project>

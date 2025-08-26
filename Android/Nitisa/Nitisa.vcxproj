@@ -1,0 +1,2008 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugRT|ARM">
+      <Configuration>DebugRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|ARM64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|x64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|x86">
+      <Configuration>DebugRT</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|ARM">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|ARM64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|x64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|x86">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Nitisa\BuiltInControls\DropDown\BuiltInDropDown.h" />
+    <ClInclude Include="..\..\Nitisa\BuiltInControls\DropDown\BuiltInDropDownListItemOwner.h" />
+    <ClInclude Include="..\..\Nitisa\BuiltInControls\IBuiltInDropDown.h" />
+    <ClInclude Include="..\..\Nitisa\BuiltInControls\IBuiltInDropDownListener.h" />
+    <ClInclude Include="..\..\Nitisa\BuiltInControls\IBuiltInMonthCalendar.h" />
+    <ClInclude Include="..\..\Nitisa\BuiltInControls\IBuiltInMonthCalendarListener.h" />
+    <ClInclude Include="..\..\Nitisa\BuiltInControls\IBuiltInScroll.h" />
+    <ClInclude Include="..\..\Nitisa\BuiltInControls\IBuiltInScrollListener.h" />
+    <ClInclude Include="..\..\Nitisa\BuiltInControls\IBuiltInSelect.h" />
+    <ClInclude Include="..\..\Nitisa\BuiltInControls\IBuiltInSelectListener.h" />
+    <ClInclude Include="..\..\Nitisa\BuiltInControls\IBuiltInTextArea.h" />
+    <ClInclude Include="..\..\Nitisa\BuiltInControls\IBuiltInTextAreaListener.h" />
+    <ClInclude Include="..\..\Nitisa\BuiltInControls\IBuiltInTextInput.h" />
+    <ClInclude Include="..\..\Nitisa\BuiltInControls\IBuiltInTextInputListener.h" />
+    <ClInclude Include="..\..\Nitisa\BuiltInControls\MonthCalendar\BuiltInMonthCalendar.h" />
+    <ClInclude Include="..\..\Nitisa\BuiltInControls\ScrollLite\BuiltInScrollLite.h" />
+    <ClInclude Include="..\..\Nitisa\BuiltInControls\Scroll\BuiltInScroll.h" />
+    <ClInclude Include="..\..\Nitisa\BuiltInControls\Select\BuiltInSelect.h" />
+    <ClInclude Include="..\..\Nitisa\BuiltInControls\TextArea\BuiltInTextArea.h" />
+    <ClInclude Include="..\..\Nitisa\BuiltInControls\TextInput\BuiltInTextInput.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Aliases.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Align.h" />
+    <ClInclude Include="..\..\Nitisa\Core\BaseTexture.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Bitmask.h" />
+    <ClInclude Include="..\..\Nitisa\Core\BlurType.h" />
+    <ClInclude Include="..\..\Nitisa\Core\BoolArray.h" />
+    <ClInclude Include="..\..\Nitisa\Core\BuiltInControl.h" />
+    <ClInclude Include="..\..\Nitisa\Core\ByteArray.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Camera.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Caret.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Class.h" />
+    <ClInclude Include="..\..\Nitisa\Core\CloseAction.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Component.h" />
+    <ClInclude Include="..\..\Nitisa\Core\ComponentService.h" />
+    <ClInclude Include="..\..\Nitisa\Core\ComponentSpliceService.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Consts.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Control.h" />
+    <ClInclude Include="..\..\Nitisa\Core\ControlItemList.h" />
+    <ClInclude Include="..\..\Nitisa\Core\ControlService.h" />
+    <ClInclude Include="..\..\Nitisa\Core\ControlSpliceService.h" />
+    <ClInclude Include="..\..\Nitisa\Core\CreateParams.h" />
+    <ClInclude Include="..\..\Nitisa\Core\CursorType.h" />
+    <ClInclude Include="..\..\Nitisa\Core\DateTime.h" />
+    <ClInclude Include="..\..\Nitisa\Core\DefaultStyle.h" />
+    <ClInclude Include="..\..\Nitisa\Core\DialogBox.h" />
+    <ClInclude Include="..\..\Nitisa\Core\DialogBoxService.h" />
+    <ClInclude Include="..\..\Nitisa\Core\EdgeType.h" />
+    <ClInclude Include="..\..\Nitisa\Core\ErrorInfo.h" />
+    <ClInclude Include="..\..\Nitisa\Core\ErrorListenerCout.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Feature.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Feedback.h" />
+    <ClInclude Include="..\..\Nitisa\Core\FeedbackEx.h" />
+    <ClInclude Include="..\..\Nitisa\Core\FocusedBy.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Font.h" />
+    <ClInclude Include="..\..\Nitisa\Core\FontProperties.h" />
+    <ClInclude Include="..\..\Nitisa\Core\FontWeight.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Form.h" />
+    <ClInclude Include="..\..\Nitisa\Core\FormService.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Hint.h" />
+    <ClInclude Include="..\..\Nitisa\Core\HintService.h" />
+    <ClInclude Include="..\..\Nitisa\Core\History.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Hotkey.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Interval.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Json.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Key.h" />
+    <ClInclude Include="..\..\Nitisa\Core\ListItem.h" />
+    <ClInclude Include="..\..\Nitisa\Core\ListItemOwner.h" />
+    <ClInclude Include="..\..\Nitisa\Core\ListItemService.h" />
+    <ClInclude Include="..\..\Nitisa\Core\LockRepaint.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Messages.h" />
+    <ClInclude Include="..\..\Nitisa\Core\ModalResult.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Model.h" />
+    <ClInclude Include="..\..\Nitisa\Core\ModelService.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Notifier.h" />
+    <ClInclude Include="..\..\Nitisa\Core\PlatformType.h" />
+    <ClInclude Include="..\..\Nitisa\Core\PlatformVersion.h" />
+    <ClInclude Include="..\..\Nitisa\Core\PointLocation.h" />
+    <ClInclude Include="..\..\Nitisa\Core\ProjectionMode.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Releasable.h" />
+    <ClInclude Include="..\..\Nitisa\Core\ReleasablePtr.h" />
+    <ClInclude Include="..\..\Nitisa\Core\RendererCapabilities.h" />
+    <ClInclude Include="..\..\Nitisa\Core\RendererTechnology.h" />
+    <ClInclude Include="..\..\Nitisa\Core\RotateOrder.h" />
+    <ClInclude Include="..\..\Nitisa\Core\ScrollType.h" />
+    <ClInclude Include="..\..\Nitisa\Core\ScrollVisibility.h" />
+    <ClInclude Include="..\..\Nitisa\Core\ShaderType.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Strings.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Style.h" />
+    <ClInclude Include="..\..\Nitisa\Core\StyleFont.h" />
+    <ClInclude Include="..\..\Nitisa\Core\StyleImage.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Styles.h" />
+    <ClInclude Include="..\..\Nitisa\Core\StyleSkin.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Task.h" />
+    <ClInclude Include="..\..\Nitisa\Core\TextAlign.h" />
+    <ClInclude Include="..\..\Nitisa\Core\TextureCompareFunction.h" />
+    <ClInclude Include="..\..\Nitisa\Core\TextureCompareMode.h" />
+    <ClInclude Include="..\..\Nitisa\Core\TextureDepthStencilMode.h" />
+    <ClInclude Include="..\..\Nitisa\Core\TextureFormat.h" />
+    <ClInclude Include="..\..\Nitisa\Core\TextureMagFilter.h" />
+    <ClInclude Include="..\..\Nitisa\Core\TextureMinFilter.h" />
+    <ClInclude Include="..\..\Nitisa\Core\TextureSwizzle.h" />
+    <ClInclude Include="..\..\Nitisa\Core\TextureWrap.h" />
+    <ClInclude Include="..\..\Nitisa\Core\TouchPoint.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Transform.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Transformable.h" />
+    <ClInclude Include="..\..\Nitisa\Core\TransformOrder.h" />
+    <ClInclude Include="..\..\Nitisa\Core\TransformService.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Translate.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Utils.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Variant.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Version2.h" />
+    <ClInclude Include="..\..\Nitisa\Core\Version3.h" />
+    <ClInclude Include="..\..\Nitisa\Core\VertexArray.h" />
+    <ClInclude Include="..\..\Nitisa\Core\VertexFormat.h" />
+    <ClInclude Include="..\..\Nitisa\Core\VerticalAlign.h" />
+    <ClInclude Include="..\..\Nitisa\Core\WindowPosition.h" />
+    <ClInclude Include="..\..\Nitisa\Core\WindowState.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbActiveQuery.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbActiveRecord.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbActiveRecordPrimaryKey.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbAsyncMode.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbAttribute.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbBaseActiveRecord.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbBatchRowCountSupport.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbBatchSupport.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbBookmarkPersistence.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbCaseSensitivity.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbCatalogUsage.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbColumn.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbColumns.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbConcatenateNullBehaviour.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbCondition.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbConvertTo.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbCursorAttributes.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbCursorBehaviour.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbCursorConcurrency.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbCursorSensitivity.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbCursorType.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbDataType.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbDate.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbDateTime.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbDelete.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbExceptionBuildQuery.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbExceptionCreateStatement.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbExceptionExecuteStatement.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbExceptionNoAttributes.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbExceptionNoColumnName.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbExceptionNoConnection.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbExceptionNoQueryBuilder.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbExceptionNoResult.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbExceptionNoStatement.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbExceptionNoTableName.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbExceptionRelationNotFound.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbExceptionQueryPrimaryKeys.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbExceptionRevertNotImplemented.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbFileUsage.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbGroupByRelation.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbInsert.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbMigration.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbMigrationColumn.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbMigrationGenerator.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbMigrationKey.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbModel.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbNull.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbNullabilityType.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbNullCollation.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbOdbcInterfaceConformance.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbOdbcVersion.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbOrder.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbOrderBy.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbOrderByArray.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbQuery.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbQueryBuilderMySql.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbRelation.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbResult.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbRow.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbRows.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSchema.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSearchableType.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSet.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSpecialColumnScope.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSqlConformance.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbStandardCliConformance.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbStatus.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedAggregateFunctions.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedAlterDomainClauses.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedAlterTableClauses.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedAvailabilityOfResultSetsInParameterizedExecution.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedConvertFunctions.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedCreateAssertionClauses.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedCreateCharacterSetClauses.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedCreateDomainClauses.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedCreateIndexKeywords.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedCreateSchemaClauses.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedCreateTableClauses.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedCreateViewClauses.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedDateTimeFunctions.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedDateTimeIntervals.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedDateTimeLiterals.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedDropClauses.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedForeignKeyRules.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedGetDataExtensions.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedGrantClauses.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedIndexClauses.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedInformationSchemaViews.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedInsertStatements.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedNumericFunctions.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedNumericValueFunctions.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedOuterJoins.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedPositionOperations.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedPredicates.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedRelationJoinOperators.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedRevokeClauses.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedRowValueConstructors.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedScalarStringFunctions.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedSchemaUsages.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedScrollOptions.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedStringFunctions.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedSubQueryPredicates.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedSystemFunctions.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedTimeDateFunctions.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedTransactionIsolationLevels.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedUnionClauses.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbSupportedValueExpressions.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbTableCorrelationName.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbTime.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbTransaction.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbTransactionSupport.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbUpdatableType.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbUpdate.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbValidator.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbValidatorBoolean.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbValidatorCompare.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbValidatorDate.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbValidatorDateTime.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbValidatorDefault.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbValidatorEmail.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbValidatorExists.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbValidatorMatch.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbValidatorNumber.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbValidatorRange.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbValidatorRequired.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbValidatorString.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbValidatorTime.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbValidatorTrim.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbValidatorUnique.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbValidatorUrl.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbValue.h" />
+    <ClInclude Include="..\..\Nitisa\Db\DbValueType.h" />
+    <ClInclude Include="..\..\Nitisa\Image\BlockColors.h" />
+    <ClInclude Include="..\..\Nitisa\Image\BorderColor.h" />
+    <ClInclude Include="..\..\Nitisa\Image\Color.h" />
+    <ClInclude Include="..\..\Nitisa\Image\Color1D.h" />
+    <ClInclude Include="..\..\Nitisa\Image\Color1DArray.h" />
+    <ClInclude Include="..\..\Nitisa\Image\ColorArray.h" />
+    <ClInclude Include="..\..\Nitisa\Image\Colors.h" />
+    <ClInclude Include="..\..\Nitisa\Image\Gradient.h" />
+    <ClInclude Include="..\..\Nitisa\Image\GradientType.h" />
+    <ClInclude Include="..\..\Nitisa\Image\Image.h" />
+    <ClInclude Include="..\..\Nitisa\Image\ImageMask.h" />
+    <ClInclude Include="..\..\Nitisa\Image\Pixel4f.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IApplication.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IApplicationService.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IBaseTexture.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IBuiltInControl.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IBuiltInControlListener.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\ICamera.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\ICaret.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IClass.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IClientSocket.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IComponent.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IComponentItemList.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IComponentItemListService.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IComponentItemTree.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IComponentService.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IControl.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IControlCreateChild.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IControlService.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IDb.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IDbActiveRecord.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IDbAttribute.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IDbConnection.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IDbMigration.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IDbMigrationColumn.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IDbMigrationKey.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IDbQuery.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IDbQueryBuilder.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IDbRelation.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IDbStatement.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IDbValidator.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IDialogBox.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IDialogBoxListener.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IDialogBoxService.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IDialogs.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IEditor.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IErrorListener.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IFeature.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IFeedback.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IFeedbackEx.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IFeedbackExListener.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IFeedbackListener.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IFile.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IFileSystem.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IFont.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IFontProperties.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IForm.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IFormListener.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IFormService.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IFramebuffer.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IHint.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IHintService.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IKeyboard.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IListItem.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IListItemCaption.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IListItemOwner.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IListItemService.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IModel.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IModelService.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IMouse.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\INativeGraphics.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\INetwork.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IPicture.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IPlatformFont.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IPolygon.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IPrimitive.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IProgram.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IReleasable.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IReleasableListener.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IRenderer.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IScreen.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IServerSocket.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IServerSocketListener.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\ISocket.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IStyle.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IStyleFont.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IStyleImage.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IStyles.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IStyleSkin.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\ISystem.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\ITask.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\ITexture.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\ITextureMultisample.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IThread.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IThreadListener.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\ITimerListener.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\ITransform.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\ITransformable.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\ITransformService.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\ITranslate.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IVertex.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IVertexArray.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IWarningListener.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IWindow.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IWindowListener.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IWindowListenerOnMessage.h" />
+    <ClInclude Include="..\..\Nitisa\Interfaces\IWindowService.h" />
+    <ClInclude Include="..\..\Nitisa\Math\Block.h" />
+    <ClInclude Include="..\..\Nitisa\Math\CubicBezierSpline.h" />
+    <ClInclude Include="..\..\Nitisa\Math\CubicBezierSplineLimits.h" />
+    <ClInclude Include="..\..\Nitisa\Math\FloatArray.h" />
+    <ClInclude Include="..\..\Nitisa\Math\IntegerArray.h" />
+    <ClInclude Include="..\..\Nitisa\Math\Mat2f.h" />
+    <ClInclude Include="..\..\Nitisa\Math\Mat3f.h" />
+    <ClInclude Include="..\..\Nitisa\Math\Mat4f.h" />
+    <ClInclude Include="..\..\Nitisa\Math\Noise.h" />
+    <ClInclude Include="..\..\Nitisa\Math\Plane.h" />
+    <ClInclude Include="..\..\Nitisa\Math\Point.h" />
+    <ClInclude Include="..\..\Nitisa\Math\PointB.h" />
+    <ClInclude Include="..\..\Nitisa\Math\PointD.h" />
+    <ClInclude Include="..\..\Nitisa\Math\PointF.h" />
+    <ClInclude Include="..\..\Nitisa\Math\PointL.h" />
+    <ClInclude Include="..\..\Nitisa\Math\Quaternion.h" />
+    <ClInclude Include="..\..\Nitisa\Math\Rect.h" />
+    <ClInclude Include="..\..\Nitisa\Math\RectB.h" />
+    <ClInclude Include="..\..\Nitisa\Math\RectD.h" />
+    <ClInclude Include="..\..\Nitisa\Math\RectF.h" />
+    <ClInclude Include="..\..\Nitisa\Math\RectL.h" />
+    <ClInclude Include="..\..\Nitisa\Math\Transform.h" />
+    <ClInclude Include="..\..\Nitisa\Math\Vec1f.h" />
+    <ClInclude Include="..\..\Nitisa\Math\Vec1i.h" />
+    <ClInclude Include="..\..\Nitisa\Math\Vec2f.h" />
+    <ClInclude Include="..\..\Nitisa\Math\Vec2i.h" />
+    <ClInclude Include="..\..\Nitisa\Math\Vec3f.h" />
+    <ClInclude Include="..\..\Nitisa\Math\Vec3i.h" />
+    <ClInclude Include="..\..\Nitisa\Math\Vec4f.h" />
+    <ClInclude Include="..\..\Nitisa\Math\Vec4i.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\AI.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\AI\Activators.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\AI\Errors.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\AI\Perceptron.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\AI\Randomizers.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\AI\Regularizers.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\ActiveRecord.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Attribute.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\AttributeList.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\BaseDeclarator.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Decoder.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Definition.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\DefinitionType.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Documentator.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Array.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Asm.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Auto.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Block.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Bool.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\CDecl.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Char.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Char16T.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Char32T.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Char8T.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Class.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\ClassBase.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Comment.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Concept.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Const.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Consteval.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Constexpr.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Constinit.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Decltype.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Double.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Empty.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Enum.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Enumerator.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Explicit.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Export.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Extern.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\FastCall.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Final.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Float.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Friend.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Function.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\FunctionParameter.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\FunctionPostContract.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\FunctionPreContract.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\IdDeclarator.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Import.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Inline.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Int.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\LanguageLinkage.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Long.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\LRef.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\LValueDeclarator.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Module.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Mutable.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Naked.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Name.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Namespace.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\NamespaceAlias.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\NoPtrDeclarator.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Override.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\PackIndexing.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\ParameterPack.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Private.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Protected.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\PtrDeclarator.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Public.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Register.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Root.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\RRef.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\RValueDeclarator.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Short.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Signed.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\SimpleDeclaration.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Static.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\StaticAssert.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\StdCall.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\StructuredBinding.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Template.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\TemplateSpecifier.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\ThisCall.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\ThreadLocal.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\TypeAlias.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Typedef.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Typename.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Unsigned.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Using.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\UsingEnum.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\UsingNamespace.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Virtual.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Void.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Volatile.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\WCharT.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Entity.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\EntityType.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Expression.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Identifier.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\IErrorListenerEx.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\List.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\ListGuard.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Migrations\MigrationV1.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Alias.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Class.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Comment.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Concept.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Const.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Entity.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Enum.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Enumerator.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Models\File.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Function.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Interface.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Module.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Namespace.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Models\NamespaceAlias.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Parameter.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Struct.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Tag.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Typedef.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Union.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Variable.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\PEntity.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\PList.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\PreProcessor.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Range.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\TokenEx.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Utils.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\C++Doc\Version.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Core\Consts.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Core\Errors.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Core\Expression.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Core\ExpressionRunner.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Core\ExpressionType.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Core\Function.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Core\Groups.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Core\Operator.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Core\Operators.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Core\PostfixType.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Core\PrefixType.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Core\Progress.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Core\ProgressStage.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Core\Token.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Core\Tokenizer.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Core\Tokens.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Core\TokenType.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Core\Variable.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Core\VariableType.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\ExpressionBuilders\Generic\ExpressionBuilder.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\ExpressionRunners\Generic\ExpressionRunner.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionBool.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionBrace.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionCall.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionCast.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionFloat.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionIdentifier.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionInteger.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionNull.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionOperator.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionSequence.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionString.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionSubscript.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\FunctionFactories\Generic\FunctionFactory.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Arithmetic\FunctionBitwiseAnd.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Arithmetic\FunctionBitwiseOr.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Arithmetic\FunctionBitwiseXor.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Arithmetic\FunctionDivide.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Arithmetic\FunctionMinus.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Arithmetic\FunctionModulo.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Arithmetic\FunctionMultiply.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Arithmetic\FunctionPlus.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Arithmetic\FunctionShiftLeft.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Arithmetic\FunctionShiftRight.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Assignment\FunctionAssign.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Assignment\FunctionBitwiseAndAssign.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Assignment\FunctionBitwiseOrAssign.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Assignment\FunctionBitwiseXorAssign.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Assignment\FunctionDivideAssign.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Assignment\FunctionMinusAssign.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Assignment\FunctionModuloAssign.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Assignment\FunctionMultiplyAssign.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Assignment\FunctionPlusAssign.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Assignment\FunctionShiftLeftAssign.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Assignment\FunctionShiftRightAssign.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Cast\FunctionBool.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Cast\FunctionDouble.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Cast\FunctionInt64.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Cast\FunctionString.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Comparison\FunctionAnd.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Comparison\FunctionEqual.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Comparison\FunctionGreater.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Comparison\FunctionGreaterEqual.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Comparison\FunctionLess.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Comparison\FunctionLessEqual.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Comparison\FunctionNotEqual.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Comparison\FunctionOr.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Comparison\FunctionSpaceship.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Comparison\FunctionTernary.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\General\FunctionArrow.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\General\FunctionBrace.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\General\FunctionIdentifier.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\General\FunctionLiteral.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\General\FunctionPi.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\General\FunctionRand.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\General\FunctionRnd.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\General\FunctionRndRange.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\General\FunctionSubscript.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\General\FunctionVariable.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionAbs.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionACos.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionACosH.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionASin.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionASinH.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionATan.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionATan2.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionATanH.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionCbrt.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionCeil.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionCos.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionCosH.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionDim.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionErf.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionErfC.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionExp.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionExp2.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionExpM1.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionFloor.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionFMA.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionGamma.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionHypot.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionLdExp.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionLGamma.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionLog.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionLog10.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionLog1P.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionLog2.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionMax.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionMin.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionMod.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionPow.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionRemainder.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionRound.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionRoundF.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionSin.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionSinH.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionSqrt.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionTan.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionTanH.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionTrunc.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Unary\FunctionBitwiseNot.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Unary\FunctionLogicalNot.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Unary\FunctionPostfixDecrement.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Unary\FunctionPostfixIncrement.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Unary\FunctionPrefixDecrement.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Unary\FunctionPrefixIncrement.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Unary\FunctionUnaryMinus.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Functions\Unary\FunctionUnaryPlus.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Interfaces\IExpression.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Interfaces\IExpressionBuilder.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Interfaces\IExpressionRunner.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Interfaces\IFunction.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Interfaces\IFunctionFactory.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Interfaces\ILexic.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Interfaces\IParser.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Interfaces\IProgressListener.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Interfaces\IReader.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Interfaces\ITokenizer.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Json\Decoder.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Json\Encoder.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Lexics\C++\Lexic.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Lexics\Json\Lexic.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Lexics\Xml\Lexic.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Parsers\C++\ParserBinary.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Parsers\C++\ParserHexadecimal.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Parsers\C++\ParserNumeric.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Parsers\C++\ParserOctal.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Parsers\C++\ParserOperator.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Parsers\C++\ParserString.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Parsers\ParserHexadecimal.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Parsers\ParserIdentifier.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Parsers\ParserNumeric.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Parsers\ParserOperator.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Parsers\ParserString.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Readers\ReaderLowerCase.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Readers\ReaderSensitive.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Readers\ReaderUpperCase.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Tokenizers\C++\Tokenizer.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Tokenizers\Generic\Tokenizer.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Tokenizers\Json\Tokenizer.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Tokenizers\Xml\Tokenizer.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Xml\Decoder.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Xml\Encoder.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Xml\Entity.h" />
+    <ClInclude Include="..\..\Nitisa\Modules\Script\Xml\EntityType.h" />
+    <ClInclude Include="..\..\Nitisa\Nitisa.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Core\Consts.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Core\Event.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Core\EventList.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Core\ExportPrefixType.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Core\PackageComponent.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Core\PackageControl.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Core\PackageDialogBox.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Core\PackageEntity.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Core\PackageForm.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Core\PackageListItem.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Core\PackagePropertyHandler.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Core\PackageRenderer.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Core\PackageStyle.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Core\Property.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Core\PropertyHandler.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Core\PropertyList.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Core\PropertyState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\EventLists\ComponentEventList.h" />
+    <ClInclude Include="..\..\Nitisa\Package\EventLists\ControlEventList.h" />
+    <ClInclude Include="..\..\Nitisa\Package\EventLists\DialogBoxEventList.h" />
+    <ClInclude Include="..\..\Nitisa\Package\EventLists\FormEventList.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IEvent.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IEventList.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPackage.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPackageComponent.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPackageComponentListener.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPackageControl.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPackageControlListener.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPackageDialogBox.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPackageEntity.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPackageForm.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPackageListItem.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPackagePropertyHandler.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPackageRenderer.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPackageService.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPackageStyle.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IProperty.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyBool.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyBoolArray.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyBoolArrayState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyBoolState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyBorderColor.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyBorderColorState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyColor.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyColorArray.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyColorArrayState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyColorState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyDouble.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyDoubleState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyEnum.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyEnumState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyFloat.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyFloatArray.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyFloatArrayState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyFloatState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyFont.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyFontState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyGradient.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyGradientState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyHandler.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyHandlerListener.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyHotkey.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyHotkeyState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyIdentifier.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyIdentifierState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyImage.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyImageList.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyImageListState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyImageState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyInt64.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyInt64State.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyInteger.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyIntegerArray.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyIntegerArrayState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyIntegerState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyList.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyMask.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyMaskState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyMatrix.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyMatrixState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyPoint.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyPointB.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyPointBState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyPointD.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyPointDState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyPointF.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyPointFState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyPointL.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyPointLState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyPointState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyRect.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyRectB.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyRectBState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyRectD.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyRectDState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyRectF.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyRectFState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyRectL.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyRectLState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyRectState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyString.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyStringState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyStyle.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyStyleState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyText.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyTextState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyTransform.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Interfaces\IPropertyTransformState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyBool.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyBoolArray.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyBoolArrayState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyBoolState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyBorderColor.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyBorderColorState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyColor.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyColorArray.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyColorArrayState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyColorState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyDouble.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyDoubleState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyEnum.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyEnumState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyFloat.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyFloatArray.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyFloatArrayState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyFloatState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyFont.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyFontState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyGradient.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyGradientState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyHotkey.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyHotkeyState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyIdentifier.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyIdentifierState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyImage.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyImageList.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyImageListState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyImageState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyInt64.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyInt64State.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyInteger.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyIntegerArray.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyIntegerArrayState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyIntegerState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyMask.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyMaskState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyMatrix.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyMatrixState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyPoint.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyPointB.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyPointBState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyPointD.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyPointDState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyPointF.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyPointFState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyPointL.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyPointLState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyPointState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyRect.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyRectB.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyRectBState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyRectD.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyRectDState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyRectF.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyRectFState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyRectL.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyRectLState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyRectState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyString.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyStringState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyStyle.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyStyleState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyText.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyTextState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyTransform.h" />
+    <ClInclude Include="..\..\Nitisa\Package\Properties\PropertyTransformState.h" />
+    <ClInclude Include="..\..\Nitisa\Package\PropertyHandlers\PropertyHandlerDefault.h" />
+    <ClInclude Include="..\..\Nitisa\Package\PropertyLists\ComponentPropertyList.h" />
+    <ClInclude Include="..\..\Nitisa\Package\PropertyLists\ControlPropertyList.h" />
+    <ClInclude Include="..\..\Nitisa\Package\PropertyLists\DialogBoxPropertyList.h" />
+    <ClInclude Include="..\..\Nitisa\Package\PropertyLists\FormPropertyList.h" />
+    <ClInclude Include="..\..\Nitisa\Package\PropertyLists\ListItemPropertyList.h" />
+    <ClInclude Include="..\..\Nitisa\Render\StoreBitmask.h" />
+    <ClInclude Include="..\..\Nitisa\Render\StoreBlock.h" />
+    <ClInclude Include="..\..\Nitisa\Render\StoreFramebuffer.h" />
+    <ClInclude Include="..\..\Nitisa\Render\StoreMask.h" />
+    <ClInclude Include="..\..\Nitisa\Render\StorePrimitiveMatrix.h" />
+    <ClInclude Include="..\..\Nitisa\Render\StoreProgram.h" />
+    <ClInclude Include="..\..\Nitisa\Render\StoreSplineLimits.h" />
+    <ClInclude Include="..\..\Nitisa\Render\StoreState.h" />
+    <ClInclude Include="..\..\Nitisa\Render\StoreTarget.h" />
+    <ClInclude Include="..\..\Nitisa\Render\StoreVertexArray.h" />
+    <ClInclude Include="..\..\Nitisa\Render\Utils.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Nitisa\BuiltInControls\DropDown\BuiltInDropDown.cpp" />
+    <ClCompile Include="..\..\Nitisa\BuiltInControls\DropDown\BuiltInDropDownListItemOwner.cpp" />
+    <ClCompile Include="..\..\Nitisa\BuiltInControls\DropDown\BuiltInDropDownNotifications.cpp" />
+    <ClCompile Include="..\..\Nitisa\BuiltInControls\DropDown\BuiltInDropDownScroll.cpp" />
+    <ClCompile Include="..\..\Nitisa\BuiltInControls\DropDown\BuiltInDropDownScrollListener.cpp" />
+    <ClCompile Include="..\..\Nitisa\BuiltInControls\DropDown\BuiltInDropDownTextInput.cpp" />
+    <ClCompile Include="..\..\Nitisa\BuiltInControls\DropDown\BuiltInDropDownTextInputListener.cpp" />
+    <ClCompile Include="..\..\Nitisa\BuiltInControls\MonthCalendar\BuiltInMonthCalendar.cpp" />
+    <ClCompile Include="..\..\Nitisa\BuiltInControls\MonthCalendar\BuiltInMonthCalendarNotifications.cpp" />
+    <ClCompile Include="..\..\Nitisa\BuiltInControls\ScrollLite\BuiltInScrollLite.cpp" />
+    <ClCompile Include="..\..\Nitisa\BuiltInControls\ScrollLite\BuiltInScrollLiteNotifications.cpp" />
+    <ClCompile Include="..\..\Nitisa\BuiltInControls\Scroll\BuiltInScroll.cpp" />
+    <ClCompile Include="..\..\Nitisa\BuiltInControls\Scroll\BuiltInScrollNotifications.cpp" />
+    <ClCompile Include="..\..\Nitisa\BuiltInControls\Select\BuiltInSelect.cpp" />
+    <ClCompile Include="..\..\Nitisa\BuiltInControls\Select\BuiltInSelectNotifications.cpp" />
+    <ClCompile Include="..\..\Nitisa\BuiltInControls\TextArea\BuiltInTextArea.cpp" />
+    <ClCompile Include="..\..\Nitisa\BuiltInControls\TextArea\BuiltInTextAreaNotifications.cpp" />
+    <ClCompile Include="..\..\Nitisa\BuiltInControls\TextInput\BuiltInTextInput.cpp" />
+    <ClCompile Include="..\..\Nitisa\BuiltInControls\TextInput\BuiltInTextInputNotifications.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Align.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\BaseTexture.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\BoolArray.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\BuiltInControl.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\ByteArray.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Camera.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Caret.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Component.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\ComponentService.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\ComponentSpliceService.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Consts.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Control.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\ControlItemList.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\ControlService.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\ControlSpliceService.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\CreateParams.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\CursorType.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\DateTime.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\DefaultStyle.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\DialogBox.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\DialogBoxService.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\ErrorListenerCout.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Feature.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Feedback.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\FeedbackEx.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Font.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\FontProperties.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\FontWeight.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Form.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\FormService.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Hint.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\HintService.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Hotkey.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Interval.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Json.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Key.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\ListItem.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\ListItemOwner.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\ListItemService.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Model.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\ModelService.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Notifier.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Releasable.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\RotateOrder.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\ScrollVisibility.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Strings.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Style.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\StyleFont.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\StyleImage.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Styles.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\StyleSkin.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\TextAlign.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Transform.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Transformable.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\TransformOrder.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\TransformService.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Translate.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Utils.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\Variant.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\VertexArray.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\VerticalAlign.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\WindowPosition.cpp" />
+    <ClCompile Include="..\..\Nitisa\Core\WindowState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbAsyncMode.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbBaseActiveRecord.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbBatchRowCountSupport.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbBatchSupport.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbBookmarkPersistence.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbCaseSensitivity.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbCatalogUsage.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbColumn.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbConcatenateNullBehaviour.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbCondition.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbConvertTo.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbCursorAttributes.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbCursorBehaviour.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbCursorConcurrency.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbCursorSensitivity.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbCursorType.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbDataType.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbDate.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbDateTime.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbDelete.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbFileUsage.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbGroupByRelation.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbInsert.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbMigration.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbMigrationColumn.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbMigrationGenerator.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbMigrationKey.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbModel.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbNull.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbNullabilityType.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbNullCollation.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbOdbcInterfaceConformance.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbOdbcVersion.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbQuery.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbQueryBuilderMySql.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbResult.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSchema.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSearchableType.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSpecialColumnScope.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSqlConformance.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbStandardCliConformance.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbStatus.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedAggregateFunctions.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedAlterDomainClauses.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedAlterTableClauses.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedAvailabilityOfResultSetsInParameterizedExecution.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedConvertFunctions.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedCreateAssertionClauses.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedCreateCharacterSetClauses.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedCreateDomainClauses.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedCreateIndexKeywords.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedCreateSchemaClauses.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedCreateTableClauses.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedCreateViewClauses.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedDateTimeFunctions.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedDateTimeIntervals.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedDateTimeLiterals.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedDropClauses.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedForeignKeyRules.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedGetDataExtensions.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedGrantClauses.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedIndexClauses.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedInformationSchemaViews.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedInsertStatements.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedNumericFunctions.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedNumericValueFunctions.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedOuterJoins.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedPositionOperations.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedPredicates.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedRelationJoinOperators.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedRevokeClauses.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedRowValueConstructors.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedScalarStringFunctions.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedSchemaUsages.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedScrollOptions.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedStringFunctions.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedSubQueryPredicates.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedSystemFunctions.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedTimeDateFunctions.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedTransactionIsolationLevels.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedUnionClauses.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbSupportedValueExpressions.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbTableCorrelationName.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbTime.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbTransaction.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbTransactionSupport.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbUpdatableType.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbUpdate.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbValidator.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbValidatorBoolean.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbValidatorCompare.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbValidatorDate.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbValidatorDateTime.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbValidatorDefault.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbValidatorEmail.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbValidatorExists.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbValidatorMatch.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbValidatorNumber.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbValidatorRange.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbValidatorRequired.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbValidatorString.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbValidatorTime.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbValidatorTrim.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbValidatorUnique.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbValidatorUrl.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbValue.cpp" />
+    <ClCompile Include="..\..\Nitisa\Db\DbValueType.cpp" />
+    <ClCompile Include="..\..\Nitisa\Image\BorderColor.cpp" />
+    <ClCompile Include="..\..\Nitisa\Image\Color.cpp" />
+    <ClCompile Include="..\..\Nitisa\Image\ColorArray.cpp" />
+    <ClCompile Include="..\..\Nitisa\Image\Colors.cpp" />
+    <ClCompile Include="..\..\Nitisa\Image\Gradient.cpp" />
+    <ClCompile Include="..\..\Nitisa\Image\GradientType.cpp" />
+    <ClCompile Include="..\..\Nitisa\Image\Image.cpp" />
+    <ClCompile Include="..\..\Nitisa\Image\ImageMask.cpp" />
+    <ClCompile Include="..\..\Nitisa\Math\Block.cpp" />
+    <ClCompile Include="..\..\Nitisa\Math\CubicBezierSpline.cpp" />
+    <ClCompile Include="..\..\Nitisa\Math\CubicBezierSplineLimits.cpp" />
+    <ClCompile Include="..\..\Nitisa\Math\FloatArray.cpp" />
+    <ClCompile Include="..\..\Nitisa\Math\IntegerArray.cpp" />
+    <ClCompile Include="..\..\Nitisa\Math\Mat4f.cpp" />
+    <ClCompile Include="..\..\Nitisa\Math\Noise.cpp" />
+    <ClCompile Include="..\..\Nitisa\Math\Point.cpp" />
+    <ClCompile Include="..\..\Nitisa\Math\PointB.cpp" />
+    <ClCompile Include="..\..\Nitisa\Math\PointD.cpp" />
+    <ClCompile Include="..\..\Nitisa\Math\PointF.cpp" />
+    <ClCompile Include="..\..\Nitisa\Math\PointL.cpp" />
+    <ClCompile Include="..\..\Nitisa\Math\Rect.cpp" />
+    <ClCompile Include="..\..\Nitisa\Math\RectB.cpp" />
+    <ClCompile Include="..\..\Nitisa\Math\RectD.cpp" />
+    <ClCompile Include="..\..\Nitisa\Math\RectF.cpp" />
+    <ClCompile Include="..\..\Nitisa\Math\RectL.cpp" />
+    <ClCompile Include="..\..\Nitisa\Math\Transform.cpp" />
+    <ClCompile Include="..\..\Nitisa\Math\Vec4f.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\ActiveRecord.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Attribute.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\AttributeList.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\BaseDeclarator.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Decoder.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Definition.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Documentator.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Array.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Asm.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Auto.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Block.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Bool.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\CDecl.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Char.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Char16T.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Char32T.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Char8T.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Class.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\ClassBase.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Comment.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Concept.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Const.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Consteval.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Constexpr.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Constinit.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Decltype.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Double.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Empty.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Enum.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Enumerator.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Explicit.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Export.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Extern.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\FastCall.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Final.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Float.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Friend.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Function.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\FunctionParameter.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\FunctionPostContract.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\FunctionPreContract.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\IdDeclarator.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Import.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Inline.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Int.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\LanguageLinkage.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Long.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\LRef.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\LValueDeclarator.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Module.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Mutable.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Naked.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Name.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Namespace.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\NamespaceAlias.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\NoPtrDeclarator.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Override.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\PackIndexing.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\ParameterPack.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Private.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Protected.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\PtrDeclarator.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Public.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Register.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Root.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\RRef.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\RValueDeclarator.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Short.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Signed.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\SimpleDeclaration.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Static.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\StaticAssert.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\StdCall.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\StructuredBinding.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Template.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\TemplateSpecifier.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\ThisCall.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\ThreadLocal.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\TypeAlias.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Typedef.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Typename.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Unsigned.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Using.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\UsingEnum.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\UsingNamespace.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Virtual.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Void.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\Volatile.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entities\WCharT.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Entity.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Expression.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Identifier.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\ListGuard.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Migrations\MigrationV1.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Alias.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Class.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Comment.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Concept.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Const.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Entity.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Enum.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Enumerator.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Models\File.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Function.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Interface.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Module.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Namespace.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Models\NamespaceAlias.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Parameter.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Struct.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Tag.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Typedef.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Union.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Models\Variable.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\PreProcessor.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Range.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\TokenEx.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Utils.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\C++Doc\Version.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Core\Errors.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Core\Expression.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Core\ExpressionRunner.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Core\ExpressionType.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Core\Function.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Core\PostfixType.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Core\PrefixType.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Core\Token.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Core\Tokenizer.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Core\Variable.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\ExpressionBuilders\Generic\ExpressionBuilder.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\ExpressionRunners\Generic\ExpressionRunner.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionBool.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionBrace.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionCall.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionCast.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionFloat.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionIdentifier.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionInteger.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionNull.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionOperator.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionSequence.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionString.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Expressions\ExpressionSubscript.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\FunctionFactories\Generic\FunctionFactory.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Arithmetic\FunctionBitwiseAnd.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Arithmetic\FunctionBitwiseOr.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Arithmetic\FunctionBitwiseXor.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Arithmetic\FunctionDivide.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Arithmetic\FunctionMinus.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Arithmetic\FunctionModulo.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Arithmetic\FunctionMultiply.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Arithmetic\FunctionPlus.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Arithmetic\FunctionShiftLeft.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Arithmetic\FunctionShiftRight.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Assignment\FunctionAssign.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Assignment\FunctionBitwiseAndAssign.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Assignment\FunctionBitwiseOrAssign.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Assignment\FunctionBitwiseXorAssign.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Assignment\FunctionDivideAssign.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Assignment\FunctionMinusAssign.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Assignment\FunctionModuloAssign.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Assignment\FunctionMultiplyAssign.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Assignment\FunctionPlusAssign.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Assignment\FunctionShiftLeftAssign.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Assignment\FunctionShiftRightAssign.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Cast\FunctionBool.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Cast\FunctionDouble.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Cast\FunctionInt64.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Cast\FunctionString.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Comparison\FunctionAnd.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Comparison\FunctionEqual.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Comparison\FunctionGreater.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Comparison\FunctionGreaterEqual.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Comparison\FunctionLess.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Comparison\FunctionLessEqual.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Comparison\FunctionNotEqual.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Comparison\FunctionOr.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Comparison\FunctionSpaceship.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Comparison\FunctionTernary.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\General\FunctionArrow.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\General\FunctionBrace.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\General\FunctionIdentifier.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\General\FunctionLiteral.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\General\FunctionPi.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\General\FunctionRand.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\General\FunctionRnd.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\General\FunctionRndRange.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\General\FunctionSubscript.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\General\FunctionVariable.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionAbs.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionACos.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionACosH.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionASin.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionASinH.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionATan.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionATan2.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionATanH.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionCbrt.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionCeil.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionCos.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionCosH.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionDim.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionErf.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionErfC.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionExp.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionExp2.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionExpM1.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionFloor.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionFMA.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionGamma.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionHypot.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionLdExp.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionLGamma.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionLog.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionLog10.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionLog1P.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionLog2.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionMax.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionMin.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionMod.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionPow.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionRemainder.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionRound.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionRoundF.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionSin.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionSinH.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionSqrt.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionTan.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionTanH.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Mathematics\FunctionTrunc.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Unary\FunctionBitwiseNot.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Unary\FunctionLogicalNot.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Unary\FunctionPostfixDecrement.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Unary\FunctionPostfixIncrement.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Unary\FunctionPrefixDecrement.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Unary\FunctionPrefixIncrement.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Unary\FunctionUnaryMinus.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Functions\Unary\FunctionUnaryPlus.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Json\Decoder.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Json\Encoder.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Lexics\C++\Lexic.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Lexics\Json\Lexic.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Lexics\Xml\Lexic.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Parsers\C++\ParserBinary.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Parsers\C++\ParserHexadecimal.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Parsers\C++\ParserNumeric.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Parsers\C++\ParserOctal.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Parsers\C++\ParserOperator.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Parsers\C++\ParserString.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Parsers\ParserHexadecimal.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Parsers\ParserIdentifier.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Parsers\ParserNumeric.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Parsers\ParserOperator.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Parsers\ParserString.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Readers\ReaderLowerCase.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Readers\ReaderSensitive.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Readers\ReaderUpperCase.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Tokenizers\C++\Tokenizer.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Tokenizers\Generic\Tokenizer.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Tokenizers\Json\Tokenizer.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Tokenizers\Xml\Tokenizer.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Xml\Decoder.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Xml\Encoder.cpp" />
+    <ClCompile Include="..\..\Nitisa\Modules\Script\Xml\Entity.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Core\Consts.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Core\Event.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Core\EventList.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Core\PackageComponent.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Core\PackageControl.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Core\PackageDialogBox.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Core\PackageEntity.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Core\PackageForm.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Core\PackageListItem.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Core\PackageRenderer.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Core\PackageStyle.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Core\Property.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Core\PropertyHandler.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Core\PropertyList.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Core\PropertyState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\EventLists\ComponentEventList.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\EventLists\ControlEventList.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\EventLists\DialogBoxEventList.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\EventLists\FormEventList.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyBool.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyBoolArray.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyBoolArrayState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyBoolState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyBorderColor.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyBorderColorState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyColor.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyColorArray.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyColorArrayState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyColorState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyDouble.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyDoubleState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyEnum.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyEnumState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyFloat.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyFloatArray.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyFloatArrayState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyFloatState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyFont.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyFontState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyGradient.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyGradientState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyHotkey.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyHotkeyState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyIdentifier.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyIdentifierState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyImage.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyImageList.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyImageListState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyImageState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyInt64.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyInt64State.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyInteger.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyIntegerArray.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyIntegerArrayState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyIntegerState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyMask.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyMaskState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyMatrix.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyMatrixState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyPoint.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyPointB.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyPointBState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyPointD.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyPointDState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyPointF.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyPointFState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyPointL.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyPointLState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyPointState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyRect.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyRectB.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyRectBState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyRectD.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyRectDState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyRectF.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyRectFState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyRectL.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyRectLState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyRectState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyString.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyStringState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyStyle.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyStyleState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyText.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyTextState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyTransform.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\Properties\PropertyTransformState.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\PropertyHandlers\PropertyHandlerDefault.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\PropertyLists\ComponentPropertyList.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\PropertyLists\ControlPropertyList.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\PropertyLists\DialogBoxPropertyList.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\PropertyLists\FormPropertyList.cpp" />
+    <ClCompile Include="..\..\Nitisa\Package\PropertyLists\ListItemPropertyList.cpp" />
+    <ClCompile Include="..\..\Nitisa\Render\Utils.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{a4a81fd8-e5c4-4f33-8f68-e3904dc8d0b6}</ProjectGuid>
+    <Keyword>Android</Keyword>
+    <RootNamespace>Nitisa</RootNamespace>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <ApplicationType>Android</ApplicationType>
+    <ApplicationTypeRevision>3.0</ApplicationTypeRevision>
+    <ProjectName>Nitisa</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+    <UseOfStl>c++_shared</UseOfStl>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x86\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Nitisa\x86\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x64\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Nitisa\x64\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Nitisa\ARM\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM64\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Nitisa\ARM64\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x86\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Nitisa\x86\DebugRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x64\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Nitisa\x64\DebugRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Nitisa\ARM\DebugRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM64\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Nitisa\ARM64\DebugRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x86\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Nitisa\x86\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x64\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Nitisa\x64\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Nitisa\ARM\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM64\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Nitisa\ARM64\Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x86\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Nitisa\x86\ReleaseRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\x64\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Nitisa\x64\ReleaseRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Nitisa\ARM\ReleaseRT\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Android\ARM64\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Android\Nitisa\ARM64\ReleaseRT\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces -Wno-reorder-ctor %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces -Wno-reorder-ctor %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces -Wno-reorder-ctor %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces -Wno-reorder-ctor %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces -Wno-reorder-ctor %(AdditionalOptions)</AdditionalOptions>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions />
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces -Wno-reorder-ctor %(AdditionalOptions)</AdditionalOptions>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions />
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces -Wno-reorder-ctor %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces -Wno-reorder-ctor %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(Sysroot)\usr\include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces -Wno-reorder-ctor %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces -Wno-reorder-ctor %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces -Wno-reorder-ctor %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces -Wno-reorder-ctor %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces -Wno-reorder-ctor %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces -Wno-reorder-ctor %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces -Wno-reorder-ctor %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CppLanguageStandard>gnu++1z</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wno-unknown-pragmas -Wno-missing-braces -Wno-reorder-ctor %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)../..;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

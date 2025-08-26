@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugRT|ARM">
+      <Configuration>DebugRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|ARM64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|Win32">
+      <Configuration>DebugRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|x64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|ARM">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|ARM64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|Win32">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|x64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{0C51A12D-41B5-4A30-82D9-0EBF2702CB28}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Charts</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Nitisa\PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x86\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Charts\x86\Debug\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x64\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Charts\x64\Debug\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Charts\ARM\Debug\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM64\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Charts\ARM64\Debug\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x86\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Charts\x86\DebugRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x64\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Charts\x64\DebugRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Charts\ARM\DebugRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM64\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Charts\ARM64\DebugRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x86\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Charts\x86\Release\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x64\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Charts\x64\Release\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Charts\ARM\Release\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM64\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Charts\ARM64\Release\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x86\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Charts\x86\ReleaseRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x64\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Charts\x64\ReleaseRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Charts\ARM\ReleaseRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM64\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Charts\ARM64\ReleaseRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Charts.h" />
+    <ClInclude Include="Controls\BarChart\BarChart.h" />
+    <ClInclude Include="Controls\DoughnutChart\DoughnutChart.h" />
+    <ClInclude Include="Controls\ForexChart\ForexChart.h" />
+    <ClInclude Include="Controls\ForexChart\ForexChartService.h" />
+    <ClInclude Include="Controls\IBarChart.h" />
+    <ClInclude Include="Controls\IDoughnutChart.h" />
+    <ClInclude Include="Controls\IForexChart.h" />
+    <ClInclude Include="Controls\ILineChart.h" />
+    <ClInclude Include="Controls\IMultiBarChart.h" />
+    <ClInclude Include="Controls\IPieChart.h" />
+    <ClInclude Include="Controls\IPolarAreaChart.h" />
+    <ClInclude Include="Controls\IRadarChart.h" />
+    <ClInclude Include="Controls\ISemiDoughnutChart.h" />
+    <ClInclude Include="Controls\ISemiPieChart.h" />
+    <ClInclude Include="Controls\ISplineChart.h" />
+    <ClInclude Include="Controls\IStackedBarChart.h" />
+    <ClInclude Include="Controls\ISteppedLineChart.h" />
+    <ClInclude Include="Controls\LineChart\LineChart.h" />
+    <ClInclude Include="Controls\MultiBarChart\MultiBarChart.h" />
+    <ClInclude Include="Controls\PieChart\PieChart.h" />
+    <ClInclude Include="Controls\PolarAreaChart\PolarAreaChart.h" />
+    <ClInclude Include="Controls\PolarAreaChart\PolarAreaChartService.h" />
+    <ClInclude Include="Controls\RadarChart\RadarChart.h" />
+    <ClInclude Include="Controls\RadarChart\RadarChartService.h" />
+    <ClInclude Include="Controls\SemiDoughnutChart\SemiDoughnutChart.h" />
+    <ClInclude Include="Controls\SemiPieChart\SemiPieChart.h" />
+    <ClInclude Include="Controls\SplineChart\SplineChart.h" />
+    <ClInclude Include="Controls\StackedBarChart\StackedBarChart.h" />
+    <ClInclude Include="Controls\SteppedLineChart\SteppedLineChart.h" />
+    <ClInclude Include="Core\BarChartRenderer.h" />
+    <ClInclude Include="Core\BezierChartRenderer.h" />
+    <ClInclude Include="Core\ChartDataSet.h" />
+    <ClInclude Include="Core\ChartData.h" />
+    <ClInclude Include="Core\CustomCartesianChart.h" />
+    <ClInclude Include="Core\CustomCartesianChartEventList.h" />
+    <ClInclude Include="Core\CustomCartesianChartPropertyList.h" />
+    <ClInclude Include="Core\CustomCartesianChartService.h" />
+    <ClInclude Include="Core\CustomRadialChart.h" />
+    <ClInclude Include="Core\CustomRadialChartEventList.h" />
+    <ClInclude Include="Core\CustomRadialChartPropertyList.h" />
+    <ClInclude Include="Core\CustomRadialChartService.h" />
+    <ClInclude Include="Core\Enums.h" />
+    <ClInclude Include="Core\LineChartRenderer.h" />
+    <ClInclude Include="Core\SteppedLineChartRenderer.h" />
+    <ClInclude Include="Core\Utils.h" />
+    <ClInclude Include="Forms\ChartDataSet\DialogBoxChartDataSet.h" />
+    <ClInclude Include="Forms\ChartDataSet\FormChartDataSet.h" />
+    <ClInclude Include="Forms\ChartDataSet\IDialogBoxChartDataSetProto.h" />
+    <ClInclude Include="Forms\ChartDataSet\IFormChartDataSetProto.h" />
+    <ClInclude Include="Forms\ForexChartData\DialogBoxForexChartData.h" />
+    <ClInclude Include="Forms\ForexChartData\FormForexChartData.h" />
+    <ClInclude Include="Forms\ForexChartData\IDialogBoxForexChartDataProto.h" />
+    <ClInclude Include="Forms\ForexChartData\IFormForexChartDataProto.h" />
+    <ClInclude Include="Forms\IFormChartDataSet.h" />
+    <ClInclude Include="Forms\IFormForexChartData.h" />
+    <ClInclude Include="Forms\IFormLineInterpolationPositionArray.h" />
+    <ClInclude Include="Forms\LineInterpolationPositionArray\DialogBoxLineInterpolationPositionArray.h" />
+    <ClInclude Include="Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArray.h" />
+    <ClInclude Include="Forms\LineInterpolationPositionArray\IDialogBoxLineInterpolationPositionArrayProto.h" />
+    <ClInclude Include="Forms\LineInterpolationPositionArray\IFormLineInterpolationPositionArrayProto.h" />
+    <ClInclude Include="Interfaces\ICartesianChart.h" />
+    <ClInclude Include="Interfaces\IChartData.h" />
+    <ClInclude Include="Interfaces\IChartDataSet.h" />
+    <ClInclude Include="Interfaces\IChartRenderer.h" />
+    <ClInclude Include="Interfaces\IRadialChart.h" />
+    <ClInclude Include="Interfaces\IUpdateListener.h" />
+    <ClInclude Include="Package\Controls\BarChart\BarChartEventList.h" />
+    <ClInclude Include="Package\Controls\BarChart\BarChartPropertyList.h" />
+    <ClInclude Include="Package\Controls\BarChart\PackageBarChart.h" />
+    <ClInclude Include="Package\Controls\DoughnutChart\DoughnutChartEventList.h" />
+    <ClInclude Include="Package\Controls\DoughnutChart\DoughnutChartPropertyList.h" />
+    <ClInclude Include="Package\Controls\DoughnutChart\PackageDoughnutChart.h" />
+    <ClInclude Include="Package\Controls\ForexChart\ForexChartEventList.h" />
+    <ClInclude Include="Package\Controls\ForexChart\ForexChartPropertyList.h" />
+    <ClInclude Include="Package\Controls\ForexChart\PackageForexChart.h" />
+    <ClInclude Include="Package\Controls\LineChart\LineChartEventList.h" />
+    <ClInclude Include="Package\Controls\LineChart\LineChartPropertyList.h" />
+    <ClInclude Include="Package\Controls\LineChart\PackageLineChart.h" />
+    <ClInclude Include="Package\Controls\MultiBarChart\MultiBarChartEventList.h" />
+    <ClInclude Include="Package\Controls\MultiBarChart\MultiBarChartPropertyList.h" />
+    <ClInclude Include="Package\Controls\MultiBarChart\PackageMultiBarChart.h" />
+    <ClInclude Include="Package\Controls\PieChart\PackagePieChart.h" />
+    <ClInclude Include="Package\Controls\PieChart\PieChartEventList.h" />
+    <ClInclude Include="Package\Controls\PieChart\PieChartPropertyList.h" />
+    <ClInclude Include="Package\Controls\PolarAreaChart\PackagePolarAreaChart.h" />
+    <ClInclude Include="Package\Controls\PolarAreaChart\PolarAreaChartEventList.h" />
+    <ClInclude Include="Package\Controls\PolarAreaChart\PolarAreaChartPropertyList.h" />
+    <ClInclude Include="Package\Controls\RadarChart\PackageRadarChart.h" />
+    <ClInclude Include="Package\Controls\RadarChart\RadarChartEventList.h" />
+    <ClInclude Include="Package\Controls\RadarChart\RadarChartPropertyList.h" />
+    <ClInclude Include="Package\Controls\SemiDoughnutChart\PackageSemiDoughnutChart.h" />
+    <ClInclude Include="Package\Controls\SemiDoughnutChart\SemiDoughnutChartEventList.h" />
+    <ClInclude Include="Package\Controls\SemiDoughnutChart\SemiDoughnutChartPropertyList.h" />
+    <ClInclude Include="Package\Controls\SemiPieChart\PackageSemiPieChart.h" />
+    <ClInclude Include="Package\Controls\SemiPieChart\SemiPieChartEventList.h" />
+    <ClInclude Include="Package\Controls\SemiPieChart\SemiPieChartPropertyList.h" />
+    <ClInclude Include="Package\Controls\SplineChart\PackageSplineChart.h" />
+    <ClInclude Include="Package\Controls\SplineChart\SplineChartEventList.h" />
+    <ClInclude Include="Package\Controls\SplineChart\SplineChartPropertyList.h" />
+    <ClInclude Include="Package\Controls\StackedBarChart\PackageStackedBarChart.h" />
+    <ClInclude Include="Package\Controls\StackedBarChart\StackedBarChartEventList.h" />
+    <ClInclude Include="Package\Controls\StackedBarChart\StackedBarChartPropertyList.h" />
+    <ClInclude Include="Package\Controls\SteppedLineChart\PackageSteppedLineChart.h" />
+    <ClInclude Include="Package\Controls\SteppedLineChart\SteppedLineChartEventList.h" />
+    <ClInclude Include="Package\Controls\SteppedLineChart\SteppedLineChartPropertyList.h" />
+    <ClInclude Include="Package\Core\Consts.h" />
+    <ClInclude Include="Package\Forms\ChartDataSet\FormChartDataSetEventList.h" />
+    <ClInclude Include="Package\Forms\ChartDataSet\FormChartDataSetPropertyList.h" />
+    <ClInclude Include="Package\Forms\ChartDataSet\PackageFormChartDataSet.h" />
+    <ClInclude Include="Package\Forms\ForexChartData\FormForexChartDataEventList.h" />
+    <ClInclude Include="Package\Forms\ForexChartData\FormForexChartDataPropertyList.h" />
+    <ClInclude Include="Package\Forms\ForexChartData\PackageFormForexChartData.h" />
+    <ClInclude Include="Package\Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArrayEventList.h" />
+    <ClInclude Include="Package\Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArrayPropertyList.h" />
+    <ClInclude Include="Package\Forms\LineInterpolationPositionArray\PackageFormLineInterpolationPositionArray.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyChartDataSet.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyForexChartData.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyLineInterpolationPositionArray.h" />
+    <ClInclude Include="Package\PackageCharts.h" />
+    <ClInclude Include="Package\PackageChartsService.h" />
+    <ClInclude Include="Package\Properties\PropertyChartDataSet.h" />
+    <ClInclude Include="Package\Properties\PropertyForexChartData.h" />
+    <ClInclude Include="Package\Properties\PropertyLineInterpolationPositionArray.h" />
+    <ClInclude Include="Package\PropertyHandlers\ChartDataSet\PropertyHandlerChartDataSet.h" />
+    <ClInclude Include="Package\PropertyHandlers\ForexChartData\PropertyHandlerForexChartData.h" />
+    <ClInclude Include="Package\PropertyHandlers\LineInterpolationPositionArray\PropertyHandlerLineInterpolationPositionArray.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Controls\BarChart\BarChart.cpp" />
+    <ClCompile Include="Controls\DoughnutChart\DoughnutChart.cpp" />
+    <ClCompile Include="Controls\ForexChart\ForexChart.cpp" />
+    <ClCompile Include="Controls\ForexChart\ForexChartData.cpp" />
+    <ClCompile Include="Controls\ForexChart\ForexChartService.cpp" />
+    <ClCompile Include="Controls\LineChart\LineChart.cpp" />
+    <ClCompile Include="Controls\MultiBarChart\MultiBarChart.cpp" />
+    <ClCompile Include="Controls\PieChart\PieChart.cpp" />
+    <ClCompile Include="Controls\PolarAreaChart\PolarAreaChart.cpp" />
+    <ClCompile Include="Controls\PolarAreaChart\PolarAreaChartService.cpp" />
+    <ClCompile Include="Controls\RadarChart\RadarChart.cpp" />
+    <ClCompile Include="Controls\RadarChart\RadarChartService.cpp" />
+    <ClCompile Include="Controls\SemiDoughnutChart\SemiDoughnutChart.cpp" />
+    <ClCompile Include="Controls\SemiPieChart\SemiPieChart.cpp" />
+    <ClCompile Include="Controls\SplineChart\SplineChart.cpp" />
+    <ClCompile Include="Controls\StackedBarChart\StackedBarChart.cpp" />
+    <ClCompile Include="Controls\SteppedLineChart\SteppedLineChart.cpp" />
+    <ClCompile Include="Core\BarChartRenderer.cpp" />
+    <ClCompile Include="Core\BezierChartRenderer.cpp" />
+    <ClCompile Include="Core\ChartData.cpp" />
+    <ClCompile Include="Core\ChartDataSet.cpp" />
+    <ClCompile Include="Core\CustomCartesianChart.cpp" />
+    <ClCompile Include="Core\CustomCartesianChartEventList.cpp" />
+    <ClCompile Include="Core\CustomCartesianChartPropertyList.cpp" />
+    <ClCompile Include="Core\CustomCartesianChartService.cpp" />
+    <ClCompile Include="Core\CustomRadialChart.cpp" />
+    <ClCompile Include="Core\CustomRadialChartEventList.cpp" />
+    <ClCompile Include="Core\CustomRadialChartPropertyList.cpp" />
+    <ClCompile Include="Core\CustomRadialChartService.cpp" />
+    <ClCompile Include="Core\LineChartRenderer.cpp" />
+    <ClCompile Include="Core\SteppedLineChartRenderer.cpp" />
+    <ClCompile Include="Core\Utils.cpp" />
+    <ClCompile Include="Forms\ChartDataSet\DialogBoxChartDataSet.cpp" />
+    <ClCompile Include="Forms\ChartDataSet\FormChartDataSet.cpp" />
+    <ClCompile Include="Forms\ForexChartData\DialogBoxForexChartData.cpp" />
+    <ClCompile Include="Forms\ForexChartData\FormForexChartData.cpp" />
+    <ClCompile Include="Forms\LineInterpolationPositionArray\DialogBoxLineInterpolationPositionArray.cpp" />
+    <ClCompile Include="Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArray.cpp" />
+    <ClCompile Include="Package\Controls\BarChart\BarChartEventList.cpp" />
+    <ClCompile Include="Package\Controls\BarChart\BarChartPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\BarChart\PackageBarChart.cpp" />
+    <ClCompile Include="Package\Controls\DoughnutChart\DoughnutChartEventList.cpp" />
+    <ClCompile Include="Package\Controls\DoughnutChart\DoughnutChartPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\DoughnutChart\PackageDoughnutChart.cpp" />
+    <ClCompile Include="Package\Controls\ForexChart\ForexChartEventList.cpp" />
+    <ClCompile Include="Package\Controls\ForexChart\ForexChartPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\ForexChart\PackageForexChart.cpp" />
+    <ClCompile Include="Package\Controls\LineChart\LineChartEventList.cpp" />
+    <ClCompile Include="Package\Controls\LineChart\LineChartPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\LineChart\PackageLineChart.cpp" />
+    <ClCompile Include="Package\Controls\MultiBarChart\MultiBarChartEventList.cpp" />
+    <ClCompile Include="Package\Controls\MultiBarChart\MultiBarChartPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\MultiBarChart\PackageMultiBarChart.cpp" />
+    <ClCompile Include="Package\Controls\PieChart\PackagePieChart.cpp" />
+    <ClCompile Include="Package\Controls\PieChart\PieChartEventList.cpp" />
+    <ClCompile Include="Package\Controls\PieChart\PieChartPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\PolarAreaChart\PackagePolarAreaChart.cpp" />
+    <ClCompile Include="Package\Controls\PolarAreaChart\PolarAreaChartEventList.cpp" />
+    <ClCompile Include="Package\Controls\PolarAreaChart\PolarAreaChartPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\RadarChart\PackageRadarChart.cpp" />
+    <ClCompile Include="Package\Controls\RadarChart\RadarChartEventList.cpp" />
+    <ClCompile Include="Package\Controls\RadarChart\RadarChartPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\SemiDoughnutChart\PackageSemiDoughnutChart.cpp" />
+    <ClCompile Include="Package\Controls\SemiDoughnutChart\SemiDoughnutChartEventList.cpp" />
+    <ClCompile Include="Package\Controls\SemiDoughnutChart\SemiDoughnutChartPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\SemiPieChart\PackageSemiPieChart.cpp" />
+    <ClCompile Include="Package\Controls\SemiPieChart\SemiPieChartEventList.cpp" />
+    <ClCompile Include="Package\Controls\SemiPieChart\SemiPieChartPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\SplineChart\PackageSplineChart.cpp" />
+    <ClCompile Include="Package\Controls\SplineChart\SplineChartEventList.cpp" />
+    <ClCompile Include="Package\Controls\SplineChart\SplineChartPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\StackedBarChart\PackageStackedBarChart.cpp" />
+    <ClCompile Include="Package\Controls\StackedBarChart\StackedBarChartEventList.cpp" />
+    <ClCompile Include="Package\Controls\StackedBarChart\StackedBarChartPropertyList.cpp" />
+    <ClCompile Include="Package\Controls\SteppedLineChart\PackageSteppedLineChart.cpp" />
+    <ClCompile Include="Package\Controls\SteppedLineChart\SteppedLineChartEventList.cpp" />
+    <ClCompile Include="Package\Controls\SteppedLineChart\SteppedLineChartPropertyList.cpp" />
+    <ClCompile Include="Package\Core\Consts.cpp" />
+    <ClCompile Include="Package\Forms\ChartDataSet\FormChartDataSetEventList.cpp" />
+    <ClCompile Include="Package\Forms\ChartDataSet\FormChartDataSetPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\ChartDataSet\PackageFormChartDataSet.cpp" />
+    <ClCompile Include="Package\Forms\ForexChartData\FormForexChartDataEventList.cpp" />
+    <ClCompile Include="Package\Forms\ForexChartData\FormForexChartDataPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\ForexChartData\PackageFormForexChartData.cpp" />
+    <ClCompile Include="Package\Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArrayEventList.cpp" />
+    <ClCompile Include="Package\Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArrayPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\LineInterpolationPositionArray\PackageFormLineInterpolationPositionArray.cpp" />
+    <ClCompile Include="Package\PackageCharts.cpp" />
+    <ClCompile Include="Package\PackageChartsService.cpp" />
+    <ClCompile Include="Package\Properties\PropertyChartDataSet.cpp" />
+    <ClCompile Include="Package\Properties\PropertyForexChartData.cpp" />
+    <ClCompile Include="Package\Properties\PropertyLineInterpolationPositionArray.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\ChartDataSet\PropertyHandlerChartDataSet.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\ForexChartData\PropertyHandlerForexChartData.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\LineInterpolationPositionArray\PropertyHandlerLineInterpolationPositionArray.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,214 @@
+{
+    "Layout": "Windows Form",
+    "Version": "2.0",
+    "Form": {
+        "Name": "FormMain",
+        "Caption": "Chat server",
+        "ClientSize": [
+            624,
+            442
+        ]
+    },
+    "Components": [
+        {
+            "Package": "Standard",
+            "ClassName": "TCPServer",
+            "Name": "TCPServer",
+            "OnClientHaveData": "TCPServer_OnClientHaveData",
+            "Position": [
+                256,
+                160
+            ]
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Timer",
+            "Name": "Timer",
+            "Interval": 2,
+            "Enabled": true,
+            "OnTimer": "Timer_OnTimer",
+            "Position": [
+                288,
+                160
+            ]
+        }
+    ],
+    "Controls": [
+        {
+            "Package": "Standard",
+            "ClassName": "Container",
+            "Name": "Container1",
+            "Size": [
+                624,
+                41
+            ],
+            "Align": "Align::Top",
+            "Controls": [
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "Label1",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 12,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        24,
+                        13
+                    ],
+                    "Caption": "Port:",
+                    "AutoSize": false
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Edit",
+                    "Name": "EditPort",
+                    "Transform": {
+                        "Tx": 48,
+                        "Ty": 8,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "TabOrder": 3,
+                    "Text": "1000"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "UpDown",
+                    "Name": "UpDownPort",
+                    "Size": [
+                        18,
+                        21
+                    ],
+                    "Min": 1,
+                    "Max": 65000,
+                    "Value": 1000,
+                    "AssignedTo": "EditPort",
+                    "Transform": {
+                        "Tx": 168,
+                        "Ty": 8,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    }
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonStart",
+                    "Transform": {
+                        "Tx": 192,
+                        "Ty": 8,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "TabOrder": 5,
+                    "Caption": "Start server",
+                    "OnClick": "ButtonStart_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonStop",
+                    "Transform": {
+                        "Tx": 304,
+                        "Ty": 8,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "TabOrder": 6,
+                    "Enabled": false,
+                    "Caption": "Stop server",
+                    "OnClick": "ButtonStop_OnClick"
+                }
+            ]
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "StatusBar",
+            "Name": "StatusBar",
+            "Transform": {
+                "Tx": 0,
+                "Ty": 424,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Items": [
+                {
+                    "Package": "Standard",
+                    "ClassName": "ListItemStatusPanelLabel",
+                    "Caption": "0 connections"
+                }
+            ]
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Memo",
+            "Name": "MemoLog",
+            "Transform": {
+                "Tx": 0,
+                "Ty": 41,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                624,
+                383
+            ],
+            "TabOrder": 8,
+            "Align": "Align::Client",
+            "Text": "",
+            "ReadOnly": true
+        }
+    ]
+}

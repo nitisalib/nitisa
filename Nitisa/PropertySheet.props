@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+	<Import Project="Branch.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <Version>16.0.0</Version>
+	<SolutionOutputDir Condition="'$(Branch)'=='master'">$(ALLUSERSPROFILE)\Nitisa\$(Version)\</SolutionOutputDir>
+	<SolutionOutputDir Condition="'$(Branch)'!='master'">$(SolutionDir)</SolutionOutputDir>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="Version">
+      <Value>$(Version)</Value>
+    </BuildMacro>
+	<BuildMacro Include="SolutionOutputDir">
+      <Value>$(SolutionOutputDir)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

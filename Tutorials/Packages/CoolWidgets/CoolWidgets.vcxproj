@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugRT|Win32">
+      <Configuration>DebugRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Controls\IRegistration.h" />
+    <ClInclude Include="Controls\Registration\Registration.h" />
+    <ClInclude Include="Controls\Registration\RegistrationService.h" />
+    <ClInclude Include="CoolWidgets.h" />
+    <ClInclude Include="Forms\IFormRegistrationData.h" />
+    <ClInclude Include="Forms\RegistrationData\FormRegistrationData.h" />
+    <ClInclude Include="Forms\RegistrationData\IFormRegistrationDataProto.h" />
+    <ClInclude Include="Package\Controls\Registration\PackageRegistration.h" />
+    <ClInclude Include="Package\Controls\Registration\RegistrationEventList.h" />
+    <ClInclude Include="Package\Controls\Registration\RegistrationPropertyList.h" />
+    <ClInclude Include="Package\Core\Utils.h" />
+    <ClInclude Include="Package\Forms\RegistrationData\FormRegistrationDataEventList.h" />
+    <ClInclude Include="Package\Forms\RegistrationData\FormRegistrationDataPropertyList.h" />
+    <ClInclude Include="Package\Forms\RegistrationData\PackageFormRegistrationData.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyRegistrationData.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyRegistrationDataState.h" />
+    <ClInclude Include="Package\PackageCoolWidgets.h" />
+    <ClInclude Include="Package\PackageCoolWidgetsService.h" />
+    <ClInclude Include="Package\Properties\PropertyRegistrationData.h" />
+    <ClInclude Include="Package\Properties\PropertyRegistrationDataState.h" />
+    <ClInclude Include="Package\PropertyHandlers\RegistrationData\PropertyHandlerRegistrationData.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Controls\Registration\MonthCalendar.cpp" />
+    <ClCompile Include="Controls\Registration\MonthCalendarListener.cpp" />
+    <ClCompile Include="Controls\Registration\Registration.cpp" />
+    <ClCompile Include="Controls\Registration\RegistrationService.cpp" />
+    <ClCompile Include="Controls\Registration\TextInput.cpp" />
+    <ClCompile Include="Controls\Registration\TextInputListener.cpp" />
+    <ClCompile Include="Forms\RegistrationData\FormRegistrationData.cpp" />
+    <ClCompile Include="Package\Controls\Registration\PackageRegistration.cpp" />
+    <ClCompile Include="Package\Controls\Registration\RegistrationEventList.cpp" />
+    <ClCompile Include="Package\Controls\Registration\RegistrationPropertyList.cpp" />
+    <ClCompile Include="Package\Core\Utils.cpp" />
+    <ClCompile Include="Package\Forms\RegistrationData\FormRegistrationDataEventList.cpp" />
+    <ClCompile Include="Package\Forms\RegistrationData\FormRegistrationDataPropertyList.cpp" />
+    <ClCompile Include="Package\Forms\RegistrationData\PackageFormRegistrationData.cpp" />
+    <ClCompile Include="Package\PackageCoolWidgets.cpp" />
+    <ClCompile Include="Package\PackageCoolWidgetsService.cpp" />
+    <ClCompile Include="Package\Properties\PropertyRegistrationData.cpp" />
+    <ClCompile Include="Package\Properties\PropertyRegistrationDataState.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\RegistrationData\PropertyHandlerRegistrationData.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms\RegistrationData\FormRegistrationDataProto.nfr" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{1B1EDDB4-70E4-495E-BFD3-536DA0D7F923}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CoolWidgets</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(SolutionDir)obj\Windows\CoolWidgets\x86\DebugRT\</IntDir>
+    <OutDir>$(SolutionDir)bin\Windows\x86\DebugRT\</OutDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)../../..;$(ProjectDir)../../../Packages;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

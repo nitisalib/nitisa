@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Controls">
+      <UniqueIdentifier>{ad9b5fca-b961-4d9c-81a5-9a2925e95df0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\LineChart">
+      <UniqueIdentifier>{6bf9ca47-e1bd-456a-a16c-0c3df1d15adc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\SplineChart">
+      <UniqueIdentifier>{265ffefa-670e-4a65-862b-3760149a12fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\SteppedLineChart">
+      <UniqueIdentifier>{559dbb6e-6cad-4a10-b997-36503b930a3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\BarChart">
+      <UniqueIdentifier>{55cc358f-a24b-484e-a94b-dcf54f44cb36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\MultiBarChart">
+      <UniqueIdentifier>{82b7db2c-5ddf-44c2-a5d5-98fe1808d5c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\StackedBarChart">
+      <UniqueIdentifier>{50ebae32-bb2a-429c-b34e-01ca15edf8e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\PieChart">
+      <UniqueIdentifier>{f31e4932-36b6-43bc-857e-21b9de8455da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\DoughnutChart">
+      <UniqueIdentifier>{7bb59e12-9a71-4741-99a6-fd5d8b8588ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\SemiPieChart">
+      <UniqueIdentifier>{21c3a988-9e9f-40c4-9a30-66cdb134fd31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\SemiDoughnutChart">
+      <UniqueIdentifier>{3843105d-f30a-4044-a042-1f5ee12be60d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\PolarAreaChart">
+      <UniqueIdentifier>{60bfa2ab-f4b6-4726-8dc2-63c5dd1a910f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\RadarChart">
+      <UniqueIdentifier>{e7ddb569-44a7-40c2-94b6-9d2a5bfcfc28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls\ForexChart">
+      <UniqueIdentifier>{5ab6535c-6e01-4756-9e6a-387d80622ac2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{c8fbcedd-ebb2-4329-aa23-d4625b687de0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Forms">
+      <UniqueIdentifier>{3486d1db-8605-4c07-8d59-0990cbfc2531}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Forms\ChartDataSet">
+      <UniqueIdentifier>{b9fc9114-3fa5-4982-b2c8-878e4226f6f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Forms\ForexChartData">
+      <UniqueIdentifier>{3a8d5cf9-aa90-4dac-9c7a-3929c960ce40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Forms\LineInterpolationPositionArray">
+      <UniqueIdentifier>{2aac0fd4-c2fa-4cda-bc60-220ea960926d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{894bdaea-a656-4aaf-b4f4-d2c2f359c89d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package">
+      <UniqueIdentifier>{937204f0-780c-43f8-af6d-3d8be0c071ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Interfaces">
+      <UniqueIdentifier>{293beb8d-151d-4596-bc36-12b3e9ee53fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Properties">
+      <UniqueIdentifier>{5411a3ed-3546-4243-aa31-44a59b25e556}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Core">
+      <UniqueIdentifier>{5b6560f4-8a03-4569-9c2d-cc9b40a8a359}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\PropertyHandlers">
+      <UniqueIdentifier>{5d41d2a4-1553-4c3b-a9cd-78dd6735c997}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\PropertyHandlers\ChartDataSet">
+      <UniqueIdentifier>{4ceb9fb3-4d48-4989-b125-11c7c8da9407}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\PropertyHandlers\ForexChartData">
+      <UniqueIdentifier>{a7c2b770-c418-47cf-8e91-c0e8035d4824}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\PropertyHandlers\LineInterpolationPositionArray">
+      <UniqueIdentifier>{156d2eb6-e7d4-4545-8c34-0dcfb7d324e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Forms">
+      <UniqueIdentifier>{5ad7e0be-5784-48b6-9a7e-c84162d88d96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Forms\ChartDataSet">
+      <UniqueIdentifier>{8043e3bb-76a8-4991-a53c-85fd513ba2d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Forms\ForexChartData">
+      <UniqueIdentifier>{eedd1952-1c9f-4976-b17f-d3385b9f7af7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Forms\LineInterpolationPositionArray">
+      <UniqueIdentifier>{c83cfc71-1009-4b84-a384-8d2eaf0726fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls">
+      <UniqueIdentifier>{78a83528-9072-45f4-8029-83ca1edcdc3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\BarChart">
+      <UniqueIdentifier>{5df6ab1a-2e0d-4d2e-8493-6d6cc5046e0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\LineChart">
+      <UniqueIdentifier>{fa8e4705-472e-4658-88f2-7d1bd7e611a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\SplineChart">
+      <UniqueIdentifier>{59fdccd3-37d6-4659-850e-71097db682ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\DoughnutChart">
+      <UniqueIdentifier>{eddace6c-957e-4bba-a382-ee94b87ea94b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\ForexChart">
+      <UniqueIdentifier>{33645531-bcc8-40ef-8317-50a7bd897c2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\MultiBarChart">
+      <UniqueIdentifier>{6718b126-4e0f-4707-8a93-15d047a9d7c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\PieChart">
+      <UniqueIdentifier>{eb9a41a2-fa38-49e8-afd5-e072a7068d8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\PolarAreaChart">
+      <UniqueIdentifier>{11760ecc-03c5-458b-b921-965c683aba4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\RadarChart">
+      <UniqueIdentifier>{6954ba94-600a-4530-ad48-b10b69446482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\SemiDoughnutChart">
+      <UniqueIdentifier>{a4e978ac-5bd1-468b-ac36-dc66726c5d4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\SemiPieChart">
+      <UniqueIdentifier>{d6fcfc5b-2494-438f-b9a5-5b3ce81b24dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\StackedBarChart">
+      <UniqueIdentifier>{4770af45-ba5e-4669-8049-7cf90708dc81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Controls\SteppedLineChart">
+      <UniqueIdentifier>{028fd0d0-d150-4719-b178-07a232d78891}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Packages\Charts\Controls\IBarChart.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\IDoughnutChart.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\IForexChart.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\ILineChart.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\IMultiBarChart.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\IPieChart.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\IPolarAreaChart.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\IRadarChart.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\ISemiDoughnutChart.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\ISemiPieChart.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\ISplineChart.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\IStackedBarChart.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\ISteppedLineChart.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\LineChart\LineChart.h">
+      <Filter>Controls\LineChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\SplineChart\SplineChart.h">
+      <Filter>Controls\SplineChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\SteppedLineChart\SteppedLineChart.h">
+      <Filter>Controls\SteppedLineChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\BarChart\BarChart.h">
+      <Filter>Controls\BarChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\MultiBarChart\MultiBarChart.h">
+      <Filter>Controls\MultiBarChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\StackedBarChart\StackedBarChart.h">
+      <Filter>Controls\StackedBarChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\PieChart\PieChart.h">
+      <Filter>Controls\PieChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\DoughnutChart\DoughnutChart.h">
+      <Filter>Controls\DoughnutChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\SemiPieChart\SemiPieChart.h">
+      <Filter>Controls\SemiPieChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\SemiDoughnutChart\SemiDoughnutChart.h">
+      <Filter>Controls\SemiDoughnutChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\PolarAreaChart\PolarAreaChart.h">
+      <Filter>Controls\PolarAreaChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\PolarAreaChart\PolarAreaChartService.h">
+      <Filter>Controls\PolarAreaChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\RadarChart\RadarChart.h">
+      <Filter>Controls\RadarChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\RadarChart\RadarChartService.h">
+      <Filter>Controls\RadarChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\ForexChart\ForexChart.h">
+      <Filter>Controls\ForexChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Controls\ForexChart\ForexChartService.h">
+      <Filter>Controls\ForexChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\BarChartRenderer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\BezierChartRenderer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\ChartDataSet.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\ChartData.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomCartesianChart.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomCartesianChartEventList.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomCartesianChartPropertyList.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomCartesianChartService.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomRadialChart.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomRadialChartEventList.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomRadialChartPropertyList.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\CustomRadialChartService.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\LineChartRenderer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\SteppedLineChartRenderer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\Utils.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Core\Enums.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\IFormChartDataSet.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\IFormForexChartData.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\IFormLineInterpolationPositionArray.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\ChartDataSet\FormChartDataSet.h">
+      <Filter>Forms\ChartDataSet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\ChartDataSet\IFormChartDataSetProto.h">
+      <Filter>Forms\ChartDataSet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\ForexChartData\FormForexChartData.h">
+      <Filter>Forms\ForexChartData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\ForexChartData\IFormForexChartDataProto.h">
+      <Filter>Forms\ForexChartData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArray.h">
+      <Filter>Forms\LineInterpolationPositionArray</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\LineInterpolationPositionArray\IFormLineInterpolationPositionArrayProto.h">
+      <Filter>Forms\LineInterpolationPositionArray</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Interfaces\ICartesianChart.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Interfaces\IChartData.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Interfaces\IChartDataSet.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Interfaces\IChartRenderer.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Interfaces\IRadialChart.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Interfaces\IUpdateListener.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\PackageCharts.h">
+      <Filter>Package</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\PackageChartsService.h">
+      <Filter>Package</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Properties\PropertyChartDataSet.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Properties\PropertyForexChartData.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Properties\PropertyLineInterpolationPositionArray.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Core\Consts.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\PropertyHandlers\ChartDataSet\PropertyHandlerChartDataSet.h">
+      <Filter>Package\PropertyHandlers\ChartDataSet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\PropertyHandlers\ForexChartData\PropertyHandlerForexChartData.h">
+      <Filter>Package\PropertyHandlers\ForexChartData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\PropertyHandlers\LineInterpolationPositionArray\PropertyHandlerLineInterpolationPositionArray.h">
+      <Filter>Package\PropertyHandlers\LineInterpolationPositionArray</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\ChartDataSet\FormChartDataSetEventList.h">
+      <Filter>Package\Forms\ChartDataSet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\ChartDataSet\FormChartDataSetPropertyList.h">
+      <Filter>Package\Forms\ChartDataSet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\ChartDataSet\PackageFormChartDataSet.h">
+      <Filter>Package\Forms\ChartDataSet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\ForexChartData\FormForexChartDataEventList.h">
+      <Filter>Package\Forms\ForexChartData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\ForexChartData\FormForexChartDataPropertyList.h">
+      <Filter>Package\Forms\ForexChartData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\ForexChartData\PackageFormForexChartData.h">
+      <Filter>Package\Forms\ForexChartData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\LineInterpolationPositionArray\PackageFormLineInterpolationPositionArray.h">
+      <Filter>Package\Forms\LineInterpolationPositionArray</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArrayPropertyList.h">
+      <Filter>Package\Forms\LineInterpolationPositionArray</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArrayEventList.h">
+      <Filter>Package\Forms\LineInterpolationPositionArray</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\BarChart\BarChartEventList.h">
+      <Filter>Package\Controls\BarChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\BarChart\BarChartPropertyList.h">
+      <Filter>Package\Controls\BarChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\BarChart\PackageBarChart.h">
+      <Filter>Package\Controls\BarChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\LineChart\LineChartEventList.h">
+      <Filter>Package\Controls\LineChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\LineChart\LineChartPropertyList.h">
+      <Filter>Package\Controls\LineChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\LineChart\PackageLineChart.h">
+      <Filter>Package\Controls\LineChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SplineChart\PackageSplineChart.h">
+      <Filter>Package\Controls\SplineChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SplineChart\SplineChartEventList.h">
+      <Filter>Package\Controls\SplineChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SplineChart\SplineChartPropertyList.h">
+      <Filter>Package\Controls\SplineChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\DoughnutChart\DoughnutChartEventList.h">
+      <Filter>Package\Controls\DoughnutChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\DoughnutChart\DoughnutChartPropertyList.h">
+      <Filter>Package\Controls\DoughnutChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\DoughnutChart\PackageDoughnutChart.h">
+      <Filter>Package\Controls\DoughnutChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\ForexChart\ForexChartEventList.h">
+      <Filter>Package\Controls\ForexChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\ForexChart\ForexChartPropertyList.h">
+      <Filter>Package\Controls\ForexChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\ForexChart\PackageForexChart.h">
+      <Filter>Package\Controls\ForexChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\MultiBarChart\MultiBarChartEventList.h">
+      <Filter>Package\Controls\MultiBarChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\MultiBarChart\MultiBarChartPropertyList.h">
+      <Filter>Package\Controls\MultiBarChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\MultiBarChart\PackageMultiBarChart.h">
+      <Filter>Package\Controls\MultiBarChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\PieChart\PackagePieChart.h">
+      <Filter>Package\Controls\PieChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\PieChart\PieChartEventList.h">
+      <Filter>Package\Controls\PieChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\PieChart\PieChartPropertyList.h">
+      <Filter>Package\Controls\PieChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\PolarAreaChart\PackagePolarAreaChart.h">
+      <Filter>Package\Controls\PolarAreaChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\PolarAreaChart\PolarAreaChartEventList.h">
+      <Filter>Package\Controls\PolarAreaChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\PolarAreaChart\PolarAreaChartPropertyList.h">
+      <Filter>Package\Controls\PolarAreaChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\RadarChart\PackageRadarChart.h">
+      <Filter>Package\Controls\RadarChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\RadarChart\RadarChartPropertyList.h">
+      <Filter>Package\Controls\RadarChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\RadarChart\RadarChartEventList.h">
+      <Filter>Package\Controls\RadarChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SemiDoughnutChart\PackageSemiDoughnutChart.h">
+      <Filter>Package\Controls\SemiDoughnutChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SemiDoughnutChart\SemiDoughnutChartPropertyList.h">
+      <Filter>Package\Controls\SemiDoughnutChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SemiDoughnutChart\SemiDoughnutChartEventList.h">
+      <Filter>Package\Controls\SemiDoughnutChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SemiPieChart\PackageSemiPieChart.h">
+      <Filter>Package\Controls\SemiPieChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SemiPieChart\SemiPieChartPropertyList.h">
+      <Filter>Package\Controls\SemiPieChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SemiPieChart\SemiPieChartEventList.h">
+      <Filter>Package\Controls\SemiPieChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\StackedBarChart\PackageStackedBarChart.h">
+      <Filter>Package\Controls\StackedBarChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\StackedBarChart\StackedBarChartPropertyList.h">
+      <Filter>Package\Controls\StackedBarChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\StackedBarChart\StackedBarChartEventList.h">
+      <Filter>Package\Controls\StackedBarChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SteppedLineChart\PackageSteppedLineChart.h">
+      <Filter>Package\Controls\SteppedLineChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SteppedLineChart\SteppedLineChartPropertyList.h">
+      <Filter>Package\Controls\SteppedLineChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Controls\SteppedLineChart\SteppedLineChartEventList.h">
+      <Filter>Package\Controls\SteppedLineChart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\stdafx.h" />
+    <ClInclude Include="..\..\Packages\Charts\Charts.h" />
+    <ClInclude Include="..\..\Packages\Charts\Forms\ChartDataSet\DialogBoxChartDataSet.h">
+      <Filter>Forms\ChartDataSet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\ChartDataSet\IDialogBoxChartDataSetProto.h">
+      <Filter>Forms\ChartDataSet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\ForexChartData\DialogBoxForexChartData.h">
+      <Filter>Forms\ForexChartData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\ForexChartData\IDialogBoxForexChartDataProto.h">
+      <Filter>Forms\ForexChartData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\LineInterpolationPositionArray\DialogBoxLineInterpolationPositionArray.h">
+      <Filter>Forms\LineInterpolationPositionArray</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Forms\LineInterpolationPositionArray\IDialogBoxLineInterpolationPositionArrayProto.h">
+      <Filter>Forms\LineInterpolationPositionArray</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Interfaces\IPropertyChartDataSet.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Interfaces\IPropertyForexChartData.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Packages\Charts\Package\Interfaces\IPropertyLineInterpolationPositionArray.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Packages\Charts\Controls\LineChart\LineChart.cpp">
+      <Filter>Controls\LineChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\SplineChart\SplineChart.cpp">
+      <Filter>Controls\SplineChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\SteppedLineChart\SteppedLineChart.cpp">
+      <Filter>Controls\SteppedLineChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\BarChart\BarChart.cpp">
+      <Filter>Controls\BarChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\MultiBarChart\MultiBarChart.cpp">
+      <Filter>Controls\MultiBarChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\StackedBarChart\StackedBarChart.cpp">
+      <Filter>Controls\StackedBarChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\PieChart\PieChart.cpp">
+      <Filter>Controls\PieChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\DoughnutChart\DoughnutChart.cpp">
+      <Filter>Controls\DoughnutChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\SemiPieChart\SemiPieChart.cpp">
+      <Filter>Controls\SemiPieChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\SemiDoughnutChart\SemiDoughnutChart.cpp">
+      <Filter>Controls\SemiDoughnutChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\PolarAreaChart\PolarAreaChart.cpp">
+      <Filter>Controls\PolarAreaChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\PolarAreaChart\PolarAreaChartService.cpp">
+      <Filter>Controls\PolarAreaChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\RadarChart\RadarChart.cpp">
+      <Filter>Controls\RadarChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\RadarChart\RadarChartService.cpp">
+      <Filter>Controls\RadarChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\ForexChart\ForexChart.cpp">
+      <Filter>Controls\ForexChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\ForexChart\ForexChartData.cpp">
+      <Filter>Controls\ForexChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Controls\ForexChart\ForexChartService.cpp">
+      <Filter>Controls\ForexChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\BarChartRenderer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\BezierChartRenderer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\ChartData.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\ChartDataSet.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomCartesianChart.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomCartesianChartEventList.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomCartesianChartPropertyList.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomCartesianChartService.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomRadialChart.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomRadialChartEventList.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomRadialChartPropertyList.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\CustomRadialChartService.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\LineChartRenderer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\SteppedLineChartRenderer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Core\Utils.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Forms\ChartDataSet\FormChartDataSet.cpp">
+      <Filter>Forms\ChartDataSet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Forms\ForexChartData\FormForexChartData.cpp">
+      <Filter>Forms\ForexChartData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArray.cpp">
+      <Filter>Forms\LineInterpolationPositionArray</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\PackageCharts.cpp">
+      <Filter>Package</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\PackageChartsService.cpp">
+      <Filter>Package</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Properties\PropertyChartDataSet.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Properties\PropertyForexChartData.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Properties\PropertyLineInterpolationPositionArray.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Core\Consts.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\PropertyHandlers\ChartDataSet\PropertyHandlerChartDataSet.cpp">
+      <Filter>Package\PropertyHandlers\ChartDataSet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\PropertyHandlers\ForexChartData\PropertyHandlerForexChartData.cpp">
+      <Filter>Package\PropertyHandlers\ForexChartData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\PropertyHandlers\LineInterpolationPositionArray\PropertyHandlerLineInterpolationPositionArray.cpp">
+      <Filter>Package\PropertyHandlers\LineInterpolationPositionArray</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\ChartDataSet\FormChartDataSetEventList.cpp">
+      <Filter>Package\Forms\ChartDataSet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\ChartDataSet\FormChartDataSetPropertyList.cpp">
+      <Filter>Package\Forms\ChartDataSet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\ChartDataSet\PackageFormChartDataSet.cpp">
+      <Filter>Package\Forms\ChartDataSet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\ForexChartData\FormForexChartDataEventList.cpp">
+      <Filter>Package\Forms\ForexChartData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\ForexChartData\FormForexChartDataPropertyList.cpp">
+      <Filter>Package\Forms\ForexChartData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\ForexChartData\PackageFormForexChartData.cpp">
+      <Filter>Package\Forms\ForexChartData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\LineInterpolationPositionArray\PackageFormLineInterpolationPositionArray.cpp">
+      <Filter>Package\Forms\LineInterpolationPositionArray</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArrayPropertyList.cpp">
+      <Filter>Package\Forms\LineInterpolationPositionArray</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\BarChart\BarChartEventList.cpp">
+      <Filter>Package\Controls\BarChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\BarChart\BarChartPropertyList.cpp">
+      <Filter>Package\Controls\BarChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\BarChart\PackageBarChart.cpp">
+      <Filter>Package\Controls\BarChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\LineChart\LineChartEventList.cpp">
+      <Filter>Package\Controls\LineChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\LineChart\LineChartPropertyList.cpp">
+      <Filter>Package\Controls\LineChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\LineChart\PackageLineChart.cpp">
+      <Filter>Package\Controls\LineChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SplineChart\PackageSplineChart.cpp">
+      <Filter>Package\Controls\SplineChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SplineChart\SplineChartEventList.cpp">
+      <Filter>Package\Controls\SplineChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SplineChart\SplineChartPropertyList.cpp">
+      <Filter>Package\Controls\SplineChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\DoughnutChart\DoughnutChartEventList.cpp">
+      <Filter>Package\Controls\DoughnutChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\DoughnutChart\DoughnutChartPropertyList.cpp">
+      <Filter>Package\Controls\DoughnutChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\DoughnutChart\PackageDoughnutChart.cpp">
+      <Filter>Package\Controls\DoughnutChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\ForexChart\ForexChartEventList.cpp">
+      <Filter>Package\Controls\ForexChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\ForexChart\ForexChartPropertyList.cpp">
+      <Filter>Package\Controls\ForexChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\ForexChart\PackageForexChart.cpp">
+      <Filter>Package\Controls\ForexChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\MultiBarChart\MultiBarChartEventList.cpp">
+      <Filter>Package\Controls\MultiBarChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\MultiBarChart\MultiBarChartPropertyList.cpp">
+      <Filter>Package\Controls\MultiBarChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\MultiBarChart\PackageMultiBarChart.cpp">
+      <Filter>Package\Controls\MultiBarChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\PieChart\PackagePieChart.cpp">
+      <Filter>Package\Controls\PieChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\PieChart\PieChartEventList.cpp">
+      <Filter>Package\Controls\PieChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\PieChart\PieChartPropertyList.cpp">
+      <Filter>Package\Controls\PieChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\PolarAreaChart\PackagePolarAreaChart.cpp">
+      <Filter>Package\Controls\PolarAreaChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\PolarAreaChart\PolarAreaChartEventList.cpp">
+      <Filter>Package\Controls\PolarAreaChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\PolarAreaChart\PolarAreaChartPropertyList.cpp">
+      <Filter>Package\Controls\PolarAreaChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\RadarChart\PackageRadarChart.cpp">
+      <Filter>Package\Controls\RadarChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\RadarChart\RadarChartPropertyList.cpp">
+      <Filter>Package\Controls\RadarChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\RadarChart\RadarChartEventList.cpp">
+      <Filter>Package\Controls\RadarChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SemiDoughnutChart\PackageSemiDoughnutChart.cpp">
+      <Filter>Package\Controls\SemiDoughnutChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SemiDoughnutChart\SemiDoughnutChartPropertyList.cpp">
+      <Filter>Package\Controls\SemiDoughnutChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SemiDoughnutChart\SemiDoughnutChartEventList.cpp">
+      <Filter>Package\Controls\SemiDoughnutChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SemiPieChart\PackageSemiPieChart.cpp">
+      <Filter>Package\Controls\SemiPieChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SemiPieChart\SemiPieChartPropertyList.cpp">
+      <Filter>Package\Controls\SemiPieChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SemiPieChart\SemiPieChartEventList.cpp">
+      <Filter>Package\Controls\SemiPieChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\StackedBarChart\PackageStackedBarChart.cpp">
+      <Filter>Package\Controls\StackedBarChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\StackedBarChart\StackedBarChartPropertyList.cpp">
+      <Filter>Package\Controls\StackedBarChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\StackedBarChart\StackedBarChartEventList.cpp">
+      <Filter>Package\Controls\StackedBarChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SteppedLineChart\PackageSteppedLineChart.cpp">
+      <Filter>Package\Controls\SteppedLineChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SteppedLineChart\SteppedLineChartPropertyList.cpp">
+      <Filter>Package\Controls\SteppedLineChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Controls\SteppedLineChart\SteppedLineChartEventList.cpp">
+      <Filter>Package\Controls\SteppedLineChart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Forms\ChartDataSet\DialogBoxChartDataSet.cpp">
+      <Filter>Forms\ChartDataSet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Forms\ForexChartData\DialogBoxForexChartData.cpp">
+      <Filter>Forms\ForexChartData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Forms\LineInterpolationPositionArray\DialogBoxLineInterpolationPositionArray.cpp">
+      <Filter>Forms\LineInterpolationPositionArray</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Packages\Charts\Package\Forms\LineInterpolationPositionArray\FormLineInterpolationPositionArrayEventList.cpp" />
+  </ItemGroup>
+</Project>

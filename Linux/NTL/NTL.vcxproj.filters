@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{547798ae-dc78-479e-92f1-66d2f2c57919}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\NTL\Core\Bitmap.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NTL\Core\Complex.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NTL\Core\Consts.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NTL\Core\Mat2.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NTL\Core\Mat3.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NTL\Core\Mat4.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NTL\Core\Matrix.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NTL\Core\Pixel.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NTL\Core\Plane.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NTL\Core\Point.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NTL\Core\Quaternion.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NTL\Core\Range.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NTL\Core\Rect.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NTL\Core\Tensor.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NTL\Core\Types.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NTL\Core\Utils.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NTL\Core\Vec1.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NTL\Core\Vec2.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NTL\Core\Vec3.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NTL\Core\Vec4.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NTL\NTL.h" />
+    <ClInclude Include="..\..\NTL\Core\List.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

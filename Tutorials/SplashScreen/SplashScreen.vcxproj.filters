@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Forms">
+      <UniqueIdentifier>{9a34dca4-91d7-48b9-8df6-2b938e5a0450}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Forms\Main">
+      <UniqueIdentifier>{57b772ec-f70d-46cb-92f6-b8eb7aaf29fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Forms\Splash">
+      <UniqueIdentifier>{50b431e7-1798-49c2-a715-63ea5cea21ab}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Forms\Main\FormMain.cpp">
+      <Filter>Forms\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Forms\Splash\FormSplash.cpp">
+      <Filter>Forms\Splash</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Forms\Main\FormMain.h">
+      <Filter>Forms\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Forms\Main\IFormMain.h">
+      <Filter>Forms\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Forms\Splash\FormSplash.h">
+      <Filter>Forms\Splash</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms\Main\FormMain.nfr">
+      <Filter>Forms\Main</Filter>
+    </None>
+    <None Include="Forms\Splash\FormSplash.nfr">
+      <Filter>Forms\Splash</Filter>
+    </None>
+  </ItemGroup>
+</Project>

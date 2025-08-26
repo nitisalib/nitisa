@@ -1,0 +1,4539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{da80e780-e4e4-4dde-ba60-3695d8457ebb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{ecbb4802-49b6-44c3-9c73-c77217a07e5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules">
+      <UniqueIdentifier>{e9569e4d-e764-4800-90a2-1f9389a573a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuiltInControls">
+      <UniqueIdentifier>{1dfa9042-306e-44e8-99be-47b114819d6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuiltInControls\DropDown">
+      <UniqueIdentifier>{0f26adf2-00bb-4ec2-bfd2-4213684769e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuiltInControls\Scroll">
+      <UniqueIdentifier>{32b977a1-7e91-4ba7-aebf-0749753b6968}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuiltInControls\TextArea">
+      <UniqueIdentifier>{043909c8-f5aa-4fec-89e2-4ccc2cf6590e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuiltInControls\TextInput">
+      <UniqueIdentifier>{73f569ea-56ce-4e8e-9af0-298b2ca98b45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\AI">
+      <UniqueIdentifier>{97ade988-3c07-4a8c-836d-ccdd73c31d21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Image">
+      <UniqueIdentifier>{eaf3079b-6823-4223-a1df-165d284549ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{7e1bf76f-a600-460b-b4d7-fd9a30a3f6c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package">
+      <UniqueIdentifier>{e07a31e5-a75b-43c7-a566-7a1e47cde3f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Interfaces">
+      <UniqueIdentifier>{a0376f7e-ea79-4611-a78b-b8f6506c43c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Core">
+      <UniqueIdentifier>{0d0570f0-ea6b-4f0e-b59e-b2db09d59299}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\Properties">
+      <UniqueIdentifier>{44102d27-8c8e-4f6c-923c-8c6f8b1af5c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\PropertyHandlers">
+      <UniqueIdentifier>{11e9d07a-2231-4d0b-9fd2-0776bfc2c065}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\EventLists">
+      <UniqueIdentifier>{405b50d9-253d-4956-b2f6-a6df002e4ec1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Package\PropertyLists">
+      <UniqueIdentifier>{7a51d65b-4162-4f3a-814d-ae2451840afa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuiltInControls\MonthCalendar">
+      <UniqueIdentifier>{a78531bd-4b43-4779-8082-a8694732135b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render">
+      <UniqueIdentifier>{df1d4171-5786-4263-a1c9-d12c28bdc6d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Db">
+      <UniqueIdentifier>{7dd37ba7-d4bc-454f-aaed-a5a4a9d0af00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script">
+      <UniqueIdentifier>{28295908-6c17-4dff-94af-7570cf641a56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Interfaces">
+      <UniqueIdentifier>{d07ca063-05f1-4253-99a7-97d3f218a1a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Core">
+      <UniqueIdentifier>{6c1baa05-b521-47a1-86bc-04483a774a52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Tokenizers">
+      <UniqueIdentifier>{e9d3dab8-01b2-4c6f-a2a4-b5f2d52dccfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Parsers">
+      <UniqueIdentifier>{926d7e12-54b1-4816-81d5-39d394cf340d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Readers">
+      <UniqueIdentifier>{fce920ca-6bd6-4283-9b41-e0e63920e3ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Lexics">
+      <UniqueIdentifier>{9685dde4-f37a-40e2-9d84-0aa468eedf12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Lexics\C++">
+      <UniqueIdentifier>{661e8437-efbb-4a3b-94a1-3c7f3f12389c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Parsers\C++">
+      <UniqueIdentifier>{1fd7f8cd-7f8b-4f5b-a080-625e29b2db7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Tokenizers\C++">
+      <UniqueIdentifier>{e830ea81-2b33-4ba1-b841-cf190330d90f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Lexics\Json">
+      <UniqueIdentifier>{15205bc5-c231-4ceb-9e95-e3b9dc3d35ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Tokenizers\Json">
+      <UniqueIdentifier>{b0080129-bf8a-4036-bd55-43cde4616b0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Json">
+      <UniqueIdentifier>{32e6aaee-ee74-4062-8df6-8ee5b9121033}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Lexics\Xml">
+      <UniqueIdentifier>{9e300351-dd84-4df7-8cf8-e286e5a623c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Tokenizers\Xml">
+      <UniqueIdentifier>{e9425213-cf08-43a0-9524-93229faa90d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Xml">
+      <UniqueIdentifier>{b65572b0-9b47-431a-a4a5-ce0492150173}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Expressions">
+      <UniqueIdentifier>{53128225-918b-4336-a023-b052d0645117}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Functions">
+      <UniqueIdentifier>{71e2b18e-b0bc-4389-83e4-e560696c45c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Functions\General">
+      <UniqueIdentifier>{c389776b-99e2-472d-b510-bd3456f1016c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Functions\Unary">
+      <UniqueIdentifier>{6e4056e4-7180-4374-a688-2ad5c1999d41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Functions\Arithmetic">
+      <UniqueIdentifier>{e2d9345c-8409-4ac1-8261-b89c32fb5a65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Functions\Comparison">
+      <UniqueIdentifier>{82449d85-c148-4377-b5df-bd9b280e78ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Functions\Assignment">
+      <UniqueIdentifier>{8398db5e-127c-4266-bc55-f6aa0b13a329}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Tokenizers\Generic">
+      <UniqueIdentifier>{dadfeeef-62eb-4330-9945-45128b6c2dd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\ExpressionBuilders">
+      <UniqueIdentifier>{a0558068-f8dd-41a7-9197-093e115a9eb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\ExpressionBuilders\Generic">
+      <UniqueIdentifier>{01f93b8f-eed5-4339-ad04-9e8de39c724e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\ExpressionRunners">
+      <UniqueIdentifier>{c14aa881-0fad-4e27-86e1-03a613f52a10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\ExpressionRunners\Generic">
+      <UniqueIdentifier>{04c98065-2cad-45d1-83ba-5f6ff71f6793}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\FunctionFactories">
+      <UniqueIdentifier>{0047f65a-11ac-419e-bf3c-52b3225e8759}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\FunctionFactories\Generic">
+      <UniqueIdentifier>{448543bf-c83c-4e69-990d-522ff3dbc2f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Functions\Cast">
+      <UniqueIdentifier>{6cf41022-ab5a-4417-835c-0af278df863a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\Functions\Mathematics">
+      <UniqueIdentifier>{3d6885c5-64da-44a2-a56a-02933bd72187}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuiltInControls\ScrollLite">
+      <UniqueIdentifier>{6147c20b-5e5d-43c6-a2ef-2fd31b811566}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuiltInControls\Select">
+      <UniqueIdentifier>{bc5a0aae-085b-4021-abc3-069445e13e57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\C++Doc">
+      <UniqueIdentifier>{f66d350b-9e6c-4c63-b0fb-cb317e9d3434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\C++Doc\Entities">
+      <UniqueIdentifier>{b9d59950-3c93-48ae-baac-ba4147aeb66d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\C++Doc\Models">
+      <UniqueIdentifier>{0a3f977d-82b9-467a-8a7e-c991ea39375a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\Script\C++Doc\Migrations">
+      <UniqueIdentifier>{8b133ac6-d9eb-4e1e-8ece-4a4117c52f76}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\Caret.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Component.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ComponentService.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Consts.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Control.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ControlService.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Feedback.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Font.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Hint.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\HintService.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ListItem.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ListItemService.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Strings.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Styles.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Transform.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Translate.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Utils.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\TransformService.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Json.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\DefaultStyle.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Variant.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\BuiltInControl.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="BuiltInControls\DropDown\BuiltInDropDown.cpp">
+      <Filter>BuiltInControls\DropDown</Filter>
+    </ClCompile>
+    <ClCompile Include="BuiltInControls\DropDown\BuiltInDropDownListItemOwner.cpp">
+      <Filter>BuiltInControls\DropDown</Filter>
+    </ClCompile>
+    <ClCompile Include="BuiltInControls\DropDown\BuiltInDropDownNotifications.cpp">
+      <Filter>BuiltInControls\DropDown</Filter>
+    </ClCompile>
+    <ClCompile Include="BuiltInControls\DropDown\BuiltInDropDownScroll.cpp">
+      <Filter>BuiltInControls\DropDown</Filter>
+    </ClCompile>
+    <ClCompile Include="BuiltInControls\DropDown\BuiltInDropDownScrollListener.cpp">
+      <Filter>BuiltInControls\DropDown</Filter>
+    </ClCompile>
+    <ClCompile Include="BuiltInControls\DropDown\BuiltInDropDownTextInput.cpp">
+      <Filter>BuiltInControls\DropDown</Filter>
+    </ClCompile>
+    <ClCompile Include="BuiltInControls\DropDown\BuiltInDropDownTextInputListener.cpp">
+      <Filter>BuiltInControls\DropDown</Filter>
+    </ClCompile>
+    <ClCompile Include="BuiltInControls\TextInput\BuiltInTextInput.cpp">
+      <Filter>BuiltInControls\TextInput</Filter>
+    </ClCompile>
+    <ClCompile Include="BuiltInControls\TextInput\BuiltInTextInputNotifications.cpp">
+      <Filter>BuiltInControls\TextInput</Filter>
+    </ClCompile>
+    <ClCompile Include="BuiltInControls\Scroll\BuiltInScroll.cpp">
+      <Filter>BuiltInControls\Scroll</Filter>
+    </ClCompile>
+    <ClCompile Include="BuiltInControls\Scroll\BuiltInScrollNotifications.cpp">
+      <Filter>BuiltInControls\Scroll</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Notifier.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Form.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\FormService.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ControlItemList.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ListItemOwner.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Core\ComponentSpliceService.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ControlSpliceService.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="BuiltInControls\TextArea\BuiltInTextArea.cpp">
+      <Filter>BuiltInControls\TextArea</Filter>
+    </ClCompile>
+    <ClCompile Include="BuiltInControls\TextArea\BuiltInTextAreaNotifications.cpp">
+      <Filter>BuiltInControls\TextArea</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\DateTime.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Interval.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\DialogBox.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\DialogBoxService.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Releasable.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\VertexArray.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Transformable.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Model.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Camera.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Hotkey.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Align.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\TextAlign.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\VerticalAlign.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\CursorType.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\TransformOrder.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\RotateOrder.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\FontWeight.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Key.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ScrollVisibility.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\WindowState.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\WindowPosition.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\Color.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\Image.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\ImageMask.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Mat4f.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Noise.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Point.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\PointB.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\PointD.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\PointF.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\PointL.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Rect.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\RectB.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\RectD.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\RectF.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\RectL.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Transform.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vec4f.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\Colors.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\Gradient.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Block.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\CubicBezierSpline.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\CubicBezierSplineLimits.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\CreateParams.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ModelService.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\StyleImage.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\StyleSkin.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\FontProperties.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\FeedbackEx.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\StyleFont.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Style.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\Event.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\EventList.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\PackageComponent.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\PackageControl.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\PackageDialogBox.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\PackageEntity.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\PackageForm.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\PackageListItem.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\PackageRenderer.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\PackageStyle.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\Property.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\PropertyHandler.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\PropertyList.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\PropertyState.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\EventLists\ComponentEventList.cpp">
+      <Filter>Package\EventLists</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\EventLists\ControlEventList.cpp">
+      <Filter>Package\EventLists</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\EventLists\DialogBoxEventList.cpp">
+      <Filter>Package\EventLists</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\EventLists\FormEventList.cpp">
+      <Filter>Package\EventLists</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\PropertyLists\ComponentPropertyList.cpp">
+      <Filter>Package\PropertyLists</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\PropertyLists\ControlPropertyList.cpp">
+      <Filter>Package\PropertyLists</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\PropertyLists\DialogBoxPropertyList.cpp">
+      <Filter>Package\PropertyLists</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\PropertyLists\FormPropertyList.cpp">
+      <Filter>Package\PropertyLists</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\PropertyLists\ListItemPropertyList.cpp">
+      <Filter>Package\PropertyLists</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\PropertyHandlers\PropertyHandlerDefault.cpp">
+      <Filter>Package\PropertyHandlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyBool.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyBoolArray.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyBoolArrayState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyBoolState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyColor.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyColorArray.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyColorArrayState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyColorState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyDouble.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyDoubleState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyEnum.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyEnumState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyFloat.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyFloatArray.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyFloatArrayState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyFloatState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyFont.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyFontState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyGradient.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyGradientState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyHotkey.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyHotkeyState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyImage.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyImageList.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyImageListState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyImageState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyInt64.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyInt64State.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyInteger.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyIntegerArray.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyIntegerArrayState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyIntegerState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyMask.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyMaskState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyMatrix.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyMatrixState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyPoint.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyPointB.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyPointBState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyPointD.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyPointDState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyPointF.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyPointFState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyPointL.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyPointLState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyPointState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyRect.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyRectB.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyRectBState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyRectD.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyRectDState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyRectF.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyRectFState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyRectL.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyRectLState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyRectState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyString.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyStringState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyStyle.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyStyleState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyText.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyTextState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyTransform.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyTransformState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="BuiltInControls\MonthCalendar\BuiltInMonthCalendar.cpp">
+      <Filter>BuiltInControls\MonthCalendar</Filter>
+    </ClCompile>
+    <ClCompile Include="BuiltInControls\MonthCalendar\BuiltInMonthCalendarNotifications.cpp">
+      <Filter>BuiltInControls\MonthCalendar</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\BoolArray.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\ColorArray.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\BorderColor.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyBorderColor.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyBorderColorState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Core\Consts.cpp">
+      <Filter>Package\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\GradientType.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\FloatArray.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\IntegerArray.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\Utils.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyIdentifier.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Package\Properties\PropertyIdentifierState.cpp">
+      <Filter>Package\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\BaseTexture.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ErrorListenerCout.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ByteArray.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbAsyncMode.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbConcatenateNullBehaviour.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbStatus.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbTableCorrelationName.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbCursorBehaviour.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbCursorSensitivity.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbFileUsage.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbGroupByRelation.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbCaseSensitivity.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbNullCollation.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbTransactionSupport.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbCursorConcurrency.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbCursorType.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbNullabilityType.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSearchableType.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbDataType.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbUpdatableType.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedTransactionIsolationLevels.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedAggregateFunctions.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedAlterDomainClauses.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedAlterTableClauses.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbBatchRowCountSupport.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbBatchSupport.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbBookmarkPersistence.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbCatalogUsage.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbConvertTo.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedConvertFunctions.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedCreateAssertionClauses.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedCreateCharacterSetClauses.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedCreateDomainClauses.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedCreateSchemaClauses.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedCreateTableClauses.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedCreateViewClauses.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedDateTimeLiterals.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedIndexClauses.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedDropClauses.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbCursorAttributes.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedGetDataExtensions.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedCreateIndexKeywords.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedInformationSchemaViews.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedInsertStatements.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedNumericFunctions.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedOuterJoins.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedAvailabilityOfResultSetsInParameterizedExecution.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedPositionOperations.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedSchemaUsages.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedScrollOptions.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSqlConformance.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbOdbcVersion.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbOdbcInterfaceConformance.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedDateTimeFunctions.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedForeignKeyRules.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedGrantClauses.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedNumericValueFunctions.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedPredicates.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedRelationJoinOperators.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedRevokeClauses.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedRowValueConstructors.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedStringFunctions.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedValueExpressions.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbStandardCliConformance.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedScalarStringFunctions.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedSubQueryPredicates.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedSystemFunctions.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedDateTimeIntervals.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedTimeDateFunctions.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSupportedUnionClauses.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbColumn.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbDate.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbDateTime.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbTime.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbValue.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbResult.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbValueType.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSpecialColumnScope.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Readers\ReaderSensitive.cpp">
+      <Filter>Modules\Script\Readers</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Readers\ReaderLowerCase.cpp">
+      <Filter>Modules\Script\Readers</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Readers\ReaderUpperCase.cpp">
+      <Filter>Modules\Script\Readers</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Parsers\ParserOperator.cpp">
+      <Filter>Modules\Script\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Parsers\ParserString.cpp">
+      <Filter>Modules\Script\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Lexics\C++\Lexic.cpp">
+      <Filter>Modules\Script\Lexics\C++</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Parsers\C++\ParserBinary.cpp">
+      <Filter>Modules\Script\Parsers\C++</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Parsers\C++\ParserNumeric.cpp">
+      <Filter>Modules\Script\Parsers\C++</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Parsers\C++\ParserOctal.cpp">
+      <Filter>Modules\Script\Parsers\C++</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Tokenizers\C++\Tokenizer.cpp">
+      <Filter>Modules\Script\Tokenizers\C++</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Parsers\ParserNumeric.cpp">
+      <Filter>Modules\Script\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Lexics\Json\Lexic.cpp">
+      <Filter>Modules\Script\Lexics\Json</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Tokenizers\Json\Tokenizer.cpp">
+      <Filter>Modules\Script\Tokenizers\Json</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Parsers\ParserIdentifier.cpp">
+      <Filter>Modules\Script\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Parsers\ParserHexadecimal.cpp">
+      <Filter>Modules\Script\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Parsers\C++\ParserString.cpp">
+      <Filter>Modules\Script\Parsers\C++</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Parsers\C++\ParserHexadecimal.cpp">
+      <Filter>Modules\Script\Parsers\C++</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Json\Decoder.cpp">
+      <Filter>Modules\Script\Json</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Json\Encoder.cpp">
+      <Filter>Modules\Script\Json</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Lexics\Xml\Lexic.cpp">
+      <Filter>Modules\Script\Lexics\Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Tokenizers\Xml\Tokenizer.cpp">
+      <Filter>Modules\Script\Tokenizers\Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Xml\Entity.cpp">
+      <Filter>Modules\Script\Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Xml\Decoder.cpp">
+      <Filter>Modules\Script\Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Xml\Encoder.cpp">
+      <Filter>Modules\Script\Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Core\Expression.cpp">
+      <Filter>Modules\Script\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Expressions\ExpressionBool.cpp">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Expressions\ExpressionInteger.cpp">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Expressions\ExpressionFloat.cpp">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Expressions\ExpressionString.cpp">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Expressions\ExpressionIdentifier.cpp">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Core\Errors.cpp">
+      <Filter>Modules\Script\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Expressions\ExpressionOperator.cpp">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Expressions\ExpressionNull.cpp">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Core\Function.cpp">
+      <Filter>Modules\Script\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Core\Tokenizer.cpp">
+      <Filter>Modules\Script\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Unary\FunctionUnaryPlus.cpp">
+      <Filter>Modules\Script\Functions\Unary</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Unary\FunctionUnaryMinus.cpp">
+      <Filter>Modules\Script\Functions\Unary</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Arithmetic\FunctionPlus.cpp">
+      <Filter>Modules\Script\Functions\Arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Arithmetic\FunctionMinus.cpp">
+      <Filter>Modules\Script\Functions\Arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Unary\FunctionPostfixIncrement.cpp">
+      <Filter>Modules\Script\Functions\Unary</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Unary\FunctionPrefixIncrement.cpp">
+      <Filter>Modules\Script\Functions\Unary</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Unary\FunctionPrefixDecrement.cpp">
+      <Filter>Modules\Script\Functions\Unary</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Unary\FunctionPostfixDecrement.cpp">
+      <Filter>Modules\Script\Functions\Unary</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Unary\FunctionBitwiseNot.cpp">
+      <Filter>Modules\Script\Functions\Unary</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Unary\FunctionLogicalNot.cpp">
+      <Filter>Modules\Script\Functions\Unary</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\General\FunctionSubscript.cpp">
+      <Filter>Modules\Script\Functions\General</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Arithmetic\FunctionMultiply.cpp">
+      <Filter>Modules\Script\Functions\Arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Arithmetic\FunctionDivide.cpp">
+      <Filter>Modules\Script\Functions\Arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Arithmetic\FunctionModulo.cpp">
+      <Filter>Modules\Script\Functions\Arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Arithmetic\FunctionShiftLeft.cpp">
+      <Filter>Modules\Script\Functions\Arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Arithmetic\FunctionShiftRight.cpp">
+      <Filter>Modules\Script\Functions\Arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Comparison\FunctionLess.cpp">
+      <Filter>Modules\Script\Functions\Comparison</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Comparison\FunctionGreater.cpp">
+      <Filter>Modules\Script\Functions\Comparison</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Comparison\FunctionLessEqual.cpp">
+      <Filter>Modules\Script\Functions\Comparison</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Comparison\FunctionGreaterEqual.cpp">
+      <Filter>Modules\Script\Functions\Comparison</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Comparison\FunctionEqual.cpp">
+      <Filter>Modules\Script\Functions\Comparison</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Comparison\FunctionNotEqual.cpp">
+      <Filter>Modules\Script\Functions\Comparison</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Arithmetic\FunctionBitwiseAnd.cpp">
+      <Filter>Modules\Script\Functions\Arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Arithmetic\FunctionBitwiseXor.cpp">
+      <Filter>Modules\Script\Functions\Arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Arithmetic\FunctionBitwiseOr.cpp">
+      <Filter>Modules\Script\Functions\Arithmetic</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Comparison\FunctionAnd.cpp">
+      <Filter>Modules\Script\Functions\Comparison</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Comparison\FunctionOr.cpp">
+      <Filter>Modules\Script\Functions\Comparison</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Assignment\FunctionAssign.cpp">
+      <Filter>Modules\Script\Functions\Assignment</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Assignment\FunctionMultiplyAssign.cpp">
+      <Filter>Modules\Script\Functions\Assignment</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Assignment\FunctionDivideAssign.cpp">
+      <Filter>Modules\Script\Functions\Assignment</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Assignment\FunctionModuloAssign.cpp">
+      <Filter>Modules\Script\Functions\Assignment</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Assignment\FunctionPlusAssign.cpp">
+      <Filter>Modules\Script\Functions\Assignment</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Assignment\FunctionMinusAssign.cpp">
+      <Filter>Modules\Script\Functions\Assignment</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Assignment\FunctionShiftLeftAssign.cpp">
+      <Filter>Modules\Script\Functions\Assignment</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Assignment\FunctionBitwiseAndAssign.cpp">
+      <Filter>Modules\Script\Functions\Assignment</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Assignment\FunctionBitwiseXorAssign.cpp">
+      <Filter>Modules\Script\Functions\Assignment</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Assignment\FunctionBitwiseOrAssign.cpp">
+      <Filter>Modules\Script\Functions\Assignment</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Comparison\FunctionTernary.cpp">
+      <Filter>Modules\Script\Functions\Comparison</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Assignment\FunctionShiftRightAssign.cpp">
+      <Filter>Modules\Script\Functions\Assignment</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Expressions\ExpressionCast.cpp">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Expressions\ExpressionCall.cpp">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Expressions\ExpressionSubscript.cpp">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Expressions\ExpressionBrace.cpp">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Expressions\ExpressionSequence.cpp">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Tokenizers\Generic\Tokenizer.cpp">
+      <Filter>Modules\Script\Tokenizers\Generic</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\ExpressionBuilders\Generic\ExpressionBuilder.cpp">
+      <Filter>Modules\Script\ExpressionBuilders\Generic</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Core\Variable.cpp">
+      <Filter>Modules\Script\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\General\FunctionLiteral.cpp">
+      <Filter>Modules\Script\Functions\General</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\General\FunctionVariable.cpp">
+      <Filter>Modules\Script\Functions\General</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Comparison\FunctionSpaceship.cpp">
+      <Filter>Modules\Script\Functions\Comparison</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\General\FunctionIdentifier.cpp">
+      <Filter>Modules\Script\Functions\General</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\General\FunctionArrow.cpp">
+      <Filter>Modules\Script\Functions\General</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\ExpressionRunners\Generic\ExpressionRunner.cpp">
+      <Filter>Modules\Script\ExpressionRunners\Generic</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Core\ExpressionRunner.cpp">
+      <Filter>Modules\Script\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\General\FunctionBrace.cpp">
+      <Filter>Modules\Script\Functions\General</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\FunctionFactories\Generic\FunctionFactory.cpp">
+      <Filter>Modules\Script\FunctionFactories\Generic</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Cast\FunctionBool.cpp">
+      <Filter>Modules\Script\Functions\Cast</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Cast\FunctionString.cpp">
+      <Filter>Modules\Script\Functions\Cast</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Cast\FunctionInt64.cpp">
+      <Filter>Modules\Script\Functions\Cast</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Cast\FunctionDouble.cpp">
+      <Filter>Modules\Script\Functions\Cast</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionAbs.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionMod.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionRemainder.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionFMA.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionMax.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionMin.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionDim.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionExp.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionExp2.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionExpM1.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionLog.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionLog10.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionLog2.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionLog1P.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionPow.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionSqrt.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionCbrt.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionHypot.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionSin.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionCos.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionTan.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionASin.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionACos.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionATan.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionATan2.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionSinH.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionCosH.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionTanH.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionASinH.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionACosH.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionATanH.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionErf.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionErfC.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionGamma.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionLGamma.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionCeil.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionFloor.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionTrunc.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionRound.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionLdExp.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionRoundF.cpp">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Core\PostfixType.cpp">
+      <Filter>Modules\Script\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Core\PrefixType.cpp">
+      <Filter>Modules\Script\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Core\ExpressionType.cpp">
+      <Filter>Modules\Script\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\General\FunctionPi.cpp">
+      <Filter>Modules\Script\Functions\General</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\General\FunctionRnd.cpp">
+      <Filter>Modules\Script\Functions\General</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\General\FunctionRndRange.cpp">
+      <Filter>Modules\Script\Functions\General</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Functions\General\FunctionRand.cpp">
+      <Filter>Modules\Script\Functions\General</Filter>
+    </ClCompile>
+    <ClCompile Include="BuiltInControls\ScrollLite\BuiltInScrollLite.cpp">
+      <Filter>BuiltInControls\ScrollLite</Filter>
+    </ClCompile>
+    <ClCompile Include="BuiltInControls\ScrollLite\BuiltInScrollLiteNotifications.cpp">
+      <Filter>BuiltInControls\ScrollLite</Filter>
+    </ClCompile>
+    <ClCompile Include="BuiltInControls\Select\BuiltInSelect.cpp">
+      <Filter>BuiltInControls\Select</Filter>
+    </ClCompile>
+    <ClCompile Include="BuiltInControls\Select\BuiltInSelectNotifications.cpp">
+      <Filter>BuiltInControls\Select</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbModel.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbBaseActiveRecord.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbQueryBuilderMySql.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbCondition.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbMigration.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbMigrationColumn.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbMigrationKey.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbQuery.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbDelete.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbInsert.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbUpdate.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbTransaction.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbSchema.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbValidatorBoolean.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbValidatorCompare.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbValidatorDateTime.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbValidator.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbValidatorDate.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbValidatorTime.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbValidatorDefault.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbValidatorEmail.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbValidatorExists.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbValidatorNumber.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbValidatorRange.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbValidatorMatch.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbValidatorRequired.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbValidatorString.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbValidatorTrim.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbValidatorUnique.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbValidatorUrl.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Feature.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbMigrationGenerator.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Db\DbNull.cpp">
+      <Filter>Db</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Decoder.cpp">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entity.cpp">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Root.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Comment.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Core\Token.cpp">
+      <Filter>Modules\Script\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Definition.cpp">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Expression.cpp">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\ListGuard.cpp">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\PreProcessor.cpp">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Utils.cpp">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\TokenEx.cpp">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\AttributeList.cpp">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Attribute.cpp">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Module.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Import.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Export.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\LanguageLinkage.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Empty.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Block.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Asm.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\NamespaceAlias.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Namespace.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\UsingNamespace.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\TypeAlias.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Using.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\UsingEnum.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Template.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Concept.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Enum.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Enumerator.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Class.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\NoPtrDeclarator.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\ClassBase.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Public.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Protected.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Private.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Friend.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\SimpleDeclaration.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Typedef.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Inline.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Virtual.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Explicit.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Constexpr.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Consteval.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Constinit.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Register.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Static.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\ThreadLocal.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Extern.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Mutable.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Char.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Char8T.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Char16T.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Char32T.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\WCharT.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Bool.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Short.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Int.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Long.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Signed.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Unsigned.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Float.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Double.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Void.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Auto.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Decltype.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\PackIndexing.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Typename.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Const.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Volatile.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Identifier.cpp">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Name.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\ParameterPack.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\PtrDeclarator.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\LValueDeclarator.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\RValueDeclarator.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\IdDeclarator.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Array.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Function.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\BaseDeclarator.cpp">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\FunctionParameter.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Override.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Final.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\LRef.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\RRef.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\FunctionPreContract.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\FunctionPostContract.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\StructuredBinding.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\TemplateSpecifier.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\StaticAssert.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Range.cpp">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\Parsers\C++\ParserOperator.cpp">
+      <Filter>Modules\Script\Parsers\C++</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Documentator.cpp">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\StdCall.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\CDecl.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\ThisCall.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\FastCall.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Naked.cpp">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Version.cpp">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\ActiveRecord.cpp">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Migrations\MigrationV1.cpp">
+      <Filter>Modules\Script\C++Doc\Migrations</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Models\Entity.cpp">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Models\Namespace.cpp">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Models\NamespaceAlias.cpp">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Models\Module.cpp">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Models\Alias.cpp">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Models\Typedef.cpp">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Models\Variable.cpp">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Models\Const.cpp">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Models\Interface.cpp">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Models\Class.cpp">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Models\Struct.cpp">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Models\Union.cpp">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Models\Enum.cpp">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Models\Enumerator.cpp">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Models\Function.cpp">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Models\Parameter.cpp">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Models\Concept.cpp">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Models\Tag.cpp">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Models\Comment.cpp">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\Script\C++Doc\Models\File.cpp">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Caret.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Component.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Consts.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Control.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Feedback.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Font.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Hint.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\History.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ListItem.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\LockRepaint.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Strings.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Styles.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Transform.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Translate.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utils.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IApplication.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\ICaret.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IComponent.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IControl.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IEditor.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IFeedback.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IFont.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IForm.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IHint.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IKeyboard.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IListItem.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IMouse.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IPlatformFont.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IRenderer.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IStyles.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\ITexture.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\ITransform.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\ITranslate.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IWindow.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TransformService.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Variant.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Json.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\DefaultStyle.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IBuiltInControl.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\BuiltInControl.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="BuiltInControls\DropDown\BuiltInDropDown.h">
+      <Filter>BuiltInControls\DropDown</Filter>
+    </ClInclude>
+    <ClInclude Include="BuiltInControls\TextInput\BuiltInTextInput.h">
+      <Filter>BuiltInControls\TextInput</Filter>
+    </ClInclude>
+    <ClInclude Include="BuiltInControls\Scroll\BuiltInScroll.h">
+      <Filter>BuiltInControls\Scroll</Filter>
+    </ClInclude>
+    <ClInclude Include="BuiltInControls\IBuiltInDropDown.h">
+      <Filter>BuiltInControls</Filter>
+    </ClInclude>
+    <ClInclude Include="BuiltInControls\IBuiltInScroll.h">
+      <Filter>BuiltInControls</Filter>
+    </ClInclude>
+    <ClInclude Include="BuiltInControls\IBuiltInTextArea.h">
+      <Filter>BuiltInControls</Filter>
+    </ClInclude>
+    <ClInclude Include="BuiltInControls\IBuiltInTextInput.h">
+      <Filter>BuiltInControls</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Class.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IClass.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Notifier.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Form.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\FormService.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ComponentService.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ControlService.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IScreen.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\ISystem.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ControlItemList.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ListItemOwner.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IComponentItemTree.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IComponentItemList.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IControlCreateChild.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IListItemCaption.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IPicture.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\ITask.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Task.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Nitisa.h" />
+    <ClInclude Include="Core\ComponentSpliceService.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ControlSpliceService.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IDialogs.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IFileSystem.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="BuiltInControls\TextArea\BuiltInTextArea.h">
+      <Filter>BuiltInControls\TextArea</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\AI.h">
+      <Filter>Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\AI\Randomizers.h">
+      <Filter>Modules\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\AI\Activators.h">
+      <Filter>Modules\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\AI\Perceptron.h">
+      <Filter>Modules\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\AI\Errors.h">
+      <Filter>Modules\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\AI\Regularizers.h">
+      <Filter>Modules\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\DateTime.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IFile.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\INetwork.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IThread.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\INativeGraphics.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IDialogBox.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\DialogBox.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\DialogBoxService.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IReleasable.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Releasable.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IProgram.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IFramebuffer.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Bitmask.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\RendererCapabilities.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Version2.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Version3.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\VertexFormat.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IVertex.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Aliases.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IPolygon.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IVertexArray.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\VertexArray.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IErrorListener.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ErrorInfo.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Transformable.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\ITransformable.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IModel.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Model.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IPrimitive.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\ICamera.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Camera.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Hotkey.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Align.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TextAlign.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\VerticalAlign.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\CursorType.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TransformOrder.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\RotateOrder.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\FontWeight.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Key.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ScrollVisibility.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\WindowState.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\WindowPosition.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\CloseAction.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\PointLocation.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\FocusedBy.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ModalResult.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ScrollType.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\BlurType.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\RendererTechnology.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TextureFormat.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TextureWrap.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TextureMinFilter.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TextureMagFilter.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TextureDepthStencilMode.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TextureCompareMode.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TextureCompareFunction.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TextureSwizzle.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ProjectionMode.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Color.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Image.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\ImageMask.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Pixel4f.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Mat2f.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Mat3f.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Mat4f.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Noise.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Plane.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Point.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\PointB.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\PointD.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\PointF.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\PointL.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Rect.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\RectB.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\RectD.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\RectF.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\RectL.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Transform.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vec1f.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vec1i.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vec2f.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vec2i.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vec3f.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vec3i.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vec4f.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vec4i.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Colors.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Gradient.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Block.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\CubicBezierSpline.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\CubicBezierSplineLimits.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TouchPoint.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\PlatformVersion.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Messages.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\CreateParams.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IWindowListenerOnMessage.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IWindowListener.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IWindowService.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IThreadListener.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IReleasableListener.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IStyleImage.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IStyleSkin.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\ISocket.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IServerSocketListener.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IClientSocket.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IServerSocket.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IModelService.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IListItemService.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IListItemOwner.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IHintService.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IFormService.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IFontProperties.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IFeedbackEx.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\ITransformService.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IStyleFont.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IStyle.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IDialogBoxService.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IDialogBoxListener.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IComponentService.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IControlService.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IComponentItemListService.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IBuiltInControlListener.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IApplicationService.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ModelService.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\FeedbackEx.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\StyleImage.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\StyleSkin.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ListItemService.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\HintService.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\FontProperties.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\StyleFont.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Style.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Interval.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IEvent.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IEventList.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPackage.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPackageComponent.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPackageComponentListener.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPackageControl.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPackageControlListener.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPackageDialogBox.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPackageEntity.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPackageForm.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPackageListItem.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPackageRenderer.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPackageService.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPackageStyle.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IProperty.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyBool.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyBoolArray.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyBoolArrayState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyBoolState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyColor.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyColorArray.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyColorArrayState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyColorState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyDouble.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyDoubleState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyEnum.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyEnumState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyFloat.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyFloatArray.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyFloatArrayState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyFloatState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyFont.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyFontState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyGradient.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyGradientState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyHandler.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyHandlerListener.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyHotkey.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyHotkeyState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyImage.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyImageList.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyImageListState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyImageState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyInt64.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyInt64State.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyInteger.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyIntegerArray.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyIntegerArrayState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyIntegerState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyList.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyMask.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyMaskState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyMatrix.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyMatrixState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyPoint.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyPointB.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyPointBState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyPointD.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyPointDState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyPointF.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyPointFState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyPointL.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyPointLState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyPointState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyRect.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyRectB.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyRectBState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyRectD.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyRectDState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyRectF.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyRectFState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyRectL.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyRectLState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyRectState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyString.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyStringState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyStyle.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyStyleState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyText.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyTextState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyTransform.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyTransformState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\Event.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\EventList.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\PackageComponent.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\PackageControl.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\PackageDialogBox.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\PackageEntity.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\PackageForm.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\PackageListItem.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\PackageRenderer.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\PackageStyle.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\Property.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\PropertyHandler.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\PropertyList.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\PropertyState.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\EventLists\ComponentEventList.h">
+      <Filter>Package\EventLists</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\EventLists\ControlEventList.h">
+      <Filter>Package\EventLists</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\EventLists\DialogBoxEventList.h">
+      <Filter>Package\EventLists</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\EventLists\FormEventList.h">
+      <Filter>Package\EventLists</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\PropertyLists\ComponentPropertyList.h">
+      <Filter>Package\PropertyLists</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\PropertyLists\ControlPropertyList.h">
+      <Filter>Package\PropertyLists</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\PropertyLists\DialogBoxPropertyList.h">
+      <Filter>Package\PropertyLists</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\PropertyLists\FormPropertyList.h">
+      <Filter>Package\PropertyLists</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\PropertyLists\ListItemPropertyList.h">
+      <Filter>Package\PropertyLists</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\PropertyHandlers\PropertyHandlerDefault.h">
+      <Filter>Package\PropertyHandlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyBool.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyBoolArray.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyBoolArrayState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyBoolState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyColor.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyColorArray.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyColorArrayState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyColorState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyDouble.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyDoubleState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyEnum.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyEnumState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyFloat.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyFloatArray.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyFloatArrayState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyFloatState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyFont.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyFontState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyGradient.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyGradientState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyHotkey.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyHotkeyState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyImage.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyImageList.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyImageListState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyImageState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyInt64.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyInt64State.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyInteger.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyIntegerArray.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyIntegerArrayState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyIntegerState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyMask.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyMaskState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyMatrix.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyMatrixState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyPoint.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyPointB.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyPointBState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyPointD.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyPointDState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyPointF.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyPointFState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyPointL.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyPointLState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyPointState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyRect.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyRectB.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyRectBState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyRectD.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyRectDState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyRectF.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyRectFState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyRectL.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyRectLState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyRectState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyString.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyStringState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyStyle.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyStyleState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyText.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyTextState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyTransform.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyTransformState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="BuiltInControls\IBuiltInTextInputListener.h">
+      <Filter>BuiltInControls</Filter>
+    </ClInclude>
+    <ClInclude Include="BuiltInControls\IBuiltInTextAreaListener.h">
+      <Filter>BuiltInControls</Filter>
+    </ClInclude>
+    <ClInclude Include="BuiltInControls\IBuiltInScrollListener.h">
+      <Filter>BuiltInControls</Filter>
+    </ClInclude>
+    <ClInclude Include="BuiltInControls\IBuiltInDropDownListener.h">
+      <Filter>BuiltInControls</Filter>
+    </ClInclude>
+    <ClInclude Include="BuiltInControls\IBuiltInMonthCalendar.h">
+      <Filter>BuiltInControls</Filter>
+    </ClInclude>
+    <ClInclude Include="BuiltInControls\MonthCalendar\BuiltInMonthCalendar.h">
+      <Filter>BuiltInControls\MonthCalendar</Filter>
+    </ClInclude>
+    <ClInclude Include="BuiltInControls\IBuiltInMonthCalendarListener.h">
+      <Filter>BuiltInControls</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\BoolArray.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\ColorArray.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\BlockColors.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Quaternion.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\BorderColor.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyBorderColor.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyBorderColorState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyBorderColor.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyBorderColorState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\PlatformType.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\EdgeType.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\Consts.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\ExportPrefixType.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="BuiltInControls\DropDown\BuiltInDropDownListItemOwner.h">
+      <Filter>BuiltInControls\DropDown</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\GradientType.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\FloatArray.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\IntegerArray.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\StoreProgram.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\StoreFramebuffer.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\StoreVertexArray.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\StoreTarget.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\StoreMask.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\StoreBlock.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\StoreBitmask.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\StoreSplineLimits.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\StorePrimitiveMatrix.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\StoreState.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\Utils.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Color1D.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Color1DArray.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ReleasablePtr.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPackagePropertyHandler.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Core\PackagePropertyHandler.h">
+      <Filter>Package\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ShaderType.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IFormListener.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyIdentifier.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Interfaces\IPropertyIdentifierState.h">
+      <Filter>Package\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyIdentifier.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Package\Properties\PropertyIdentifierState.h">
+      <Filter>Package\Properties</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\ITextureMultisample.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IBaseTexture.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\BaseTexture.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\ITimerListener.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IFeedbackListener.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IFeedbackExListener.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IDb.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IDbConnection.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ErrorListenerCout.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IDbStatement.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ByteArray.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbAsyncMode.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbConcatenateNullBehaviour.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbStatus.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbTableCorrelationName.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbCursorBehaviour.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbCursorSensitivity.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbFileUsage.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbGroupByRelation.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbCaseSensitivity.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbNullCollation.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbTransactionSupport.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbCursorConcurrency.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbCursorType.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbNullabilityType.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSearchableType.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbDataType.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbUpdatableType.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedTransactionIsolationLevels.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedAggregateFunctions.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedAlterDomainClauses.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedAlterTableClauses.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbBatchRowCountSupport.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbBatchSupport.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbBookmarkPersistence.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbCatalogUsage.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbConvertTo.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedConvertFunctions.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedCreateAssertionClauses.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedCreateCharacterSetClauses.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedCreateDomainClauses.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedCreateSchemaClauses.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedCreateTableClauses.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedCreateViewClauses.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedDateTimeLiterals.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedIndexClauses.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedDropClauses.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbCursorAttributes.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedGetDataExtensions.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedCreateIndexKeywords.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedInformationSchemaViews.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedInsertStatements.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedNumericFunctions.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedOuterJoins.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedAvailabilityOfResultSetsInParameterizedExecution.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedPositionOperations.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedSchemaUsages.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedScrollOptions.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSqlConformance.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbOdbcVersion.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbOdbcInterfaceConformance.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedDateTimeFunctions.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedForeignKeyRules.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedGrantClauses.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedNumericValueFunctions.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedPredicates.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedRelationJoinOperators.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedRevokeClauses.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedRowValueConstructors.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedStringFunctions.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedValueExpressions.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbStandardCliConformance.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedScalarStringFunctions.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedSubQueryPredicates.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedSystemFunctions.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedDateTimeIntervals.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedTimeDateFunctions.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSupportedUnionClauses.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbColumn.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbColumns.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbDate.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbDateTime.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbResult.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbRow.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbRows.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbTime.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbValue.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbValueType.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSpecialColumnScope.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script.h">
+      <Filter>Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Core\Operator.h">
+      <Filter>Modules\Script\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Core\Token.h">
+      <Filter>Modules\Script\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Interfaces\ITokenizer.h">
+      <Filter>Modules\Script\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Core\Tokens.h">
+      <Filter>Modules\Script\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Interfaces\IParser.h">
+      <Filter>Modules\Script\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Parsers\ParserOperator.h">
+      <Filter>Modules\Script\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Interfaces\IReader.h">
+      <Filter>Modules\Script\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Readers\ReaderSensitive.h">
+      <Filter>Modules\Script\Readers</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Readers\ReaderLowerCase.h">
+      <Filter>Modules\Script\Readers</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Readers\ReaderUpperCase.h">
+      <Filter>Modules\Script\Readers</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Core\Operators.h">
+      <Filter>Modules\Script\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Interfaces\ILexic.h">
+      <Filter>Modules\Script\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Core\TokenType.h">
+      <Filter>Modules\Script\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Parsers\ParserString.h">
+      <Filter>Modules\Script\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Lexics\C++\Lexic.h">
+      <Filter>Modules\Script\Lexics\C++</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Parsers\C++\ParserBinary.h">
+      <Filter>Modules\Script\Parsers\C++</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Parsers\C++\ParserNumeric.h">
+      <Filter>Modules\Script\Parsers\C++</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Parsers\C++\ParserOctal.h">
+      <Filter>Modules\Script\Parsers\C++</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Tokenizers\C++\Tokenizer.h">
+      <Filter>Modules\Script\Tokenizers\C++</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Core\Consts.h">
+      <Filter>Modules\Script\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Parsers\ParserNumeric.h">
+      <Filter>Modules\Script\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Lexics\Json\Lexic.h">
+      <Filter>Modules\Script\Lexics\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Tokenizers\Json\Tokenizer.h">
+      <Filter>Modules\Script\Tokenizers\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Parsers\ParserIdentifier.h">
+      <Filter>Modules\Script\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Parsers\ParserHexadecimal.h">
+      <Filter>Modules\Script\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Parsers\C++\ParserString.h">
+      <Filter>Modules\Script\Parsers\C++</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Parsers\C++\ParserHexadecimal.h">
+      <Filter>Modules\Script\Parsers\C++</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Json\Decoder.h">
+      <Filter>Modules\Script\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Interfaces\IProgressListener.h">
+      <Filter>Modules\Script\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Core\ProgressStage.h">
+      <Filter>Modules\Script\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Core\Progress.h">
+      <Filter>Modules\Script\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Json\Encoder.h">
+      <Filter>Modules\Script\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Lexics\Xml\Lexic.h">
+      <Filter>Modules\Script\Lexics\Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Tokenizers\Xml\Tokenizer.h">
+      <Filter>Modules\Script\Tokenizers\Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Xml\Entity.h">
+      <Filter>Modules\Script\Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Xml\EntityType.h">
+      <Filter>Modules\Script\Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Xml\Decoder.h">
+      <Filter>Modules\Script\Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Xml\Encoder.h">
+      <Filter>Modules\Script\Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Core\ExpressionType.h">
+      <Filter>Modules\Script\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Interfaces\IExpression.h">
+      <Filter>Modules\Script\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Core\Expression.h">
+      <Filter>Modules\Script\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Expressions\ExpressionBool.h">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Expressions\ExpressionInteger.h">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Expressions\ExpressionFloat.h">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Expressions\ExpressionString.h">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Expressions\ExpressionIdentifier.h">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Interfaces\IExpressionBuilder.h">
+      <Filter>Modules\Script\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Core\Errors.h">
+      <Filter>Modules\Script\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Expressions\ExpressionOperator.h">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Expressions\ExpressionNull.h">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Interfaces\IFunction.h">
+      <Filter>Modules\Script\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Core\Function.h">
+      <Filter>Modules\Script\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Core\Tokenizer.h">
+      <Filter>Modules\Script\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Unary\FunctionUnaryMinus.h">
+      <Filter>Modules\Script\Functions\Unary</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Unary\FunctionUnaryPlus.h">
+      <Filter>Modules\Script\Functions\Unary</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Arithmetic\FunctionPlus.h">
+      <Filter>Modules\Script\Functions\Arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Arithmetic\FunctionMinus.h">
+      <Filter>Modules\Script\Functions\Arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Unary\FunctionPostfixIncrement.h">
+      <Filter>Modules\Script\Functions\Unary</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Unary\FunctionPrefixIncrement.h">
+      <Filter>Modules\Script\Functions\Unary</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Unary\FunctionPrefixDecrement.h">
+      <Filter>Modules\Script\Functions\Unary</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Unary\FunctionPostfixDecrement.h">
+      <Filter>Modules\Script\Functions\Unary</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Unary\FunctionBitwiseNot.h">
+      <Filter>Modules\Script\Functions\Unary</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Unary\FunctionLogicalNot.h">
+      <Filter>Modules\Script\Functions\Unary</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\General\FunctionSubscript.h">
+      <Filter>Modules\Script\Functions\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Arithmetic\FunctionMultiply.h">
+      <Filter>Modules\Script\Functions\Arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Arithmetic\FunctionDivide.h">
+      <Filter>Modules\Script\Functions\Arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Arithmetic\FunctionModulo.h">
+      <Filter>Modules\Script\Functions\Arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Arithmetic\FunctionShiftLeft.h">
+      <Filter>Modules\Script\Functions\Arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Arithmetic\FunctionShiftRight.h">
+      <Filter>Modules\Script\Functions\Arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Comparison\FunctionLess.h">
+      <Filter>Modules\Script\Functions\Comparison</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Comparison\FunctionGreater.h">
+      <Filter>Modules\Script\Functions\Comparison</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Comparison\FunctionLessEqual.h">
+      <Filter>Modules\Script\Functions\Comparison</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Comparison\FunctionGreaterEqual.h">
+      <Filter>Modules\Script\Functions\Comparison</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Comparison\FunctionEqual.h">
+      <Filter>Modules\Script\Functions\Comparison</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Comparison\FunctionNotEqual.h">
+      <Filter>Modules\Script\Functions\Comparison</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Arithmetic\FunctionBitwiseAnd.h">
+      <Filter>Modules\Script\Functions\Arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Arithmetic\FunctionBitwiseXor.h">
+      <Filter>Modules\Script\Functions\Arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Arithmetic\FunctionBitwiseOr.h">
+      <Filter>Modules\Script\Functions\Arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Comparison\FunctionAnd.h">
+      <Filter>Modules\Script\Functions\Comparison</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Comparison\FunctionOr.h">
+      <Filter>Modules\Script\Functions\Comparison</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Assignment\FunctionAssign.h">
+      <Filter>Modules\Script\Functions\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Assignment\FunctionMultiplyAssign.h">
+      <Filter>Modules\Script\Functions\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Assignment\FunctionDivideAssign.h">
+      <Filter>Modules\Script\Functions\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Assignment\FunctionModuloAssign.h">
+      <Filter>Modules\Script\Functions\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Assignment\FunctionPlusAssign.h">
+      <Filter>Modules\Script\Functions\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Assignment\FunctionMinusAssign.h">
+      <Filter>Modules\Script\Functions\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Assignment\FunctionShiftLeftAssign.h">
+      <Filter>Modules\Script\Functions\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Assignment\FunctionBitwiseAndAssign.h">
+      <Filter>Modules\Script\Functions\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Assignment\FunctionBitwiseXorAssign.h">
+      <Filter>Modules\Script\Functions\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Assignment\FunctionBitwiseOrAssign.h">
+      <Filter>Modules\Script\Functions\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Comparison\FunctionTernary.h">
+      <Filter>Modules\Script\Functions\Comparison</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Assignment\FunctionShiftRightAssign.h">
+      <Filter>Modules\Script\Functions\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Expressions\ExpressionCast.h">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Expressions\ExpressionCall.h">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Expressions\ExpressionSubscript.h">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Expressions\ExpressionBrace.h">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Expressions\ExpressionSequence.h">
+      <Filter>Modules\Script\Expressions</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Tokenizers\Generic\Tokenizer.h">
+      <Filter>Modules\Script\Tokenizers\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\ExpressionBuilders\Generic\ExpressionBuilder.h">
+      <Filter>Modules\Script\ExpressionBuilders\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Interfaces\IExpressionRunner.h">
+      <Filter>Modules\Script\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Core\VariableType.h">
+      <Filter>Modules\Script\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Core\Variable.h">
+      <Filter>Modules\Script\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\General\FunctionLiteral.h">
+      <Filter>Modules\Script\Functions\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\General\FunctionVariable.h">
+      <Filter>Modules\Script\Functions\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Comparison\FunctionSpaceship.h">
+      <Filter>Modules\Script\Functions\Comparison</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\General\FunctionIdentifier.h">
+      <Filter>Modules\Script\Functions\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\General\FunctionArrow.h">
+      <Filter>Modules\Script\Functions\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\ExpressionRunners\Generic\ExpressionRunner.h">
+      <Filter>Modules\Script\ExpressionRunners\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Core\ExpressionRunner.h">
+      <Filter>Modules\Script\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\General\FunctionBrace.h">
+      <Filter>Modules\Script\Functions\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Interfaces\IFunctionFactory.h">
+      <Filter>Modules\Script\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\FunctionFactories\Generic\FunctionFactory.h">
+      <Filter>Modules\Script\FunctionFactories\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Cast\FunctionBool.h">
+      <Filter>Modules\Script\Functions\Cast</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Cast\FunctionString.h">
+      <Filter>Modules\Script\Functions\Cast</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Cast\FunctionInt64.h">
+      <Filter>Modules\Script\Functions\Cast</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Cast\FunctionDouble.h">
+      <Filter>Modules\Script\Functions\Cast</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionAbs.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionMod.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionRemainder.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionFMA.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionMax.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionMin.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionDim.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionExp.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionExp2.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionExpM1.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionLog.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionLog10.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionLog2.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionLog1P.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionPow.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionSqrt.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionCbrt.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionHypot.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionSin.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionCos.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionTan.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionASin.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionACos.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionATan.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionATan2.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionSinH.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionCosH.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionTanH.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionASinH.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionACosH.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionATanH.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionErf.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionErfC.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionGamma.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionLGamma.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionCeil.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionFloor.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionTrunc.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionRound.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionRoundF.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionLdExp.h">
+      <Filter>Modules\Script\Functions\Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Core\PostfixType.h">
+      <Filter>Modules\Script\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Core\PrefixType.h">
+      <Filter>Modules\Script\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\General\FunctionPi.h">
+      <Filter>Modules\Script\Functions\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\General\FunctionRnd.h">
+      <Filter>Modules\Script\Functions\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\General\FunctionRndRange.h">
+      <Filter>Modules\Script\Functions\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Functions\General\FunctionRand.h">
+      <Filter>Modules\Script\Functions\General</Filter>
+    </ClInclude>
+    <ClInclude Include="BuiltInControls\ScrollLite\BuiltInScrollLite.h">
+      <Filter>BuiltInControls\ScrollLite</Filter>
+    </ClInclude>
+    <ClInclude Include="BuiltInControls\IBuiltInSelect.h">
+      <Filter>BuiltInControls</Filter>
+    </ClInclude>
+    <ClInclude Include="BuiltInControls\IBuiltInSelectListener.h">
+      <Filter>BuiltInControls</Filter>
+    </ClInclude>
+    <ClInclude Include="BuiltInControls\Select\BuiltInSelect.h">
+      <Filter>BuiltInControls\Select</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbModel.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbBaseActiveRecord.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbQuery.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IDbQueryBuilder.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IDbQuery.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbQueryBuilderMySql.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbOrder.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbOrderBy.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbOrderByArray.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbCondition.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbActiveRecordPrimaryKey.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbExceptionNoConnection.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbExceptionNoQueryBuilder.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbExceptionBuildQuery.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbExceptionCreateStatement.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbExceptionExecuteStatement.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbExceptionNoResult.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbExceptionQueryPrimaryKeys.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IDbMigration.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbMigration.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IDbMigrationColumn.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbMigrationColumn.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IDbMigrationKey.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbMigrationKey.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbExceptionRevertNotImplemented.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbActiveQuery.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbDelete.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbInsert.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbUpdate.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbTransaction.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbExceptionNoAttributes.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSchema.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbActiveRecord.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IDbValidator.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbValidatorBoolean.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbValidatorCompare.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbValidatorDateTime.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbValidator.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbValidatorDate.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbValidatorTime.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbValidatorDefault.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbValidatorEmail.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbValidatorExists.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbValidatorNumber.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbValidatorRange.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbValidatorMatch.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbValidatorRequired.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbValidatorString.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbValidatorTrim.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbValidatorUnique.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbValidatorUrl.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbRelation.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IDbRelation.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IDbAttribute.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbAttribute.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IFeature.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Feature.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IDbActiveRecord.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbExceptionNoStatement.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbExceptionNoTableName.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbExceptionNoColumnName.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbSet.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbExceptionRelationNotFound.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbMigrationGenerator.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Db\DbNull.h">
+      <Filter>Db</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Decoder.h">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\EntityType.h">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entity.h">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Root.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Comment.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\DefinitionType.h">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Definition.h">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\List.h">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Expression.h">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\PList.h">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\ListGuard.h">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\PreProcessor.h">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Utils.h">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Core\Groups.h">
+      <Filter>Modules\Script\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\PEntity.h">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\TokenEx.h">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\AttributeList.h">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Attribute.h">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Module.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Import.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Export.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\LanguageLinkage.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Empty.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Block.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Asm.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\NamespaceAlias.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Namespace.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\UsingNamespace.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Identifier.h">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Range.h">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\TypeAlias.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Using.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\UsingEnum.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Template.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Concept.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Enum.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Enumerator.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Class.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\NoPtrDeclarator.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\ClassBase.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Public.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Protected.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Private.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Friend.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\SimpleDeclaration.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Typedef.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Inline.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Virtual.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Explicit.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Constexpr.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Consteval.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Constinit.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Register.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Static.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\ThreadLocal.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Extern.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Mutable.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Char.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Char8T.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Char16T.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Char32T.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\WCharT.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Bool.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Short.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Int.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Long.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Signed.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Unsigned.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Float.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Double.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Void.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Auto.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Decltype.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\PackIndexing.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Typename.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Const.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Volatile.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Name.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\ParameterPack.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\PtrDeclarator.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\LValueDeclarator.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\RValueDeclarator.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\IdDeclarator.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Array.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Function.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\BaseDeclarator.h">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\FunctionParameter.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Override.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Final.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\LRef.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\RRef.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\FunctionPreContract.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\FunctionPostContract.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\StructuredBinding.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\TemplateSpecifier.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\StaticAssert.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Version.h">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\Parsers\C++\ParserOperator.h">
+      <Filter>Modules\Script\Parsers\C++</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Documentator.h">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\IErrorListenerEx.h">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\StdCall.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\CDecl.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\ThisCall.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\FastCall.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Naked.h">
+      <Filter>Modules\Script\C++Doc\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\ActiveRecord.h">
+      <Filter>Modules\Script\C++Doc</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Migrations\MigrationV1.h">
+      <Filter>Modules\Script\C++Doc\Migrations</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Models\Entity.h">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Models\Namespace.h">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Models\NamespaceAlias.h">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Models\Module.h">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Models\Alias.h">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Models\Typedef.h">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Models\Variable.h">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Models\Const.h">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Models\Interface.h">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Models\Class.h">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Models\Struct.h">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Models\Union.h">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Models\Enum.h">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Models\Enumerator.h">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Models\Function.h">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Models\Parameter.h">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Models\Concept.h">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Models\Tag.h">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Models\Comment.h">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\Script\C++Doc\Models\File.h">
+      <Filter>Modules\Script\C++Doc\Models</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

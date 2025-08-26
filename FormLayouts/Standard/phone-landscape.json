@@ -1,0 +1,26 @@
+{
+	"title": "Phone(landscape)",
+	"landscape" : true,
+	"left": {
+		"start": "phone-top-start.png",
+		"middle": "phone-top-middle.png",
+		"end": "phone-top-end.png",
+		"fill": "phone-top-fill.png"
+	},
+	"top": {
+		"fill": "phone-leftright-fill.png"
+	},
+	"right": {
+		"start": "phone-right-start.png",
+		"middle": "phone-right-middle.png",
+		"end": "phone-right-end.png",
+		"fill": "phone-right-fill.png"
+	},
+	"bottom": {
+		"fill": "phone(landscape)-right-fill.png"
+	},
+	"size": {
+		"width": "1280",
+		"height": "670"
+	}
+}

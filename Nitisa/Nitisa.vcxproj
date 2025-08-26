@@ -1,0 +1,2103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugRT|ARM">
+      <Configuration>DebugRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|ARM64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|Win32">
+      <Configuration>DebugRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRT|x64">
+      <Configuration>DebugRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|ARM">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|ARM64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|Win32">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseRT|x64">
+      <Configuration>ReleaseRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BuiltInControls\DropDown\BuiltInDropDown.cpp" />
+    <ClCompile Include="BuiltInControls\DropDown\BuiltInDropDownListItemOwner.cpp" />
+    <ClCompile Include="BuiltInControls\DropDown\BuiltInDropDownNotifications.cpp" />
+    <ClCompile Include="BuiltInControls\DropDown\BuiltInDropDownScroll.cpp" />
+    <ClCompile Include="BuiltInControls\DropDown\BuiltInDropDownScrollListener.cpp" />
+    <ClCompile Include="BuiltInControls\DropDown\BuiltInDropDownTextInput.cpp" />
+    <ClCompile Include="BuiltInControls\DropDown\BuiltInDropDownTextInputListener.cpp" />
+    <ClCompile Include="BuiltInControls\MonthCalendar\BuiltInMonthCalendar.cpp" />
+    <ClCompile Include="BuiltInControls\MonthCalendar\BuiltInMonthCalendarNotifications.cpp" />
+    <ClCompile Include="BuiltInControls\ScrollLite\BuiltInScrollLite.cpp" />
+    <ClCompile Include="BuiltInControls\ScrollLite\BuiltInScrollLiteNotifications.cpp" />
+    <ClCompile Include="BuiltInControls\Scroll\BuiltInScroll.cpp" />
+    <ClCompile Include="BuiltInControls\Scroll\BuiltInScrollNotifications.cpp" />
+    <ClCompile Include="BuiltInControls\Select\BuiltInSelect.cpp" />
+    <ClCompile Include="BuiltInControls\Select\BuiltInSelectNotifications.cpp" />
+    <ClCompile Include="BuiltInControls\TextArea\BuiltInTextArea.cpp" />
+    <ClCompile Include="BuiltInControls\TextArea\BuiltInTextAreaNotifications.cpp" />
+    <ClCompile Include="BuiltInControls\TextInput\BuiltInTextInput.cpp" />
+    <ClCompile Include="BuiltInControls\TextInput\BuiltInTextInputNotifications.cpp" />
+    <ClCompile Include="Core\Align.cpp" />
+    <ClCompile Include="Core\BaseTexture.cpp" />
+    <ClCompile Include="Core\BoolArray.cpp" />
+    <ClCompile Include="Core\BuiltInControl.cpp" />
+    <ClCompile Include="Core\ByteArray.cpp" />
+    <ClCompile Include="Core\Camera.cpp" />
+    <ClCompile Include="Core\Caret.cpp" />
+    <ClCompile Include="Core\Component.cpp" />
+    <ClCompile Include="Core\ComponentService.cpp" />
+    <ClCompile Include="Core\ComponentSpliceService.cpp" />
+    <ClCompile Include="Core\Consts.cpp" />
+    <ClCompile Include="Core\Control.cpp" />
+    <ClCompile Include="Core\ControlItemList.cpp" />
+    <ClCompile Include="Core\ControlService.cpp" />
+    <ClCompile Include="Core\ControlSpliceService.cpp" />
+    <ClCompile Include="Core\CreateParams.cpp" />
+    <ClCompile Include="Core\CursorType.cpp" />
+    <ClCompile Include="Core\DateTime.cpp" />
+    <ClCompile Include="Core\DefaultStyle.cpp" />
+    <ClCompile Include="Core\DialogBox.cpp" />
+    <ClCompile Include="Core\DialogBoxService.cpp" />
+    <ClCompile Include="Core\ErrorListenerCout.cpp" />
+    <ClCompile Include="Core\Feature.cpp" />
+    <ClCompile Include="Core\FeedbackEx.cpp" />
+    <ClCompile Include="Core\FontProperties.cpp" />
+    <ClCompile Include="Core\FontWeight.cpp" />
+    <ClCompile Include="Core\Form.cpp" />
+    <ClCompile Include="Core\FormService.cpp" />
+    <ClCompile Include="Core\Hotkey.cpp" />
+    <ClCompile Include="Core\Interval.cpp" />
+    <ClCompile Include="Core\Key.cpp" />
+    <ClCompile Include="Core\ListItemOwner.cpp" />
+    <ClCompile Include="Core\Feedback.cpp" />
+    <ClCompile Include="Core\Font.cpp" />
+    <ClCompile Include="Core\Hint.cpp" />
+    <ClCompile Include="Core\HintService.cpp" />
+    <ClCompile Include="Core\Json.cpp" />
+    <ClCompile Include="Core\ListItem.cpp" />
+    <ClCompile Include="Core\ListItemService.cpp" />
+    <ClCompile Include="Core\Model.cpp" />
+    <ClCompile Include="Core\ModelService.cpp" />
+    <ClCompile Include="Core\Notifier.cpp" />
+    <ClCompile Include="Core\Releasable.cpp" />
+    <ClCompile Include="Core\RotateOrder.cpp" />
+    <ClCompile Include="Core\ScrollVisibility.cpp" />
+    <ClCompile Include="Core\Strings.cpp" />
+    <ClCompile Include="Core\Style.cpp" />
+    <ClCompile Include="Core\StyleFont.cpp" />
+    <ClCompile Include="Core\StyleImage.cpp" />
+    <ClCompile Include="Core\Styles.cpp" />
+    <ClCompile Include="Core\StyleSkin.cpp" />
+    <ClCompile Include="Core\TextAlign.cpp" />
+    <ClCompile Include="Core\Transform.cpp" />
+    <ClCompile Include="Core\Transformable.cpp" />
+    <ClCompile Include="Core\TransformOrder.cpp" />
+    <ClCompile Include="Core\TransformService.cpp" />
+    <ClCompile Include="Core\Translate.cpp" />
+    <ClCompile Include="Core\Utils.cpp" />
+    <ClCompile Include="Core\Variant.cpp" />
+    <ClCompile Include="Core\VertexArray.cpp" />
+    <ClCompile Include="Core\VerticalAlign.cpp" />
+    <ClCompile Include="Core\WindowPosition.cpp" />
+    <ClCompile Include="Core\WindowState.cpp" />
+    <ClCompile Include="Db\DbBaseActiveRecord.cpp" />
+    <ClCompile Include="Db\DbAsyncMode.cpp" />
+    <ClCompile Include="Db\DbBatchRowCountSupport.cpp" />
+    <ClCompile Include="Db\DbBatchSupport.cpp" />
+    <ClCompile Include="Db\DbBookmarkPersistence.cpp" />
+    <ClCompile Include="Db\DbCaseSensitivity.cpp" />
+    <ClCompile Include="Db\DbCatalogUsage.cpp" />
+    <ClCompile Include="Db\DbColumn.cpp" />
+    <ClCompile Include="Db\DbConcatenateNullBehaviour.cpp" />
+    <ClCompile Include="Db\DbCondition.cpp" />
+    <ClCompile Include="Db\DbConvertTo.cpp" />
+    <ClCompile Include="Db\DbCursorAttributes.cpp" />
+    <ClCompile Include="Db\DbCursorBehaviour.cpp" />
+    <ClCompile Include="Db\DbCursorConcurrency.cpp" />
+    <ClCompile Include="Db\DbCursorSensitivity.cpp" />
+    <ClCompile Include="Db\DbCursorType.cpp" />
+    <ClCompile Include="Db\DbDataType.cpp" />
+    <ClCompile Include="Db\DbDate.cpp" />
+    <ClCompile Include="Db\DbDateTime.cpp" />
+    <ClCompile Include="Db\DbDelete.cpp" />
+    <ClCompile Include="Db\DbFileUsage.cpp" />
+    <ClCompile Include="Db\DbGroupByRelation.cpp" />
+    <ClCompile Include="Db\DbInsert.cpp" />
+    <ClCompile Include="Db\DbMigration.cpp" />
+    <ClCompile Include="Db\DbMigrationColumn.cpp" />
+    <ClCompile Include="Db\DbMigrationGenerator.cpp" />
+    <ClCompile Include="Db\DbMigrationKey.cpp" />
+    <ClCompile Include="Db\DbModel.cpp" />
+    <ClCompile Include="Db\DbNull.cpp" />
+    <ClCompile Include="Db\DbNullabilityType.cpp" />
+    <ClCompile Include="Db\DbNullCollation.cpp" />
+    <ClCompile Include="Db\DbOdbcInterfaceConformance.cpp" />
+    <ClCompile Include="Db\DbOdbcVersion.cpp" />
+    <ClCompile Include="Db\DbQuery.cpp" />
+    <ClCompile Include="Db\DbQueryBuilderMySql.cpp" />
+    <ClCompile Include="Db\DbResult.cpp" />
+    <ClCompile Include="Db\DbSchema.cpp" />
+    <ClCompile Include="Db\DbSearchableType.cpp" />
+    <ClCompile Include="Db\DbSpecialColumnScope.cpp" />
+    <ClCompile Include="Db\DbSqlConformance.cpp" />
+    <ClCompile Include="Db\DbStandardCliConformance.cpp" />
+    <ClCompile Include="Db\DbStatus.cpp" />
+    <ClCompile Include="Db\DbSupportedAggregateFunctions.cpp" />
+    <ClCompile Include="Db\DbSupportedAlterDomainClauses.cpp" />
+    <ClCompile Include="Db\DbSupportedAlterTableClauses.cpp" />
+    <ClCompile Include="Db\DbSupportedAvailabilityOfResultSetsInParameterizedExecution.cpp" />
+    <ClCompile Include="Db\DbSupportedConvertFunctions.cpp" />
+    <ClCompile Include="Db\DbSupportedCreateAssertionClauses.cpp" />
+    <ClCompile Include="Db\DbSupportedCreateCharacterSetClauses.cpp" />
+    <ClCompile Include="Db\DbSupportedCreateDomainClauses.cpp" />
+    <ClCompile Include="Db\DbSupportedCreateIndexKeywords.cpp" />
+    <ClCompile Include="Db\DbSupportedCreateSchemaClauses.cpp" />
+    <ClCompile Include="Db\DbSupportedCreateTableClauses.cpp" />
+    <ClCompile Include="Db\DbSupportedCreateViewClauses.cpp" />
+    <ClCompile Include="Db\DbSupportedDateTimeFunctions.cpp" />
+    <ClCompile Include="Db\DbSupportedDateTimeIntervals.cpp" />
+    <ClCompile Include="Db\DbSupportedDateTimeLiterals.cpp" />
+    <ClCompile Include="Db\DbSupportedDropClauses.cpp" />
+    <ClCompile Include="Db\DbSupportedForeignKeyRules.cpp" />
+    <ClCompile Include="Db\DbSupportedGetDataExtensions.cpp" />
+    <ClCompile Include="Db\DbSupportedGrantClauses.cpp" />
+    <ClCompile Include="Db\DbSupportedIndexClauses.cpp" />
+    <ClCompile Include="Db\DbSupportedInformationSchemaViews.cpp" />
+    <ClCompile Include="Db\DbSupportedInsertStatements.cpp" />
+    <ClCompile Include="Db\DbSupportedNumericFunctions.cpp" />
+    <ClCompile Include="Db\DbSupportedNumericValueFunctions.cpp" />
+    <ClCompile Include="Db\DbSupportedOuterJoins.cpp" />
+    <ClCompile Include="Db\DbSupportedPositionOperations.cpp" />
+    <ClCompile Include="Db\DbSupportedPredicates.cpp" />
+    <ClCompile Include="Db\DbSupportedRelationJoinOperators.cpp" />
+    <ClCompile Include="Db\DbSupportedRevokeClauses.cpp" />
+    <ClCompile Include="Db\DbSupportedRowValueConstructors.cpp" />
+    <ClCompile Include="Db\DbSupportedScalarStringFunctions.cpp" />
+    <ClCompile Include="Db\DbSupportedSchemaUsages.cpp" />
+    <ClCompile Include="Db\DbSupportedScrollOptions.cpp" />
+    <ClCompile Include="Db\DbSupportedStringFunctions.cpp" />
+    <ClCompile Include="Db\DbSupportedSubQueryPredicates.cpp" />
+    <ClCompile Include="Db\DbSupportedSystemFunctions.cpp" />
+    <ClCompile Include="Db\DbSupportedTimeDateFunctions.cpp" />
+    <ClCompile Include="Db\DbSupportedTransactionIsolationLevels.cpp" />
+    <ClCompile Include="Db\DbSupportedUnionClauses.cpp" />
+    <ClCompile Include="Db\DbSupportedValueExpressions.cpp" />
+    <ClCompile Include="Db\DbTableCorrelationName.cpp" />
+    <ClCompile Include="Db\DbTime.cpp" />
+    <ClCompile Include="Db\DbTransaction.cpp" />
+    <ClCompile Include="Db\DbTransactionSupport.cpp" />
+    <ClCompile Include="Db\DbUpdatableType.cpp" />
+    <ClCompile Include="Db\DbUpdate.cpp" />
+    <ClCompile Include="Db\DbValidator.cpp" />
+    <ClCompile Include="Db\DbValidatorBoolean.cpp" />
+    <ClCompile Include="Db\DbValidatorCompare.cpp" />
+    <ClCompile Include="Db\DbValidatorDate.cpp" />
+    <ClCompile Include="Db\DbValidatorDateTime.cpp" />
+    <ClCompile Include="Db\DbValidatorDefault.cpp" />
+    <ClCompile Include="Db\DbValidatorEmail.cpp" />
+    <ClCompile Include="Db\DbValidatorExists.cpp" />
+    <ClCompile Include="Db\DbValidatorMatch.cpp" />
+    <ClCompile Include="Db\DbValidatorNumber.cpp" />
+    <ClCompile Include="Db\DbValidatorRange.cpp" />
+    <ClCompile Include="Db\DbValidatorRequired.cpp" />
+    <ClCompile Include="Db\DbValidatorString.cpp" />
+    <ClCompile Include="Db\DbValidatorTime.cpp" />
+    <ClCompile Include="Db\DbValidatorTrim.cpp" />
+    <ClCompile Include="Db\DbValidatorUnique.cpp" />
+    <ClCompile Include="Db\DbValidatorUrl.cpp" />
+    <ClCompile Include="Db\DbValue.cpp" />
+    <ClCompile Include="Db\DbValueType.cpp" />
+    <ClCompile Include="Image\Color.cpp" />
+    <ClCompile Include="Image\ColorArray.cpp" />
+    <ClCompile Include="Image\Colors.cpp" />
+    <ClCompile Include="Image\Gradient.cpp" />
+    <ClCompile Include="Image\GradientType.cpp" />
+    <ClCompile Include="Image\Image.cpp" />
+    <ClCompile Include="Image\ImageMask.cpp" />
+    <ClCompile Include="Image\BorderColor.cpp" />
+    <ClCompile Include="Math\Block.cpp" />
+    <ClCompile Include="Math\CubicBezierSpline.cpp" />
+    <ClCompile Include="Math\CubicBezierSplineLimits.cpp" />
+    <ClCompile Include="Math\FloatArray.cpp" />
+    <ClCompile Include="Math\IntegerArray.cpp" />
+    <ClCompile Include="Math\Mat4f.cpp" />
+    <ClCompile Include="Math\Noise.cpp" />
+    <ClCompile Include="Math\Point.cpp" />
+    <ClCompile Include="Math\PointB.cpp" />
+    <ClCompile Include="Math\PointD.cpp" />
+    <ClCompile Include="Math\PointF.cpp" />
+    <ClCompile Include="Math\PointL.cpp" />
+    <ClCompile Include="Math\Rect.cpp" />
+    <ClCompile Include="Math\RectB.cpp" />
+    <ClCompile Include="Math\RectD.cpp" />
+    <ClCompile Include="Math\RectF.cpp" />
+    <ClCompile Include="Math\RectL.cpp" />
+    <ClCompile Include="Math\Transform.cpp" />
+    <ClCompile Include="Math\Vec4f.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\ActiveRecord.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Attribute.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\AttributeList.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\BaseDeclarator.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Decoder.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Documentator.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Array.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Asm.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Auto.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Block.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Bool.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\CDecl.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Char.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Char16T.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Char32T.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Char8T.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Class.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\ClassBase.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Concept.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Const.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Consteval.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Constexpr.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Constinit.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Decltype.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Double.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Explicit.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Extern.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\FastCall.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Final.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Float.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Function.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\FunctionParameter.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\FunctionPostContract.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\FunctionPreContract.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\IdDeclarator.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Inline.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Int.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Long.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\LRef.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\LValueDeclarator.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Mutable.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Naked.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Name.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Override.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\PackIndexing.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\ParameterPack.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\PtrDeclarator.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Register.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\RRef.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\RValueDeclarator.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Short.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Signed.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\SimpleDeclaration.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\NoPtrDeclarator.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Empty.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Enum.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Enumerator.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Export.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\LanguageLinkage.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Friend.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Import.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Module.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Namespace.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\NamespaceAlias.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Private.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Protected.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Public.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Root.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Comment.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Static.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\StaticAssert.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\StdCall.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\StructuredBinding.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Template.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\TemplateSpecifier.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\ThisCall.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\ThreadLocal.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\TypeAlias.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Typedef.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Typename.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Unsigned.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Using.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\UsingEnum.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\UsingNamespace.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Virtual.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Void.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\Volatile.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entities\WCharT.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Entity.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Definition.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Expression.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Identifier.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\ListGuard.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Migrations\MigrationV1.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Models\Alias.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Models\Class.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Models\Comment.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Models\Concept.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Models\Const.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Models\Entity.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Models\Enum.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Models\Enumerator.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Models\File.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Models\Function.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Models\Interface.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Models\Module.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Models\Namespace.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Models\NamespaceAlias.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Models\Parameter.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Models\Struct.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Models\Tag.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Models\Typedef.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Models\Union.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Models\Variable.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\PreProcessor.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Range.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\TokenEx.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Utils.cpp" />
+    <ClCompile Include="Modules\Script\C++Doc\Version.cpp" />
+    <ClCompile Include="Modules\Script\Core\Errors.cpp" />
+    <ClCompile Include="Modules\Script\Core\Expression.cpp" />
+    <ClCompile Include="Modules\Script\Core\ExpressionRunner.cpp" />
+    <ClCompile Include="Modules\Script\Core\ExpressionType.cpp" />
+    <ClCompile Include="Modules\Script\Core\Function.cpp" />
+    <ClCompile Include="Modules\Script\Core\PostfixType.cpp" />
+    <ClCompile Include="Modules\Script\Core\PrefixType.cpp" />
+    <ClCompile Include="Modules\Script\Core\Token.cpp" />
+    <ClCompile Include="Modules\Script\Core\Tokenizer.cpp" />
+    <ClCompile Include="Modules\Script\Core\Variable.cpp" />
+    <ClCompile Include="Modules\Script\ExpressionBuilders\Generic\ExpressionBuilder.cpp" />
+    <ClCompile Include="Modules\Script\ExpressionRunners\Generic\ExpressionRunner.cpp" />
+    <ClCompile Include="Modules\Script\Expressions\ExpressionSequence.cpp" />
+    <ClCompile Include="Modules\Script\Expressions\ExpressionBool.cpp" />
+    <ClCompile Include="Modules\Script\Expressions\ExpressionBrace.cpp" />
+    <ClCompile Include="Modules\Script\Expressions\ExpressionCall.cpp" />
+    <ClCompile Include="Modules\Script\Expressions\ExpressionCast.cpp" />
+    <ClCompile Include="Modules\Script\Expressions\ExpressionFloat.cpp" />
+    <ClCompile Include="Modules\Script\Expressions\ExpressionIdentifier.cpp" />
+    <ClCompile Include="Modules\Script\Expressions\ExpressionInteger.cpp" />
+    <ClCompile Include="Modules\Script\Expressions\ExpressionNull.cpp" />
+    <ClCompile Include="Modules\Script\Expressions\ExpressionOperator.cpp" />
+    <ClCompile Include="Modules\Script\Expressions\ExpressionString.cpp" />
+    <ClCompile Include="Modules\Script\Expressions\ExpressionSubscript.cpp" />
+    <ClCompile Include="Modules\Script\FunctionFactories\Generic\FunctionFactory.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Arithmetic\FunctionBitwiseAnd.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Arithmetic\FunctionBitwiseOr.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Arithmetic\FunctionBitwiseXor.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Arithmetic\FunctionDivide.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Arithmetic\FunctionMinus.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Arithmetic\FunctionModulo.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Arithmetic\FunctionMultiply.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Arithmetic\FunctionPlus.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Arithmetic\FunctionShiftLeft.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Arithmetic\FunctionShiftRight.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Assignment\FunctionAssign.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Assignment\FunctionBitwiseAndAssign.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Assignment\FunctionBitwiseOrAssign.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Assignment\FunctionBitwiseXorAssign.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Assignment\FunctionDivideAssign.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Assignment\FunctionMinusAssign.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Assignment\FunctionModuloAssign.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Assignment\FunctionMultiplyAssign.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Assignment\FunctionPlusAssign.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Assignment\FunctionShiftLeftAssign.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Assignment\FunctionShiftRightAssign.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Cast\FunctionBool.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Cast\FunctionDouble.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Cast\FunctionInt64.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Cast\FunctionString.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Comparison\FunctionAnd.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Comparison\FunctionEqual.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Comparison\FunctionGreater.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Comparison\FunctionGreaterEqual.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Comparison\FunctionLess.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Comparison\FunctionLessEqual.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Comparison\FunctionNotEqual.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Comparison\FunctionOr.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Comparison\FunctionSpaceship.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Comparison\FunctionTernary.cpp" />
+    <ClCompile Include="Modules\Script\Functions\General\FunctionArrow.cpp" />
+    <ClCompile Include="Modules\Script\Functions\General\FunctionBrace.cpp" />
+    <ClCompile Include="Modules\Script\Functions\General\FunctionIdentifier.cpp" />
+    <ClCompile Include="Modules\Script\Functions\General\FunctionLiteral.cpp" />
+    <ClCompile Include="Modules\Script\Functions\General\FunctionPi.cpp" />
+    <ClCompile Include="Modules\Script\Functions\General\FunctionRnd.cpp" />
+    <ClCompile Include="Modules\Script\Functions\General\FunctionRand.cpp" />
+    <ClCompile Include="Modules\Script\Functions\General\FunctionSubscript.cpp" />
+    <ClCompile Include="Modules\Script\Functions\General\FunctionVariable.cpp" />
+    <ClCompile Include="Modules\Script\Functions\General\FunctionRndRange.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionAbs.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionACos.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionACosH.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionASin.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionASinH.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionATan.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionATan2.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionATanH.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionCbrt.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionCeil.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionCos.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionCosH.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionDim.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionErf.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionErfC.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionExp.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionExp2.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionExpM1.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionFloor.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionFMA.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionGamma.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionHypot.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionLdExp.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionLGamma.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionLog.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionLog10.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionLog1P.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionLog2.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionMax.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionMin.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionMod.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionPow.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionRemainder.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionRound.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionSin.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionSinH.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionSqrt.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionTan.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionTanH.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionTrunc.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Mathematics\FunctionRoundF.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Unary\FunctionBitwiseNot.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Unary\FunctionLogicalNot.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Unary\FunctionPostfixDecrement.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Unary\FunctionPostfixIncrement.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Unary\FunctionPrefixDecrement.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Unary\FunctionPrefixIncrement.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Unary\FunctionUnaryMinus.cpp" />
+    <ClCompile Include="Modules\Script\Functions\Unary\FunctionUnaryPlus.cpp" />
+    <ClCompile Include="Modules\Script\Json\Decoder.cpp" />
+    <ClCompile Include="Modules\Script\Json\Encoder.cpp" />
+    <ClCompile Include="Modules\Script\Lexics\C++\Lexic.cpp" />
+    <ClCompile Include="Modules\Script\Lexics\Json\Lexic.cpp" />
+    <ClCompile Include="Modules\Script\Lexics\Xml\Lexic.cpp" />
+    <ClCompile Include="Modules\Script\Parsers\C++\ParserBinary.cpp" />
+    <ClCompile Include="Modules\Script\Parsers\C++\ParserHexadecimal.cpp" />
+    <ClCompile Include="Modules\Script\Parsers\C++\ParserNumeric.cpp" />
+    <ClCompile Include="Modules\Script\Parsers\C++\ParserOctal.cpp" />
+    <ClCompile Include="Modules\Script\Parsers\C++\ParserOperator.cpp" />
+    <ClCompile Include="Modules\Script\Parsers\C++\ParserString.cpp" />
+    <ClCompile Include="Modules\Script\Parsers\ParserHexadecimal.cpp" />
+    <ClCompile Include="Modules\Script\Parsers\ParserIdentifier.cpp" />
+    <ClCompile Include="Modules\Script\Parsers\ParserNumeric.cpp" />
+    <ClCompile Include="Modules\Script\Parsers\ParserOperator.cpp" />
+    <ClCompile Include="Modules\Script\Parsers\ParserString.cpp" />
+    <ClCompile Include="Modules\Script\Readers\ReaderLowerCase.cpp" />
+    <ClCompile Include="Modules\Script\Readers\ReaderSensitive.cpp" />
+    <ClCompile Include="Modules\Script\Readers\ReaderUpperCase.cpp" />
+    <ClCompile Include="Modules\Script\Tokenizers\C++\Tokenizer.cpp" />
+    <ClCompile Include="Modules\Script\Tokenizers\Generic\Tokenizer.cpp" />
+    <ClCompile Include="Modules\Script\Tokenizers\Json\Tokenizer.cpp" />
+    <ClCompile Include="Modules\Script\Tokenizers\Xml\Tokenizer.cpp" />
+    <ClCompile Include="Modules\Script\Xml\Decoder.cpp" />
+    <ClCompile Include="Modules\Script\Xml\Encoder.cpp" />
+    <ClCompile Include="Modules\Script\Xml\Entity.cpp" />
+    <ClCompile Include="Package\Core\Consts.cpp" />
+    <ClCompile Include="Package\Core\Event.cpp" />
+    <ClCompile Include="Package\Core\EventList.cpp" />
+    <ClCompile Include="Package\Core\PackageComponent.cpp" />
+    <ClCompile Include="Package\Core\PackageControl.cpp" />
+    <ClCompile Include="Package\Core\PackageDialogBox.cpp" />
+    <ClCompile Include="Package\Core\PackageEntity.cpp" />
+    <ClCompile Include="Package\Core\PackageForm.cpp" />
+    <ClCompile Include="Package\Core\PackageListItem.cpp" />
+    <ClCompile Include="Package\Core\PackageRenderer.cpp" />
+    <ClCompile Include="Package\Core\PackageStyle.cpp" />
+    <ClCompile Include="Package\Core\Property.cpp" />
+    <ClCompile Include="Package\Core\PropertyHandler.cpp" />
+    <ClCompile Include="Package\Core\PropertyList.cpp" />
+    <ClCompile Include="Package\Core\PropertyState.cpp" />
+    <ClCompile Include="Package\EventLists\ComponentEventList.cpp" />
+    <ClCompile Include="Package\EventLists\ControlEventList.cpp" />
+    <ClCompile Include="Package\EventLists\DialogBoxEventList.cpp" />
+    <ClCompile Include="Package\EventLists\FormEventList.cpp" />
+    <ClCompile Include="Package\Properties\PropertyBool.cpp" />
+    <ClCompile Include="Package\Properties\PropertyBoolArray.cpp" />
+    <ClCompile Include="Package\Properties\PropertyBoolArrayState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyBoolState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyColor.cpp" />
+    <ClCompile Include="Package\Properties\PropertyColorArray.cpp" />
+    <ClCompile Include="Package\Properties\PropertyColorArrayState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyColorState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyDouble.cpp" />
+    <ClCompile Include="Package\Properties\PropertyDoubleState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyEnum.cpp" />
+    <ClCompile Include="Package\Properties\PropertyEnumState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyFloat.cpp" />
+    <ClCompile Include="Package\Properties\PropertyFloatArray.cpp" />
+    <ClCompile Include="Package\Properties\PropertyFloatArrayState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyFloatState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyFont.cpp" />
+    <ClCompile Include="Package\Properties\PropertyFontState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyGradient.cpp" />
+    <ClCompile Include="Package\Properties\PropertyGradientState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyHotkey.cpp" />
+    <ClCompile Include="Package\Properties\PropertyHotkeyState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyIdentifier.cpp" />
+    <ClCompile Include="Package\Properties\PropertyIdentifierState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyImage.cpp" />
+    <ClCompile Include="Package\Properties\PropertyImageList.cpp" />
+    <ClCompile Include="Package\Properties\PropertyImageListState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyImageState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyInt64.cpp" />
+    <ClCompile Include="Package\Properties\PropertyInt64State.cpp" />
+    <ClCompile Include="Package\Properties\PropertyInteger.cpp" />
+    <ClCompile Include="Package\Properties\PropertyIntegerArray.cpp" />
+    <ClCompile Include="Package\Properties\PropertyIntegerArrayState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyIntegerState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyMask.cpp" />
+    <ClCompile Include="Package\Properties\PropertyMaskState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyMatrix.cpp" />
+    <ClCompile Include="Package\Properties\PropertyMatrixState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyPoint.cpp" />
+    <ClCompile Include="Package\Properties\PropertyPointB.cpp" />
+    <ClCompile Include="Package\Properties\PropertyPointBState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyPointD.cpp" />
+    <ClCompile Include="Package\Properties\PropertyPointDState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyPointF.cpp" />
+    <ClCompile Include="Package\Properties\PropertyPointFState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyPointL.cpp" />
+    <ClCompile Include="Package\Properties\PropertyPointLState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyPointState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyRect.cpp" />
+    <ClCompile Include="Package\Properties\PropertyRectB.cpp" />
+    <ClCompile Include="Package\Properties\PropertyRectBState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyBorderColor.cpp" />
+    <ClCompile Include="Package\Properties\PropertyBorderColorState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyRectD.cpp" />
+    <ClCompile Include="Package\Properties\PropertyRectDState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyRectF.cpp" />
+    <ClCompile Include="Package\Properties\PropertyRectFState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyRectL.cpp" />
+    <ClCompile Include="Package\Properties\PropertyRectLState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyRectState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyString.cpp" />
+    <ClCompile Include="Package\Properties\PropertyStringState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyStyle.cpp" />
+    <ClCompile Include="Package\Properties\PropertyStyleState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyText.cpp" />
+    <ClCompile Include="Package\Properties\PropertyTextState.cpp" />
+    <ClCompile Include="Package\Properties\PropertyTransform.cpp" />
+    <ClCompile Include="Package\Properties\PropertyTransformState.cpp" />
+    <ClCompile Include="Package\PropertyHandlers\PropertyHandlerDefault.cpp" />
+    <ClCompile Include="Package\PropertyLists\ComponentPropertyList.cpp" />
+    <ClCompile Include="Package\PropertyLists\ControlPropertyList.cpp" />
+    <ClCompile Include="Package\PropertyLists\DialogBoxPropertyList.cpp" />
+    <ClCompile Include="Package\PropertyLists\FormPropertyList.cpp" />
+    <ClCompile Include="Package\PropertyLists\ListItemPropertyList.cpp" />
+    <ClCompile Include="Render\Utils.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BuiltInControls\DropDown\BuiltInDropDown.h" />
+    <ClInclude Include="BuiltInControls\DropDown\BuiltInDropDownListItemOwner.h" />
+    <ClInclude Include="BuiltInControls\IBuiltInDropDown.h" />
+    <ClInclude Include="BuiltInControls\IBuiltInDropDownListener.h" />
+    <ClInclude Include="BuiltInControls\IBuiltInMonthCalendar.h" />
+    <ClInclude Include="BuiltInControls\IBuiltInMonthCalendarListener.h" />
+    <ClInclude Include="BuiltInControls\IBuiltInScroll.h" />
+    <ClInclude Include="BuiltInControls\IBuiltInScrollListener.h" />
+    <ClInclude Include="BuiltInControls\IBuiltInSelect.h" />
+    <ClInclude Include="BuiltInControls\IBuiltInSelectListener.h" />
+    <ClInclude Include="BuiltInControls\IBuiltInTextArea.h" />
+    <ClInclude Include="BuiltInControls\IBuiltInTextAreaListener.h" />
+    <ClInclude Include="BuiltInControls\IBuiltInTextInput.h" />
+    <ClInclude Include="BuiltInControls\IBuiltInTextInputListener.h" />
+    <ClInclude Include="BuiltInControls\MonthCalendar\BuiltInMonthCalendar.h" />
+    <ClInclude Include="BuiltInControls\ScrollLite\BuiltInScrollLite.h" />
+    <ClInclude Include="BuiltInControls\Scroll\BuiltInScroll.h" />
+    <ClInclude Include="BuiltInControls\Select\BuiltInSelect.h" />
+    <ClInclude Include="BuiltInControls\TextArea\BuiltInTextArea.h" />
+    <ClInclude Include="BuiltInControls\TextInput\BuiltInTextInput.h" />
+    <ClInclude Include="Core\Aliases.h" />
+    <ClInclude Include="Core\Align.h" />
+    <ClInclude Include="Core\BaseTexture.h" />
+    <ClInclude Include="Core\Bitmask.h" />
+    <ClInclude Include="Core\BlurType.h" />
+    <ClInclude Include="Core\BoolArray.h" />
+    <ClInclude Include="Core\BuiltInControl.h" />
+    <ClInclude Include="Core\ByteArray.h" />
+    <ClInclude Include="Core\Camera.h" />
+    <ClInclude Include="Core\Caret.h" />
+    <ClInclude Include="Core\CloseAction.h" />
+    <ClInclude Include="Core\Class.h" />
+    <ClInclude Include="Core\Component.h" />
+    <ClInclude Include="Core\ComponentService.h" />
+    <ClInclude Include="Core\ComponentSpliceService.h" />
+    <ClInclude Include="Core\Consts.h" />
+    <ClInclude Include="Core\Control.h" />
+    <ClInclude Include="Core\ControlItemList.h" />
+    <ClInclude Include="Core\ControlService.h" />
+    <ClInclude Include="Core\ControlSpliceService.h" />
+    <ClInclude Include="Core\CreateParams.h" />
+    <ClInclude Include="Core\CursorType.h" />
+    <ClInclude Include="Core\DateTime.h" />
+    <ClInclude Include="Core\DefaultStyle.h" />
+    <ClInclude Include="Core\DialogBox.h" />
+    <ClInclude Include="Core\DialogBoxService.h" />
+    <ClInclude Include="Core\EdgeType.h" />
+    <ClInclude Include="Core\ErrorInfo.h" />
+    <ClInclude Include="Core\ErrorListenerCout.h" />
+    <ClInclude Include="Core\Feature.h" />
+    <ClInclude Include="Core\FeedbackEx.h" />
+    <ClInclude Include="Core\FocusedBy.h" />
+    <ClInclude Include="Core\FontProperties.h" />
+    <ClInclude Include="Core\FontWeight.h" />
+    <ClInclude Include="Core\Form.h" />
+    <ClInclude Include="Core\FormService.h" />
+    <ClInclude Include="Core\HintService.h" />
+    <ClInclude Include="Core\Hotkey.h" />
+    <ClInclude Include="Core\Interval.h" />
+    <ClInclude Include="Core\Key.h" />
+    <ClInclude Include="Core\ListItemOwner.h" />
+    <ClInclude Include="Core\Feedback.h" />
+    <ClInclude Include="Core\Font.h" />
+    <ClInclude Include="Core\Hint.h" />
+    <ClInclude Include="Core\History.h" />
+    <ClInclude Include="Core\Json.h" />
+    <ClInclude Include="Core\ListItem.h" />
+    <ClInclude Include="Core\ListItemService.h" />
+    <ClInclude Include="Core\LockRepaint.h" />
+    <ClInclude Include="Core\Messages.h" />
+    <ClInclude Include="Core\ModalResult.h" />
+    <ClInclude Include="Core\Model.h" />
+    <ClInclude Include="Core\ModelService.h" />
+    <ClInclude Include="Core\Notifier.h" />
+    <ClInclude Include="Core\PlatformType.h" />
+    <ClInclude Include="Core\PlatformVersion.h" />
+    <ClInclude Include="Core\PointLocation.h" />
+    <ClInclude Include="Core\ProjectionMode.h" />
+    <ClInclude Include="Core\Releasable.h" />
+    <ClInclude Include="Core\ReleasablePtr.h" />
+    <ClInclude Include="Core\RendererCapabilities.h" />
+    <ClInclude Include="Core\RendererTechnology.h" />
+    <ClInclude Include="Core\RotateOrder.h" />
+    <ClInclude Include="Core\ScrollType.h" />
+    <ClInclude Include="Core\ScrollVisibility.h" />
+    <ClInclude Include="Core\ShaderType.h" />
+    <ClInclude Include="Core\Strings.h" />
+    <ClInclude Include="Core\Style.h" />
+    <ClInclude Include="Core\StyleFont.h" />
+    <ClInclude Include="Core\StyleImage.h" />
+    <ClInclude Include="Core\Styles.h" />
+    <ClInclude Include="Core\StyleSkin.h" />
+    <ClInclude Include="Core\Task.h" />
+    <ClInclude Include="Core\TextAlign.h" />
+    <ClInclude Include="Core\TextureCompareFunction.h" />
+    <ClInclude Include="Core\TextureCompareMode.h" />
+    <ClInclude Include="Core\TextureDepthStencilMode.h" />
+    <ClInclude Include="Core\TextureFormat.h" />
+    <ClInclude Include="Core\TextureMagFilter.h" />
+    <ClInclude Include="Core\TextureMinFilter.h" />
+    <ClInclude Include="Core\TextureSwizzle.h" />
+    <ClInclude Include="Core\TextureWrap.h" />
+    <ClInclude Include="Core\TouchPoint.h" />
+    <ClInclude Include="Core\Transform.h" />
+    <ClInclude Include="Core\Transformable.h" />
+    <ClInclude Include="Core\TransformOrder.h" />
+    <ClInclude Include="Core\TransformService.h" />
+    <ClInclude Include="Core\Translate.h" />
+    <ClInclude Include="Core\Utils.h" />
+    <ClInclude Include="Core\Variant.h" />
+    <ClInclude Include="Core\Version2.h" />
+    <ClInclude Include="Core\Version3.h" />
+    <ClInclude Include="Core\VertexArray.h" />
+    <ClInclude Include="Core\VertexFormat.h" />
+    <ClInclude Include="Core\VerticalAlign.h" />
+    <ClInclude Include="Core\WindowPosition.h" />
+    <ClInclude Include="Core\WindowState.h" />
+    <ClInclude Include="Db\DbActiveQuery.h" />
+    <ClInclude Include="Db\DbAttribute.h" />
+    <ClInclude Include="Db\DbBaseActiveRecord.h" />
+    <ClInclude Include="Db\DbActiveRecordPrimaryKey.h" />
+    <ClInclude Include="Db\DbAsyncMode.h" />
+    <ClInclude Include="Db\DbBatchRowCountSupport.h" />
+    <ClInclude Include="Db\DbBatchSupport.h" />
+    <ClInclude Include="Db\DbBookmarkPersistence.h" />
+    <ClInclude Include="Db\DbCaseSensitivity.h" />
+    <ClInclude Include="Db\DbCatalogUsage.h" />
+    <ClInclude Include="Db\DbColumn.h" />
+    <ClInclude Include="Db\DbColumns.h" />
+    <ClInclude Include="Db\DbConcatenateNullBehaviour.h" />
+    <ClInclude Include="Db\DbCondition.h" />
+    <ClInclude Include="Db\DbConvertTo.h" />
+    <ClInclude Include="Db\DbCursorAttributes.h" />
+    <ClInclude Include="Db\DbCursorBehaviour.h" />
+    <ClInclude Include="Db\DbCursorConcurrency.h" />
+    <ClInclude Include="Db\DbCursorSensitivity.h" />
+    <ClInclude Include="Db\DbCursorType.h" />
+    <ClInclude Include="Db\DbDataType.h" />
+    <ClInclude Include="Db\DbDate.h" />
+    <ClInclude Include="Db\DbDateTime.h" />
+    <ClInclude Include="Db\DbDelete.h" />
+    <ClInclude Include="Db\DbExceptionBuildQuery.h" />
+    <ClInclude Include="Db\DbExceptionExecuteStatement.h" />
+    <ClInclude Include="Db\DbExceptionNoAttributes.h" />
+    <ClInclude Include="Db\DbExceptionNoColumnName.h" />
+    <ClInclude Include="Db\DbExceptionNoConnection.h" />
+    <ClInclude Include="Db\DbExceptionNoQueryBuilder.h" />
+    <ClInclude Include="Db\DbExceptionCreateStatement.h" />
+    <ClInclude Include="Db\DbExceptionNoResult.h" />
+    <ClInclude Include="Db\DbExceptionNoStatement.h" />
+    <ClInclude Include="Db\DbExceptionNoTableName.h" />
+    <ClInclude Include="Db\DbExceptionQueryPrimaryKeys.h" />
+    <ClInclude Include="Db\DbExceptionRelationNotFound.h" />
+    <ClInclude Include="Db\DbExceptionRevertNotImplemented.h" />
+    <ClInclude Include="Db\DbFileUsage.h" />
+    <ClInclude Include="Db\DbGroupByRelation.h" />
+    <ClInclude Include="Db\DbInsert.h" />
+    <ClInclude Include="Db\DbMigration.h" />
+    <ClInclude Include="Db\DbMigrationColumn.h" />
+    <ClInclude Include="Db\DbMigrationGenerator.h" />
+    <ClInclude Include="Db\DbMigrationKey.h" />
+    <ClInclude Include="Db\DbModel.h" />
+    <ClInclude Include="Db\DbNull.h" />
+    <ClInclude Include="Db\DbNullabilityType.h" />
+    <ClInclude Include="Db\DbNullCollation.h" />
+    <ClInclude Include="Db\DbOdbcInterfaceConformance.h" />
+    <ClInclude Include="Db\DbOdbcVersion.h" />
+    <ClInclude Include="Db\DbOrder.h" />
+    <ClInclude Include="Db\DbOrderBy.h" />
+    <ClInclude Include="Db\DbOrderByArray.h" />
+    <ClInclude Include="Db\DbQuery.h" />
+    <ClInclude Include="Db\DbQueryBuilderMySql.h" />
+    <ClInclude Include="Db\DbRelation.h" />
+    <ClInclude Include="Db\DbResult.h" />
+    <ClInclude Include="Db\DbRow.h" />
+    <ClInclude Include="Db\DbRows.h" />
+    <ClInclude Include="Db\DbSchema.h" />
+    <ClInclude Include="Db\DbSearchableType.h" />
+    <ClInclude Include="Db\DbSet.h" />
+    <ClInclude Include="Db\DbSpecialColumnScope.h" />
+    <ClInclude Include="Db\DbSqlConformance.h" />
+    <ClInclude Include="Db\DbStandardCliConformance.h" />
+    <ClInclude Include="Db\DbStatus.h" />
+    <ClInclude Include="Db\DbSupportedAggregateFunctions.h" />
+    <ClInclude Include="Db\DbSupportedAlterDomainClauses.h" />
+    <ClInclude Include="Db\DbSupportedAlterTableClauses.h" />
+    <ClInclude Include="Db\DbSupportedAvailabilityOfResultSetsInParameterizedExecution.h" />
+    <ClInclude Include="Db\DbSupportedConvertFunctions.h" />
+    <ClInclude Include="Db\DbSupportedCreateAssertionClauses.h" />
+    <ClInclude Include="Db\DbSupportedCreateCharacterSetClauses.h" />
+    <ClInclude Include="Db\DbSupportedCreateDomainClauses.h" />
+    <ClInclude Include="Db\DbSupportedCreateIndexKeywords.h" />
+    <ClInclude Include="Db\DbSupportedCreateSchemaClauses.h" />
+    <ClInclude Include="Db\DbSupportedCreateTableClauses.h" />
+    <ClInclude Include="Db\DbSupportedCreateViewClauses.h" />
+    <ClInclude Include="Db\DbSupportedDateTimeFunctions.h" />
+    <ClInclude Include="Db\DbSupportedDateTimeIntervals.h" />
+    <ClInclude Include="Db\DbSupportedDateTimeLiterals.h" />
+    <ClInclude Include="Db\DbSupportedDropClauses.h" />
+    <ClInclude Include="Db\DbSupportedForeignKeyRules.h" />
+    <ClInclude Include="Db\DbSupportedGetDataExtensions.h" />
+    <ClInclude Include="Db\DbSupportedGrantClauses.h" />
+    <ClInclude Include="Db\DbSupportedIndexClauses.h" />
+    <ClInclude Include="Db\DbSupportedInformationSchemaViews.h" />
+    <ClInclude Include="Db\DbSupportedInsertStatements.h" />
+    <ClInclude Include="Db\DbSupportedNumericFunctions.h" />
+    <ClInclude Include="Db\DbSupportedNumericValueFunctions.h" />
+    <ClInclude Include="Db\DbSupportedOuterJoins.h" />
+    <ClInclude Include="Db\DbSupportedPositionOperations.h" />
+    <ClInclude Include="Db\DbSupportedPredicates.h" />
+    <ClInclude Include="Db\DbSupportedRelationJoinOperators.h" />
+    <ClInclude Include="Db\DbSupportedRevokeClauses.h" />
+    <ClInclude Include="Db\DbSupportedRowValueConstructors.h" />
+    <ClInclude Include="Db\DbSupportedScalarStringFunctions.h" />
+    <ClInclude Include="Db\DbSupportedSchemaUsages.h" />
+    <ClInclude Include="Db\DbSupportedScrollOptions.h" />
+    <ClInclude Include="Db\DbSupportedStringFunctions.h" />
+    <ClInclude Include="Db\DbSupportedSubQueryPredicates.h" />
+    <ClInclude Include="Db\DbSupportedSystemFunctions.h" />
+    <ClInclude Include="Db\DbSupportedTimeDateFunctions.h" />
+    <ClInclude Include="Db\DbSupportedTransactionIsolationLevels.h" />
+    <ClInclude Include="Db\DbSupportedUnionClauses.h" />
+    <ClInclude Include="Db\DbSupportedValueExpressions.h" />
+    <ClInclude Include="Db\DbTableCorrelationName.h" />
+    <ClInclude Include="Db\DbTime.h" />
+    <ClInclude Include="Db\DbTransaction.h" />
+    <ClInclude Include="Db\DbTransactionSupport.h" />
+    <ClInclude Include="Db\DbUpdatableType.h" />
+    <ClInclude Include="Db\DbUpdate.h" />
+    <ClInclude Include="Db\DbValidator.h" />
+    <ClInclude Include="Db\DbValidatorBoolean.h" />
+    <ClInclude Include="Db\DbValidatorCompare.h" />
+    <ClInclude Include="Db\DbValidatorDate.h" />
+    <ClInclude Include="Db\DbValidatorDateTime.h" />
+    <ClInclude Include="Db\DbValidatorDefault.h" />
+    <ClInclude Include="Db\DbValidatorEmail.h" />
+    <ClInclude Include="Db\DbValidatorExists.h" />
+    <ClInclude Include="Db\DbValidatorMatch.h" />
+    <ClInclude Include="Db\DbValidatorNumber.h" />
+    <ClInclude Include="Db\DbValidatorRange.h" />
+    <ClInclude Include="Db\DbValidatorRequired.h" />
+    <ClInclude Include="Db\DbValidatorString.h" />
+    <ClInclude Include="Db\DbValidatorTime.h" />
+    <ClInclude Include="Db\DbValidatorTrim.h" />
+    <ClInclude Include="Db\DbValidatorUnique.h" />
+    <ClInclude Include="Db\DbValidatorUrl.h" />
+    <ClInclude Include="Db\DbValue.h" />
+    <ClInclude Include="Db\DbValueType.h" />
+    <ClInclude Include="Db\DbActiveRecord.h" />
+    <ClInclude Include="Image\BlockColors.h" />
+    <ClInclude Include="Image\Color.h" />
+    <ClInclude Include="Image\Color1D.h" />
+    <ClInclude Include="Image\Color1DArray.h" />
+    <ClInclude Include="Image\ColorArray.h" />
+    <ClInclude Include="Image\Colors.h" />
+    <ClInclude Include="Image\Gradient.h" />
+    <ClInclude Include="Image\GradientType.h" />
+    <ClInclude Include="Image\Image.h" />
+    <ClInclude Include="Image\ImageMask.h" />
+    <ClInclude Include="Image\Pixel4f.h" />
+    <ClInclude Include="Image\BorderColor.h" />
+    <ClInclude Include="Interfaces\IApplication.h" />
+    <ClInclude Include="Interfaces\IApplicationService.h" />
+    <ClInclude Include="Interfaces\IBaseTexture.h" />
+    <ClInclude Include="Interfaces\IBuiltInControl.h" />
+    <ClInclude Include="Interfaces\IBuiltInControlListener.h" />
+    <ClInclude Include="Interfaces\ICamera.h" />
+    <ClInclude Include="Interfaces\ICaret.h" />
+    <ClInclude Include="Interfaces\IClass.h" />
+    <ClInclude Include="Interfaces\IClientSocket.h" />
+    <ClInclude Include="Interfaces\IComponent.h" />
+    <ClInclude Include="Interfaces\IComponentItemListService.h" />
+    <ClInclude Include="Interfaces\IComponentService.h" />
+    <ClInclude Include="Interfaces\IControl.h" />
+    <ClInclude Include="Interfaces\IComponentItemList.h" />
+    <ClInclude Include="Interfaces\IComponentItemTree.h" />
+    <ClInclude Include="Interfaces\IControlCreateChild.h" />
+    <ClInclude Include="Interfaces\IControlService.h" />
+    <ClInclude Include="Interfaces\IDb.h" />
+    <ClInclude Include="Interfaces\IDbActiveRecord.h" />
+    <ClInclude Include="Interfaces\IDbAttribute.h" />
+    <ClInclude Include="Interfaces\IDbConnection.h" />
+    <ClInclude Include="Interfaces\IDbMigration.h" />
+    <ClInclude Include="Interfaces\IDbMigrationColumn.h" />
+    <ClInclude Include="Interfaces\IDbMigrationKey.h" />
+    <ClInclude Include="Interfaces\IDbQuery.h" />
+    <ClInclude Include="Interfaces\IDbQueryBuilder.h" />
+    <ClInclude Include="Interfaces\IDbRelation.h" />
+    <ClInclude Include="Interfaces\IDbStatement.h" />
+    <ClInclude Include="Interfaces\IDbValidator.h" />
+    <ClInclude Include="Interfaces\IDialogBox.h" />
+    <ClInclude Include="Interfaces\IDialogBoxListener.h" />
+    <ClInclude Include="Interfaces\IDialogBoxService.h" />
+    <ClInclude Include="Interfaces\IDialogs.h" />
+    <ClInclude Include="Interfaces\IEditor.h" />
+    <ClInclude Include="Interfaces\IErrorListener.h" />
+    <ClInclude Include="Interfaces\IFeature.h" />
+    <ClInclude Include="Interfaces\IFeedback.h" />
+    <ClInclude Include="Interfaces\IFeedbackEx.h" />
+    <ClInclude Include="Interfaces\IFeedbackExListener.h" />
+    <ClInclude Include="Interfaces\IFeedbackListener.h" />
+    <ClInclude Include="Interfaces\IFile.h" />
+    <ClInclude Include="Interfaces\IFileSystem.h" />
+    <ClInclude Include="Interfaces\IFont.h" />
+    <ClInclude Include="Interfaces\IFontProperties.h" />
+    <ClInclude Include="Interfaces\IForm.h" />
+    <ClInclude Include="Interfaces\IFormListener.h" />
+    <ClInclude Include="Interfaces\IFormService.h" />
+    <ClInclude Include="Interfaces\IFramebuffer.h" />
+    <ClInclude Include="Interfaces\IHint.h" />
+    <ClInclude Include="Interfaces\IHintService.h" />
+    <ClInclude Include="Interfaces\IKeyboard.h" />
+    <ClInclude Include="Interfaces\IListItem.h" />
+    <ClInclude Include="Interfaces\IListItemCaption.h" />
+    <ClInclude Include="Interfaces\IListItemOwner.h" />
+    <ClInclude Include="Interfaces\IListItemService.h" />
+    <ClInclude Include="Interfaces\IModel.h" />
+    <ClInclude Include="Interfaces\IModelService.h" />
+    <ClInclude Include="Interfaces\IMouse.h" />
+    <ClInclude Include="Interfaces\INativeGraphics.h" />
+    <ClInclude Include="Interfaces\INetwork.h" />
+    <ClInclude Include="Interfaces\IPicture.h" />
+    <ClInclude Include="Interfaces\IPlatformFont.h" />
+    <ClInclude Include="Interfaces\IPolygon.h" />
+    <ClInclude Include="Interfaces\IPrimitive.h" />
+    <ClInclude Include="Interfaces\IReleasable.h" />
+    <ClInclude Include="Interfaces\IReleasableListener.h" />
+    <ClInclude Include="Interfaces\IRenderer.h" />
+    <ClInclude Include="Interfaces\IScreen.h" />
+    <ClInclude Include="Interfaces\IProgram.h" />
+    <ClInclude Include="Interfaces\IServerSocket.h" />
+    <ClInclude Include="Interfaces\IServerSocketListener.h" />
+    <ClInclude Include="Interfaces\ISocket.h" />
+    <ClInclude Include="Interfaces\IStyle.h" />
+    <ClInclude Include="Interfaces\IStyleFont.h" />
+    <ClInclude Include="Interfaces\IStyleImage.h" />
+    <ClInclude Include="Interfaces\IStyles.h" />
+    <ClInclude Include="Interfaces\IStyleSkin.h" />
+    <ClInclude Include="Interfaces\ISystem.h" />
+    <ClInclude Include="Interfaces\ITask.h" />
+    <ClInclude Include="Interfaces\ITexture.h" />
+    <ClInclude Include="Interfaces\ITextureMultisample.h" />
+    <ClInclude Include="Interfaces\IThread.h" />
+    <ClInclude Include="Interfaces\IThreadListener.h" />
+    <ClInclude Include="Interfaces\ITimerListener.h" />
+    <ClInclude Include="Interfaces\ITransform.h" />
+    <ClInclude Include="Interfaces\ITransformable.h" />
+    <ClInclude Include="Interfaces\ITransformService.h" />
+    <ClInclude Include="Interfaces\ITranslate.h" />
+    <ClInclude Include="Interfaces\IVertex.h" />
+    <ClInclude Include="Interfaces\IVertexArray.h" />
+    <ClInclude Include="Interfaces\IWindow.h" />
+    <ClInclude Include="Interfaces\IWindowListener.h" />
+    <ClInclude Include="Interfaces\IWindowListenerOnMessage.h" />
+    <ClInclude Include="Interfaces\IWindowService.h" />
+    <ClInclude Include="Math\Block.h" />
+    <ClInclude Include="Math\CubicBezierSpline.h" />
+    <ClInclude Include="Math\CubicBezierSplineLimits.h" />
+    <ClInclude Include="Math\FloatArray.h" />
+    <ClInclude Include="Math\IntegerArray.h" />
+    <ClInclude Include="Math\Mat2f.h" />
+    <ClInclude Include="Math\Mat3f.h" />
+    <ClInclude Include="Math\Mat4f.h" />
+    <ClInclude Include="Math\Noise.h" />
+    <ClInclude Include="Math\Plane.h" />
+    <ClInclude Include="Math\Point.h" />
+    <ClInclude Include="Math\PointB.h" />
+    <ClInclude Include="Math\PointD.h" />
+    <ClInclude Include="Math\PointF.h" />
+    <ClInclude Include="Math\PointL.h" />
+    <ClInclude Include="Math\Quaternion.h" />
+    <ClInclude Include="Math\Rect.h" />
+    <ClInclude Include="Math\RectB.h" />
+    <ClInclude Include="Math\RectD.h" />
+    <ClInclude Include="Math\RectF.h" />
+    <ClInclude Include="Math\RectL.h" />
+    <ClInclude Include="Math\Transform.h" />
+    <ClInclude Include="Math\Vec1f.h" />
+    <ClInclude Include="Math\Vec1i.h" />
+    <ClInclude Include="Math\Vec2f.h" />
+    <ClInclude Include="Math\Vec2i.h" />
+    <ClInclude Include="Math\Vec3f.h" />
+    <ClInclude Include="Math\Vec3i.h" />
+    <ClInclude Include="Math\Vec4f.h" />
+    <ClInclude Include="Math\Vec4i.h" />
+    <ClInclude Include="Modules\AI.h" />
+    <ClInclude Include="Modules\AI\Activators.h" />
+    <ClInclude Include="Modules\AI\Errors.h" />
+    <ClInclude Include="Modules\AI\Perceptron.h" />
+    <ClInclude Include="Modules\AI\Randomizers.h" />
+    <ClInclude Include="Modules\AI\Regularizers.h" />
+    <ClInclude Include="Modules\Script.h" />
+    <ClInclude Include="Modules\Script\C++Doc\ActiveRecord.h" />
+    <ClInclude Include="Modules\Script\C++Doc\BaseDeclarator.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Documentator.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Array.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Auto.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Bool.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\CDecl.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Char.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Char16T.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Char32T.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Char8T.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Class.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\ClassBase.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Concept.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Const.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Consteval.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Constexpr.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Constinit.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Decltype.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Double.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Explicit.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Extern.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\FastCall.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Final.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Float.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Function.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\FunctionParameter.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\FunctionPostContract.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\FunctionPreContract.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\IdDeclarator.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Inline.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Int.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Long.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\LRef.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\LValueDeclarator.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Mutable.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Naked.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Name.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Override.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\PackIndexing.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\ParameterPack.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\PtrDeclarator.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Register.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\RRef.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\RValueDeclarator.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Short.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Signed.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\SimpleDeclaration.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\NoPtrDeclarator.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Enum.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Enumerator.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Friend.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Private.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Protected.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Public.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Static.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\StaticAssert.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\StdCall.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\StructuredBinding.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Template.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\TemplateSpecifier.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\ThisCall.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\ThreadLocal.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\TypeAlias.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Typedef.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Typename.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Unsigned.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Using.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\UsingEnum.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Virtual.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Void.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Volatile.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\WCharT.h" />
+    <ClInclude Include="Modules\Script\C++Doc\IErrorListenerEx.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Migrations\MigrationV1.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Models\Alias.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Models\Class.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Models\Comment.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Models\Concept.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Models\Const.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Models\Entity.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Models\Enum.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Models\Enumerator.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Models\File.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Models\Function.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Models\Interface.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Models\Module.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Models\Namespace.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Models\NamespaceAlias.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Models\Parameter.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Models\Struct.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Models\Tag.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Models\Typedef.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Models\Union.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Models\Variable.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Range.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Attribute.h" />
+    <ClInclude Include="Modules\Script\C++Doc\AttributeList.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Decoder.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Asm.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Block.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Empty.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Export.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\LanguageLinkage.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Import.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Module.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Namespace.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\NamespaceAlias.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Root.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\Comment.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entities\UsingNamespace.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Entity.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Identifier.h" />
+    <ClInclude Include="Modules\Script\C++Doc\PEntity.h" />
+    <ClInclude Include="Modules\Script\C++Doc\EntityType.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Expression.h" />
+    <ClInclude Include="Modules\Script\C++Doc\List.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Definition.h" />
+    <ClInclude Include="Modules\Script\C++Doc\DefinitionType.h" />
+    <ClInclude Include="Modules\Script\C++Doc\ListGuard.h" />
+    <ClInclude Include="Modules\Script\C++Doc\PList.h" />
+    <ClInclude Include="Modules\Script\C++Doc\PreProcessor.h" />
+    <ClInclude Include="Modules\Script\C++Doc\TokenEx.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Utils.h" />
+    <ClInclude Include="Modules\Script\C++Doc\Version.h" />
+    <ClInclude Include="Modules\Script\Core\Consts.h" />
+    <ClInclude Include="Modules\Script\Core\Errors.h" />
+    <ClInclude Include="Modules\Script\Core\Expression.h" />
+    <ClInclude Include="Modules\Script\Core\ExpressionRunner.h" />
+    <ClInclude Include="Modules\Script\Core\ExpressionType.h" />
+    <ClInclude Include="Modules\Script\Core\Function.h" />
+    <ClInclude Include="Modules\Script\Core\Groups.h" />
+    <ClInclude Include="Modules\Script\Core\Operator.h" />
+    <ClInclude Include="Modules\Script\Core\Operators.h" />
+    <ClInclude Include="Modules\Script\Core\PostfixType.h" />
+    <ClInclude Include="Modules\Script\Core\PrefixType.h" />
+    <ClInclude Include="Modules\Script\Core\Progress.h" />
+    <ClInclude Include="Modules\Script\Core\ProgressStage.h" />
+    <ClInclude Include="Modules\Script\Core\Token.h" />
+    <ClInclude Include="Modules\Script\Core\Tokenizer.h" />
+    <ClInclude Include="Modules\Script\Core\Tokens.h" />
+    <ClInclude Include="Modules\Script\Core\TokenType.h" />
+    <ClInclude Include="Modules\Script\Core\Variable.h" />
+    <ClInclude Include="Modules\Script\Core\VariableType.h" />
+    <ClInclude Include="Modules\Script\ExpressionBuilders\Generic\ExpressionBuilder.h" />
+    <ClInclude Include="Modules\Script\ExpressionRunners\Generic\ExpressionRunner.h" />
+    <ClInclude Include="Modules\Script\Expressions\ExpressionSequence.h" />
+    <ClInclude Include="Modules\Script\Expressions\ExpressionBool.h" />
+    <ClInclude Include="Modules\Script\Expressions\ExpressionBrace.h" />
+    <ClInclude Include="Modules\Script\Expressions\ExpressionCall.h" />
+    <ClInclude Include="Modules\Script\Expressions\ExpressionCast.h" />
+    <ClInclude Include="Modules\Script\Expressions\ExpressionFloat.h" />
+    <ClInclude Include="Modules\Script\Expressions\ExpressionIdentifier.h" />
+    <ClInclude Include="Modules\Script\Expressions\ExpressionInteger.h" />
+    <ClInclude Include="Modules\Script\Expressions\ExpressionNull.h" />
+    <ClInclude Include="Modules\Script\Expressions\ExpressionOperator.h" />
+    <ClInclude Include="Modules\Script\Expressions\ExpressionString.h" />
+    <ClInclude Include="Modules\Script\Expressions\ExpressionSubscript.h" />
+    <ClInclude Include="Modules\Script\FunctionFactories\Generic\FunctionFactory.h" />
+    <ClInclude Include="Modules\Script\Functions\Arithmetic\FunctionBitwiseAnd.h" />
+    <ClInclude Include="Modules\Script\Functions\Arithmetic\FunctionBitwiseOr.h" />
+    <ClInclude Include="Modules\Script\Functions\Arithmetic\FunctionBitwiseXor.h" />
+    <ClInclude Include="Modules\Script\Functions\Arithmetic\FunctionDivide.h" />
+    <ClInclude Include="Modules\Script\Functions\Arithmetic\FunctionMinus.h" />
+    <ClInclude Include="Modules\Script\Functions\Arithmetic\FunctionModulo.h" />
+    <ClInclude Include="Modules\Script\Functions\Arithmetic\FunctionMultiply.h" />
+    <ClInclude Include="Modules\Script\Functions\Arithmetic\FunctionPlus.h" />
+    <ClInclude Include="Modules\Script\Functions\Arithmetic\FunctionShiftLeft.h" />
+    <ClInclude Include="Modules\Script\Functions\Arithmetic\FunctionShiftRight.h" />
+    <ClInclude Include="Modules\Script\Functions\Assignment\FunctionAssign.h" />
+    <ClInclude Include="Modules\Script\Functions\Assignment\FunctionBitwiseAndAssign.h" />
+    <ClInclude Include="Modules\Script\Functions\Assignment\FunctionBitwiseOrAssign.h" />
+    <ClInclude Include="Modules\Script\Functions\Assignment\FunctionBitwiseXorAssign.h" />
+    <ClInclude Include="Modules\Script\Functions\Assignment\FunctionDivideAssign.h" />
+    <ClInclude Include="Modules\Script\Functions\Assignment\FunctionMinusAssign.h" />
+    <ClInclude Include="Modules\Script\Functions\Assignment\FunctionModuloAssign.h" />
+    <ClInclude Include="Modules\Script\Functions\Assignment\FunctionMultiplyAssign.h" />
+    <ClInclude Include="Modules\Script\Functions\Assignment\FunctionPlusAssign.h" />
+    <ClInclude Include="Modules\Script\Functions\Assignment\FunctionShiftLeftAssign.h" />
+    <ClInclude Include="Modules\Script\Functions\Assignment\FunctionShiftRightAssign.h" />
+    <ClInclude Include="Modules\Script\Functions\Cast\FunctionBool.h" />
+    <ClInclude Include="Modules\Script\Functions\Cast\FunctionDouble.h" />
+    <ClInclude Include="Modules\Script\Functions\Cast\FunctionInt64.h" />
+    <ClInclude Include="Modules\Script\Functions\Cast\FunctionString.h" />
+    <ClInclude Include="Modules\Script\Functions\Comparison\FunctionAnd.h" />
+    <ClInclude Include="Modules\Script\Functions\Comparison\FunctionEqual.h" />
+    <ClInclude Include="Modules\Script\Functions\Comparison\FunctionGreater.h" />
+    <ClInclude Include="Modules\Script\Functions\Comparison\FunctionGreaterEqual.h" />
+    <ClInclude Include="Modules\Script\Functions\Comparison\FunctionLess.h" />
+    <ClInclude Include="Modules\Script\Functions\Comparison\FunctionLessEqual.h" />
+    <ClInclude Include="Modules\Script\Functions\Comparison\FunctionNotEqual.h" />
+    <ClInclude Include="Modules\Script\Functions\Comparison\FunctionOr.h" />
+    <ClInclude Include="Modules\Script\Functions\Comparison\FunctionSpaceship.h" />
+    <ClInclude Include="Modules\Script\Functions\Comparison\FunctionTernary.h" />
+    <ClInclude Include="Modules\Script\Functions\General\FunctionArrow.h" />
+    <ClInclude Include="Modules\Script\Functions\General\FunctionBrace.h" />
+    <ClInclude Include="Modules\Script\Functions\General\FunctionIdentifier.h" />
+    <ClInclude Include="Modules\Script\Functions\General\FunctionLiteral.h" />
+    <ClInclude Include="Modules\Script\Functions\General\FunctionPi.h" />
+    <ClInclude Include="Modules\Script\Functions\General\FunctionRnd.h" />
+    <ClInclude Include="Modules\Script\Functions\General\FunctionRand.h" />
+    <ClInclude Include="Modules\Script\Functions\General\FunctionRndRange.h" />
+    <ClInclude Include="Modules\Script\Functions\General\FunctionSubscript.h" />
+    <ClInclude Include="Modules\Script\Functions\General\FunctionVariable.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionAbs.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionACos.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionACosH.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionASin.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionASinH.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionATan.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionATan2.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionATanH.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionCbrt.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionCeil.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionCos.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionCosH.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionDim.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionErf.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionErfC.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionExp.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionExp2.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionExpM1.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionFloor.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionFMA.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionGamma.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionHypot.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionLdExp.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionLGamma.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionLog.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionLog10.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionLog1P.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionLog2.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionMax.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionMin.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionMod.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionPow.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionRemainder.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionRound.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionRoundF.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionSin.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionSinH.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionSqrt.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionTan.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionTanH.h" />
+    <ClInclude Include="Modules\Script\Functions\Mathematics\FunctionTrunc.h" />
+    <ClInclude Include="Modules\Script\Functions\Unary\FunctionBitwiseNot.h" />
+    <ClInclude Include="Modules\Script\Functions\Unary\FunctionLogicalNot.h" />
+    <ClInclude Include="Modules\Script\Functions\Unary\FunctionPostfixDecrement.h" />
+    <ClInclude Include="Modules\Script\Functions\Unary\FunctionPostfixIncrement.h" />
+    <ClInclude Include="Modules\Script\Functions\Unary\FunctionPrefixDecrement.h" />
+    <ClInclude Include="Modules\Script\Functions\Unary\FunctionPrefixIncrement.h" />
+    <ClInclude Include="Modules\Script\Functions\Unary\FunctionUnaryPlus.h" />
+    <ClInclude Include="Modules\Script\Functions\Unary\FunctionUnaryMinus.h" />
+    <ClInclude Include="Modules\Script\Interfaces\IExpressionRunner.h" />
+    <ClInclude Include="Modules\Script\Interfaces\IExpression.h" />
+    <ClInclude Include="Modules\Script\Interfaces\IExpressionBuilder.h" />
+    <ClInclude Include="Modules\Script\Interfaces\IFunction.h" />
+    <ClInclude Include="Modules\Script\Interfaces\IFunctionFactory.h" />
+    <ClInclude Include="Modules\Script\Interfaces\ILexic.h" />
+    <ClInclude Include="Modules\Script\Interfaces\IParser.h" />
+    <ClInclude Include="Modules\Script\Interfaces\IProgressListener.h" />
+    <ClInclude Include="Modules\Script\Interfaces\IReader.h" />
+    <ClInclude Include="Modules\Script\Interfaces\ITokenizer.h" />
+    <ClInclude Include="Modules\Script\Json\Decoder.h" />
+    <ClInclude Include="Modules\Script\Json\Encoder.h" />
+    <ClInclude Include="Modules\Script\Lexics\C++\Lexic.h" />
+    <ClInclude Include="Modules\Script\Lexics\Json\Lexic.h" />
+    <ClInclude Include="Modules\Script\Lexics\Xml\Lexic.h" />
+    <ClInclude Include="Modules\Script\Parsers\C++\ParserBinary.h" />
+    <ClInclude Include="Modules\Script\Parsers\C++\ParserHexadecimal.h" />
+    <ClInclude Include="Modules\Script\Parsers\C++\ParserNumeric.h" />
+    <ClInclude Include="Modules\Script\Parsers\C++\ParserOctal.h" />
+    <ClInclude Include="Modules\Script\Parsers\C++\ParserOperator.h" />
+    <ClInclude Include="Modules\Script\Parsers\C++\ParserString.h" />
+    <ClInclude Include="Modules\Script\Parsers\ParserHexadecimal.h" />
+    <ClInclude Include="Modules\Script\Parsers\ParserIdentifier.h" />
+    <ClInclude Include="Modules\Script\Parsers\ParserNumeric.h" />
+    <ClInclude Include="Modules\Script\Parsers\ParserOperator.h" />
+    <ClInclude Include="Modules\Script\Parsers\ParserString.h" />
+    <ClInclude Include="Modules\Script\Readers\ReaderLowerCase.h" />
+    <ClInclude Include="Modules\Script\Readers\ReaderSensitive.h" />
+    <ClInclude Include="Modules\Script\Readers\ReaderUpperCase.h" />
+    <ClInclude Include="Modules\Script\Tokenizers\C++\Tokenizer.h" />
+    <ClInclude Include="Modules\Script\Tokenizers\Generic\Tokenizer.h" />
+    <ClInclude Include="Modules\Script\Tokenizers\Json\Tokenizer.h" />
+    <ClInclude Include="Modules\Script\Tokenizers\Xml\Tokenizer.h" />
+    <ClInclude Include="Modules\Script\Xml\Decoder.h" />
+    <ClInclude Include="Modules\Script\Xml\Encoder.h" />
+    <ClInclude Include="Modules\Script\Xml\Entity.h" />
+    <ClInclude Include="Modules\Script\Xml\EntityType.h" />
+    <ClInclude Include="Nitisa.h" />
+    <ClInclude Include="Package\Core\Consts.h" />
+    <ClInclude Include="Package\Core\Event.h" />
+    <ClInclude Include="Package\Core\EventList.h" />
+    <ClInclude Include="Package\Core\ExportPrefixType.h" />
+    <ClInclude Include="Package\Core\PackageComponent.h" />
+    <ClInclude Include="Package\Core\PackageControl.h" />
+    <ClInclude Include="Package\Core\PackageDialogBox.h" />
+    <ClInclude Include="Package\Core\PackageEntity.h" />
+    <ClInclude Include="Package\Core\PackageForm.h" />
+    <ClInclude Include="Package\Core\PackageListItem.h" />
+    <ClInclude Include="Package\Core\PackagePropertyHandler.h" />
+    <ClInclude Include="Package\Core\PackageRenderer.h" />
+    <ClInclude Include="Package\Core\PackageStyle.h" />
+    <ClInclude Include="Package\Core\Property.h" />
+    <ClInclude Include="Package\Core\PropertyHandler.h" />
+    <ClInclude Include="Package\Core\PropertyList.h" />
+    <ClInclude Include="Package\Core\PropertyState.h" />
+    <ClInclude Include="Package\EventLists\ComponentEventList.h" />
+    <ClInclude Include="Package\EventLists\ControlEventList.h" />
+    <ClInclude Include="Package\EventLists\DialogBoxEventList.h" />
+    <ClInclude Include="Package\EventLists\FormEventList.h" />
+    <ClInclude Include="Package\Interfaces\IEvent.h" />
+    <ClInclude Include="Package\Interfaces\IEventList.h" />
+    <ClInclude Include="Package\Interfaces\IPackage.h" />
+    <ClInclude Include="Package\Interfaces\IPackageComponent.h" />
+    <ClInclude Include="Package\Interfaces\IPackageComponentListener.h" />
+    <ClInclude Include="Package\Interfaces\IPackageControl.h" />
+    <ClInclude Include="Package\Interfaces\IPackageControlListener.h" />
+    <ClInclude Include="Package\Interfaces\IPackageDialogBox.h" />
+    <ClInclude Include="Package\Interfaces\IPackageEntity.h" />
+    <ClInclude Include="Package\Interfaces\IPackageForm.h" />
+    <ClInclude Include="Package\Interfaces\IPackageListItem.h" />
+    <ClInclude Include="Package\Interfaces\IPackagePropertyHandler.h" />
+    <ClInclude Include="Package\Interfaces\IPackageRenderer.h" />
+    <ClInclude Include="Package\Interfaces\IPackageService.h" />
+    <ClInclude Include="Package\Interfaces\IPackageStyle.h" />
+    <ClInclude Include="Package\Interfaces\IProperty.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyBool.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyBoolArray.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyBoolArrayState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyBoolState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyColor.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyColorArray.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyColorArrayState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyColorState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyDouble.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyDoubleState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyEnum.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyEnumState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyFloat.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyFloatArray.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyFloatArrayState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyFloatState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyFont.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyFontState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyGradient.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyGradientState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyHandler.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyHandlerListener.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyHotkey.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyHotkeyState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyIdentifier.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyIdentifierState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyImage.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyImageList.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyImageListState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyImageState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyInt64.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyInt64State.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyInteger.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyIntegerArray.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyIntegerArrayState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyIntegerState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyList.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyMask.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyMaskState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyMatrix.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyMatrixState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyPoint.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyPointB.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyPointBState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyPointD.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyPointDState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyPointF.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyPointFState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyPointL.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyPointLState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyPointState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyRect.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyRectB.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyRectBState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyBorderColor.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyBorderColorState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyRectD.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyRectDState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyRectF.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyRectFState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyRectL.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyRectLState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyRectState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyString.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyStringState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyStyle.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyStyleState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyText.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyTextState.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyTransform.h" />
+    <ClInclude Include="Package\Interfaces\IPropertyTransformState.h" />
+    <ClInclude Include="Package\Properties\PropertyBool.h" />
+    <ClInclude Include="Package\Properties\PropertyBoolArray.h" />
+    <ClInclude Include="Package\Properties\PropertyBoolArrayState.h" />
+    <ClInclude Include="Package\Properties\PropertyBoolState.h" />
+    <ClInclude Include="Package\Properties\PropertyColor.h" />
+    <ClInclude Include="Package\Properties\PropertyColorArray.h" />
+    <ClInclude Include="Package\Properties\PropertyColorArrayState.h" />
+    <ClInclude Include="Package\Properties\PropertyColorState.h" />
+    <ClInclude Include="Package\Properties\PropertyDouble.h" />
+    <ClInclude Include="Package\Properties\PropertyDoubleState.h" />
+    <ClInclude Include="Package\Properties\PropertyEnum.h" />
+    <ClInclude Include="Package\Properties\PropertyEnumState.h" />
+    <ClInclude Include="Package\Properties\PropertyFloat.h" />
+    <ClInclude Include="Package\Properties\PropertyFloatArray.h" />
+    <ClInclude Include="Package\Properties\PropertyFloatArrayState.h" />
+    <ClInclude Include="Package\Properties\PropertyFloatState.h" />
+    <ClInclude Include="Package\Properties\PropertyFont.h" />
+    <ClInclude Include="Package\Properties\PropertyFontState.h" />
+    <ClInclude Include="Package\Properties\PropertyGradient.h" />
+    <ClInclude Include="Package\Properties\PropertyGradientState.h" />
+    <ClInclude Include="Package\Properties\PropertyHotkey.h" />
+    <ClInclude Include="Package\Properties\PropertyHotkeyState.h" />
+    <ClInclude Include="Package\Properties\PropertyIdentifier.h" />
+    <ClInclude Include="Package\Properties\PropertyIdentifierState.h" />
+    <ClInclude Include="Package\Properties\PropertyImage.h" />
+    <ClInclude Include="Package\Properties\PropertyImageList.h" />
+    <ClInclude Include="Package\Properties\PropertyImageListState.h" />
+    <ClInclude Include="Package\Properties\PropertyImageState.h" />
+    <ClInclude Include="Package\Properties\PropertyInt64.h" />
+    <ClInclude Include="Package\Properties\PropertyInt64State.h" />
+    <ClInclude Include="Package\Properties\PropertyInteger.h" />
+    <ClInclude Include="Package\Properties\PropertyIntegerArray.h" />
+    <ClInclude Include="Package\Properties\PropertyIntegerArrayState.h" />
+    <ClInclude Include="Package\Properties\PropertyIntegerState.h" />
+    <ClInclude Include="Package\Properties\PropertyMask.h" />
+    <ClInclude Include="Package\Properties\PropertyMaskState.h" />
+    <ClInclude Include="Package\Properties\PropertyMatrix.h" />
+    <ClInclude Include="Package\Properties\PropertyMatrixState.h" />
+    <ClInclude Include="Package\Properties\PropertyPoint.h" />
+    <ClInclude Include="Package\Properties\PropertyPointB.h" />
+    <ClInclude Include="Package\Properties\PropertyPointBState.h" />
+    <ClInclude Include="Package\Properties\PropertyPointD.h" />
+    <ClInclude Include="Package\Properties\PropertyPointDState.h" />
+    <ClInclude Include="Package\Properties\PropertyPointF.h" />
+    <ClInclude Include="Package\Properties\PropertyPointFState.h" />
+    <ClInclude Include="Package\Properties\PropertyPointL.h" />
+    <ClInclude Include="Package\Properties\PropertyPointLState.h" />
+    <ClInclude Include="Package\Properties\PropertyPointState.h" />
+    <ClInclude Include="Package\Properties\PropertyRect.h" />
+    <ClInclude Include="Package\Properties\PropertyRectB.h" />
+    <ClInclude Include="Package\Properties\PropertyRectBState.h" />
+    <ClInclude Include="Package\Properties\PropertyBorderColor.h" />
+    <ClInclude Include="Package\Properties\PropertyBorderColorState.h" />
+    <ClInclude Include="Package\Properties\PropertyRectD.h" />
+    <ClInclude Include="Package\Properties\PropertyRectDState.h" />
+    <ClInclude Include="Package\Properties\PropertyRectF.h" />
+    <ClInclude Include="Package\Properties\PropertyRectFState.h" />
+    <ClInclude Include="Package\Properties\PropertyRectL.h" />
+    <ClInclude Include="Package\Properties\PropertyRectLState.h" />
+    <ClInclude Include="Package\Properties\PropertyRectState.h" />
+    <ClInclude Include="Package\Properties\PropertyString.h" />
+    <ClInclude Include="Package\Properties\PropertyStringState.h" />
+    <ClInclude Include="Package\Properties\PropertyStyle.h" />
+    <ClInclude Include="Package\Properties\PropertyStyleState.h" />
+    <ClInclude Include="Package\Properties\PropertyText.h" />
+    <ClInclude Include="Package\Properties\PropertyTextState.h" />
+    <ClInclude Include="Package\Properties\PropertyTransform.h" />
+    <ClInclude Include="Package\Properties\PropertyTransformState.h" />
+    <ClInclude Include="Package\PropertyHandlers\PropertyHandlerDefault.h" />
+    <ClInclude Include="Package\PropertyLists\ComponentPropertyList.h" />
+    <ClInclude Include="Package\PropertyLists\ControlPropertyList.h" />
+    <ClInclude Include="Package\PropertyLists\DialogBoxPropertyList.h" />
+    <ClInclude Include="Package\PropertyLists\FormPropertyList.h" />
+    <ClInclude Include="Package\PropertyLists\ListItemPropertyList.h" />
+    <ClInclude Include="Render\StoreBitmask.h" />
+    <ClInclude Include="Render\StoreBlock.h" />
+    <ClInclude Include="Render\StoreFramebuffer.h" />
+    <ClInclude Include="Render\StoreMask.h" />
+    <ClInclude Include="Render\StorePrimitiveMatrix.h" />
+    <ClInclude Include="Render\StoreProgram.h" />
+    <ClInclude Include="Render\StoreSplineLimits.h" />
+    <ClInclude Include="Render\StoreState.h" />
+    <ClInclude Include="Render\StoreTarget.h" />
+    <ClInclude Include="Render\StoreVertexArray.h" />
+    <ClInclude Include="Render\Utils.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0C287F17-8C4C-4081-97AA-D6452B3A1FF2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>NitisaRT</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x86\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Nitisa\x86\Debug\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x64\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Nitisa\x64\Debug\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Nitisa\ARM\Debug\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM64\Debug\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Nitisa\ARM64\Debug\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x86\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Nitisa\x86\DebugRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x64\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Nitisa\x64\DebugRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Nitisa\ARM\DebugRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM64\DebugRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Nitisa\ARM64\DebugRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x86\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Nitisa\x86\Release\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x64\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Nitisa\x64\Release\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Nitisa\ARM\Release\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM64\Release\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Nitisa\ARM64\Release\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x86\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Nitisa\x86\ReleaseRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\x64\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Nitisa\x64\ReleaseRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Nitisa\ARM\ReleaseRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <OutDir>$(SolutionOutputDir)bin\Windows\ARM64\ReleaseRT\</OutDir>
+    <IntDir>$(SolutionOutputDir)obj\Windows\Nitisa\ARM64\ReleaseRT\</IntDir>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib />
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib />
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugRT|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib />
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib />
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|ARM64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseRT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).obj</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib />
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

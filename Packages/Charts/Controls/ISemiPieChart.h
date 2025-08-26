@@ -1,0 +1,30 @@
+// This file is a part of Nitisa framework
+// Copyright © 2021 Nitisa. All rights reserved.
+// Author: Dimitry Lysenko
+// Site: http://nitisa.com
+// Download: http://nitisa.com/downloads
+// Documentation: http://nitisa.com/documentation
+// License: http://nitisa.com/site/license
+
+#pragma once
+
+#include "../Interfaces/IRadialChart.h"
+
+namespace nitisa
+{
+	namespace charts
+	{
+		class ISemiPieChart :public virtual IRadialChart
+		{
+		protected:
+			ISemiPieChart() = default;
+			~ISemiPieChart() = default;
+			ISemiPieChart(const ISemiPieChart &other) = delete;
+			ISemiPieChart(ISemiPieChart &&other) = delete;
+			ISemiPieChart &operator=(const ISemiPieChart &other) = delete;
+			ISemiPieChart &operator=(ISemiPieChart &&other) = delete;
+		public:
+			// No additional properties and methods
+		};
+	}
+}

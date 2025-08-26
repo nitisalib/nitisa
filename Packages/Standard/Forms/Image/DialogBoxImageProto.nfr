@@ -1,0 +1,348 @@
+{
+    "Layout": "Windows Form",
+    "Version": "2.0",
+    "Settings": {
+        "GridX": true,
+        "GridY": true,
+        "GridRotate": true,
+        "GridXStep": 8,
+        "GridYStep": 8,
+        "GridRotateStep": 0.0174533,
+        "RotateShift": 2,
+        "GridPointSize": 1,
+        "GridPointColor": [
+            113,
+            21,
+            36,
+            255
+        ],
+        "Namespace": "standard",
+        "Prefix": "m_p",
+        "SelectionPointSize": 4,
+        "SelectionBorderWidth": 1,
+        "SelectionBorderColor": [
+            0,
+            0,
+            255,
+            150
+        ],
+        "SelectionBackgroundColor": [
+            0,
+            0,
+            255,
+            50
+        ],
+        "OverwriteIncludes": [
+            {
+                "Search": "Standard",
+                "Replace": "../.."
+            }
+        ],
+        "OverwriteNamespaces": [
+            {
+                "Search": "standard",
+                "Replace": ""
+            }
+        ],
+        "WidgetsSection": "protected",
+        "GenerateGetters": false,
+        "HighlightBorderWidth": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "HighlightBorderColor": [
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ],
+            [
+                0,
+                0,
+                255,
+                255
+            ]
+        ],
+        "ExportAs": 1,
+        "DialogBoxPackage": "Standard",
+        "DialogBoxClass": "DialogBoxEx"
+    },
+    "Form": {
+        "Name": "DialogBoxImageProto",
+        "Caption": "Image",
+        "ClientSize": [
+            600,
+            400
+        ],
+        "State": "WindowState::Hidden",
+        "WindowPosition": "WindowPosition::MainFormCenter",
+        "OnKeyUp": "FormImageProto_OnKeyUp"
+    },
+    "Controls": [
+        {
+            "Package": "Standard",
+            "ClassName": "Panel",
+            "Name": "PanelWarning",
+            "Font": {
+                "FontName": "Tahoma",
+                "Height": -11,
+                "Weight": 3,
+                "Distance": 0,
+                "Color": [
+                    255,
+                    0,
+                    0,
+                    255
+                ],
+                "ShadowShift": [
+                    0,
+                    0
+                ],
+                "ShadowRadius": 1,
+                "ShadowColor": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "Italic": false,
+                "Underline": false,
+                "StrikeOut": false,
+                "Monospace": false
+            },
+            "Transform": {
+                "Tx": 0,
+                "Ty": 376,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                600,
+                24
+            ],
+            "UseParentFont": false,
+            "Align": "Align::Bottom",
+            "Caption": "If you add big image, the form save and load time will take awhile!",
+            "CaptionHorizontalAlign": "TextAlign::Left",
+            "OuterBevelWidth": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "InnerBevelWidth": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "Padding": [
+                4,
+                0,
+                0,
+                0
+            ],
+            "BackgroundColor": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "UseMask": false
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "Container",
+            "Name": "Container",
+            "Transform": {
+                "Tx": 516,
+                "Ty": 0,
+                "Tz": 0,
+                "Sx": 1,
+                "Sy": 1,
+                "Sz": 1,
+                "Rx": 0,
+                "Ry": 0,
+                "Rz": 0,
+                "RO": "RotateOrder::XYZ",
+                "TO": "TransformOrder::TRS"
+            },
+            "Size": [
+                84,
+                376
+            ],
+            "Align": "Align::Right",
+            "UseMask": false,
+            "Controls": [
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonLoad",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 8,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        68,
+                        23
+                    ],
+                    "TabOrder": 5,
+                    "Caption": "Load...",
+                    "OnClick": "ButtonLoad_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonClear",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 35,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        68,
+                        23
+                    ],
+                    "TabOrder": 6,
+                    "Caption": "Clear",
+                    "OnClick": "ButtonClear_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonOk",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 66,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        68,
+                        23
+                    ],
+                    "TabOrder": 7,
+                    "Caption": "OK",
+                    "OnClick": "ButtonOk_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Button",
+                    "Name": "ButtonCancel",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 93,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        68,
+                        23
+                    ],
+                    "TabOrder": 8,
+                    "Caption": "Cancel",
+                    "OnClick": "ButtonCancel_OnClick"
+                },
+                {
+                    "Package": "Standard",
+                    "ClassName": "Label",
+                    "Name": "LabelSize",
+                    "Transform": {
+                        "Tx": 8,
+                        "Ty": 140,
+                        "Tz": 0,
+                        "Sx": 1,
+                        "Sy": 1,
+                        "Sz": 1,
+                        "Rx": 0,
+                        "Ry": 0,
+                        "Rz": 0,
+                        "RO": "RotateOrder::XYZ",
+                        "TO": "TransformOrder::TRS"
+                    },
+                    "Size": [
+                        68,
+                        50
+                    ],
+                    "Caption": "",
+                    "Multiline": true,
+                    "AutoSize": false
+                }
+            ]
+        },
+        {
+            "Package": "Standard",
+            "ClassName": "ScrollBox",
+            "Name": "ScrollBox",
+            "Size": [
+                516,
+                376
+            ],
+            "Align": "Align::Client",
+            "Controls": [
+                {
+                    "Package": "Standard",
+                    "ClassName": "Image",
+                    "Name": "Image",
+                    "Size": [
+                        0,
+                        0
+                    ]
+                }
+            ]
+        }
+    ]
+}
